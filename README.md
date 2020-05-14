@@ -50,7 +50,7 @@ Layout css for the theme
 Contains all overriden woocommerce templates.
  
  
-ROOT FILES
+Root Files
 ----------
 
 ***NOTE: The root of the theme contains all custom theme template files and overridden wordpress templates***
