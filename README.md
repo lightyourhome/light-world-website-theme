@@ -22,7 +22,7 @@ Table of Contents
     - front-page templates
     - sale-page templates
 
-FOLDERS
+Folders
 --------
 
 ###### CSS
@@ -50,11 +50,8 @@ Layout css for the theme
 Contains all overriden woocommerce templates.
  
  
-/************************************
-*
-*           ROOT FILES
-*
-************************************/
+ROOT FILES
+----------
 
 ***NOTE: The root of the theme contains all custom theme template files and overridden wordpress templates***
 
