@@ -10,8 +10,32 @@ Directories and File Locations
 Table of Contents
 
 - Folders
-  - CSS
+  - css
+  - js
+    - customizer.js
+    - filter_overlay.js
+    - lighting_ideas.js
+    - lw-showroom.js
+    - navigation.js
+    - skip-link-focus-fix.js
+    - slick_init.min.js
+    - swatch_slider_1.0.js
+    - tfs-product-remove.js
+    - tfs_checkout_and_cart.js
+    - woo_single_product.js
   - inc
+    - woocommerce
+      - shipping
+        - single-product-shipping.php
+      - tool-tips
+        -single-product-tool-tips-information.php
+      - woocommerce-admin-functions.php
+      - woocommerce-functions.php
+    - custom-breadcrumbs.php
+    - custom-header.php
+    - customizer.php
+    - template-functions.php
+    - template-tags.php
   - languages
   - layouts
   - template-parts
