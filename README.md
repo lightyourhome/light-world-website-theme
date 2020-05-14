@@ -17,6 +17,7 @@ Table of Contents
   - template-parts
   - woocommerce
 - Root Files
+  - functions.php
   - style.css
   - template files
     - front-page templates
@@ -54,6 +55,10 @@ Root Files
 ----------
 
 ***NOTE: The root of the theme contains all custom theme template files and overridden wordpress templates***
+
+###### functions.php
+
+Contains all enqueued and dequeued files, as well as theme set up and required files. This file links the theme's backend together.
 
 ###### style.css
 
