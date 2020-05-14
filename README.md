@@ -23,7 +23,7 @@ Table of Contents
     - sale-page templates
 
 FOLDERS
-===
+--------
 
 ###### CSS
  
