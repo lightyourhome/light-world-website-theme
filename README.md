@@ -7,21 +7,20 @@ Custom Theme for Light World's Website
 Directories and File Locations
 ----------------------------
 
-/**************************
 >>> Table of Contents
 
-# Folders
-  ## CSS
-  ## inc
-  ## languages
-  ## layouts
-  ## template-parts
-  ## woocommerce
-# Root Files
-  ## style.css
-  ## template files
-    ### front-page templates
-    ### sale-page templates
+- Folders
+  - CSS
+  - inc
+  - languages
+  - layouts
+  - template-parts
+  - woocommerce
+- Root Files
+  - style.css
+  - template files
+    - front-page templates
+    - sale-page templates
 
 FOLDERS
 ===
