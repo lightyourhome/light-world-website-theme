@@ -7,7 +7,7 @@ Custom Theme for Light World's Website
 Directories and File Locations
 ----------------------------
 
-###Table of Contents
+##Table of Contents
 
 - Folders
   - CSS
