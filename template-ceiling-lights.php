@@ -2,6 +2,7 @@
 
 <?php get_header(); ?>
 
+<!-- mobile hero scene   -->
 <div class="mobile-only">
 
     <div class="container-fluid px-0">
@@ -20,6 +21,7 @@
 
 </div>
 
+<!-- desktop/tablet slider -->
 <div class="desktop-only">
 
   <?php echo do_shortcode('[rev_slider alias="Ceiling-Lights-Slider3"][/rev_slider]'); ?>
@@ -98,6 +100,7 @@
 
             <main id="main" class="site-main" role="main">
 
+              <!-- BEST SELLERS -->
               <div class="row">
 
                 <div class="col-md-12 pb-2 mb-5 mt-5" style="border-bottom: 2px solid #d3d3d3;">
@@ -110,6 +113,7 @@
 
               </div>
 
+              <!-- ACCORDION -->
               <div class="row justify-content-center mt-5 mb-5">
                 <div class="col-md-12 p-3" style="background-color: #f6f6f6;">
                   <h1>Ceiling Light Fixtures</h1>
@@ -133,9 +137,10 @@
                   If you’re a resident of Bucks County, Newtown, PA or surrounding areas, Light World has all the ceiling lights you could ever need!  Whether you’re looking for recessed ceiling lights or any other type of ceiling light fixtures, we’ve got them in stock.  In addition, we also stock every other type of light fixture and freestanding lamp for your home including <strong><a href="product-category/bath-vanity-lighting">bathroom vanity lighting</a></strong>, floor lamps, <strong><a href="product-category/outdoor-lighting">outdoor lighting</a></strong>, and even <strong><a href="product-category/ceiling-fans">ceiling fans</a></strong>!  Let our staff guide you through the thousands of products we have in stock to help you find the one that’s best for you.  Come to us for all your light fixtures; we’ll light the way to your new home!
                   </div>
                   <br>
-                  <a href="javascript:void(0)" id="accordion-read-more">Read More</a>                </div>
+                  <a href="javascript:void(0)" id="accordion-read-more">Read More</a></div>
               </div>
 
+              <!-- YOU MAY ALSO LIKE SECTION -->
               <div class="col-md-12 pb-2 mb-5 mt-5" style="border-bottom: 2px solid #d3d3d3;">
                   <h3>You May Also Like...</h3>
               </div>

@@ -222,7 +222,8 @@
                      <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Linara-Night-LI.jpg">', wp_get_attachment_metadata(163890), 163890 ); ?>
 
                 </div>
-
+                
+                <!-- LIGHTING IDEAS -->
                 <div class="col-md-4 p-3" style="background-color: #f6f6f6;">
                     
                     <div class="row h-100">
@@ -265,7 +266,8 @@
 
             </div><!-- END ROW 4-->
 
-            <div class="row mt-5 mb-5" style="text-align: center; border: 2px solid #000;"><!-- ROW 5 -->
+            <!-- WHY SHOP WITH US --><!-- ROW 5 -->
+            <div class="row mt-5 mb-5" style="text-align: center; border: 2px solid #000;">
 
                 <div class="col-md-12 mt-3 mb-3"><h2>Why Shop with Us Online?</h2></div>
 
@@ -347,6 +349,7 @@
 
   </div>
 
+    <!-- ACCORDION  -->
     <div class="row justify-content-center mt-5" style="background-color: #f6f6f6;">
 
         <div class="col-md-6 p-4">

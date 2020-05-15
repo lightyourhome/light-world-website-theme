@@ -52,6 +52,7 @@
                 <h2>Our Showroom</h2>
               </div>
 
+              <!-- STORE IMAGE -->
               <div class="col-md-7 mb-3">
                 <div class="row h-100">
                   <div class="col-md-12 my-auto">
@@ -60,6 +61,7 @@
                 </div>
               </div>
 
+              <!-- STORE BIO -->
               <div class="col-md-5 mb-3">
 
                 <p>For over thirty years, Light World has been focused on refining the lighting experience for its customers.</p>
@@ -75,6 +77,7 @@
               </div>
             </div>
 
+            <!-- STAFF SLIDESHOW -->
             <div id="lw-showroom-staff" class="row mt-5 justify-content-center">
 
               <div class="col-md-12 mb-3" style="border-bottom: 2px solid rgb(253, 156, 21);">
@@ -272,7 +275,7 @@
 
             </div>
 
-
+                <!-- PHOTO GALLERY -->
                 <div id="lw-showroom-gallery" class="row mt-5 mb-3 justify-content-center">
 
                   <div class="col-md-12 mb-5" style="border-bottom: 2px solid rgb(253, 156, 21);">

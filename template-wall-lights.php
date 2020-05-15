@@ -2,6 +2,7 @@
 
 <?php get_header(); ?>
 
+<!-- mobile hero scene -->
 <div class="mobile-only">
 
     <div class="container-fluid px-0">
@@ -20,6 +21,7 @@
 
 </div>
 
+<!-- desktop/tablet slider -->
 <div class="desktop-only">
 
   <?php echo do_shortcode('[rev_slider alias="wall_lights_slider1"][/rev_slider]'); ?>
@@ -64,6 +66,7 @@
                   </div>
                 </div>
 
+                <!-- BEST SELLERS -->
                 <div class="col-md-12 pb-2 mb-5 mt-5" style="border-bottom: 2px solid #d3d3d3;">
                     <h2>Best Selling Wall Lights</h2>
                 </div>
@@ -74,6 +77,7 @@
 
               </div>
 
+              <!-- ACCORDION CAN GO INSIDE THIS ROW -->
               <div class="row justify-content-center mt-5 mb-5">
                 <div class="col-md-10 p-5" style="background-color: #f6f6f6;">
                   <h2>Wall Lighting</h2>
