@@ -54,6 +54,30 @@ Folders
  
  This folder contains theme.css which is the old theme's style.css. This file is not currently enqueued but can be used in the future in case there are any styling issues.
  
+###### js
+
+  - customizer.js
+    - Contains theme customizer enchancements, reloads preview changes async
+  - filter_overlay.js
+    - Contains js for the mobile product filter on woocommerce shop/product category pages
+  - lighting_ideas.js
+    - Handles product sliders and tip sliders on lighting ideas pages. Uses slick.js
+  - lw-showroom.js
+    - Handles jquery navigation scroll and sliders on light world showroom page
+  - navigation.js
+    - Handles default navigation in theme. Not currently used, may be removed in future.
+  - skip-link-focus-fix.js
+    - Helps with accessibility for keyboard only users
+  - slick_init.min.js
+    - minified version of slick_init.js - handles the initialization of all slick sliders on the site
+  - tfs-product-remove.js
+    - temporary fix for removing products in the cart from the old theme. May be removed in the future.
+  - tfs_checkout_and_cart.js
+    - temporary fix for removing products from cart via ajax from cart/checkout. May be removed in future.
+  - woo_single_product.js
+    - Handles all custom javascript on single product pages. Product thumbnail gallery, variable product summary, printing function,      chat with us button, variable product change handlers for tables, summary and links, and lastly tool tips.
+    
+  
 ###### inc
  
  Contains theme functions and other important theme php files. The woocommerce folder includes all of the custom woocommerce functions and edits for the theme.
