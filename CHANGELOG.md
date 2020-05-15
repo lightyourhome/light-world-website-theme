@@ -4,13 +4,19 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ unreleased ]
+## [ released ]
 
 ## [ 1.0.1 ] - 5.15.2020
 
 ## Added
 
 - New sale page with Hudson Valley Removed ( sale-page-template-hvl-end.php )
+
+## Changed
+
+- Footer credit cards positioning on mobile
+- Footer social media icons positioning on mobile
+- Added comments to 1SEO requested page template files for page sections
 
 ## [ released ]
 
