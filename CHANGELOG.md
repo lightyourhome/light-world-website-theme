@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.0.2 ] - 5.18.2020
+
+## Changed
+
+-Artcraft sale added to Sale page
+
+## [ released ]
+
 ## [ 1.0.1 ] - 5.15.2020
 
 ## Added
