@@ -155,7 +155,7 @@ Layout css for the theme
  
 ###### woocommerce
  
-Contains all overriden woocommerce templates.
+Contains all overridden woocommerce templates.
  
  
 Root Files
