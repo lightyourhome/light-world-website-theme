@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.0.4 ] - 5.20.2020
+
+## Changed
+
+- Top header row on mobile to say "Free shipping on all orders"
+
+## [ released ]
+
 ## [ 1.0.3 ] - 5.20.2020
 
 ## Added
