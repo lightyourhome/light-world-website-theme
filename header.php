@@ -117,16 +117,12 @@
 				</div>
 			</div>
 
-			<div id="header-store-info-row-mobile" class="row" style="background-color: #f6f6f6; border-bottom: 2px solid #f6f6f6;">
+			<div id="header-store-info-row-mobile" class="row" style="background-color: rgb(253, 156, 21); border-bottom: 2px solid #f6f6f6;">
 				
-				<div class="col-sm-12" style="display: inline-block;">
+				<div class="col-sm-12">
+                  	<p class="p--upper">Free Shipping On All Orders</p>
+                </div>
 
-					<ul style="list-style: none;" class="ml-0 mt-1">
-						<li style="font-size: 14px; float: left;"><a href="https://www.google.com/maps/place/Light+World/@40.1361691,-74.9831387,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6b2a78b88497f:0xa019ba94f4c9b0ef!8m2!3d40.136165!4d-74.98095"><strong>4625 E Street Road</strong></a></li>
-						<li style="font-size: 14px; float: right;"><a href="tel:215-883-8544"><strong>215-883-8544</strong></a></li>
-					</ul>
-
-				</div>
 			</div>
 
 			<div id="header-extra-links-row" class="row pt-2 pb-2" style="background-color: #f6f6f6;">
