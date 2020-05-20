@@ -110,7 +110,7 @@
 					
 					<div class="mt-1">
 						
-						<h5 style="color: white;">Free Shipping on All Orders - Hand Picked Selection - Easy Returns</h5>
+						<h5 style="color: white;">Free Shipping on All Orders - Handpicked Selection - Easy Returns</h5>
 						
 					</div>
 
