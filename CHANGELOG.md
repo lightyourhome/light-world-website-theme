@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.0.4 ] - 5.20.2020
 
+## Added
+
+- margin-block-start: 0 to paragraph tags
+
 ## Changed
 
 - Top header row on mobile to say "Free shipping on all orders"
