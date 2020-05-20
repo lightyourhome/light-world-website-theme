@@ -488,6 +488,7 @@ textarea {
   }
 
 p {
+  margin-block-start: 0;
 	margin-bottom: 1.5em;
 }
 
