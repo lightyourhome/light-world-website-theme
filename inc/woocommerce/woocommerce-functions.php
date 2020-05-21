@@ -1625,6 +1625,12 @@ if ( ! function_exists('get_recent_post_data') ) :
 
 endif;
 
+add_filter( 'woocommerce_product_additional_information_heading', 'remove_single_product_specification_tab_heading', 10, 1 );
+if ( ! function_exists('remove_single_product_specification_tab_heading') ) :
 
+  function remove_single_product_specification_tab_heading( $heading ) {
+  return false;
+  }
 
+endif;
 
