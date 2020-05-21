@@ -8,9 +8,6 @@ License URI: LICENSE
 Text Domain: light-world
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
 Light World is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
@@ -1123,10 +1120,15 @@ object {
     .heading, .related-posts, #decomments-form-add-comment,
     #breadcrumbs, #footer, .post-byline, .meta-single,
     .site-title img, .post-tags, .readability, .related, .products, #wp-live-chat,
-    /*img.wp-post-image.sp-no-webp,*/ #sp-click-to-zoom, #wp-live-chat-header, .woocommerce-store-notice,
+    /*img.wp-post-image.sp-no-webp*/ #sp-click-to-zoom, #wp-live-chat-header, .woocommerce-store-notice,
     .zoomImg, .spec-tool-tip-info-icon, .spec-tool-tip, .spec-tool-tip-text, .sp-description
     {
     display: none!important;
+    } 
+
+    #print-product-image-container{
+      float: left!important;
+      z-index: 1!important;
     }
   
     .price {
@@ -1154,7 +1156,7 @@ object {
   
     a { text-decoration: none!important; }
 
-    th, td p { font-size: 12px!important; }
+    th, td, p { font-size: 12px!important; }
   
     body { overflow: hidden;}
   
@@ -1163,7 +1165,7 @@ object {
   
   .flex-viewport .woocommerce-product-gallery__image { /*display: none!important;*/ }
   
-    /* .flex-viewport { height: 100%!important; } */
+    .flex-viewport { height: 100%!important; }
   
     #sp-print-image {
       padding-right: 100px;
@@ -1225,6 +1227,10 @@ object {
   
     h1 {
     font-size: 24pt;
+    }
+
+    p {
+      font-size: 12px;
     }
   
     h2, h3, h4 {
