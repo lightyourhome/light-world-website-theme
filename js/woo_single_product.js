@@ -173,7 +173,7 @@ jQuery(function($) {
 
     function change_variation_product_finish() {
 
-        if ($('variations_form')) {
+        if ( $('variations_form') ) {
 
             $(document).ready(function() {
 
@@ -207,168 +207,195 @@ jQuery(function($) {
 
     function print_simple_single_product() {
 
-        $(document).ready(function() {
+        if ( $('body').hasClass('single-product') && $('div.product').hasClass('product-type-simple') ) {
 
-            if ($('body').hasClass('single-product') && $('div.product').hasClass('product-type-simple')) {
+            let simpleProductPrintableTable = false;
 
-                let simpleProductPrintableTable = false;
+            if ( $('#woocommerce-simple-product-attributes-table').attr('data-printable_table') ) {
 
-                if ($('#woocommerce-simple-product-attributes-table').attr('data-printable_table')) {
+                simpleProductPrintableTable = JSON.parse(document.getElementById('woocommerce-simple-product-attributes-table').getAttribute('data-printable_table'));
 
-                    simpleProductPrintableTable = JSON.parse(document.getElementById('woocommerce-simple-product-attributes-table').getAttribute('data-printable_table'));
+                return simpleProductPrintableTable;
 
-                } else {
+            } else {
 
-                    return;
-
-                }
-
-                let $currentTable = $('#woocommerce-simple-product-attributes-table').html();
-
-                window.onbeforeprint = function(event) {
-
-                    if ($('#woocommerce-simple-product-attributes-table')) {
-
-                        $('.flex-active-slide').attr('id', 'sp-print-image');
-
-                        $('#woocommerce-simple-product-attributes-table').empty();
-
-                        $('.wc-tabs-wrapper').prepend('<h2 class="sp-print-specs-heading">SPECIFICATIONS</h2>');
-
-                        if (simpleProductPrintableTable) {
-
-                            $('#woocommerce-simple-product-attributes-table').append(simpleProductPrintableTable);
-
-                        }
-
-                        print_document_footer();
-
-                    }
-
-                };
-
-                window.onafterprint = function(event) {
-
-                    if ($('#woocommerce-simple-product-attributes-table')) {
-
-                       $('.flex-active-slide').removeAttr('id');
-
-                        $('.sp-print-specs-heading').remove();
-
-                        $('#sp-print-footer').remove();
-
-                        $('#woocommerce-simple-product-attributes-table').empty().append($currentTable);
-
-                    }
-
-                }
+                return;
 
             }
 
-        });
+        }
 
     }
 
 
     function print_variable_single_product() {
 
-        if ($('body').hasClass('single-product') && $('div.product').hasClass('product-type-variable')) {
+        if ( $('body').hasClass('single-product') && $('div.product').hasClass('product-type-variable') ) {
 
-            $(document).ready(function() {
+            let $tableRows = $('.variable-product-attribute-row');
 
-                let $tableRows = $('.variable-product-attribute-row');
+            let tableData = [];
 
-                let tableData = [];
+            let formattedPrintTable = [];
 
-                let formattedPrintTable = [];
+            $tableRows.each(function(e) {
 
-                $tableRows.each(function(e) {
-
-                    tableData.push($(this).find('th'));
-                    tableData.push($(this).find('td'));
-
-                });
-
-                let threeRowsCount = null;
-                let dataLength = tableData.length;
-
-                let numberOfColumns =  Math.floor( tableData.length / 4 );
-
-                if (Math.abs(tableData.length % 2) == 1) {
-
-                    threeRowsCount = tableData.length / numberOfColumns;
-
-                } else {
-
-                    dataLength = ((tableData.length / numberOfColumns) + 1) * numberOfColumns - 1;
-
-                    threeRowsCount = 6;
-
-                }
-
-                for (colCount = 0; colCount < dataLength; colCount += threeRowsCount) {
-
-                    let row = '<tr>';
-
-                    for (count = colCount; count < colCount + threeRowsCount; count++) {
-
-                        if (typeof tableData[count] === 'undefined') {
-
-                            break;
-
-                        } else {
-
-                            row += tableData[count].prop('outerHTML');
-
-                        }
-
-                    }
-
-                    row += '</tr>';
-
-                    formattedPrintTable.push(row);
-
-                }
-
-                let $currentVariableTable = $('#woocommerce-variable-product-attributes-table').html();
-
-                window.onbeforeprint = function(event) {
-
-                    if ($('#woocommerce-variable-product-attributes-table')) {
-
-                        $('.flex-active-slide').attr('id', 'sp-print-image');
-
-                        $('#woocommerce-variable-product-attributes-table').empty();
-                        $('#woocommerce-variable-product-attributes-table').append(formattedPrintTable.join(','));
-
-                        print_document_footer();
-
-                    }
-
-                };
-
-                let $currentTable = $('#woocommerce-variable-product-attributes-table').html();
-
-                window.onafterprint = function(event) {
-
-                    if ($('#woocommerce-variable-product-attributes-table')) {
-
-                        $('.flex-active-slide').removeAttr('id');
-
-                        $('.sp-print-specs-heading').remove();
-
-                        $('#woocommerce-variable-product-attributes-table').empty().append($currentVariableTable);
-
-                        $('#sp-print-footer').remove();
-
-                    }
-
-                };
+                tableData.push($(this).find('th'));
+                tableData.push($(this).find('td'));
 
             });
 
+            let threeRowsCount = null;
+            let dataLength = tableData.length;
+
+            let numberOfColumns =  Math.floor( tableData.length / 4 );
+
+            if (Math.abs(tableData.length % 2) == 1) {
+
+                threeRowsCount = tableData.length / numberOfColumns;
+
+            } else {
+
+                dataLength = ((tableData.length / numberOfColumns) + 1) * numberOfColumns - 1;
+
+                threeRowsCount = 6;
+
+            }
+
+            for (colCount = 0; colCount < dataLength; colCount += threeRowsCount) {
+
+                let row = '<tr>';
+
+                for (count = colCount; count < colCount + threeRowsCount; count++) {
+
+                    if (typeof tableData[count] === 'undefined') {
+
+                        break;
+
+                    } else {
+
+                        row += tableData[count].prop('outerHTML');
+
+                    }
+
+                }
+
+                row += '</tr>';
+
+                formattedPrintTable.push(row);
+
+            }
+
+            return formattedPrintTable;
+
         }
 
+    }
+
+    function before_single_product_print(simpleProductPrintableTable) {
+
+        window.onbeforeprint = function(event) {
+    
+             $('.flex-viewport').hide();
+
+             $('#print-product-image-container').show();
+    
+            //if a product is variable
+            if ( ! $('#woocommerce-simple-product-attributes-table')[0] ) {
+
+                let formattedPrintTable = print_variable_single_product();
+
+                if ($('#woocommerce-variable-product-attributes-table')) {
+
+                    $('.flex-active-slide').attr('id', 'sp-print-image');
+
+                    $('#woocommerce-variable-product-attributes-table').empty();
+                    $('#woocommerce-variable-product-attributes-table').append(formattedPrintTable.join(','));
+
+                    print_document_footer();
+
+                }
+
+            }
+
+            //if a product is simple
+            if ( $('#woocommerce-simple-product-attributes-table')[0] ) {
+
+                $('.flex-active-slide').attr('id', 'sp-print-image');
+
+                $('#woocommerce-simple-product-attributes-table').empty();
+
+                $('.wc-tabs-wrapper').prepend('<h2 class="sp-print-specs-heading">SPECIFICATIONS</h2>');
+
+                if (simpleProductPrintableTable) {
+
+                    $('#woocommerce-simple-product-attributes-table').append(simpleProductPrintableTable);
+
+                }
+
+                print_document_footer();
+
+            }
+
+        }
+    
+    }
+
+    function after_single_product_print($woocommerceGalleryContents) {
+
+        let $currentVariableTable = null;
+        let $currentSimpleTable = null;
+
+        if ($('form.variations_form')) { 
+
+            $currentVariableTable = $('#woocommerce-variable-product-attributes-table').html();
+
+        }
+
+        if ($('#woocommerce-simple-product-attributes-table')) { 
+
+            $currentSimpleTable = $('#woocommerce-simple-product-attributes-table').html();
+
+        }
+
+        window.onafterprint = function(event) {
+
+            //readd original gallery content
+            $('#print-product-image-container').hide();
+
+            $('.flex-viewport').show();
+
+            //if a product is variable
+            if ($('form.variations_form')) {
+
+                if ($('#woocommerce-variable-product-attributes-table')) {
+
+                    $('.flex-active-slide').removeAttr('id');
+
+                    $('.sp-print-specs-heading').remove();
+
+                    $('#woocommerce-variable-product-attributes-table').empty().append($currentVariableTable);
+
+                    $('#sp-print-footer').remove();
+
+                }
+
+            }
+
+            //if a product is simple
+            if ($('#woocommerce-simple-product-attributes-table')) {
+
+                $('.flex-active-slide').removeAttr('id');
+
+                 $('.sp-print-specs-heading').remove();
+
+                 $('#sp-print-footer').remove();
+
+                 $('#woocommerce-simple-product-attributes-table').empty().append($currentSimpleTable);
+
+             }
+
+        }
     }
 
 
@@ -376,19 +403,61 @@ jQuery(function($) {
 
         $(document).ready(function() {
 
-            if ($('#sp-print')) {
+            if ( $('#sp-print')[0] ) {
 
-                print_simple_single_product();
+                if ( $('.flex-viewport')[0] && $('.variations_form')[0] ) {
 
+                    let productVariationsForm = document.getElementsByClassName('variations_form');
+
+                    let productJSON = JSON.parse(productVariationsForm[0].getAttribute('data-product_variations'));
+
+                    let $defaultProductImage = productJSON[0].image['full_src'];
+
+                    $('.woocommerce-product-gallery').append('<div id="print-product-image-container"><img id="print-image" style="height: 100%; width: 100%;" src="' + $defaultProductImage +'"></div>');
+
+                    $('#print-product-image-container').hide();    
+                    
+                    //change the image every time a new variation is selected
+                    $('.variation_id').change(function() {
+
+                        let $currentVariationId = $('.variation_id').val();
+
+                        for ( let i = 0; i < productJSON.length; i++ ) {
+
+                            if ( productJSON[i].variation_id == $currentVariationId ) {
+
+                                let $currentImageSrc = productJSON[i].image['full_src'];
+
+                                console.log($currentImageSrc);
+
+                                $('#print-image').attr('src', $currentImageSrc );
+    
+                            }
+                        }
+
+                    });
+                        
+                        
+                } else if ( $('.flex-viewport')[0] ) {
+
+                    let $simpleProductSrc = $('.flex-active-slide').attr('data-thumb');
+    
+                    $('.woocommerce-product-gallery').append('<div id="print-product-image-container"><img id="print-image" style="height: 100%; width: 100%;" src="' + $simpleProductSrc +'"></div>');
+    
+                    $('#print-product-image-container').hide();    
+
+                }
+
+    
                 $('#sp-print').click(function() {
 
-                  $('.flex-active-slide').attr('id', 'sp-print-image');
+                    let simpleProductTable = print_simple_single_product();
 
-                    if ($('form.variations_form')) {
+                    before_single_product_print(simpleProductTable);
 
-                      print_variable_single_product();
+                    let $woocommerceFlexViewportContents = $('.flex-viewport').clone();
 
-                    }
+                    after_single_product_print($woocommerceFlexViewportContents);
 
                     $('.spec-tool-tip').hide();
 
