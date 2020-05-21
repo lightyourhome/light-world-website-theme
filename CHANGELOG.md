@@ -6,6 +6,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.0.5 ] - 5.21.2020
+
+## Added
+
+- Fix for print images in woo_single_product.js ( simple and variable products )
+- Print css to remove footer from print document
+- Filter that removes single product additional information heading to woocommerce-functions.php
+
+## Changed 
+
+- Print css paragraph font size
+- Refactored window.onbeforeprint and window.onafterprint code in woo_single_product.js
+- Print css body height ( it was cutting off the print footer )
+- Query strings for style.css and woo_single_product.js
+
+## Removed
+
+- Print CSS that was inhibiting multiple pages in print window
+
+## [ released ]
+
 ## [ 1.0.4 ] - 5.20.2020
 
 ## Added
