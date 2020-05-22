@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Changed 
 
-- Font size for arrows on thumbnail slider
+- Font size for arrows on thumbnail slider mobile
 - style.css query string
 - theme version number
 
