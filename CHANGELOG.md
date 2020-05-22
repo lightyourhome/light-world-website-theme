@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Font size of "Why Shop With Us" icons on home page
 - Query strings for style.css and woo_single_product.js
 - Theme version number in style.css
+- Discount percentage for ET2 and Maxim on sale page
 
 ## [ released ]
 
