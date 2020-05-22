@@ -1509,7 +1509,7 @@ object {
     .thumbnail-arrow-left {
       transform: translateY(-25px)!important;
        margin-right: 10px!important;
-       font-size: 22px;
+       font-size: 22px!important;
       cursor: pointer;
     }
   
