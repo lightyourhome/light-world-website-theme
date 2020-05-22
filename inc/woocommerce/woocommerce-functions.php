@@ -537,43 +537,16 @@ if ( ! function_exists('woo_custom_get_availability') ) :
       $stock_date = get_field('_back_in_stock_date');
       // Change In Stock Text
       if ( $_product->is_in_stock() ) {
-          $availability['availability'] = __('In stock!', 'woocommerce');
+
+        $availability['availability'] = __('In stock!', 'woocommerce');
+
+      } else {
+
+        $availability['availability'] = __('Sorry, We\'re All Out! Product may be on backorder, please contact us for more info!','woocommerce');
+
       }
-      // Change Out of Stock Text, If a back in stock date is provided, show it and if not, say "More Available Soon"
-      // Removes (estimate) from livex inv sheet
-      if ( ! $_product->is_in_stock() && strpos($stock_date, '(estimate)') !== FALSE ) {
 
-  		$replace_est = str_replace("(estimate)", " ", $stock_date);
-  		$availability['availability'] = __('Sorry, We\'re All Out! Estimated Availability Date: ' . $replace_est,'woocommerce');
-
-  	//Removes (actual) from Livex inv sheet
-  	} else if ( ! $_product->is_in_stock() && strpos($stock_date, '(actual)') !== FALSE ) {
-
-  		$replace_act = str_replace("(actual)", " ", $stock_date);
-  		$availability['availability'] = __('Sorry, We\'re All Out! Estimated Availability Date: ' . $replace_act,'woocommerce');
-
-  	//Removes AVAIL: from Uttermost Inv sheet
-  	} else if ( ! $_product->is_in_stock() && strpos($stock_date, 'AVAIL:') !== FALSE ) {
-
-  		$replace_utt = str_replace("AVAIL:", " ", $stock_date);
-  		$availability['availability'] = __('Sorry, We\'re All Out! Estimated Availability Date: ' . $replace_utt,'woocommerce');
-
-  	//Removes EST: from Uttermost Inv sheet
-  	} else if ( ! $_product->is_in_stock() && strpos($stock_date, 'EST:') !== FALSE ) {
-
-  		$replace_est = str_replace("EST:", " ", $stock_date);
-  		$availability['availability'] = __('Sorry, We\'re All Out! Estimated Availability Date: ' . $replace_est,'woocommerce');
-
-  	} else if ( ! $_product->is_in_stock() && strpos($stock_date, '/') !== FALSE) {
-
-          $availability['availability'] = __('Sorry, We\'re All Out! Estimated Availability Date: ' . $stock_date, 'woocommerce');
-
-      } else if ( ! $_product->is_in_stock() ) {
-
-  		$availability['availability'] = __('Sorry, We\'re All Out! More Available Soon. ', 'woocommerce');
-
-  	}
-      return $availability;
+    return $availability;
   } /* END WOOCOMMERCE CUSTOM IN STOCK AND OUT OF STOCK */
 
 endif;
