@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Single product "chat with us" button to open new chat window ( uses tidio api open() method )
+- Font size of "Why Shop With Us" icons on home page
 
 ## [ released ]
 
