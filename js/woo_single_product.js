@@ -478,12 +478,15 @@ jQuery(function($) {
      *****************************************************************/
 
     //open chat for single product PAGES
-    $('#single-product-page_contact_us').click(function() {
+    if ( $('#single-product-page_contact_us') ) {
 
-        $('#wp-live-chat-header').addClass('active');
-        $('#wplc_hovercard').show();
+        $('#single-product-page_contact_us').click(function() {
 
-    });
+            tidioChatApi.open();
+    
+        });
+
+    }
 
 
     /*****************************************************************
