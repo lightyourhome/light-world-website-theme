@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.0.6 ] - 5.22.2020
+
+## Added
+
+## Changed
+
+- Single product "chat with us" button to open new chat window ( uses tidio api open() method )
+
+## [ released ]
+
 ## [ 1.0.5 ] - 5.21.2020
 
 ## Added
