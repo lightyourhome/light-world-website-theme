@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.1.0 ] - 5.22.2020
+
+## Added 
+
+- Custom meta fields for product variation availability dates
+
+## [ released ]
+
 ## [ 1.0.7 ] - 5.22.2020
 
 ## Changed 
@@ -18,14 +26,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - "Product may be on backorder. Contact us for more information!" to out of stock message
 - Refactored woo_custom_get_availability(), code is stale
-
-## Changed
-
-- Single product "chat with us" button to open new chat window ( uses tidio api open() method )
-- Font size of "Why Shop With Us" icons on home page
-- Query strings for style.css and woo_single_product.js
-- Theme version number in style.css
-- Discount percentage for ET2 and Maxim on sale page
 
 ## [ released ]
 
