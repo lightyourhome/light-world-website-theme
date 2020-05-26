@@ -262,7 +262,7 @@ if ( ! function_exists('woo_variable_fields') ) :
 
     echo '<div class="variation-custom-fields">';
 
-      // Text Field
+      // Specification Sheet text field
       woocommerce_wp_text_input(
         array(
           'id'          => 'variation-spec-sheet',
@@ -275,7 +275,7 @@ if ( ! function_exists('woo_variable_fields') ) :
         )
       );
 
-      // Text Field
+      // Installation Sheet text field
       woocommerce_wp_text_input(
         array(
           'id'          => 'variation-installation-sheet',
@@ -285,6 +285,19 @@ if ( ! function_exists('woo_variable_fields') ) :
           'wrapper_class' => 'form-row form-row-first',
           //'description' => __( 'Enter the custom value here.', 'woocommerce' ),
           'value'       => get_post_meta($variation->ID, '_text_field_installation', true)
+        )
+      );
+
+      // Product Availability date text field
+      woocommerce_wp_text_input(
+        array(
+          'id'          => 'variation-avail-date',
+          'label'       => __( 'Variation Availability Date', 'woocommerce' ),
+          'placeholder' => 'Enter an availability date for this product',
+          //'desc_tip'    => true,
+          'wrapper_class' => 'form-row form-row-first',
+          //'description' => __( 'Enter the custom value here.', 'woocommerce' ),
+          'value'       => get_post_meta($variation->ID, '_text_field_variation_avail', true)
         )
       );
 
@@ -307,6 +320,8 @@ if ( ! function_exists('save_variation_fields') ) :
   $text_field_installation = stripslashes( $_POST['variation-installation-sheet'] );
   update_post_meta( $variation_id, '_text_field_installation', esc_attr( $text_field_installation ) );
 
+  $text_field_variation_avail = stripslashes( $_POST['variation-avail-date'] );
+  update_post_meta( $variation_id, '_text_field_variation_avail', esc_attr( $text_field_variation_avail ) );
 
   }
 
