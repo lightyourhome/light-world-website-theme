@@ -4,6 +4,19 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ unreleased ]
+
+## [ 1.1.3 ] - 5.28.2020
+
+## Added
+
+- function woo_product_variation_availability to handle in stock/out of stock messages for product variations
+
+## Changed
+
+- function woo_custom_product_availability to woo_simple_product_availability
+- function woo_simple_product_availability to only support simple product stock messages
+
 ## [ released ]
 
 ## [ 1.1.2 ] - 5.27.2020
