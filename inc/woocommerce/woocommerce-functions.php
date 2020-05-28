@@ -525,11 +525,31 @@ if ( ! function_exists('woocommerce_loop_swatches') ) :
 
 endif;
 
+if ( ! function_exists('woo_product_variation_availability') ) :
+
+  /**
+   * Handles custom in stock and out of stock message for variable products
+   * 
+   * @since 1.1.3
+   * @param object - the product
+   * @return array - product variation message json
+   */
+  function woo_product_variation_availability( $product ) {
+
+
+
+
+
+
+  }
+
+endif;
+
 add_filter( 'woocommerce_get_availability', 'woo_simple_product_availability', 1, 2);
 if ( ! function_exists('woo_simple_product_availability') ) :
 
   /**
-  * Adds out of stock and availability messages based off inventory feed
+  * Adds custom in stock and out of stock message for simple products
   *
   */
   function woo_simple_product_availability( $availability, $product ) {
