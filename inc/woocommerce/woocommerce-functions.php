@@ -525,29 +525,46 @@ if ( ! function_exists('woocommerce_loop_swatches') ) :
 
 endif;
 
-add_filter( 'woocommerce_get_availability', 'woo_custom_get_availability', 1, 2);
-if ( ! function_exists('woo_custom_get_availability') ) :
+add_filter( 'woocommerce_get_availability', 'woo_simple_product_availability', 1, 2);
+if ( ! function_exists('woo_simple_product_availability') ) :
 
   /**
   * Adds out of stock and availability messages based off inventory feed
   *
   */
-  function woo_custom_get_availability( $availability, $_product ) {
-  	//GET CUSTOM FIELD
-      $stock_date = get_field('_back_in_stock_date');
-      // Change In Stock Text
-      if ( $_product->is_in_stock() ) {
+  function woo_simple_product_availability( $availability, $product ) {
 
-        $availability['availability'] = __('In stock!', 'woocommerce');
+    $simple_product_backorder_date = get_field('back_in_stock_date');
 
-      } else {
+    if ( $product->is_in_stock() ) {
 
-        $availability['availability'] = __('Sorry, We\'re All Out! Product may be on backorder, please contact us for more info!','woocommerce');
+      $availability['availability'] = __('In stock!', 'woocommerce');
 
+      return $availability;
+
+    }
+
+    if ( ! $product->is_in_stock() ) {
+  
+      if ( $product->is_type('simple') ) {
+
+        if ( ! empty( $simple_product_backorder_date ) ) {
+
+          $availability['availability'] = __('Sorry, We\'re All Out! Estimated Availability Date: ' . $simple_product_backorder_date ,'woocommerce');
+
+        } else {
+
+          $availability['availability'] = __('Sorry, We\'re All Out! Product may be on backorder, please contact us for more info!','woocommerce');
+
+        }
+ 
       }
+ 
+      return $availability;
 
-    return $availability;
-  } /* END WOOCOMMERCE CUSTOM IN STOCK AND OUT OF STOCK */
+    }
+
+  }
 
 endif;
 
