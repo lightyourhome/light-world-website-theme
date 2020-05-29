@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Product variation availability JSON to variation selection form
 - function change_single_product_variation_stock_html to handle product variation stock messages in woo_single_product.js
 - stock.php template from woocommerce plugin template files ( override) 
+- Additional out of stock messages if availability date is empty
 
 ## Removed 
 
