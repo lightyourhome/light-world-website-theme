@@ -536,10 +536,33 @@ if ( ! function_exists('woo_product_variation_availability') ) :
    */
   function woo_product_variation_availability( $product ) {
 
+    global $woocommerce;
 
+    $variation_avail = [];
 
+    foreach ( $product->get_visible_children() as $variation_id ) :
 
+      $product_variation = wc_get_product( $variation_id );
 
+      $variation_avail_date = get_post_meta( $variation_id, '_text_field_variation_avail' , true );
+
+      $out_of_stock_html = '<p class="stock out-of-stock">Sorry, We\'re All Out! Estimated Availability Date: ' . $variation_avail_date . '</p>';
+
+      $in_stock_html = '<p class="stock in-stock">In stock!</p>';
+
+      if ( $product_variation->is_in_stock() ) {
+
+        array_push($variation_avail, array( 'id' => $variation_id, 'stock_html' => $in_stock_html ) );
+
+      } else {
+
+        array_push($variation_avail, array( 'id' => $variation_id, 'stock_html' => $out_of_stock_html ) );
+
+      }
+
+    endforeach;
+
+    return wp_json_encode( $variation_avail );
 
   }
 
