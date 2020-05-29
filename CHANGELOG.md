@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.2.1 ] - 6.1.2020
+
+## Added
+
+- Elk Lighting Sale
+
+## Changed 
+
+- Innovations and Quoizel Sales
+- Innovations images
+
+## [ released ]
+
 ## [ 1.2.0 ] - 5.29.2020
 
 ## Added
