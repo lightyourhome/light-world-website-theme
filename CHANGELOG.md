@@ -4,6 +4,22 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ unreleased ]
+
+## [ 1.2.0 ] - 5.29.2020
+
+## Added
+
+- function woo_product_variation_availability now returns product avail JSON to be used in variable.php
+- Product variation availability JSON to variation selection form
+- function change_single_product_variation_stock_html to handle product variation stock messages in woo_single_product.js
+- stock.php template from woocommerce plugin template files ( override) 
+- Additional out of stock messages if availability date is empty
+
+## Removed 
+
+- Product variation stock messages from stock.php
+
 ## [ released ]
 
 ## [ 1.1.4 ] - 5.29.2020

@@ -428,8 +428,6 @@ jQuery(function($) {
 
                                 let $currentImageSrc = productJSON[i].image['full_src'];
 
-                                console.log($currentImageSrc);
-
                                 $('#print-image').attr('src', $currentImageSrc );
     
                             }
@@ -488,6 +486,41 @@ jQuery(function($) {
 
     }
 
+    /***************************************************************
+     VARIABLE PRODUCT CHANGE HANDLER FOR STOCK HTML
+    ****************************************************************/
+
+    function change_single_product_variation_stock_html() {
+
+        if ( $('form.variations_form').length && $('body').hasClass('single-product') ) {
+
+            $(document).ready(function() {
+
+                let $stock_html = JSON.parse( document.querySelector('.variations_form').getAttribute('data-product_avail_html') );
+
+                $('input.variation_id').change(function() {
+
+                    $variation_id = $('input.variation_id').val();
+
+                    for ( let i = 0; i < $stock_html.length; i++ ) {
+
+                        if ( $stock_html[i].id == $variation_id ) {
+
+                            $('.woocommerce-variation-availability').append( $stock_html[i].stock_html );
+
+                        }
+
+                    }
+
+                });
+
+            });
+
+        }
+
+    }
+
+    change_single_product_variation_stock_html();
 
     /*****************************************************************
      VARIABLE PRODUCTS CHANGE HANDLERS FOR TABLES, SUMMARY AND LINKS
