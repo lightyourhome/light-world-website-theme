@@ -130,24 +130,40 @@
                         </div>
                      </div>
 
-                   <div class="col-md-4">
+                     <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/brands/artcraft-lighting'); ?>">
+                            <a href="<?php echo site_url('/brands/mitzi-lighting'); ?>">
                                 <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/03/AC11442.jpg">', wp_get_attachment_metadata(163698), 163698 ); ?>
+                                  <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2018/12/mitzi_Arden_1.jpg">', wp_get_attachment_metadata(7356), 7356 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
-                                        <h4 class="block-heading">Artcraft Lighting</h4>
-                                        <h3 class="block-heading">Save 20% on Artcraft Lighting</h3>
+                                        <h4 class="block-heading">Mitzi Lighting</h4>
+                                        <h3 class="block-heading">Save 20% off all Mitzi Lighting</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/artcraft-lighting'); ?>" class="block-shop-link">Shop Now</a>
-                                     </div>
+                                        <a style="text-align: center;" href="<?php echo site_url('/brands/mitzi-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                    </div>                                   
                                 </div>
                             </a>
-                        </div>
-                    </div>
+                         </div>
+                     </div>
 
+                     <div class="col-md-4">
+                        <div class="block-container">
+                            <a href="<?php echo site_url('/brands/hudson-valley-lighting'); ?>">
+                                <div class="block-picture">
+                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/07/5800-AGB_800.jpg">', wp_get_attachment_metadata(27793), 27793 ); ?>
+                                </div>
+                                <div class="block-caption-wrapper">
+                                    <div class="block-caption-container">
+                                    <h4 class="block-heading">Hudson Valley</h4>
+                                    <h3 class="block-heading">Save 20% off all Hudson Valley Lighting</h3>
+                                    <h4 class="block-heading">Prices already discounted!</h4>
+                                    <a style="text-align: center;" href="<?php echo site_url('/brands/hudson-valley-lighting'); ?>" class="block-shop-link">Shop Now</a>                                    </div>
+                                </div>
+                            </a>
+                         </div>
+                     </div>
 
                     <div class="col-md-12" style="border-top: 2px solid #d3d3d3;"></div>
 
