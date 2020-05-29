@@ -428,8 +428,6 @@ jQuery(function($) {
 
                                 let $currentImageSrc = productJSON[i].image['full_src'];
 
-                                console.log($currentImageSrc);
-
                                 $('#print-image').attr('src', $currentImageSrc );
     
                             }
