@@ -44,7 +44,7 @@
                         <div class="block-container">
                             <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-outdoor/'); ?>">
                                 <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/04/TNC5006WT_4_.jpg">', wp_get_attachment_metadata(16796), 16796 ); ?>
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/10/DL8406AC_2_.jpg">', wp_get_attachment_metadata(45543), 45543 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
