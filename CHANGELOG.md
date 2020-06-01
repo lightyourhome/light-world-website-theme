@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.2.2 ] - 6.1.2020
+
+## Changed
+
+- Sale page template quoizel picture
+
+## [ released ]
+
 ## [ 1.2.1 ] - 6.1.2020
 
 ## Added
