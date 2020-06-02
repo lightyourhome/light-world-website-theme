@@ -6,6 +6,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.2.3 ] - 6.2.2020
+
+## Added
+
+- Check to see if product is simple in function woo_product_variation_availability in woocommerce-functions.php ( fixes quick view simple product avail error )
+
+## [ released ]
+
+## [ 1.2.2 ] - 6.1.2020
+
+## Changed
+
+- Sale page template quoizel picture
+
+## [ released ]
+
+## [ 1.2.1 ] - 6.1.2020
+
+## Added
+
+- Elk Lighting Sale
+
+## Changed 
+
+- Innovations and Quoizel Sales
+- Innovations images
+
+## [ released ]
+
 ## [ 1.2.0 ] - 5.29.2020
 
 ## Added

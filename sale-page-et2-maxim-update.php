@@ -42,16 +42,16 @@
                     
                     <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/brands/quoizel-lighting'); ?>">
+                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-outdoor/'); ?>">
                                 <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/04/TNC5006WT_4_.jpg">', wp_get_attachment_metadata(16796), 16796 ); ?>
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/10/DL8406AC_2_.jpg">', wp_get_attachment_metadata(45543), 45543 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Quoizel Lighting</h4>
-                                        <h3 class="block-heading">Save 10% on Quoizel Lighting</h3>
-                                        <h4 class="block-heading">Use Code "QUOIZEL10" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/quoizel-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        <h3 class="block-heading">Save 10% on Quoizel Outdoor Lighting</h3>
+                                        <h4 class="block-heading">Use Code "OUTDOOR10" at checkout!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-outdoor/'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
@@ -60,16 +60,16 @@
 
                      <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/brands/innovations-lighting'); ?>">
+                            <a href="<?php echo site_url('/product-category/innovations-lighting/innovations-chandeliers/'); ?>">
                                 <div class="block-picture">
-                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/08/516-3W-BK-G112.jpg">', wp_get_attachment_metadata(31879), 31879 ); ?>
+                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/09/516-3I-BK-G121-8RB-2.jpg">', wp_get_attachment_metadata(38393), 38393 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
-                                        <h4 class="block-heading">Innovations Lighting</h4>
-                                        <h3 class="block-heading">Save 20% on All Innovations Lighting</h3>
+                                        <h4 class="block-heading">Innovations Lighting Chandeliers</h4>
+                                        <h3 class="block-heading">Save 20% on Innovations Chandeliers</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/innovations-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/innovations-lighting/innovations-chandeliers/'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
@@ -78,39 +78,58 @@
 
                      <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/brands/maxim-lighting'); ?>">
+                            <a href="<?php echo site_url('/product-category/innovations-lighting/innovations-pendants/'); ?>">
                                 <div class="block-picture">
-                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/31213OIAB-scaled.jpg">', wp_get_attachment_metadata(165335), 165335 ); ?>
+                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/08/200C-AB.jpg">', wp_get_attachment_metadata(31214), 31214 ); ?>
+                                </div>
+                                <div class="block-caption-wrapper">
+                                    <div class="block-caption-container">
+                                        <h4 class="block-heading">Innovations Lighting Pendants</h4>
+                                        <h3 class="block-heading">Save 20% on All Innovations Pendants</h3>
+                                        <h4 class="block-heading">Prices already discounted!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/innovations-lighting/innovations-pendants/'); ?>" class="block-shop-link">Shop Now</a>
+                                    </div>
+                                </div>
+                            </a>
+                         </div>
+                     </div>
+
+
+                     <!-- <div class="col-md-4">
+                        <div class="block-container">
+                            <a href="<?php //echo site_url('/brands/maxim-lighting'); ?>">
+                                <div class="block-picture">
+                                     <?php //echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/31213OIAB-scaled.jpg">', wp_get_attachment_metadata(165335), 165335 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Maxim Lighting</h4>
                                         <h3 class="block-heading">Save 15% on All Maxim Lighting</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/maxim-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php //echo site_url('/brands/maxim-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
                          </div>
-                     </div>
+                     </div> -->
 
-                     <div class="col-md-4">
+                     <!-- <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/brands/et2-lighting'); ?>">
+                            <a href="<?php //echo site_url('/brands/et2-lighting'); ?>">
                                 <div class="block-picture">
-                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/E25064-92BKGLD-scaled.jpg">', wp_get_attachment_metadata(165986), 165986 ); ?>
+                                     <?php //echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/E25064-92BKGLD-scaled.jpg">', wp_get_attachment_metadata(165986), 165986 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">ET2 Lighting</h4>
                                         <h3 class="block-heading">Save 15% on All ET2 Lighting</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/et2-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php //echo site_url('/brands/et2-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
                          </div>
-                     </div>
+                     </div> -->
 
                      <div class="col-md-4">
                         <div class="block-container">
@@ -124,6 +143,24 @@
                                         <h3 class="block-heading">Save 15% off all Elk Home</h3>
                                         <h4 class="block-heading">Use code "ELK15" at checkout!</h4>
                                         <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
+                                    </div>
+                                </div>
+                             </a>
+                        </div>
+                     </div>
+
+                     <div class="col-md-4">
+                        <div class="block-container">
+                            <a href="<?php echo site_url('/brands/elk-lighting'); ?>">
+                                <div class="block-picture">
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/05/89047_8.jpg">', wp_get_attachment_metadata(166726), 166726 ); ?>
+                                </div>
+                                <div class="block-caption-wrapper">
+                                    <div class="block-caption-container">
+                                        <h4 class="block-heading">Elk Lighting</h4>
+                                        <h3 class="block-heading">Save 15% off all Elk Lighting</h3>
+                                        <h4 class="block-heading">Use code "ELKLIGHTING15" at checkout!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/brands/elk-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                              </a>

@@ -540,37 +540,41 @@ if ( ! function_exists('woo_product_variation_availability') ) :
 
     $variation_avail = [];
 
-    foreach ( $product->get_visible_children() as $variation_id ) :
+    if ( ! $product->is_type('simple') ) {
 
-      $product_variation = wc_get_product( $variation_id );
+      foreach ( $product->get_visible_children() as $variation_id ) :
 
-      $variation_avail_date = get_post_meta( $variation_id, '_text_field_variation_avail' , true );
-
-      $out_of_stock_html_with_date = '<p class="stock out-of-stock">Sorry, We\'re All Out! Estimated Availability Date: ' . $variation_avail_date . '</p>';
-
-      $out_of_stock_html_no_date = '<p class="stock out-of-stock">Sorry, We\'re All Out! Product may be on backorder, please contact us for more info!</p>';
-
-      $in_stock_html = '<p class="stock in-stock">In stock!</p>';
-
-      if ( $product_variation->is_in_stock() ) {
-
-        array_push($variation_avail, array( 'id' => $variation_id, 'stock_html' => $in_stock_html ) );
-
-      } else {
-
-        if ( ! empty( $variation_avail_date ) ) {
-
-          array_push($variation_avail, array( 'id' => $variation_id, 'stock_html' => $out_of_stock_html_with_date ) );
-
+        $product_variation = wc_get_product( $variation_id );
+  
+        $variation_avail_date = get_post_meta( $variation_id, '_text_field_variation_avail' , true );
+  
+        $out_of_stock_html_with_date = '<p class="stock out-of-stock">Sorry, We\'re All Out! Estimated Availability Date: ' . $variation_avail_date . '</p>';
+  
+        $out_of_stock_html_no_date = '<p class="stock out-of-stock">Sorry, We\'re All Out! Product may be on backorder, please contact us for more info!</p>';
+  
+        $in_stock_html = '<p class="stock in-stock">In stock!</p>';
+  
+        if ( $product_variation->is_in_stock() ) {
+  
+          array_push($variation_avail, array( 'id' => $variation_id, 'stock_html' => $in_stock_html ) );
+  
         } else {
-
-          array_push($variation_avail, array( 'id' => $variation_id, 'stock_html' => $out_of_stock_html_no_date ) );
-
+  
+          if ( ! empty( $variation_avail_date ) ) {
+  
+            array_push($variation_avail, array( 'id' => $variation_id, 'stock_html' => $out_of_stock_html_with_date ) );
+  
+          } else {
+  
+            array_push($variation_avail, array( 'id' => $variation_id, 'stock_html' => $out_of_stock_html_no_date ) );
+  
+          }
+  
         }
+  
+      endforeach;
 
-      }
-
-    endforeach;
+    }
 
     return wp_json_encode( $variation_avail );
 
