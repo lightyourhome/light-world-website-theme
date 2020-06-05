@@ -49,20 +49,25 @@ if ( post_password_required() ) {
 	  	<?php echo esc_html( $product->get_name() ); ?>
 	  </h1>
 
-		<div class="mt-3 mb-3 sp-finish">
-			<span><b>Finish: </b></span>
+	  	<?php if ( ! empty( $product->get_attribute( 'pa_finish' ) ) ) : ?>
 
-			<?php if ( $product->is_type('simple') ) : ?>
+			<div class="mt-3 mb-3 sp-finish">
 
-			<span><?php echo esc_html( $product->get_attribute('pa_finish') );  ?></span>
+				<span><b>Finish: </b></span>
 
-		<?php else : ?>
+				<?php if ( $product->is_type('simple') ) : ?>
 
-			<span id="sp-variation-finish"></span>
+					<span><?php echo esc_html( $product->get_attribute('pa_finish') );  ?></span>
+
+				<?php else : ?>
+
+					<span id="sp-variation-finish"></span>
+
+				<?php endif; ?>
+
+			</div>
 
 		<?php endif; ?>
-
-		</div>
 
 		<?php woocommerce_get_template( 'single-product/meta.php' ); ?>
 
@@ -71,11 +76,14 @@ if ( post_password_required() ) {
 			<span><?php echo $product->get_categories(); ?></span>
 		</div>
 
-		<div class="mb-3 sp-categories">
-			<span><b>Tags: </b></span>
-			<span><?php echo $product->get_tags(); ?></span>
-		</div>
+		<?php if ( ! empty( $product->get_tags() ) ) : ?>
 
+			<div class="mb-3 sp-categories">
+				<span><b>Tags: </b></span>
+				<span><?php echo $product->get_tags(); ?></span>
+			</div>
+
+		<?php endif; ?>
 
 		<?php
 		/**
