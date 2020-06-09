@@ -40,11 +40,11 @@
 
                     <div class="col-sm-4 col-6 mt-5">
 
-                        <a href="<?php echo site_url('/product-category/uttermost-lighting-and-decor/uttermost-art-and-decor'); ?>">
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-accessories'); ?>">
                             <div class="brand-page_cat_image_container pt-3">
-                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/01/216-33677_2_-1.jpg">', wp_get_attachment_metadata(9256), 9256); ?>
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/ACC_2311_19061-C.jpg">', wp_get_attachment_metadata(171932), 171932); ?>
                                 <div class="pb-3 pt-3">
-                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Art and Decor</h3>
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Accessories</h3>
                                 </div>
                             </div>
                         </a>
@@ -53,7 +53,59 @@
 
                     <div class="col-sm-4 col-6 mt-5">
 
-                        <a href="<?php echo site_url('/product-category/uttermost-lighting-and-decor/uttermost-table-lamps'); ?>">
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor/uttermost-mirrors/'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/MIR_19323_09301-C.jpg">', wp_get_attachment_metadata(167750), 167750); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Mirrors</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor/uttermost-wall-art/uttermost-paintings-and-prints/'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/ART_11675_33707_C.jpg">', wp_get_attachment_metadata(169880), 169880); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Paintings and Prints</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor/uttermost-wall-clocks/'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/ACC_102990_06098-C.jpg">', wp_get_attachment_metadata(169544), 169544); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Wall Clocks</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/MIR_19562_04145-C.jpg">', wp_get_attachment_metadata(169067), 169067); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Wall Décor</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-lighting/uttermost-table-lamps/'); ?>">
                             <div class="brand-page_cat_image_container pt-3">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2018/12/27788-1_2_.jpg">', wp_get_attachment_metadata(7348), 7348 ); ?>
 								 <div class="pb-3 pt-3">
@@ -66,7 +118,7 @@
 
                     <div class="col-md-12 mt-5" style="text-align: center; background-color: #f6f6f6;">
                         <div class="mb-5 mt-5">
-                            <a href="<?php echo site_url('/product-category/uttermost-lighting-and-decor'); ?>">
+                            <a href="<?php echo site_url('/product-category/uttermost'); ?>">
                                 <button class="button">Shop All Uttermost</button>
                             </a>
                         </div>
@@ -77,7 +129,7 @@
                     </div>
 
                     <div class="col-md-12">
-                        <?php echo do_shortcode('[products limit="6" columns="3" best_selling="true" category="uttermost-lighting-and-decor" ]'); ?>
+                        <?php echo do_shortcode('[products limit="6" columns="3" best_selling="true" category="uttermost" ]'); ?>
                     </div>
 
                     <div class="col-md-12 mt-3" style="border-top: 2px solid #d3d3d3;"></div>

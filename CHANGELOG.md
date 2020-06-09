@@ -4,6 +4,19 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ unreleased ]
+
+## [ 1.4.0 ] - 6.8.2020
+
+## Added
+
+- New product categories to Uttermost brand page
+- MPN, GTIN and UPC custom fields to woocommerce product variations
+
+## Changed
+
+- Uttermost product category ID in function categoryPageImages ( woocommerce-functions.php )
+
 ## [ released ]
 
 ## [ 1.3.0 ] - 6.5.2020
