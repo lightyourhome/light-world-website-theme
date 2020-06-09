@@ -260,7 +260,7 @@ if ( ! function_exists('woo_variable_fields') ) :
   // Create new fields for variations
   function woo_variable_fields( $loop, $variation_data, $variation ) {
 
-    echo '<div class="variation-custom-fields">';
+    echo '<div class="variation-custom-fields"><h2>Custom Variation Fields</h2>';
 
       // Specification Sheet text field
       woocommerce_wp_text_input(
@@ -301,6 +301,45 @@ if ( ! function_exists('woo_variable_fields') ) :
         )
       );
 
+      // Product GTIN text field
+      woocommerce_wp_text_input(
+        array(
+          'id'          => 'variation-gtin',
+          'label'       => __( 'Variation GTIN', 'woocommerce' ),
+          'placeholder' => 'Enter a GTIN for this product variation',
+          //'desc_tip'    => true,
+          'wrapper_class' => 'form-row form-row-first',
+          //'description' => __( 'Enter the custom value here.', 'woocommerce' ),
+          'value'       => get_post_meta($variation->ID, '_text_field_gtin', true)
+        )
+      );
+
+      // Product UPC text field
+      woocommerce_wp_text_input(
+        array(
+          'id'          => 'variation-upc',
+          'label'       => __( 'Variation UPC', 'woocommerce' ),
+          'placeholder' => 'Enter a UPC for this product variation',
+          //'desc_tip'    => true,
+          'wrapper_class' => 'form-row form-row-first',
+          //'description' => __( 'Enter the custom value here.', 'woocommerce' ),
+          'value'       => get_post_meta($variation->ID, '_text_field_upc', true)
+        )
+      );
+
+      // Product MPN text field
+      woocommerce_wp_text_input(
+        array(
+          'id'          => 'variation-mpn',
+          'label'       => __( 'Variation MPN', 'woocommerce' ),
+          'placeholder' => 'Enter an MPN for this product variation',
+          //'desc_tip'    => true,
+          'wrapper_class' => 'form-row form-row-first',
+          //'description' => __( 'Enter the custom value here.', 'woocommerce' ),
+          'value'       => get_post_meta($variation->ID, '_text_field_mpn', true)
+        )
+      );
+
     echo '</div>';
 
   }
@@ -322,6 +361,15 @@ if ( ! function_exists('save_variation_fields') ) :
 
   $text_field_variation_avail = stripslashes( $_POST['variation-avail-date'] );
   update_post_meta( $variation_id, '_text_field_variation_avail', esc_attr( $text_field_variation_avail ) );
+
+  $text_field_variation_avail = stripslashes( $_POST['variation-gtin'] );
+  update_post_meta( $variation_id, '_text_field_gtin', esc_attr( $text_field_variation_avail ) );
+
+  $text_field_variation_avail = stripslashes( $_POST['variation-upc'] );
+  update_post_meta( $variation_id, '_text_field_upc', esc_attr( $text_field_variation_avail ) );
+
+  $text_field_variation_avail = stripslashes( $_POST['variation-mpn'] );
+  update_post_meta( $variation_id, '_text_field_mpn', esc_attr( $text_field_variation_avail ) );
 
   }
 
