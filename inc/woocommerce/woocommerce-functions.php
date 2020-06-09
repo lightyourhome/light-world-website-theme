@@ -895,7 +895,7 @@ if ( ! function_exists('categoryPageImages') ) :
     //z lite lighting
     '14235' => 'https://www.lightyourhome.com/wp-content/uploads/2019/11/z_lite_category_img.jpg',
     //uttermost
-    '14244' => 'https://www.lightyourhome.com/wp-content/uploads/2019/12/uttermost_brand_header_img-1.jpg',
+    '25900' => 'https://www.lightyourhome.com/wp-content/uploads/2019/12/uttermost_brand_header_img-1.jpg',
     //elk home
     '14247' => 'https://www.lightyourhome.com/wp-content/uploads/2019/12/elk_home_brand_header_img.jpg',
     //elan lighting
