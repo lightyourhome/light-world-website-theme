@@ -4,7 +4,15 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ unreleased ]
+## [ released ]
+
+## [ 1.4.1 ] - 6.10.2020
+
+## Added
+
+- Additional product categories to Uttermost Brand Page
+
+## [ released ]
 
 ## [ 1.4.0 ] - 6.8.2020
 
