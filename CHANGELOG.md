@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.4.2 ] - 6.10.2020
+
+## Changed
+
+- Uttermost brand page decorative bowls and trays url
+
+## [ released ]
+
 ## [ 1.4.1 ] - 6.10.2020
 
 ## Added
