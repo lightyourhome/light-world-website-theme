@@ -80,6 +80,71 @@
 
                     <div class="col-sm-4 col-6 mt-5">
 
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor/uttermost-wall-art/uttermost-shadow-boxes/'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/MIR_17979_14555-C.jpg">', wp_get_attachment_metadata(169459), 169459); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Shadow Boxes</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor/uttermost-wall-art/uttermost-metal-wall-art/'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/MIR_11537_13480-1.jpg">', wp_get_attachment_metadata(172627), 172627); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Metal Wall Art</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor/uttermost-wall-art/uttermost-ceramic-wall-art/'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/MIR_19018_04100-C.jpg">', wp_get_attachment_metadata(168932), 168932); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Ceramic Wall Art</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor/uttermost-wall-art/uttermost-wood-wall-art/'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/MIR_20392_04175-C.jpg">', wp_get_attachment_metadata(169134), 169134); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Wood Wall Art</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
+                        <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor/uttermost-wall-art/uttermost-alternative-wall-art/'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/MIR_19277_04111-C.jpg">', wp_get_attachment_metadata(168948), 168948); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Alternative Wall Art</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
                         <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor/uttermost-wall-clocks/'); ?>">
                             <div class="brand-page_cat_image_container pt-3">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/ACC_102990_06098-C.jpg">', wp_get_attachment_metadata(169544), 169544); ?>
