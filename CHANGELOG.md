@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.4.3 ]
+
+## Added 
+
+- More product categories to Uttermost brand page
+- Kichler sale to Sales and Promotions page
+
+## [ released ]
+
 ## [ 1.4.2 ] - 6.10.2020
 
 ## Changed
