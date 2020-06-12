@@ -158,6 +158,19 @@
 
                     <div class="col-sm-4 col-6 mt-5">
 
+                        <a href="<?php echo site_url('/product-category/art-and-decor/wall-decor/candle-sconces/'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/MIR_19781_18935-C.jpg">', wp_get_attachment_metadata(169466), 169466); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Candle Sconces</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
                         <a href="<?php echo site_url('/product-category/uttermost/uttermost-wall-decor'); ?>">
                             <div class="brand-page_cat_image_container pt-3">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/MIR_19562_04145-C.jpg">', wp_get_attachment_metadata(169067), 169067); ?>
