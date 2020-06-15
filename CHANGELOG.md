@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bottom border color of header
 - Theme version number
 - Bootstrap container max-width for large screen sizes
+- js and css query strings
 
 ## Removed
 
