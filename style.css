@@ -2,7 +2,7 @@
 Theme Name: Light World
 Author: Jim Merk
 Description: Light World's Custom Wordpress Theme
-Version: 1.2.0
+Version: 1.5.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: light-world
@@ -1315,6 +1315,10 @@ object {
   
   @media screen and (min-width: 1400px) {
 
+    .cart_label {
+      display: inline-block!important;
+    }
+
     .woocommerce nav.woocommerce-pagination ul li a, 
     .woocommerce nav.woocommerce-pagination ul li span {
       font-size: 1.5em;
@@ -2046,6 +2050,12 @@ object {
   
   ul#header-contact-and-account li {
     float: right!important;
+  }
+
+  .orange-hr {
+    background-color: rgb(253, 156, 21);
+    margin-bottom: 0;
+    height: 2px;
   }
   
   #lyh-brand {
@@ -2876,25 +2886,25 @@ object {
   
   .woocommerce-store-notice, p.demo_store {
   
-    position: absolute;
-      top: 0;
+    position: relative;
+      top: 100%;
       left: 0;
       right: 0;
       margin: 0;
       width: 100%;
       font-size: 1em;
-      padding: 1em 0;
+      padding: .5em 0;
       text-align: center;
-      background-color: red;
+      background-color: rgb(253, 156, 21);
       color: #fff;
-      z-index: 99998;
+      z-index: 1;
       box-shadow: none!important;
       display: none;
   
   }
   
   #header-container {
-  
+
     margin-top: 0px;
   
   }
@@ -3548,6 +3558,11 @@ object {
   /*--------------------------------------
   ### HEADER CART AND CART OVERLAY 
   ---------------------------------------*/
+
+  .cart_label {
+    display: none;
+    font-size: 16px;
+  }
   
   .cart-contents:before {
       font-family: FontAwesome;
@@ -4215,9 +4230,13 @@ html {
 }
 
 @media (min-width: 1200px) {
-  .container {
+  /* .container {
     max-width: 1140px;
-  }
+  } */
+  .container {
+    max-width: 1240px;
+  } 
+
 }
 
 .container-fluid {

@@ -12,6 +12,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Free Shipping text to single product pages
 - CSS rule for sp free shipping
+- custom action store-notice-header to header.php
+- Cart label to header shopping cart
+- orange horizontal rule for accents
+- Open chat handler to header open chat
+
+## Changed 
+
+- Info and other links header positioning and styling
+- Demo store notice color
+- Bottom border color of header
+- Theme version number
+- Bootstrap container max-width for large screen sizes
+
+## Removed
+
+- demo store notice from action wp_footer
+- Top header with "free shipping on all orders - hand picked selections - easy returns"
 
 ## [ released ]
 
