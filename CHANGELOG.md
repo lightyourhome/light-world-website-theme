@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.5.0 ]
+
+## Added
+
+- Free Shipping text to single product pages
+- CSS rule for sp free shipping
+
+## [ released ]
+
 ## [ 1.4.4 ]
 
 ## Add

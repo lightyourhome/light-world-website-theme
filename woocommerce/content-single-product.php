@@ -103,15 +103,23 @@ if ( post_password_required() ) {
 
 		<?php //echo free_bulbs(); ?>
 
+		<div class="sp-free-shipping">
+			<span>
+				<strong>Free Shipping!</strong>
+			</span>
+		</div>
+
+		<!-- <p style="text-align: center; color: rgb(253, 156, 21);"><strong>c</strong></p> -->
+
         <!-- DISPLAYS SHIPPING DURATION ON SINGLE PRODUCT PAGES -->
-        <div class="shipping-duration">
+        <div class="shipping-duration mb-5 mt-4">
 	       <?php
 
-				  $shipping_duration = single_product_manufacturer_shipping_and_info( $product->get_categories() );
+				$shipping_duration = single_product_manufacturer_shipping_and_info( $product->get_categories() );
 
-				  echo $shipping_duration['shipping'];
+				echo $shipping_duration['shipping'];
 
-					?>
+			?>
         </div>
 
 		<?php //echo single_product_icons(); ?>
