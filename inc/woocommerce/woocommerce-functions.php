@@ -1681,3 +1681,11 @@ if ( ! function_exists('remove_single_product_specification_tab_heading') ) :
 
 endif;
 
+remove_action('wp_footer', 'woocommerce_demo_store');
+add_action('store-notice-header', 'woocommerce_demo_store' );
+
+// function customize_notices() {
+
+// remove_action('wp_body_open', 'wc_print_notices');
+
+// }

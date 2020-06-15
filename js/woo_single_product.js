@@ -486,6 +486,17 @@ jQuery(function($) {
 
     }
 
+    //open chat with chat with us header
+    if ( $('#header-open-live-chat') ) {
+
+        $('#header-open-live-chat').click(function() {
+
+            tidioChatApi.open();
+    
+        });
+
+    }
+
     /***************************************************************
      VARIABLE PRODUCT CHANGE HANDLER FOR STOCK HTML
     ****************************************************************/

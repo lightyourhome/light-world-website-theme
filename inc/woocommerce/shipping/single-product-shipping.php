@@ -78,7 +78,7 @@ if ( ! function_exists('single_product_manufacturer_shipping_and_info') ) :
         ],
   
       '010' => [ //ARTCRAFT
-          'shipping' => 'Ships in 7 - 10 Business Days',
+          'shipping' => 'Ships in 3 - 4 Business Days',
           'warranty' => 'https://www.artcraftlighting.com/warranty/'
         ],
   

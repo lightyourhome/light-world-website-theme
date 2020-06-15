@@ -102,20 +102,7 @@
 
 	<header>
 
-		<div id="header-container" class="container-fluid" style="border-bottom: 2px solid #f6f6f6;">
-
-			<div id="header-store-info-row" class="row pt-1 pb-1" style="background-color: rgb(253, 156, 21);">
-					
-				<div class="col-sm-12">
-					
-					<div class="mt-1">
-						
-						<h5 style="color: white;">Free Shipping on All Orders - Handpicked Selection - Easy Returns</h5>
-						
-					</div>
-
-				</div>
-			</div>
+		<div id="header-container" class="container">
 
 			<div id="header-store-info-row-mobile" class="row" style="background-color: rgb(253, 156, 21); border-bottom: 2px solid #f6f6f6;">
 				
@@ -125,22 +112,17 @@
 
 			</div>
 
-			<div id="header-extra-links-row" class="row pt-2 pb-2" style="background-color: #f6f6f6;">
+			<div id="header-extra-links-row" class="row pt-2 pb-2" style="">
 				
 				<div class="col-sm-12">
 					
 					<nav>
-						
-						<ul id="header-showroom-info" class="mb-0">
-							<li class="mr-3"><a href="tel:215-883-8544"><b>215-883-8544</b></li>
-							<li class="mr-3"><a href="<?php echo site_url('/home/light-world-showroom'); ?>"><b>Visit Our Showroom</b></a></li>
-						</ul>
-					</nav>
-					<nav>
 						<ul id="header-contact-and-account" class="mb-0">
-							<li class="ml-3"><a href="<?php echo site_url('/contact'); ?>"><b>Showroom Hours</b></a></li>
-							<li class="ml-3"><a id="header-open-live-chat" href="javascript:void(0)"><b>Chat With Us</b></a></li>
-							<li><a href="<?php echo site_url('/contact'); ?>"><b>Contact Us</b></a></li>
+							<li class="mr-3"><a href="tel:215-883-8544">215-883-8544</li>
+							<li class="mr-3"><a href="<?php echo site_url('/home/light-world-showroom'); ?>">Visit Our Showroom</a></li>
+							<li class="ml-3 mr-3"><a href="<?php echo site_url('/contact'); ?>">Showroom Hours</a></li>
+							<li class="ml-3"><a id="header-open-live-chat" href="javascript:void(0)">Chat With Us</a></li>
+							<li><a href="<?php echo site_url('/contact'); ?>">Contact Us</a></li>
 						</ul>
 					</nav>
 
@@ -150,7 +132,7 @@
 
 			<div class="row justify-content-center">
 				
-				<div class="col-sm-2 col-2">
+				<div class="col-md-2 col-2">
 					
 					<a href="<?php echo site_url('/home'); ?>">
 							
@@ -179,7 +161,7 @@
 
 				</div>
 
-				<div id="navigation-col-desktop" class="col-sm-6">
+				<div id="navigation-col-desktop" class="col-sm-6 col-lg-6">
 
 					<nav id="desktop-menu">
 
@@ -213,7 +195,7 @@
 
 				</div>
 
-				<div id="desktop-search-container" class="col-sm-3">
+				<div id="desktop-search-container" class="col-md-3 col-sm-4">
 									
 					<div id="desktop-search">
 						
@@ -231,7 +213,7 @@
 
 					<ul class="mb-0 ml-0" style="list-style: none; width: 100%;">
 						<li id="header-mobile-search" style="float: left;"><a href="javascript:void(0)"><i class="fa fa-search ml-2"></i></a></li>
-						<li id="header-cart" style="float: right;"><?php echo display_woo_cart(); ?></li>
+						<li id="header-cart" style="float: right;"><span class="cart_label"><strong>Cart</strong></span><?php echo display_woo_cart(); ?></li>
 					</ul>
 
 				</div>
@@ -250,6 +232,10 @@
 			</div>
 
 	</div>
+
+	<hr class="orange-hr">
+
+	<?php do_action('store-notice-header'); ?>
 
 </header>
 
