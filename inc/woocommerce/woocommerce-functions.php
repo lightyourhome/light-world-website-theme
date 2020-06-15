@@ -77,6 +77,7 @@ function display_woo_cart() {
 
       $count = WC()->cart->cart_contents_count; ?>
 
+  <a href="<?php echo site_url('/cart'); ?>"><span class="cart_label"><strong>Cart</strong></span></a>
   <a id="header-shopping-cart" class="cart-contents" href="<?php echo site_url('/cart') ?>" title="<?php _e( 'View your shopping cart' ); ?>">
   	<?php
       if ( $count > 0 ) {
