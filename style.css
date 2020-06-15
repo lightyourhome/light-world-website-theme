@@ -3098,6 +3098,15 @@ object {
     font-size: 18px;
     font-weight: 600;
   }
+
+    /* Style for Shipping Duration on single product pages  */
+    .sp-free-shipping {
+      text-align: center;
+      color: rgb(253, 156, 21);
+      font-size: 18px;
+      font-weight: 600;
+    }
+  
   
   /*-------------------------------------
     ### WooCommerce Checkout
