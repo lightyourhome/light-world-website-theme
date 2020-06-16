@@ -2883,6 +2883,10 @@ object {
   .breadcrumbs-footer .item-current .bread-current {
       color: white!important;
   }
+
+  .admin-bar p.demo_store {
+    top: 0px!important;
+  }
   
   .woocommerce-store-notice, p.demo_store {
   
