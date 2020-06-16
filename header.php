@@ -213,7 +213,7 @@
 
 					<ul class="mb-0 ml-0" style="list-style: none; width: 100%;">
 						<li id="header-mobile-search" style="float: left;"><a href="javascript:void(0)"><i class="fa fa-search ml-2"></i></a></li>
-						<li id="header-cart" style="float: right;"><span class="cart_label"><strong>Cart</strong></span><?php echo display_woo_cart(); ?></li>
+						<li id="header-cart" style="float: right;"><?php echo display_woo_cart(); ?></li>
 					</ul>
 
 				</div>

@@ -142,7 +142,7 @@ add_action( 'widgets_init', 'light_world_widgets_init' );
  * Enqueue scripts and styles.
  */
 function enqueue_light_world_scripts() {
-	wp_enqueue_style( 'light-world-style', get_template_directory_uri() . '/style.css', array(), '1.5.0' );
+	wp_enqueue_style( 'light-world-style', get_template_directory_uri() . '/style.css', array(), '1.5.1' );
 
 	//wp_enqueue_style( 'light-world-style-2', get_template_directory_uri() . '/css/theme.css', array(), '03192020', true );
 
@@ -157,7 +157,7 @@ function enqueue_light_world_scripts() {
 	wp_enqueue_script( 'woocommerce-product-swatches', get_template_directory_uri() . '/js/swatch_slider_1.0.js', array(), '03112020', true);
 
 	/* Single Product JS */
-	wp_enqueue_script( 'woocommerce-single-product-scripts', get_template_directory_uri() . '/js/woo_single_product.js', array(), '1.5.0', true );
+	wp_enqueue_script( 'woocommerce-single-product-scripts', get_template_directory_uri() . '/js/woo_single_product.js', array(), '1.5.1', true );
 
 	/* Slick Slider */
 	wp_enqueue_script( 'slick-slider', get_template_directory_uri() . '/js/slick_init.min.js', array(), '02332020', true );

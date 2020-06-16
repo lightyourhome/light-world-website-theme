@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.5.1 ]
+
+## Changed
+
+- Elk Lighting and Elk Home sales
+- Cart label to be a part of link
+
+## [ released ]
+
 ## [ 1.5.0 ]
 
 ## Added

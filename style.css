@@ -3560,8 +3560,13 @@ object {
   ---------------------------------------*/
 
   .cart_label {
+    cursor: pointer;
     display: none;
     font-size: 16px;
+  }
+
+  a .cart_label:hover {
+    color: #000!important;
   }
   
   .cart-contents:before {
