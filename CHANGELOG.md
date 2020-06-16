@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.6.0 ]
+
+## Added
+
+- Sales to home page
+- Popular products to home page
+- product categories to home page
+
+## Changed 
+
+- Home page layout
+
+## [ released ]
+
 ## [ 1.5.2 ]
 
 ## Changed
