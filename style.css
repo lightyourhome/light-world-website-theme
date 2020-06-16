@@ -2849,7 +2849,21 @@ object {
   
   .brand-page_cat_image_container {
     cursor: pointer;
+    height: 100%;
   }
+
+  .home_deals_heading {
+    position: absolute;
+    bottom: 10%;
+    left: 32%;
+  }
+
+  /* .brand-page_cat_headings {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 20%
+  } */
   
   /*------------------------------------
   ## BREADCRUMBS

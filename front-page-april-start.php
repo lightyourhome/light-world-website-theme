@@ -25,8 +25,7 @@
 
 <div class="desktop-only">
 
-    <a
-        href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/03/spring_sale_banner_updated_2.jpg">', wp_get_attachment_metadata(163810), 163810 ); ?></a>
+    <a href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src=https://lightyourhome.com/wp-content/uploads/2020/03/spring_sale_banner_updated_2.jpg">', wp_get_attachment_metadata(163810), 163810 ); ?></a>
 
 </div>
 
@@ -38,129 +37,126 @@
 
             <main id="main" class="site-main" role="main">
 
-                <div class="row mt-5">
+                <div class="row mt-5 row-eq-height">
                     <!-- ROW 2 -->
 
-                    <div class="col-md-12 mb-3" style="border-bottom: 2px solid #d3d3d3">
-                        <h2>Popular Categories and More</h2>
+                    <!-- Popular Categories -->
+                    <div class="col-md-2 col-6 mt-3">
+
+                        <a href="<?php echo site_url('/product-category/chandeliers'); ?>">
+                            <div class="brand-page_cat_image_container p-2">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/03/CRL5003AWH.jpg">', wp_get_attachment_metadata(11779), 11779); ?>
+								 <div class="pb-3 pt-3">
+                                    <h4 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Chandeliers</h4>
+                                </div>
+                            </div>
+                        </a>
+
                     </div>
 
-                    <!-- BATH AND VANITY -->
-                    <div class="col-md-6">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/bath-vanity-lights'); ?>">
-                                <div class="block-picture">
-                                    <img style="height: auto; width: 100%;"
-                                        src="https://www.lightyourhome.com/wp-content/uploads/2019/09/bath_and_vanity_home-e1569270702892.jpg">
+                    <div class="col-md-2 col-6 mt-3">
+
+                        <a href="<?php echo site_url('/product-category/pendant-lights'); ?>">
+                            <div class="brand-page_cat_image_container p-2">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2018/12/069-K42878NI.jpg">', wp_get_attachment_metadata(7616), 7616); ?>
+								 <div class="pb-3 pt-3">
+                                    <h4 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Pendants</h4>
                                 </div>
-                                <div class="block-caption-wrapper">
+                            </div>
+                        </a>
 
-                                    <div class="block-caption-container">
-
-                                        <h3 class="block-heading">Bath and Vanity Lights</h3>
-                                        <h4 class="block-heading">Bring your bathroom to life</h4>
-                                        <a style="text-align: center;"
-                                            href="<?php echo site_url('/product-category/bath-vanity-lights'); ?>"
-                                            class="block-shop-link">Shop Bath and Vanity</a>
-
-                                    </div>
-
-                                </div>
-                            </a>
-                        </div>
                     </div>
 
-                    <div class="col-md-6">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/chandeliers'); ?>">
-                                <div class="block-picture">
-                                    <img style="height: auto; width: 100%;"
-                                        src="https://www.lightyourhome.com/wp-content/uploads/2019/06/Dining-Room-Forge-43977BK-Day.jpg">
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
+                    <div class="col-md-2 col-6 mt-3">
 
-                                        <h3 class="block-heading">Chandeliers</h3>
-                                        <h4 class="block-heading">Hand picked and ready to go</h4>
-                                        <a style="text-align: center;"
-                                            href="<?php echo site_url('/product-category/chandeliers'); ?>"
-                                            class="block-shop-link">Shop Chandeliers</a>
-
-                                    </div>
+                        <a href="<?php echo site_url('/product-category/bath-vanity-lights'); ?>">
+                            <div class="brand-page_cat_image_container p-2">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/02/Q-ATT8602EK_3__1-2.jpg">', wp_get_attachment_metadata(9697), 9697); ?>
+								 <div class="pb-3 pt-3">
+                                    <h4 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Bath and Vanity</h4>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
+
                     </div>
 
-                    <?php if ( ! wp_is_mobile() ) : ?>
+                    <div class="col-md-2 col-6 mt-3">
 
-                    <!-- OUTDOOR -->
-                    <div class="col-md-12">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/outdoor-lighting'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/02/WVR9007EK_7.jpg">', wp_get_attachment_metadata(144260), 144260 ); ?>
+                        <a href="<?php echo site_url('/product-category/outdoor-lighting'); ?>">
+                            <div class="brand-page_cat_image_container">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/03/49960AVI.jpg">', wp_get_attachment_metadata(12205), 12205); ?>
+								 <div class="pb-3 pt-3">
+                                    <h4 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Outdoor Lighting</h4>
                                 </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
+                            </div>
+                        </a>
 
-                                        <h3 class="block-heading">Outdoor Lighting</h3>
-                                        <h4 class="block-heading">Lighting your neighbors wish they had</h4>
-                                        <a style="text-align: center;"
-                                            href="<?php echo site_url('/product-category/outdoor-lighting'); ?>"
-                                            class="block-shop-link">Shop Outdoor Lighting</a>
-
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
                     </div>
 
-                    <?php endif; ?>
+                    <div class="col-md-2 col-6 mt-3">
 
-                    <div class="col-md-6">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/home/full-selection'); ?>">
-                                <div class="block-picture">
-                                    <img style="height: auto; width: 100%;"
-                                        src="https://www.lightyourhome.com/wp-content/uploads/2019/06/Kitchen-44167BK-Day.jpg">
+                        <a href="<?php echo site_url('/product-category/art-and-decor'); ?>">
+                            <div class="brand-page_cat_image_container p-2">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/01/216-06428_3_-3.jpg">', wp_get_attachment_metadata(9268), 9268); ?>
+								 <div class="pb-3 pt-3">
+                                    <h4 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Home Décor</h4>
                                 </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
+                            </div>
+                        </a>
 
-                                        <h3 class="block-heading">Full Selection</h3>
-                                        <h4 class="block-heading">See all that we have to offer</h4>
-                                        <a style="text-align: center;"
-                                            href="<?php echo site_url('/home/full-selection'); ?>"
-                                            class="block-shop-link">Shop Our Full Selection</a>
+                    </div>
 
-                                    </div>
+                    <div class="col-md-2 col-6 mt-3">
+
+                        <a href="<?php echo site_url('/product-category/home/sales-and-promotions'); ?>">
+                            <div class="brand-page_cat_image_container pt-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="96" height="96"
+                                viewBox="0 0 172 172"
+                                style=" fill:#000000; margin: auto; display: block;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M86,7.16667l16.1465,18.02058l23.27017,-7.27058l5.24958,23.41708l23.41708,5.24958l-7.16667,23.27017l17.91667,16.1465l-17.91667,16.1465l7.16667,23.27017l-23.41708,5.24958l-5.24958,23.41708l-23.27017,-7.27058l-16.1465,18.02058l-16.1465,-18.02058l-23.27017,7.27058l-5.24958,-23.41708l-23.41708,-5.24958l7.16667,-23.27017l-17.91667,-16.1465l17.91667,-16.1465l-7.16667,-23.27017l23.41708,-5.24958l5.24958,-23.41708l23.27017,7.27058z" fill="#e67e22"></path><path d="M79.54642,94.59283h-7.87975l-1.42617,5.7405h-6.10242l8.95833,-28.66667h5.375l8.95833,28.66667h-6.08808zM72.74525,89.58333h5.375l-2.50475,-10.03692zM97.46308,95.32383h10.03692v5.0095h-15.7595v-28.66667h5.72617v23.65717zM127.57383,87.79167h-8.95833v7.53217h10.75v5.0095h-16.4905v-28.66667h16.4905v4.66192h-10.75v6.80117h8.95833zM54.1155,92.80117c0,-6.08808 -12.1905,-3.9345 -12.1905,-13.60592c0,-2.87025 1.79167,-7.89408 8.95833,-7.89408c7.87975,0 8.95833,6.8155 8.95833,8.95833h-5.72617c0,-2.14283 -1.07858,-3.9345 -3.23217,-3.9345c-3.21783,0 -3.21783,2.87025 -3.21783,3.21783c0,5.375 12.17617,3.23217 12.17617,13.25475c0,4.31075 -2.87025,7.89408 -8.95833,7.89408c-5.0095,0 -10.03692,-3.23217 -10.03692,-9.32383h5.73692c0,1.79167 0.3655,4.66192 3.94883,4.66192c1.79167,0.00717 3.58333,-0.35833 3.58333,-3.22858z" fill="#ffffff"></path></g></g></svg>
+								 <div class="pb-3 pt-3">
+                                    <h4 class="brand-page_cat_headings home_deals_heading" style="text-align: center;" class="mb-2">Deals</h4>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
+
                     </div>
 
                     <div class="col-md-6">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/new-and-trending'); ?>">
+                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-outdoor/'); ?>">
                                 <div class="block-picture">
-                                    <img style="height: auto; width: 100%;"
-                                        src="https://www.lightyourhome.com/wp-content/uploads/2019/11/CTY542BN_5_home.jpg">
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/quoizel_outdoor_sale_2020_2.jpg">', wp_get_attachment_metadata(172662), 172662 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
-
-                                        <h3 class="block-heading">New and Trending</h3>
-                                        <h4 class="block-heading">The latest styles and more</h4>
-                                        <a style="text-align: center;"
-                                            href="<?php echo site_url('/new-and-trending'); ?>"
-                                            class="block-shop-link">Shop New and Trending</a>
-
+                                        <h4 class="block-heading">Quoizel Lighting</h4>
+                                        <h3 class="block-heading">Save 10% on Quoizel Outdoor Lighting</h3>
+                                        <h4 class="block-heading">Use Code "OUTDOOR10" at checkout!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-outdoor/'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
+                         </div>
+                     </div>
+
+                     <div class="col-md-6">
+                        <div class="block-container">
+                            <a href="<?php echo site_url('/brands/kichler-lighting'); ?>">
+                                <div class="block-picture">
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/kichler_sale_2020.jpg">', wp_get_attachment_metadata(172661), 172661 ); ?>
+                                </div>
+                                <div class="block-caption-wrapper">
+                                    <div class="block-caption-container">
+                                        <h4 class="block-heading">Kichler Lighting</h4>
+                                        <h3 class="block-heading">Save 15% off all Kichler Lighting</h3>
+                                        <h4 class="block-heading">Prices already discounted!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/brands/kichler-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                    </div>
+                                </div>
+                             </a>
                         </div>
-                    </div>
+                     </div>
 
                     <div class="col-md-12 mb-3 mt-5" style="border-bottom: 2px solid #d3d3d3;">
                         <h2>Featured Designer Collections</h2>
@@ -238,6 +234,16 @@
                     </div>
 
                 </div>
+
+
+                <div class="col-md-12 mb-3 mt-5" style="border-bottom: 2px solid #d3d3d3;">
+                    <h2>Popular Products</h2>
+                </div>
+
+                <div class="col-md-12 mb-3 mt-5" style="border-bottom: 2px solid #d3d3d3;">
+                    <?php echo do_shortcode('[products limit="6" best_selling]'); ?>
+                </div>
+
 
         </div><!-- END ROW 2 -->
 
