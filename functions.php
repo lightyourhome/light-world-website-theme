@@ -142,7 +142,7 @@ add_action( 'widgets_init', 'light_world_widgets_init' );
  * Enqueue scripts and styles.
  */
 function enqueue_light_world_scripts() {
-	wp_enqueue_style( 'light-world-style', get_template_directory_uri() . '/style.css', array(), '1.5.1' );
+	wp_enqueue_style( 'light-world-style', get_template_directory_uri() . '/style.css', array(), '1.5.2' );
 
 	//wp_enqueue_style( 'light-world-style-2', get_template_directory_uri() . '/css/theme.css', array(), '03192020', true );
 

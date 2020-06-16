@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.5.2 ]
+
+## Changed
+
+- Store Notice top position value
+
+## [ released ]
+
 ## [ 1.5.1 ]
 
 ## Changed
