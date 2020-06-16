@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.6.1 ]
+
+## Changed
+
+- Kichler Sale image
+- Popular Products shortcode
+- Deals Link
+
+## [ released ]
+
 ## [ 1.6.0 ]
 
 ## Added

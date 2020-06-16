@@ -108,7 +108,7 @@
 
                     <div class="col-md-2 col-6 mt-3">
 
-                        <a href="<?php echo site_url('/product-category/home/sales-and-promotions'); ?>">
+                        <a href="<?php echo site_url('/home/sales-and-promotions'); ?>">
                             <div class="brand-page_cat_image_container pt-5">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                 width="96" height="96"
@@ -126,7 +126,7 @@
                         <div class="block-container">
                             <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-outdoor/'); ?>">
                                 <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/quoizel_outdoor_sale_2020_2.jpg">', wp_get_attachment_metadata(172662), 172662 ); ?>
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/quoizel_outdoor_sale_2020_3.jpg">', wp_get_attachment_metadata(172664), 172664 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
@@ -144,7 +144,7 @@
                         <div class="block-container">
                             <a href="<?php echo site_url('/brands/kichler-lighting'); ?>">
                                 <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/kichler_sale_2020.jpg">', wp_get_attachment_metadata(172661), 172661 ); ?>
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/kichler_summer_sale_2020.jpg">', wp_get_attachment_metadata(172667), 172667 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
@@ -241,7 +241,7 @@
                 </div>
 
                 <div class="col-md-12 mb-3 mt-5" style="border-bottom: 2px solid #d3d3d3;">
-                    <?php echo do_shortcode('[products limit="6" best_selling]'); ?>
+                    <?php echo do_shortcode('[products limit="6" columns="3" orderby="popularity" ]'); ?>
                 </div>
 
 
