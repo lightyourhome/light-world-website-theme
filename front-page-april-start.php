@@ -36,7 +36,7 @@
                     <!-- Popular Categories -->
                     <div class="col-md-2 col-6 mt-3">
 
-                        <a href="<?php echo site_url('/product-category/chandeliers'); ?>">
+                        <a href="<?php echo site_url('/product-category/ceiling-lights/chandeliers'); ?>">
                             <div class="brand-page_cat_image_container p-2">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/03/CRL5003AWH.jpg">', wp_get_attachment_metadata(11779), 11779); ?>
 								 <div class="pb-3 pt-3">
@@ -49,7 +49,7 @@
 
                     <div class="col-md-2 col-6 mt-3">
 
-                        <a href="<?php echo site_url('/product-category/pendant-lights'); ?>">
+                        <a href="<?php echo site_url('/product-category/ceiling-lights/pendant-lights'); ?>">
                             <div class="brand-page_cat_image_container p-2">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2018/12/069-K42878NI.jpg">', wp_get_attachment_metadata(7616), 7616); ?>
 								 <div class="pb-3 pt-3">
@@ -62,7 +62,7 @@
 
                     <div class="col-md-2 col-6 mt-3">
 
-                        <a href="<?php echo site_url('/product-category/bath-vanity-lights'); ?>">
+                        <a href="<?php echo site_url('/product-category/wall-lights/bath-vanity-lights'); ?>">
                             <div class="brand-page_cat_image_container p-2">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/02/Q-ATT8602EK_3__1-2.jpg">', wp_get_attachment_metadata(9697), 9697); ?>
 								 <div class="pb-3 pt-3">

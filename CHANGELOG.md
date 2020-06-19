@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Style filter to use checkboxes
 - Wall Lights template
 - Ceiling lights template
+- Home page category links
 
 ## Removed
 
