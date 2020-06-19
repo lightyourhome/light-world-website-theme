@@ -4,7 +4,21 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ unreleased ]
+## [ released ]
+
+## [ 1.7.1 ]
+
+## Added
+
+- Inspiration to home decor landing page
+- Margin bottom to see all inspiration on new landing pages
+
+## Changed
+
+- Bath and vanity link on wall lights landing page
+- Heading for products on home decor and lamps landing pages
+
+## [ released ]
 
 ## [ 1.7.0 ]
 
