@@ -849,30 +849,10 @@ if ( ! function_exists('categoryPageImages') ) :
     $categoryImageLinks = array(
     //ART AND ACCESSORIES
     '443'   => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/art_category_picture-e1576271344838.jpg',
-    //CHANDELIERS
-    '59'    => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/chandelier_category_picture.jpg',
-    //BATH AND VANITY
-    '82'    => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/bath_and_vanity_category_picture-1.jpg',
     //CEILING FANS
     '81'    => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/fans_category_picture.jpg',
-    //TABLE LAMPS
-    '3226'  => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/table_and_floor_lamps_category_picture_5-e1569944729170.jpg',
-    //FLOOR LAMPS
-    '3225'  => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/table_and_floor_lamps_category_picture_5-e1569944729170.jpg',
-    //LAMPS
-    '165'   => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/table_and_floor_lamps_category_picture_5.jpg',
-    //SEMI-FLUSH MOUNTS
-    '3228'  => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/semi_flush_mounts_category_pictures.jpg',
-    //FLUSH MOUNTS
-    '3227'  => 'https://www.lightyourhome.com/wp-content/uploads/2019/12/flush_mounts_heading_img-1.jpg',
-    //MIRRORS
-    '1860'  => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/mirrors_category_picture.jpg',
     //OUTDOOR
     '80'    => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/outdoor_category_picture-e1570205505925.jpg',
-    //PENDANTS
-    '78'    => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/pendants_category_picture.jpg',
-    //SCONCES
-    '79'    => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/sconces_category_image-e1569504785541.jpg',
     //QUOIZEL lighting
     '10612' => 'https://www.lightyourhome.com/wp-content/uploads/2019/08/quoizel_summer_sale.jpg',
     //LABOR DAY SALE
@@ -918,7 +898,13 @@ if ( ! function_exists('categoryPageImages') ) :
     //et2
     '24446' => 'https://www.lightyourhome.com/wp-content/uploads/2020/04/et2_lighting.jpg',
     //elk lighting
-    '25105' => 'https://www.lightyourhome.com/wp-content/uploads/2020/05/elk_lighting_brand_image.jpg'
+    '25105' => 'https://www.lightyourhome.com/wp-content/uploads/2020/05/elk_lighting_brand_image.jpg',
+    //ceiling lights
+    '30479' => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/chandelier_category_picture.jpg',
+    //wall lights
+    '30480' => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/bath_and_vanity_category_picture-1.jpg',
+    //lamps
+    '30481' => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/table_and_floor_lamps_category_picture_5.jpg'
     
     ); ?>
     
