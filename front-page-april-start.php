@@ -7,16 +7,9 @@
     <div class="container-fluid px-0">
         <div class="row">
             <div class="col-md-12">
-                <img id="home-image"
-                    src="<?php echo site_url('/wp-content/uploads/2020/03/foyer_lights_mobile.jpg'); ?>">
-            </div>
-            <div class="col-md-12" style="background-color: #f6f6f6; text-align: center;">
-                <div class="home-hero-desc">
-                    <h3>Spring Sale</h3>
-                    <p>Save on Chandeliers, Pendants and More!</p>
-                    <a class="button mb-3" href="<?php echo site_url('/home/sales-and-promotions'); ?>">See The
-                        Sales</a>
-                </div>
+                <a href="https://www.lightyourhome.com/home/sales-and-promotions/">
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/02.Banner_640x800.jpg">', wp_get_attachment_metadata(172691), 172691 ); ?>
+                </a>
             </div>
         </div>
     </div>
@@ -25,7 +18,7 @@
 
 <div class="desktop-only">
 
-    <a href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src=https://lightyourhome.com/wp-content/uploads/2020/03/spring_sale_banner_updated_2.jpg">', wp_get_attachment_metadata(163810), 163810 ); ?></a>
+    <a href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/02.Banner_2.jpg">', wp_get_attachment_metadata(172684), 172684 ); ?></a>
 
 </div>
 

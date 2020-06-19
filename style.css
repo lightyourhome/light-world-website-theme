@@ -2,7 +2,7 @@
 Theme Name: Light World
 Author: Jim Merk
 Description: Light World's Custom Wordpress Theme
-Version: 1.5.0
+Version: 1.7.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: light-world
@@ -3988,6 +3988,12 @@ object {
       border: 1px solid #ccc;
       border-radius: 4px;
   }
+
+  .style_filter_checkboxes li, .finish_filter_swatches li {
+    text-align: left;
+    margin-left: 20px;
+  }
+
   
   .berocket_aapf_widget-title {
     text-align: left!important;

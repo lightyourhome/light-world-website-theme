@@ -29,82 +29,72 @@
 
 </div>
 
-<div class="container-fluid">
+<div class="container">
 
     <div class="row mt-5">
 
-        <div class="col-md-3">
-            <!-- CHANDELIERS -->
-            <div id="new-and-trending" class="picture-container" style="width: 100%;">
-                <a href="<?php echo site_url('/product-category/chandeliers'); ?>"><img
-                        src="<?php echo site_url('/wp-content/uploads/2019/06/dining_room_chandelier.jpg'); ?>"
-                        class="staff-picks-image" style="width: 100%; height: 250px; "></a>
-                <div class="button-container">
-                    <a href="<?php echo site_url('product-category/chandeliers'); ?>"><button
-                            class="button staff-picks-shop-button">SHOP CHANDELIERS
-                        </button></a>
+		<div class="col-sm-4 col-6 mt-5">
+
+            <a href="<?php echo site_url('/product-category/ceiling-lights/chandeliers'); ?>">
+                <div class="brand-page_cat_image_container pt-3">
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/03/AC11204PN.jpg">', wp_get_attachment_metadata(163595), 163595 ); ?>
+					<div class="pb-3 pt-3">
+                        <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Chandeliers</h3>
+                    </div>
                 </div>
-                <div class="image-title-bar" style="text-align: center;">
-                    <h3 class="box-headings"><a
-                            href="<?php echo site_url('/product-category/chandeliers'); ?>">CHANDELIERS</a></h3>
-                </div>
-            </div>
+            </a>
+
         </div>
 
-        <div class="col-md-3">
-            <!-- PENDANTS -->
-            <div id="new-and-trending" class="picture-container" style="width: 100%;">
-                <a href="<?php echo site_url('/product-category/pendant-lights'); ?>"><img
-                        src="<?php echo site_url('/wp-content/uploads/2019/06/dining_room_pendants.jpg'); ?>"
-                        class="staff-picks-image" style="width: 100%; height: 250px; "></a>
-                <div class="button-container">
-                    <a href="<?php echo site_url('/product-category/pendant-lights'); ?>"><button
-                            class="button staff-picks-shop-button">SHOP PENDANTS
-                        </button></a>
+        <div class="col-sm-4 col-6 mt-5">
+
+            <a href="<?php echo site_url('/product-category/ceiling-lights/pendant-lights'); ?>">
+                <div class="brand-page_cat_image_container pt-3">
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/01/FS-EP1101AI-scaled.jpg">', wp_get_attachment_metadata(112424), 112424 ); ?>
+					<div class="pb-3 pt-3">
+                        <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Pendants</h3>
+                    </div>
                 </div>
-                <div class="image-title-bar" style="text-align: center;">
-                    <h3 class="box-headings"><a
-                            href="<?php echo site_url('/product-category/pendant-lights'); ?>">PENDANTS</a></h3>
-                </div>
-            </div>
+            </a>
+
         </div>
 
-        <div class="col-md-3">
-            <!-- FLUSH MOUNTS -->
-            <div id="new-and-trending" class="picture-container" style="width: 100%;">
-                <a href="<?php echo site_url('/product-category/flush-mounts'); ?>"><img
-                        src="<?php echo site_url('/wp-content/uploads/2019/06/conference_room_flush_mounts.jpg'); ?>"
-                        class="staff-picks-image" style="width: 100%; height: 250px; "></a>
-                <div class="button-container">
-                    <a href="<?php echo site_url('/product-category/flush-mounts'); ?>"><button
-                            class="button staff-picks-shop-button">SHOP FLUSH MOUNTS
-                        </button></a>
+		<div class="col-sm-4 col-6 mt-5">
+
+            <a href="<?php echo site_url('/product-category/ceiling-lights/flush-mounts'); ?>">
+                <div class="brand-page_cat_image_container pt-3">
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/30330BKGLD-scaled.jpg">', wp_get_attachment_metadata(165752), 165752 ); ?>
+					<div class="pb-3 pt-3">
+                        <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Flush Mounts</h3>
+                    </div>
                 </div>
-                <div class="image-title-bar" style="text-align: center;">
-                    <h3 class="box-headings"><a href="<?php echo site_url('/product-category/flush-mounts'); ?>">FLUSH
-                            MOUNTS</a></h3>
-                </div>
-            </div>
+            </a>
+
         </div>
 
-        <div class="col-md-3">
-            <!-- SEMI FLUSH MOUNTS -->
-            <div id="new-and-trending" class="picture-container" style="width: 100%;">
-                <a href="<?php echo site_url('/product-category/semi-flush-mounts'); ?>"><img
-                        src="<?php echo site_url('/wp-content/uploads/2019/06/new_and_trending_flush_and_semi_flush_mounts.jpg'); ?>"
-                        class="staff-picks-image" style="width: 100%; height: 250px; "></a>
-                <div class="button-container">
-                    <a href="<?php echo site_url('/product-category/semi-flush-mounts'); ?>"><button
-                            class="button staff-picks-shop-button">SHOP SEMI FLUSH MOUNTS
-                        </button></a>
+		<div class="col-sm-4 col-6 mt-5">
+
+            <a href="<?php echo site_url('/product-category/ceiling-lights/semi-flush-mounts'); ?>">
+                <div class="brand-page_cat_image_container pt-3">
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/05/15454_3.jpg">', wp_get_attachment_metadata(167193), 167193 ); ?>
+					<div class="pb-3 pt-3">
+                        <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Semi Flush Mounts</h3>
+                    </div>
                 </div>
-                <div class="image-title-bar" style="text-align: center;">
-                    <h3 class="box-headings"><a
-                            href="<?php echo site_url('/product-category/semi-flush-mounts'); ?>">SEMI FLUSH MOUNTS</a>
-                    </h3>
-                </div>
-            </div>
+            </a>
+
         </div>
+
+        <div class="col-md-12 mt-5" style="text-align: center; background-color: #f6f6f6;">
+
+            <div class="mb-5 mt-5">
+
+                <a class="button" href="<?php echo site_url('/product-category/ceiling-lights'); ?>">Shop All Ceiling Lights</a>
+
+            </div>
+
+        </div>
+
 
     </div>
 
@@ -126,15 +116,41 @@
                     </div>
 
                     <div class="col-md-12">
-                        <?php echo do_shortcode('[products limit="4" columns="4" best_selling="true" category="chandeliers" ]'); ?>
+                        <?php echo do_shortcode('[products limit="4" columns="4" best_selling="true" category="ceiling-lights" ]'); ?>
+                    </div>
+
+                    <div class="col-md-12 mb-3 mt-5" style="border-bottom: 2px solid #d3d3d3;">
+                        <h2>Lighting Inspiration</h2>
+                    </div>
+
+                    <?php get_recent_post_data(); ?>
+
+                    <div class="col-md-12 mt-5" style="text-align: center; background-color: #f6f6f6;">
+
+                        <div class="mb-5 mt-5">
+
+                            <a class="button" href="<?php echo site_url('/lightworld-blog'); ?>">See All Inspiration</a>
+
+                        </div>
+
                     </div>
 
                 </div>
 
-                <!-- ACCORDION -->
-                <div id="accordion-container" class="row justify-content-center mt-5 mb-5">
-                    <div class="col-md-12 p-5" style="background-color: #f6f6f6;">
-                        <h1><strong>Ceiling Mounted Light Fixtures</strong></h1>
+            </main>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ACCORDION  -->
+<div id="accordion-container" class="row justify-content-center mt-5" style="background-color: #f6f6f6;">
+
+    <div class="col-md-8 p-4">
+
+    <h1><strong>Ceiling Mounted Light Fixtures</strong></h1>
                         <p>
                             <br>
                             <span style="font-weight: 400;">Ceiling mounted lights</span>
@@ -216,63 +232,7 @@
                         </div>
                         <br>
                         <a href="javascript:void(0)" id="accordion-read-more">Read More</a>
-                    </div>
-                </div>
-
-                <!-- YOU MAY ALSO LIKE SECTION -->
-                <div class="col-md-12 pb-2 mb-5 mt-5" style="border-bottom: 2px solid #d3d3d3;">
-                    <h3>You May Also Like...</h3>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <!-- BATH AND VANITY -->
-                        <div id="new-and-trending" class="picture-container" style="width: 100%;">
-                            <a href="<?php echo site_url('/product-category/bath-vanity-lights/'); ?>"><img
-                                    src="<?php echo site_url('/wp-content/uploads/2019/06/vanity_light.jpg'); ?>"
-                                    class="staff-picks-image" style="width: 100%; height: 250px; "></a>
-                            <a href="<?php echo site_url('/product-category/bath-vanity-lights/'); ?>">
-                                <div class="hover-button-container">
-                                    <h3 class="hover-button-heading">EXPLORE</h3>
-                                </div>
-                            </a>
-                            <div class="image-title-bar" style="text-align: center;">
-                                <h3 class="box-headings"><a
-                                        href="<?php echo site_url('/product-category/bath-vanity-lights/'); ?>">BATH AND
-                                        VANITY</a></h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <!-- SCONCES -->
-                        <div id="new-and-trending" class="picture-container" style="width: 100%;">
-                            <a href="<?php echo site_url('/product-category/sconces'); ?>"><img
-                                    src="<?php echo site_url('/wp-content/uploads/2019/06/dining_room_sconces.jpg'); ?>"
-                                    class="staff-picks-image" style="width: 100%; height: 250px; "></a>
-                            <a href="<?php echo site_url('/product-category/sconces'); ?>">
-                                <div class="hover-button-container">
-                                    <h3 class="hover-button-heading">EXPLORE</h3>
-                                </div>
-                            </a>
-                            <div class="image-title-bar" style="text-align: center;">
-                                <h3 class="box-headings"><a
-                                        href="<?php echo site_url('/product-category/sconces'); ?>">SCONCES</a></h3>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row mt-5 mb-5">
-                    <div class="col-md-12" style="border: 1px solid #d3d3d3;"></div>
-                </div>
-
-            </main>
-
-        </div>
-
+            
     </div>
 
 </div>

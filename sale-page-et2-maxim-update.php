@@ -7,13 +7,7 @@
     <div class="container-fluid px-0">
         <div class="row">
             <div class="col-md-12">
-                <img id="home-image" src="<?php echo site_url('/wp-content/uploads/2019/11/black_friday_sale-slider-mobile.jpg'); ?>">
-            </div>
-            <div class="col-md-12" style="background-color: #f6f6f6; text-align: center;">
-                <div class="home-hero-desc">
-                    <h3>Sales and Promotions</h3>
-                    <p>Save on Chandeliers, Pendants and More!</p>
-                </div>
+                <a href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/01.Banner_640x800.jpg">', wp_get_attachment_metadata(172690), 172690 ); ?></a>
             </div>
         </div>
     </div>
@@ -22,7 +16,7 @@
 
 <div class="desktop-only">
 
-  <a href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/03/spring_sale_banner_updated_2.jpg">', wp_get_attachment_metadata(163810), 163810 ); ?></a>
+  <a href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/01.Banner.jpg">', wp_get_attachment_metadata(172685), 172685 ); ?></a>
 
 </div>
 
