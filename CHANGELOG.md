@@ -4,6 +4,32 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ unreleased ]
+
+## [ 1.7.0 ]
+
+## Added
+
+- Css class to filter checkboxes ( .style_filter_checkboxes )
+- Css class to filter Finish Swatches ( .finish_filter_swatches )
+- Labels to filter finish swatches
+- Home Decor Page template
+- Outdoor Lighting Page template
+- Lamps template
+- Brand page picture boxes to parent category landing pages
+- New images to parent category landing pages
+
+## Changed
+
+- Style filter to use checkboxes
+- Wall Lights template
+- Ceiling lights template
+- Home page category links
+
+## Removed
+
+- Text block and call to action in front page and sales page mobile templates
+
 ## [ released ]
 
 ## [ 1.6.1 ]

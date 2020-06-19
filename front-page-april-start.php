@@ -7,16 +7,9 @@
     <div class="container-fluid px-0">
         <div class="row">
             <div class="col-md-12">
-                <img id="home-image"
-                    src="<?php echo site_url('/wp-content/uploads/2020/03/foyer_lights_mobile.jpg'); ?>">
-            </div>
-            <div class="col-md-12" style="background-color: #f6f6f6; text-align: center;">
-                <div class="home-hero-desc">
-                    <h3>Spring Sale</h3>
-                    <p>Save on Chandeliers, Pendants and More!</p>
-                    <a class="button mb-3" href="<?php echo site_url('/home/sales-and-promotions'); ?>">See The
-                        Sales</a>
-                </div>
+                <a href="https://www.lightyourhome.com/home/sales-and-promotions/">
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/02.Banner_640x800.jpg">', wp_get_attachment_metadata(172691), 172691 ); ?>
+                </a>
             </div>
         </div>
     </div>
@@ -25,7 +18,7 @@
 
 <div class="desktop-only">
 
-    <a href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src=https://lightyourhome.com/wp-content/uploads/2020/03/spring_sale_banner_updated_2.jpg">', wp_get_attachment_metadata(163810), 163810 ); ?></a>
+    <a href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/02.Banner_2.jpg">', wp_get_attachment_metadata(172684), 172684 ); ?></a>
 
 </div>
 
@@ -43,7 +36,7 @@
                     <!-- Popular Categories -->
                     <div class="col-md-2 col-6 mt-3">
 
-                        <a href="<?php echo site_url('/product-category/chandeliers'); ?>">
+                        <a href="<?php echo site_url('/product-category/ceiling-lights/chandeliers'); ?>">
                             <div class="brand-page_cat_image_container p-2">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/03/CRL5003AWH.jpg">', wp_get_attachment_metadata(11779), 11779); ?>
 								 <div class="pb-3 pt-3">
@@ -56,7 +49,7 @@
 
                     <div class="col-md-2 col-6 mt-3">
 
-                        <a href="<?php echo site_url('/product-category/pendant-lights'); ?>">
+                        <a href="<?php echo site_url('/product-category/ceiling-lights/pendant-lights'); ?>">
                             <div class="brand-page_cat_image_container p-2">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2018/12/069-K42878NI.jpg">', wp_get_attachment_metadata(7616), 7616); ?>
 								 <div class="pb-3 pt-3">
@@ -69,7 +62,7 @@
 
                     <div class="col-md-2 col-6 mt-3">
 
-                        <a href="<?php echo site_url('/product-category/bath-vanity-lights'); ?>">
+                        <a href="<?php echo site_url('/product-category/wall-lights/bath-vanity-lights'); ?>">
                             <div class="brand-page_cat_image_container p-2">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/02/Q-ATT8602EK_3__1-2.jpg">', wp_get_attachment_metadata(9697), 9697); ?>
 								 <div class="pb-3 pt-3">
