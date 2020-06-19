@@ -6,6 +6,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.7.2 ]
+
+## Added
+
+- Category images for new parent product categories ( lamps, wall lights, ceiling lights )
+
+## Changed
+
+- Theme version number and style.css query string
+
+## Removed
+
+- Old parent category pictures (chandeliers, pendants,etc.)
+
+## [ released ]
+
 ## [ 1.7.1 ]
 
 ## Added
