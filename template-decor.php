@@ -163,12 +163,25 @@
 
                     <!-- BEST SELLERS -->
                     <div class="col-md-12 pb-2 mb-5 mt-5" style="border-bottom: 2px solid #d3d3d3;">
-                        <h2>Best Selling Wall Lights</h2>
+                        <h2>Best Selling Home Décor Products</h2>
                     </div>
 
                     <div class="col-md-12">
                         <?php echo do_shortcode('[products limit="4" columns="4" best_selling="true" category="art-and-decor" ]'); ?>
                     </div>
+
+                    <?php get_recent_post_data(); ?>
+
+                    <div class="col-md-12 mt-5 mb-5" style="text-align: center; background-color: #f6f6f6;">
+
+                        <div class="mb-5 mt-5">
+
+                            <a class="button" href="<?php echo site_url('/lightworld-blog'); ?>">See All Inspiration</a>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 

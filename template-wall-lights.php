@@ -40,7 +40,7 @@
 
                     <div class="col-sm-4 col-6 mt-5">
 
-                        <a href="<?php echo site_url('/product-category/wall-lights/bath-and-vanity'); ?>">
+                        <a href="<?php echo site_url('/product-category/wall-lights/bath-vanity-lights'); ?>">
                             <div class="brand-page_cat_image_container pt-3">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/01/FS-VS2473MBK-scaled.jpg">', wp_get_attachment_metadata(122199), 122199 ); ?>
                                 <div class="pb-3 pt-3">
