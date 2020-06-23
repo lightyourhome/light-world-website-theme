@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.9.2 ]
+
+## Changed
+
+- Contact page covid update
+
+## [ released ]
+
 ## [ 1.9.1 ]
 
 ## Added

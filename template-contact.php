@@ -7,10 +7,10 @@
     <div class="col-md-8 col-12 text-center" style="background-color: #f6f6f6;">
       <h2 class="mt-3"><strong>Important Update 6/23/2020</strong></h2>
       <br>
-      <p>Starting Friday, 6/26/2020 Light World's Showroom will now be open to the public. However, for the safety of our employees and customers, only 8 customers will be allowed to enter the showroom at any given time. Masks are required for entrance to our showroom and we ask that all customers practice social distancing.</p>
+      <p>We are excited to announce starting Friday, 6/26/2020 Light World's Showroom will now be open to the public. For the safety of our employees and customers, only 8 customers will be allowed to enter the showroom at any given time. Masks are required for entrance to our showroom and we ask that all customers practice social distancing.</p>
       <p>If the door to the store is locked when you arrive, please call the showroom at 215-357-2882 to gain entrance during our business hours.</p>
-      <p><strong>Our showroom hours will be Monday to Saturday, 10 AM to 5 PM until further notice.</strong></p>
-      <p>We appreciate your patience and apologize for any inconvenience during these trying times.</p>
+      <p>We look forward to welcoming you again to our showroom.</p>
+      <p>See you soon! Stay safe and healthy!</p>
       <h4 class="mb-3">The Management and Sales Staff of Light World</h4>
     </div>
   </div>
