@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Elk Home and Lighting sales back to use coupons
+- Contact page update
 
 ## Removed
 
