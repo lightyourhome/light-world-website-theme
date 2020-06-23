@@ -88,41 +88,41 @@
                          </div>
                      </div>
 
-                     <div class="col-md-4">
+                     <!-- <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/brands/kichler-lighting'); ?>">
+                            <a href="<?php //echo site_url('/brands/kichler-lighting'); ?>">
                                 <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/07/43036DAG-10.jpg">', wp_get_attachment_metadata(29834), 29834 ); ?>
+                                    <?php //echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/07/43036DAG-10.jpg">', wp_get_attachment_metadata(29834), 29834 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Kichler Lighting</h4>
                                         <h3 class="block-heading">Save 15% off all Kichler Lighting</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/kichler-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php //echo site_url('/brands/kichler-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                              </a>
                         </div>
-                     </div>
+                     </div> -->
                      
-                     <div class="col-md-4">
+                     <!-- <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/brands/elan-lighting'); ?>">
+                            <a href="<?php //echo site_url('/brands/elan-lighting'); ?>">
                                 <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/01/84195.jpg">', wp_get_attachment_metadata(106870), 106870 ); ?>
+                                    <?php //echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/01/84195.jpg">', wp_get_attachment_metadata(106870), 106870 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Élan Lighting</h4>
                                         <h3 class="block-heading">Save 15% off all Élan Lighting</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/elan-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php //echo site_url('/brands/elan-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                              </a>
                         </div>
-                     </div>
+                     </div> -->
 
                      <!-- <div class="col-md-4">
                         <div class="block-container">
@@ -169,8 +169,8 @@
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Elk Home</h4>
-                                        <h3 class="block-heading">Save 20% off all Elk Home</h3>
-                                        <h4 class="block-heading">Prices already discounted!</h4>
+                                        <h3 class="block-heading">Save 15% off all Elk Home</h3>
+                                        <h4 class="block-heading">Use code "ELKHOME15" at checkout!</h4>
                                         <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
@@ -187,8 +187,8 @@
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Elk Lighting</h4>
-                                        <h3 class="block-heading">Save 20% off all Elk Lighting</h3>
-                                        <h4 class="block-heading">Prices already discounted!</h4>
+                                        <h3 class="block-heading">Save 15% off all Elk Lighting</h3>
+                                        <h4 class="block-heading">Use code "ELKLIGHTING15" at checkout!</h4>
                                         <a style="text-align: center;" href="<?php echo site_url('/brands/elk-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>

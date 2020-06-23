@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.9.0 ]
+
+## Changed
+
+- Elk Home and Lighting sales back to use coupons
+- Contact page update
+
+## Removed
+
+- Kichler sale from home page
+- Kichler and elan sale from sales and promotions
+
+## [ released ]
+
 ## [ 1.8.0 ]
 
 ## Added
