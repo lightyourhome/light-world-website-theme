@@ -4,12 +4,13 @@
 
 <div class="container mt-3">
   <div class="row justify-content-center">
-    <div class="col-md-8 col-12" style="background-color: #f6f6f6;">
-      <h2 class="mt-3"><strong>Important Update</strong></h2>
+    <div class="col-md-8 col-12 text-center" style="background-color: #f6f6f6;">
+      <h2 class="mt-3"><strong>Important Update 6/23/2020</strong></h2>
       <br>
-      <p><strong>As of Tuesday, 3/17/2020, our showroom will be closed due to the evolving situation regarding COVID-19 (Coronavirus) and the recent government advisory for all non-essential businesses to close.</strong></p>
-      <p><strong>However, if you would like to pick up an order, please call the showroom at 215-883-8544 with a time you would like to pick up based on our hours below. In order to ensure the safety of our employees and customers, we will leave your order outside the front door at the scheduled time.</strong></p>
-		<p><strong>Should you have any questions or concerns, please feel free to contact us on this page via the form and we will get back to you as soon as possible. We apologize in advance for any inconvenience this may cause and appreciate your patience and understanding at this time.</strong></p>
+      <p>Starting Friday, 6/26/2020 Light World's Showroom will now be open to the public. However, for the safety of our employees and customers, only 8 customers will be allowed to enter the showroom at any given time. Masks are required for entrance to our showroom and we ask that all customers practice social distancing.</p>
+      <p>If the door to the store is locked when you arrive, please call the showroom at 215-357-2882 to gain entrance during our business hours.</p>
+      <p><strong>Our showroom hours will be Monday to Saturday, 10 AM to 5 PM until further notice.</strong></p>
+      <p>We appreciate your patience and apologize for any inconvenience during these trying times.</p>
       <h4 class="mb-3">The Management and Sales Staff of Light World</h4>
     </div>
   </div>
@@ -61,9 +62,9 @@
                 <br>
                 <li>Wednesday: 10 AM - 5 PM</li>
                 <br>
-                <li>Thursday: 10 AM - 8 PM</li>
+                <li>Thursday: 10 AM - 5 PM</li>
                 <br>
-                <li>Friday: 10 AM - 6 PM</li>
+                <li>Friday: 10 AM - 5 PM</li>
                 <br>
                 <li>Saturday: 10 AM - 5 PM</li>
                 <br>
