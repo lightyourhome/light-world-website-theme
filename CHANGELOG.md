@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.10.1 ]
+
+## Changed
+
+- Fixed bug where header navigation would not display on mobile
+
+## [ released ]
+
 ## [ 1.10.0 ]
 
 ## Added
