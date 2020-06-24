@@ -34,59 +34,111 @@
 					</div>
 
 					<div class="col-md-12"><hr></div>
-				
-					<!-- MOBILE MENU -->
-					<div id="footer-mobile-nav" style="width: 100%">
-						<div class="col">
-							<?php wp_nav_menu( array( 'theme_location'  => 'mobile-footer-menu' ) ); ?>
+
+				</div>
+
+				<div id="mobile-footer-container">
+
+					<div class="row justify-content-center">
+
+						<div class="col-md-12">
+
+							<!-- MOBILE MENU -->
+							<div id="footer-mobile-nav" style="width: 100%">
+								<div class="col">
+									<?php wp_nav_menu( array( 'theme_location'  => 'mobile-footer-menu' ) ); ?>
+								</div>
+							</div>
+
 						</div>
-					</div>
 
-					<div class="col-md-3 mb-3 desktop-only">
-						<h3 class="footer-menu-heading">LIGHTING</h3>
-						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-lighting') ); ?>
-					</div>
+						<div class="col-md-4 mb-3 mt-3">
 
-					<div class="col-md-3 mb-3 desktop-only">
+							<h3 id="open-chat-footer" class="footer-menu-heading">Chat With Us</h3>
+							<h5 class="footer-menu-info">Mon - Fri 10 AM to 5 PM</h5>
 
-						<h3 class="footer-menu-heading">LAMPS</h3>
-						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-lamps') ); ?>
-
-						<h3 class="footer-menu-heading">DECOR</h3>
-						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-decor') ); ?>
-
-						<h3 class="footer-menu-heading">FANS</h3>
-						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-fans') ); ?>
-
-					</div>
-
-					<div class="col-md-3 mb-3 desktop-only">
-
-						<h3 class="footer-menu-heading">TIPS, TRICKS & MORE</h3>
-						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-blog-posts') ); ?>
-
-						<h3 class="footer-menu-heading">OTHER STUFF</h3>
-						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-policies') ); ?>
-
-					</div>
-
-					<div class="col-md-3 mb-3">
-						<div class="desktop-only">
-							<h3 class="footer-menu-heading">VISIT OUR SHOWROOM</h3>
-							<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-showroom') ); ?>
 						</div>
-						<br>
-						<h3 id="open-chat-footer" class="footer-menu-heading">Chat With Us</h3>
-						<h5 class="footer-menu-info">Mon - Fri 10 AM to 5 PM</h5>
-						<br>
-						<h3 class="footer-menu-heading">Call Us: </h3>
-						<a class="footer-menu-info" href="tel:2158838544" onclick="gtag('event', 'clicks', { event_category: 'Phone Number', event_action: 'Clicked'});"><p>215-883-8544</p></a>
-						<br>
-						<h3 class="footer-menu-heading">Visit Us: </h3>
-						<h3 class="footer-menu-info">4625 E Street Road Trevose, PA</h3>
+
+						<div class="col-md-4 mb-3 mt-3">
+
+							<h3 class="footer-menu-heading">Call Us: </h3>
+							<a class="footer-menu-info" href="tel:2158838544" onclick="gtag('event', 'clicks', { event_category: 'Phone Number', event_action: 'Clicked'});"><p>215-883-8544</p></a>
+
+						</div>
+
+						<div class="col-md-4 mb-3 mt-3">
+
+							<h3 class="footer-menu-heading">Visit Us: </h3>
+							<h3 class="footer-menu-info">4625 E Street Road Trevose, PA</h3>
+
+						</div>
+
 					</div>
 
 				</div>
+
+				<div id="desktop-footer-nav">
+
+					<div class="row">
+
+
+						<div class="col-md-3 mb-3 desktop-only">
+							<h3 class="footer-menu-heading">LIGHTING</h3>
+							<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-lighting') ); ?>
+						</div>
+
+						<div class="col-md-3 mb-3 desktop-only">
+
+							<h3 class="footer-menu-heading">LAMPS</h3>
+							<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-lamps') ); ?>
+
+							<h3 class="footer-menu-heading">DECOR</h3>
+							<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-decor') ); ?>
+
+							<h3 class="footer-menu-heading">FANS</h3>
+							<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-fans') ); ?>
+
+						</div>
+
+						<div class="col-md-3 mb-3 desktop-only">
+
+							<h3 class="footer-menu-heading">TIPS, TRICKS & MORE</h3>
+							<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-blog-posts') ); ?>
+
+							<h3 class="footer-menu-heading">OTHER STUFF</h3>
+							<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-policies') ); ?>
+
+						</div>
+
+						<div class="col-md-3 mb-3">
+							<div class="desktop-only">
+								<h3 class="footer-menu-heading">VISIT OUR SHOWROOM</h3>
+								<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-showroom') ); ?>
+							</div>
+							<br>
+							<h3 id="open-chat-footer" class="footer-menu-heading">Chat With Us</h3>
+							<h5 class="footer-menu-info">Mon - Fri 10 AM to 5 PM</h5>
+							<br>
+							<h3 class="footer-menu-heading">Call Us: </h3>
+							<a class="footer-menu-info" href="tel:2158838544" onclick="gtag('event', 'clicks', { event_category: 'Phone Number', event_action: 'Clicked'});"><p>215-883-8544</p></a>
+							<br>
+							<h3 class="footer-menu-heading">Visit Us: </h3>
+							<h3 class="footer-menu-info">4625 E Street Road Trevose, PA</h3>
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+				
+
+
+
+
+
+
 
 				<div class="row justify-content-center">
 
