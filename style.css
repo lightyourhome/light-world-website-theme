@@ -1466,7 +1466,7 @@ object {
     }
   
   #mobile-menu,
-  #header-mobile-search,
+  #header-mobile-search
     {
       display: block!important;
     }
