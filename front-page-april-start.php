@@ -240,50 +240,55 @@
 
         </div><!-- END ROW 2 -->
 
-        <div class="row mt-5 lighting-ideas-home">
-            <!-- ROW 3 -->
+        <div class="lighting-ideas-home">
 
-            <div class="col-md-4">
+            <div class="row mt-5">
+                <!-- ROW 3 -->
 
-                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Linara-Night-LI.jpg">', wp_get_attachment_metadata(163890), 163890 ); ?>
+                <div class="col-md-4">
 
-            </div>
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Linara-Night-LI.jpg">', wp_get_attachment_metadata(163890), 163890 ); ?>
 
-            <!-- LIGHTING IDEAS -->
-            <div class="col-md-4 p-3" style="background-color: #f6f6f6;">
+                </div>
 
-                <div class="row h-100">
+                <!-- LIGHTING IDEAS -->
+                <div class="col-md-4 p-3" style="background-color: #f6f6f6;">
 
-                    <div class="col-md-12 my-auto">
+                    <div class="row h-100">
 
-                        <div>
-                            <h2>Lighting Ideas</h2>
+                        <div class="col-md-12 my-auto">
+
+                            <div>
+                                <h2>Lighting Ideas</h2>
+                            </div>
+
+                            <div class="mt-3">
+                                <p><span style="font-weight: 400;">Love a chandelier, but can't find a </span><a
+                                        href="https://www.lightyourhome.com/product-category/pendant-lights"><span
+                                            style="font-weight: 400;">pendant light fixture</span></a><span
+                                        style="font-weight: 400;"> that matches it? Love a certain style, but don't know
+                                        where to start? Look no further! Our </span><span style="font-weight: 400;">online
+                                        lighting store</span><span style="font-weight: 400;"> has a section dedicated only
+                                        to Lighting Ideas, where you&rsquo;ll find products from all lighting categories
+                                        across the most recent and popular styles. Whether you're looking for inspiration or
+                                        just want to find matching fixtures &mdash; Lighting Ideas is a great place to get
+                                        started!</span></p>
+                            </div>
+
+                            <div class="mt-3"><a href="<?php echo site_url('/home/lighting-ideas'); ?>"
+                                    class="lw-showroom-nav-button">Get Inspired</a></div>
                         </div>
-
-                        <div class="mt-3">
-                            <p><span style="font-weight: 400;">Love a chandelier, but can't find a </span><a
-                                    href="https://www.lightyourhome.com/product-category/pendant-lights"><span
-                                        style="font-weight: 400;">pendant light fixture</span></a><span
-                                    style="font-weight: 400;"> that matches it? Love a certain style, but don't know
-                                    where to start? Look no further! Our </span><span style="font-weight: 400;">online
-                                    lighting store</span><span style="font-weight: 400;"> has a section dedicated only
-                                    to Lighting Ideas, where you&rsquo;ll find products from all lighting categories
-                                    across the most recent and popular styles. Whether you're looking for inspiration or
-                                    just want to find matching fixtures &mdash; Lighting Ideas is a great place to get
-                                    started!</span></p>
-                        </div>
-
-                        <div class="mt-3"><a href="<?php echo site_url('/home/lighting-ideas'); ?>"
-                                class="lw-showroom-nav-button">Get Inspired</a></div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-4 desktop-only">
-                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Dining-Room-Laurent-52052CG-Detail-Day-1B-scaled.jpg">', wp_get_attachment_metadata(163892), 163892 ); ?>
-            </div>
+                <div class="col-md-4 desktop-only">
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Dining-Room-Laurent-52052CG-Detail-Day-1B-scaled.jpg">', wp_get_attachment_metadata(163892), 163892 ); ?>
+                </div>
 
-        </div><!-- END ROW 3-->
+            </div><!-- END ROW 3-->
+
+        </div>
+
 
         <div class="row mt-5">
             <!-- ROW 4 -->
