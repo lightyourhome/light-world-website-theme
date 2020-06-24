@@ -1276,6 +1276,7 @@ object {
   }
   
   @media screen and (min-width: 768px) {
+
   
     table.cart th, table.cart td {
       padding: 1.618em !important;
@@ -1370,6 +1371,10 @@ object {
    }
   
   @media screen and (min-width: 1024px) {
+
+  .lighting-ideas-home {
+    display: block !important;
+  }
   
   .woocommerce table.shop_attributes th {
     width: 350px;
@@ -1379,8 +1384,7 @@ object {
   #brand-container-mobile,
   #mobile-menu,
   #header-store-info-row-mobile,
-  #header-mobile-search,
-  #footer-mobile-nav
+  #header-mobile-search
     {
       display: none!important;
     }
@@ -1451,7 +1455,8 @@ object {
   #nav-items-desktop,
   #desktop-search-container,
   #navigation-col-desktop,
-  #header-store-info-row-mobile
+  #header-store-info-row-mobile,
+  .lighting-ideas-home
     {
       display: none!important;
   }
@@ -1462,7 +1467,6 @@ object {
   
   #mobile-menu,
   #header-mobile-search,
-  #footer-mobile-nav
     {
       display: block!important;
     }
@@ -1470,7 +1474,19 @@ object {
   }
   
   @media screen and (max-width: 768px) {
-	  
+
+    #mobile-footer-container {
+      display: block !important;
+    }
+
+    #desktop-footer-nav {
+      display: none !important;
+    }
+
+    #footer-mobile-nav {
+      display: block;
+    }
+
 	  .tfs-product-remove:before {
 		display: none;
 		}
@@ -1629,7 +1645,7 @@ object {
   
     .mobile-only { display:block !important; }
   
-      .desktop-only { display:none !important; }
+    .desktop-only { display:none !important; }
   
     .woocommerce-ordering { float: none!important; }
   
@@ -1822,11 +1838,25 @@ object {
      }
   
   }
+
+  @media (min-width: 769px ) {
+
+    .desktop-only { display:block !important; }
+
+    #mobile-footer-container {
+      display: none !important;
+    }
+
+    #desktop-footer-nav {
+      display: block !important;
+    }
+
+  }
   
   /*medium+ screen sizes*/
-  @media (min-width:769px) {
-  
-      .desktop-only { display:block !important; }
+  @media (min-width:768px) {
+
+    .desktop-only { display:block !important; }
   
     .mobile-only { display:none !important; }
   

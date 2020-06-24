@@ -1216,9 +1216,14 @@ if ( ! function_exists('adding_customers_details_to_thankyou') ) :
 	*/
 	function adding_customers_details_to_thankyou( $order_id ) {
 
-	    $order = wc_get_order($order_id); // Get an instance of the WC_Order object
+    $order = wc_get_order($order_id); // Get an instance of the WC_Order object
+      
+    if ( ! is_user_logged_in() ) {
 
-	    wc_get_template( 'order/order-details-customer.php', array('order' => $order ));
+      wc_get_template( 'order/order-details-customer.php', array('order' => $order ));
+
+    }
+
 	}
 
 endif;

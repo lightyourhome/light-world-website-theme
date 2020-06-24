@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.10.0 ]
+
+## Added
+
+- thankyou.php ( custom thank you page )
+
+## Changed
+
+- Conditions for displaying order details while not logged in ( woocommerce-functions.php )
+- Front page tablet portrait mode layout
+- Footer Navigation for mobile
+
+## [ released ]
+
 ## [ 1.9.2 ]
 
 ## Changed
