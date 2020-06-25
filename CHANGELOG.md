@@ -23,6 +23,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Shop/product category structure on tablet and mobile
 - Query strings
 - Theme version number
+- mobile_search_init.js to jquery
+- Fixed mobile search toggle, wasn't showing up on mobile
 
 ## Removed
 
