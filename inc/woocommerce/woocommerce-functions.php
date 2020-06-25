@@ -1681,3 +1681,74 @@ add_action('store-notice-header', 'woocommerce_demo_store' );
 // remove_action('wp_body_open', 'wc_print_notices');
 
 // }
+
+if ( ! function_exists('display_mobile_filter') ) :
+
+  function display_mobile_filter() {
+
+    if ( wp_is_mobile() && is_product_category() || wp_is_mobile() && is_shop() ) : ?>
+  
+      <div class="row justify-content-center filter-overlay-button">
+      
+        <div class="col-md-6">
+      
+          <a id="open-filter-overlay" class="button" style="cursor: pointer;">Refine Your Search</a>
+      
+        </div>
+      
+      </div>
+      
+      <div id="filter-overlay" class="container-fluid">
+
+        <div class="row" style="background-color: #f6f6f6;">
+
+          <div class="col-8">
+
+            <div class="filter-overlay-heading">
+    
+              Refine Your Search
+
+            </div>
+
+          </div>
+
+          <div class="col-4">
+
+            <button class="close-filter-overlay close-filter-overlay_times">&times;</button>
+
+           </div>
+
+        </div>
+      
+        <div id="mobile-product-filter-group-container">
+
+          <span id="mobile-product-filter-group_loader" style="display: none;">
+
+            <img src="http://localhost/lightyourhome.com_april/wp-content/uploads/2020/06/ajax-loader.gif" style="height: 25px; width: 25px;">
+            Just a Moment!
+
+          </span>
+
+          <div id="mobile-product-filter-group">
+
+            <?php if (getCategoryId() == 81) { echo do_shortcode('[br_filters_group group_id=32535]'); } else { echo do_shortcode('[br_filters_group group_id=27306]'); } ?>
+
+          </div>
+
+        </div>
+            
+        <div class="filter-overlay-reset-update-container">
+
+          <a id="close-filter-overlay_cancel_btn" class="close-filter-overlay button" style="cursor: pointer;">Cancel</a>
+
+          <?php echo do_shortcode( '[br_filter_single filter_id=32529]' ); ?>
+
+        </div>
+
+      </div>
+      
+      <?php endif;
+
+  }
+
+endif;

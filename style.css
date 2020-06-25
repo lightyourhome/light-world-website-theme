@@ -2,9 +2,7 @@
 Theme Name: Light World
 Author: Jim Merk
 Description: Light World's Custom Wordpress Theme
-Version: 1.10.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
+Version: 1.11.0
 Text Domain: light-world
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
@@ -1412,6 +1410,32 @@ object {
   
   
   }
+
+  @media screen and (max-width: 1365px) {
+
+    .filter-overlay-button {
+      display: flex !important;
+    }
+
+    .product_category_filter_group_desktop {
+      display: none !important;
+    }
+
+  }
+
+  @media screen and (min-width: 1366px) {
+
+    .filter-overlay-button,
+    #filter-overlay {
+      display: none !important;
+    }
+
+    .product_category_filter_group_desktop {
+      display: block !important;
+    }
+
+
+  }
   
   @media screen and (max-width: 1366px) {
   
@@ -1646,9 +1670,7 @@ object {
     .mobile-only { display:block !important; }
   
     .desktop-only { display:none !important; }
-  
-    .woocommerce-ordering { float: none!important; }
-  
+    
     #sale-page-wrapper {
       margin-left: auto;
       margin-right: auto;
@@ -1674,6 +1696,7 @@ object {
   
   @media screen and (max-width: 767px) {
 
+    .woocommerce-ordering { float: none!important; }
   
     #dark-overlay {
       display: none!important;
@@ -1973,36 +1996,7 @@ object {
     transform: translatey(0);
   }
   
-  button.button {
-    background-color: #222!important;
-    border-radius: 0;
-    -webkit-box-shadow: none!important;
-    -o-box-shadow: none!important;
-    box-shadow: none!important;
-    background-image: none!important;
-    text-shadow: none!important;
-    -moz-text-shadow: none!important;
-    -webkit-text-shadow: none!important;
-    -o-text-shadow: none!important;
-    border: none!important;
-    background-repeat: no-repeat;
-    color: #fff!important;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 12px!important;
-    font-weight: 700!important;
-    line-height: 15px;
-    padding: 15px 40px!important;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-transition: bottom .2s linear 0s,background-color .2s linear 0s;
-    transition: bottom .2s linear 0s,background-color .2s linear 0s;
-  }
-  
-  a.button {
+  a.button, button.button {
       background-color: #222!important;
       border-radius: 0;
       -webkit-box-shadow: none!important;
@@ -2869,6 +2863,8 @@ object {
   
   .berocket_aapf_widget_update_button {
     margin-top: 20px;
+    width: 100%!important;
+    border-radius: 0px!important;
   }
   
   .brand-page_cat_image_container:hover {
@@ -3656,18 +3652,6 @@ object {
     overflow-x: hidden;
   }
   
-  /* Position and style the close button (top right corner) */
-  .closeCart,
-  #close-filter-overlay {
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    font-size: 40px;
-    margin-left: 30px;
-    color: black;
-    font-weight: bold;
-  }
-  
   .woocommerce-cart-form .woocommerce-order .shop_table, .shop_table_responsive cart, .woocommerce-cart-form__contents {
     /* padding-left: 20px; */
     background-color: #fff!important;
@@ -4214,16 +4198,110 @@ object {
   #filter-overlay {
     position: fixed;
     height: 0px;
-    width: 0px;
-    z-index: 4;
+    width: 100%;
+    z-index: 10000000000000;
     top: 0px;
+    bottom: 0px;
     right: 0px;
-    background-color: #f3f3f3;
+    left: 0px;
+    background-color: #fff;
     transition: 0.5s;
     overflow-x: hidden;
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
+  }
+
+  .close-filter-overlay_times {
+    padding: 0px;
+    float: right;
+    width: 3rem;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    background: #000;
+    border-radius: 0px;
+  }
+
+  #mobile-product-filter-group_loader {
+    margin: auto;
+    margin-top: 20px;
+    z-index: 6;
+  }
+
+  #filter-overlay-heading-container {
+    width: 100%;
+    display: flex;
+    -moz-box-shadow: 0px 1px 8px 1px black;
+    -webkit-box-shadow: 0px 1px 8px 1px black;
+    box-shadow: 0px 1px 8px 1px black;
+    background-color: #f3f3f3;
+  }
+
+  #mobile-product-filter-group-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90%;
+    width: 100%;
+    padding: 0px 20px 20px;
+  }
+
+  .filter-overlay-heading {
+    font-family: 'Lato';
+    margin-left: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .filter-overlay-reset-update-container .widget  {
+    margin: 0!important;
+    padding: 0!important;
+  }
+
+  .filter-overlay-reset-update-container .berocket_aapf_widget {
+    margin: 0!important;
+    padding: 0!important;
+
+  }
+
+  .berocket_aapf_widget_update_button {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .filter-overlay-reset-update-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
+  }
+
+  #filter-overlay_update_filter,
+  #close-filter-overlay_cancel_btn {
+    width: 50%;
+  }
+
+  #close-filter-overlay_cancel_btn {
+    background-color: #fff!important;
+    color: #000!important;
+    border-radius: 0px!important;
+    border: 1px solid #000!important;
+  }
+
+  .mobile-product-filter-accordion {
+
+    border-top: #f3f3f3;
+    border-bottom: #f3f3f3;
+
   }
   
   #open-filter-overlay {
