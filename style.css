@@ -267,6 +267,12 @@ select { /* 1 */
 	text-transform: none;
 }
 
+/* Remove line height from button input */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  line-height: 0;
+}
+
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
@@ -4015,8 +4021,17 @@ object {
     padding-top: 5px;
     border-bottom: 1px solid rgba(0,0,0,.05);
   }
+
+  /* Stops open filter buttons from being hidden on mobile  */
+  .berocket_aapf_widget_show.mobile_hide {
+    display: block !important;
+  }
+
+  .berocket_aapf_reset_button {
+    margin-top: .5rem;
+  }
   
-  .berocket_aapf_reset_button, .berocket_aapf_widget_update_button {
+  .berocket_aapf_reset_button {
     background-color: #222!important;
       border-radius: 0;
       -webkit-box-shadow: none!important;
@@ -4288,6 +4303,19 @@ object {
   #filter-overlay_update_filter,
   #close-filter-overlay_cancel_btn {
     width: 50%;
+  }
+
+  .berocket_single_filter_widget_32529 {
+    width: 50% !important;
+  }
+
+  .berocket_aapf_widget_update_button {
+    height: 100% !important;
+    padding: 15px 20px !important;
+    width: 100% !important;
+    color: white !important;
+    font-weight: bold;
+    background-color: #000 !important;
   }
 
   #close-filter-overlay_cancel_btn {

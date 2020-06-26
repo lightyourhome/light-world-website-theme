@@ -16,4 +16,20 @@ jQuery(function($) {
 
   });
 
+  if ( $( '.berocket_aapf_widget_update_button' ) ) {
+
+    $('.berocket_aapf_widget_update_button').addClass('button');
+
+  }
+
+  $.ajaxStop(function() {
+
+    if ( $( '.berocket_aapf_widget_update_button' ) ) {
+
+      $('.berocket_aapf_widget_update_button').addClass('button');
+  
+    }  
+
+  }); 
+    
 });

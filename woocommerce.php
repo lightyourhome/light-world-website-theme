@@ -144,7 +144,7 @@ get_header(); ?>
 
       <!-- Sidebar Left -->
 
-      <div class="col-lg-2 d-none d-lg-block d-xl-block">
+      <div class="col-lg-2 d-none d-xl-block">
 
         <?php if ( is_shop() && empty( get_search_query() ) ) { lyh_breadcrumbs();  } ?>
 

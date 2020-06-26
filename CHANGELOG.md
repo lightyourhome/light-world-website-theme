@@ -4,7 +4,27 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ unreleased ]
+## [ released ]
+
+## [ 1.11.1 ]
+
+## Added
+
+- Margin top to reset products button
+
+## Changed
+
+- Filter/shop responsive breakpoints on tablet portrait mode (removed d-lg-block)
+- Open filter buttons from being hidden on mobile (dropdown arrows)
+- Size of mobile product filter update filter button
+- Query strings
+- Theme version number
+
+## Removed
+
+- Bottom spacing on mobile product filter update filter button
+
+## [ released ]
 
 ## [ 1.11.0 ]
 
