@@ -22,7 +22,7 @@ jQuery(function($) {
 
   }
 
-  $.ajaxStop(function() {
+  $(document).ajaxStop(function() {
 
     if ( $( '.berocket_aapf_widget_update_button' ) ) {
 
