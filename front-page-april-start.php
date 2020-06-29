@@ -133,18 +133,17 @@
                          </div>
                      </div>
 
-                     <div class="col-md-6">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/brands/elk-home'); ?>">
+                     <div class="block-container">
+                            <a href="<?php echo site_url('/brands/kichler-lighting'); ?>">
                                 <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/elk_home_sale_june.jpg">', wp_get_attachment_metadata(172718), 172718 ); ?>
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/kichler_summer_sale_2020.jpg">', wp_get_attachment_metadata(172667), 172667 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
-                                        <h4 class="block-heading">Elk Home</h4>
-                                        <h3 class="block-heading">Save 15% off all Elk Home</h3>
-                                        <h4 class="block-heading">Use code "ELKHOME15" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
+                                        <h4 class="block-heading">Kichler Lighting</h4>
+                                        <h3 class="block-heading">Save 20% off all Kichler Lighting</h3>
+                                        <h4 class="block-heading">Prices already discounted!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/brands/kichler-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                              </a>
