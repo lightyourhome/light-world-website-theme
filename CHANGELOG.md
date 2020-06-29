@@ -4,6 +4,34 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ unreleased ]
+
+## [ 1.11.0 ]
+
+## Added
+
+- New media queries for ipad and ipad pro
+- More responsive functionality/support to shop/product categories for tablet devices
+- Reset button to filter overlay
+
+## Changed
+
+- Mobile Product filter styling
+- Mobile product filter positioning
+- Mobile product filter event listeners (open and close)
+- Mobile Product filter javascript from vanilla to jquery
+- Shop/product category structure on tablet and mobile
+- Query strings
+- Theme version number
+- mobile_search_init.js to jquery
+- Fixed mobile search toggle, wasn't showing up on mobile
+
+## Removed
+
+- Product filter from left side on ipad portrait/landscape and ipad pro portrait. Now uses mobile product filter
+- Ajax start and stop handlers from filter_overlay.js
+- GNU license
+
 ## [ released ]
 
 ## [ 1.10.2 ]

@@ -130,33 +130,7 @@ get_header(); ?>
 
 <?php endif; ?>
 
-<?php if ( wp_is_mobile() && is_product_category() || wp_is_mobile() && is_shop() ) : ?>
-  
-<div class="row justify-content-center filter-overlay-button">
-
-  <div class="col-md-6">
-
-    <a id="open-filter-overlay" class="button" style="cursor: pointer;">Refine Your Search</a>
-
-  </div>
-
-</div>
-
-<div id="filter-overlay">
-
-  <a id="close-filter-overlay" href="javascript:void(0)">&times;</a>
-
-  <div class="filter-overlay-heading">
-
-    <h2>Refine Your Search</h2>
-
-  </div>
-
-  <?php if (getCategoryId() == 81) { echo do_shortcode('[br_filters_group group_id=32535]'); } else { echo do_shortcode('[br_filters_group group_id=27306]'); } ?>
-
-</div>
-
-<?php endif; ?>
+<?php display_mobile_filter(); ?>
 
 <!-- class="wrapper" id="woocommerce-wrapper" -->
 
@@ -170,7 +144,7 @@ get_header(); ?>
 
       <!-- Sidebar Left -->
 
-      <div class="col-sm-2">
+      <div class="col-lg-2 d-none d-lg-block d-xl-block">
 
         <?php if ( is_shop() && empty( get_search_query() ) ) { lyh_breadcrumbs();  } ?>
 
@@ -178,7 +152,7 @@ get_header(); ?>
 
       </div>
 
-      <div id="primary" class="<?php if ( ! is_product() ) : ?>col-md-10<?php else : ?>col-md-12<?php endif; ?> content-area">
+      <div id="primary" class="<?php if ( ! is_product() ) : ?>col-sm-12 col-md-12 col-lg-12 col-xl-10<?php else : ?>col-md-12<?php endif; ?> content-area">
 
         <main id="main" class="site-main" role="main">
 
