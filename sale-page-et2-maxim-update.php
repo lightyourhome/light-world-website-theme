@@ -7,7 +7,7 @@
     <div class="container-fluid px-0">
         <div class="row">
             <div class="col-md-12">
-                <a href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/01.Banner_640x800.jpg">', wp_get_attachment_metadata(172690), 172690 ); ?></a>
+                <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src=/wp-content/uploads/2020/06/03.Banner_640x800.jpg">', wp_get_attachment_metadata(172774), 172774 ); ?></a>
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@
 
 <div class="desktop-only">
 
-  <a href="https://www.lightyourhome.com/home/sales-and-promotions/"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/01.Banner.jpg">', wp_get_attachment_metadata(172685), 172685 ); ?></a>
+  <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="wp-content/uploads/2020/06/03.Banner_1.jpg">', wp_get_attachment_metadata(172772),172772 ); ?></a>
 
 </div>
 
@@ -36,16 +36,16 @@
                     
                     <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-outdoor/'); ?>">
+                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>">
                                 <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/10/DL8406AC_2_.jpg">', wp_get_attachment_metadata(45543), 45543 ); ?>
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/UNI8602PK.jpg">', wp_get_attachment_metadata(17649), 17649 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Quoizel Lighting</h4>
-                                        <h3 class="block-heading">Save 10% on Quoizel Outdoor Lighting</h3>
-                                        <h4 class="block-heading">Use Code "OUTDOOR10" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-outdoor/'); ?>" class="block-shop-link">Shop Now</a>
+                                        <h3 class="block-heading">Save 10% on Quoizel Bath</h3>
+                                        <h4 class="block-heading">Use Code "QUOIZEL10" at checkout!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
@@ -54,34 +54,52 @@
 
                      <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/innovations-lighting/innovations-chandeliers/'); ?>">
+                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>">
+                                <div class="block-picture">
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/03/QW4065AN.jpg">', wp_get_attachment_metadata(10836), 10836 ); ?>
+                                </div>
+                                <div class="block-caption-wrapper">
+                                    <div class="block-caption-container">
+                                        <h4 class="block-heading">Quoizel Lighting</h4>
+                                        <h3 class="block-heading">Save 10% on Quoizel Sconces</h3>
+                                        <h4 class="block-heading">Use Code "QUOIZEL10" at checkout!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>" class="block-shop-link">Shop Now</a>
+                                    </div>
+                                </div>
+                            </a>
+                         </div>
+                     </div>
+
+                     <div class="col-md-4">
+                        <div class="block-container">
+                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-mirrors/'); ?>">
+                                <div class="block-picture">
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/QR3700-1.jpg">', wp_get_attachment_metadata(22989), 22989 ); ?>
+                                </div>
+                                <div class="block-caption-wrapper">
+                                    <div class="block-caption-container">
+                                        <h4 class="block-heading">Quoizel Lighting</h4>
+                                        <h3 class="block-heading">Save 10% on Quoizel Mirrors</h3>
+                                        <h4 class="block-heading">Use Code "QUOIZEL10" at checkout!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-mirrors/'); ?>" class="block-shop-link">Shop Now</a>
+                                    </div>
+                                </div>
+                            </a>
+                         </div>
+                     </div>
+
+                     <div class="col-md-4">
+                        <div class="block-container">
+                            <a href="<?php echo site_url('/brands/innovations-lighting'); ?>">
                                 <div class="block-picture">
                                      <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/09/516-3I-BK-G121-8RB-2.jpg">', wp_get_attachment_metadata(38393), 38393 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
-                                        <h4 class="block-heading">Innovations Lighting Chandeliers</h4>
-                                        <h3 class="block-heading">Save 20% on Innovations Chandeliers</h3>
+                                        <h4 class="block-heading">Innovations Lighting</h4>
+                                        <h3 class="block-heading">Save 20% on All Innovations Lighting</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/innovations-lighting/innovations-chandeliers/'); ?>" class="block-shop-link">Shop Now</a>
-                                    </div>
-                                </div>
-                            </a>
-                         </div>
-                     </div>
-
-                     <div class="col-md-4">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/innovations-lighting/innovations-pendants/'); ?>">
-                                <div class="block-picture">
-                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/08/200C-AB.jpg">', wp_get_attachment_metadata(31214), 31214 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Innovations Lighting Pendants</h4>
-                                        <h3 class="block-heading">Save 20% on All Innovations Pendants</h3>
-                                        <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/innovations-lighting/innovations-pendants/'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php echo site_url('/brands/innovations-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
@@ -178,23 +196,23 @@
                          </div>
                      </div> -->
 
-                     <div class="col-md-4">
+                     <!-- <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/brands/elk-home'); ?>">
+                            <a href="<?php //echo site_url('/brands/elk-home'); ?>">
                                 <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/10/d2688.jpg">', wp_get_attachment_metadata(57912), 57912 ); ?>
+                                    <?php //echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/10/d2688.jpg">', wp_get_attachment_metadata(57912), 57912 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Elk Home</h4>
                                         <h3 class="block-heading">Save 15% off all Elk Home</h3>
                                         <h4 class="block-heading">Use code "ELKHOME15" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php //echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                              </a>
                         </div>
-                     </div>
+                     </div> -->
 
                      <div class="col-md-4">
                         <div class="block-container">

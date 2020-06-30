@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.11.3 ]
+
+## Changed
+
+- Front page sale banners on mobile and desktop
+- Sale page sale banners on mobile and desktop
+- Front page quoizel sale image/description
+
+## Removed
+
+- Elk Home Sale
+
+## [ released ]
+
 ## [ 1.11.2 ]
 
 ## Added
