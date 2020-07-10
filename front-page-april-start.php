@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>">
-                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/02.Banner_640x800.jpg">', wp_get_attachment_metadata(172691), 172691 ); ?>
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/07/2.mobile_banner_640x800.jpg">', wp_get_attachment_metadata(172791), 172791 ); ?>
                 </a>
             </div>
         </div>
@@ -18,7 +18,7 @@
 
 <div class="desktop-only">
 
-    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/02.Banner_2.jpg">', wp_get_attachment_metadata(172684), 172684 ); ?></a>
+    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/07/2.Summer_banner_1920x600.jpg">', wp_get_attachment_metadata(172792), 172792 ); ?></a>
 
 </div>
 
@@ -218,7 +218,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 mt-5" style="text-align: center; background-color: #f6f6f6;">
+                    <div class="col-md-12 mt-5 button-container" style="text-align: center;">
                         <div class="mb-5 mt-5">
                             <a class="button" href="<?php echo site_url('/designer-collections'); ?>">
                                 See All Designer Collections
@@ -252,7 +252,7 @@
                 </div>
 
                 <!-- LIGHTING IDEAS -->
-                <div class="col-md-4 p-3" style="background-color: #f6f6f6;">
+                <div class="col-md-4 p-3 button-container">
 
                     <div class="row h-100">
 
@@ -299,7 +299,7 @@
 
             <?php get_recent_post_data(); ?>
 
-            <div class="col-md-12 mt-5" style="text-align: center; background-color: #f6f6f6;">
+            <div class="col-md-12 mt-5 button-container" style="text-align: center;">
 
                 <div class="mb-5 mt-5">
 
@@ -403,7 +403,7 @@
     </div>
 
     <!-- ACCORDION  -->
-    <div id="accordion-container" class="row justify-content-center mt-5" style="background-color: #f6f6f6;">
+    <div class="row justify-content-center mt-5 accordion-container">
 
         <div class="col-md-8 p-4">
 

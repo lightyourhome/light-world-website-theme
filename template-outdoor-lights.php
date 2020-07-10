@@ -78,7 +78,7 @@
 
         </div>
 
-        <div class="col-md-12 mt-5" style="text-align: center; background-color: #f6f6f6;">
+        <div class="col-md-12 mt-5 button-container" style="text-align: center;">
 
             <div class="mb-5 mt-5">
 
@@ -118,7 +118,7 @@
 
                     <?php get_recent_post_data(); ?>
 
-                    <div class="col-md-12 mt-5 mb-5" style="text-align: center; background-color: #f6f6f6;">
+                    <div class="col-md-12 mt-5 mb-5 button-container" style="text-align: center;">
 
                         <div class="mb-5 mt-5">
 

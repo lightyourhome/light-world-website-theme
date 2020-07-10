@@ -4,7 +4,7 @@
 
 <div class="container px-0 mt-5">
   <div class="row">
-    <div class="col-md-12" style="background-color: #f6f6f6; text-align: center;">
+    <div class="col-md-12 title-container" style="text-align: center;">
       <div class="home-hero-desc mt-5 mb-5">
         <h1>Site Map</h1>
       </div>

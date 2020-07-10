@@ -14,6 +14,28 @@ jQuery(function($) {
 	
 	}
 
+	$(window).scroll( function() { addStickyNav() } );
+
+	let navigation = document.getElementById('header-container')
+	let offset = navigation.offsetTop;
+
+	function addStickyNav() {
+
+		if ( window.pageYOffset >= offset ) {
+
+			navigation.classList.add('sticky-nav');
+			$('#woocommerce-wrapper-shop').css({ 'margin-top' : '30px' });
+
+		} else {
+
+			navigation.classList.remove('sticky-nav');
+			$('#woocommerce-wrapper-shop').css({ 'margin-top' : 'none' });
+
+
+		}
+
+	}
+
 });
 
  document.addEventListener("DOMContentLoaded", initAccordion, true);

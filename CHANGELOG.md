@@ -4,6 +4,37 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ released ] - 7.10.2020
+
+## [ 1.12.0 ]
+
+## Added
+
+- Sticky navigation to all platforms (CSS and JS)
+- WooCommerce single product tabs template
+- class title-container/button-container to all page title containers
+- Product dimensions to product summary
+
+## Changed 
+
+- Header layout
+- Cart icon to SVG image
+- Header styling
+- Search icon size
+- Logo to horizontal version
+- Header, footer, button container colors
+- Sale banners with new colors
+- Header margin to auto
+- fa icon hover color
+- Wrapped single product tabs in anchor (makes tabs act as buttons)
+- template-bucks-county.php to reflect ceiling lights/wall lights templates
+- accordion styling
+
+## Removed
+
+- Row above header on mobile (free shipping with every order)
+- Some inline styles from page templates
+
 ## [ released ]
 
 ## Changed 

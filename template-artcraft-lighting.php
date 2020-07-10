@@ -11,7 +11,7 @@
               </div>
 			</div>
 
-        <div class="col-lg-4 col-12" style="background-color: #fbfbfb;">
+        <div class="col-lg-4 col-12 title-container">
             <div class="row h-100 justify-content-center">
                 <div class="col-lg-12 col-12 my-auto">
                     <div class="prod_cat_text" style="background-color: #fbfbfb;  padding: 10px;">
@@ -104,7 +104,7 @@
                               </div>
 
 
-                    <div class="col-md-12 mt-5" style="text-align: center; background-color: #f6f6f6;">
+                    <div class="col-md-12 mt-5 button-container" style="text-align: center;">
                         <div class="mb-5 mt-5">
                             <a href="<?php echo site_url('/product-category/artcraft-lighting'); ?>">
                                 <button class="button">Shop All Artcraft Lighting</button>

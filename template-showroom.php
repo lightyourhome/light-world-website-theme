@@ -10,7 +10,7 @@
                 <img id="home-image"
                     src="<?php echo site_url('/wp-content/uploads/2018/10/Light_World_Showroom_Small.jpg'); ?>">
             </div>
-            <div class="col-md-12" style="background-color: #f6f6f6; text-align: center;">
+            <div class="col-md-12 title-container" style="text-align: center;">
                 <div class="home-hero-desc">
                     <h2>Explore Light World</h2>
                     <h3>Pennsylvania's Premier Lighting Showroom</h3>
@@ -396,7 +396,7 @@
     <div class="container-fluid">
 
         <!-- ACCORDION  -->
-        <div id="accordion-container" class="row justify-content-center mt-5" style="background-color: #f6f6f6;">
+        <div class="row justify-content-center mt-5 accordion-container">
 
             <div class="col-md-8 p-4">
 
