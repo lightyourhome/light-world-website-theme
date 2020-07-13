@@ -14,7 +14,7 @@
         <div class="col-lg-4 col-12 title-container">
             <div class="row h-100 justify-content-center">
                 <div class="col-lg-12 col-12 my-auto">
-                    <div class="prod_cat_text" style="background-color: #fbfbfb;  padding: 10px;">
+                    <div class="prod_cat_text" style="padding: 10px;">
                         <h2 class="prod-cat-title">Feiss Collection</h2>
                     </div>
                 </div>

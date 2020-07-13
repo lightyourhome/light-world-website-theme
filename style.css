@@ -2032,6 +2032,10 @@ object {
     background-color: #EDEEF0;
   }
   
+  .woocommerce a.button {
+    color: #fff;
+  }
+
   a.button, button.button {
       background-color: #000!important;
       border-radius: 0;
@@ -2045,7 +2049,7 @@ object {
       -o-text-shadow: none!important;
       border: none!important;
       background-repeat: no-repeat;
-      color: #fff;
+      color: #fff !important;
       cursor: pointer;
       display: inline-block;
       font-size: 12px!important;
@@ -3673,7 +3677,7 @@ object {
   }
   
   .cart-contents:before {
-      content: url('http://localhost/lightyourhome.com_april/wp-content/themes/light-world/assets/cart.svg');
+      content: url('http://lightyourhome.com/wp-content/themes/light-world/assets/cart.svg');
       display: inline-block;
       width: 24px;
       height: 24px;
