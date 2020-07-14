@@ -6,6 +6,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ] - 7.14.2020
 
+## [ 1.12.4 ]
+
+## Added
+
+- Paypal integration
+
+## Changed
+
+- Payment options styling
+
+## Removed
+
+- Paypal "credit cards accepted"
+
+## [ released ] - 7.14.2020
+
 ## [ 1.12.3 ]
 
 ## Removed
