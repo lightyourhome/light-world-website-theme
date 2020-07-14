@@ -203,7 +203,7 @@
 
 					</div>
 
-					<div id="brand-container-mobile" class="col-sm-6 col-6 col-md-8 my-auto mx-auto">
+					<div id="brand-container-mobile" class="col-sm-6 col-6 col-md-8 my-auto">
 
 
 						<a href="<?php echo site_url('/home'); ?>">
@@ -228,7 +228,7 @@
 					
 					</div>
 
-					<div id="header-extra-nav-items" class="col-xs-3 col-sm-1 col-2 my-auto mx-auto pt-1 justify-content-center">
+					<div id="header-extra-nav-items" class="col-xs-3 col-sm-1 col-2 my-auto mx-auto justify-content-center">
 
 						<ul class="mb-0 ml-0" style="list-style: none; width: 100%;">
 							<li id="header-cart" class="mt-1"><?php echo display_woo_cart(); ?></li>
