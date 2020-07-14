@@ -3072,6 +3072,10 @@ object {
   .select2-selection__arrow {
     top: 13px!important;
   }
+
+  .woocommerce-checkout #payment div.payment_box input.js-sv-wc-payment-gateway-credit-card-form-input[type="tel"] {
+    font-size: 1em !important;
+  }
   
   /*HOVER COLOR FOR STAFF PICKS CATEGORY GO BACK BUTTON */
   .staff-picks-btn:hover {
