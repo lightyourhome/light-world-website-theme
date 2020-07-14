@@ -36,57 +36,57 @@
                     
                     <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/brands/quoizel-lighting'); ?>">
+                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>">
                                 <div class="block-picture">
                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/UNI8602PK.jpg">', wp_get_attachment_metadata(17649), 17649 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Quoizel Lighting</h4>
-                                        <h3 class="block-heading">Save 15% on All Quoizel Lighting</h3>
-                                        <h4 class="block-heading">Use code "QUOIZEL15" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/brands/quoizel-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        <h3 class="block-heading">Save 10% on Quoizel Bath</h3>
+                                        <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
                          </div>
                      </div>
 
-                     <!-- <div class="col-md-4">
+                     <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php //echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>">
+                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>">
                                 <div class="block-picture">
-                                    <?php //echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/03/QW4065AN.jpg">', wp_get_attachment_metadata(10836), 10836 ); ?>
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/03/QW4065AN.jpg">', wp_get_attachment_metadata(10836), 10836 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Quoizel Lighting</h4>
                                         <h3 class="block-heading">Save 10% on Quoizel Sconces</h3>
                                         <h4 class="block-heading">Use Code "QUOIZEL10" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php //echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
                          </div>
                      </div>
- -->
-                     <!-- <div class="col-md-4">
+
+                     <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php //echo site_url('/product-category/quoizel-lighting/quoizel-mirrors/'); ?>">
+                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-mirrors/'); ?>">
                                 <div class="block-picture">
-                                    <?php //echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/QR3700-1.jpg">', wp_get_attachment_metadata(22989), 22989 ); ?>
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/QR3700-1.jpg">', wp_get_attachment_metadata(22989), 22989 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Quoizel Lighting</h4>
                                         <h3 class="block-heading">Save 10% on Quoizel Mirrors</h3>
                                         <h4 class="block-heading">Use Code "QUOIZEL10" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php //echo site_url('/product-category/quoizel-lighting/quoizel-mirrors/'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-mirrors/'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
                          </div>
-                     </div> -->
+                     </div>
 
                      <div class="col-md-4">
                         <div class="block-container">
