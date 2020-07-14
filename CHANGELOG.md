@@ -4,6 +4,14 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ released ] - 7.14.2020
+
+## [ 1.12.3 ]
+
+## Removed
+
+- innovations sale
+
 ## [ released ] - 7.13.2020
 
 ## [ 1.12.2 ]
