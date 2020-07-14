@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.11.4 ]
+
+## Changed
+
+- Quoizel sale on front page and sales page
+
+## [ released ]
+
 ## [ 1.11.3 ]
 
 ## Changed
