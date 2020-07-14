@@ -12,7 +12,7 @@
 
               <div class="row">
                 <div class="col-md-12">
-                  <div class="prod_cat_text mt-5 mb-5" style="background-color: #fbfbfb;  padding: 10px;">
+                  <div class="prod_cat_text mt-5 mb-5 title-container" style="padding: 10px;">
                     <h2 class="prod-cat-title">New and Trending</h2>
                     <p>This is Light World’s hand-picked selection of New and Trending light fixtures! All of our New and Trending lights are a part of 2020 introductions from the best names in lighting. The fixtures we choose are trendy, eye-catching and artistic. Take a look around and we are sure you will agree with us!</p>
                   </div>

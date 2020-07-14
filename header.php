@@ -114,17 +114,9 @@
 
 	<header>
 
-		<div id="header-container" class="container">
+		<div class="container">
 
-			<div id="header-store-info-row-mobile" class="row" style="background-color: rgb(253, 156, 21); border-bottom: 2px solid #f6f6f6;">
-				
-				<div class="col-sm-12">
-                  	<p class="p--upper">Free Shipping On All Orders</p>
-                </div>
-
-			</div>
-
-			<div id="header-extra-links-row" class="row pt-2 pb-2" style="">
+			<div id="header-extra-links-row" class="row pt-1 pb-1">
 				
 				<div class="col-sm-12">
 					
@@ -142,110 +134,127 @@
 
 			</div>
 
-			<div class="row justify-content-center">
-				
-				<div class="col-md-2 col-2">
+		</div>
+
+		<div id="header-container" class="container-fluid">
+
+			<div class="row justify-content-center h-100 no-gutters">
 					
-					<a href="<?php echo site_url('/home'); ?>">
-							
-						<div id="lyh-brand">
+					<div class="col-md-2 col-1 my-auto mx-auto d-none d-lg-block">
+						
+						<a href="<?php echo site_url('/home'); ?>">
 								
-							<img src="<?php echo site_url('/wp-content/uploads/2020/03/lyh_logo_wide.jpg'); ?>">
-							
-						</div>
-					
-					</a>
+							<div id="lyh-brand" class="">
+									
+								<img src="https://lightyourhome.com/wp-content/uploads/2020/03/lyh_logo_mobile_large.jpg<?php //echo site_url('/wp-content/uploads/2020/03/lyh_logo_wide.jpg'); ?>">
+								
+							</div>
+						
+						</a>
 
-					<nav id="mobile-menu" class="" style="display: none;">
+					</div>
 
-						<?php
+					<div id="mobile-menu" class="col-md-1 col-1 my-auto mx-auto d-none">
 
-						 wp_nav_menu(
-							
-							array(
+						<nav>
 
-							'theme_location' =>  'header-new-menu',
+							<?php
+
+								wp_nav_menu(
+	
+									array(
+
+										'theme_location' =>  'header-new-menu',
+
+								) 	);
+							?>
+
+						</nav>
+
+					</div>
+
+					<div class="col-1 col-sm-1 d-none d-md-none d-lg-none d-xl-none d-block my-auto mx-auto">
+
+						<ul>
+
+							<li id="header-mobile-search" style=""><a href="javascript:void(0)"><i class="fa fa-search"></i></a></li>
+
+						</ul>
+
+					</div>
+
+					<div id="navigation-col-desktop" class="col-sm-6 col-lg-6">
+
+						<nav id="desktop-menu">
+
+							<?php
+
+								wp_nav_menu(
+
+								array(
+
+									'theme_location' =>  'header-new-menu',
 
 								) );
-						?>
-
-					</nav>
-
-				</div>
-
-				<div id="navigation-col-desktop" class="col-sm-6 col-lg-6">
-
-					<nav id="desktop-menu">
-
-						<?php
-
-							wp_nav_menu(
-
-							array(
-
-							'theme_location' =>  'header-new-menu',
-
-							) );
-						
-						?>
-
-					</nav>
-
-				</div>
-
-				<div id="brand-container-mobile" class="col-sm-8 col-6">
-
-					<a href="<?php echo site_url('/home'); ?>">
-						
-						<div id="lyh-mobile-brand">
 							
-							<img src="<?php echo site_url('/wp-content/uploads/2020/03/lyh_logo_mobile_large.jpg'); ?>" style="height: 40px;">
-						
-						</div>
-					
-					</a>
+							?>
 
-				</div>
+						</nav>
 
-				<div id="desktop-search-container" class="col-md-3 col-sm-4">
-									
-					<div id="desktop-search">
-						
-						<div class="mt-3">
+					</div>
+
+					<div id="brand-container-mobile" class="col-sm-6 col-6 col-md-8 my-auto mx-auto">
+
+
+						<a href="<?php echo site_url('/home'); ?>">
 							
-							<?php echo do_shortcode('[wpdreams_ajaxsearchpro id=4]'); ?>
+							<div id="lyh-mobile-brand">
+								
+								<img src="https://lightyourhome.com/wp-content/uploads/2020/03/lyh_logo_mobile_large.jpg<?php //echo site_url('/wp-content/uploads/2020/03/lyh_logo_mobile_large.jpg'); ?>" style="height: 40px;">
+							
+							</div>
 						
+						</a>
+
+					</div>
+
+					<div id="desktop-search-container" class="col-md-3 col-sm-4 my-auto mx-auto">
+										
+						<div id="desktop-search">
+															
+								<?php echo do_shortcode('[wpdreams_ajaxsearchpro id=4]'); ?>
+													
 						</div>
 					
 					</div>
-				
+
+					<div id="header-extra-nav-items" class="col-xs-3 col-sm-1 col-2 my-auto mx-auto pt-1 justify-content-center">
+
+						<ul class="mb-0 ml-0" style="list-style: none; width: 100%;">
+							<li id="header-cart" class="mt-1"><?php echo display_woo_cart(); ?></li>
+						</ul>
+
+					</div>
+
 				</div>
 
-				<div id="header-extra-nav-items" class="col-sm col-4" style="">
-
-					<ul class="mb-0 ml-0" style="list-style: none; width: 100%;">
-						<li id="header-mobile-search" style="float: left;"><a href="javascript:void(0)"><i class="fa fa-search ml-2"></i></a></li>
-						<li id="header-cart" style="float: right;"><?php echo display_woo_cart(); ?></li>
-					</ul>
-
-				</div>
-
-			</div>
-
-			<div id="mobile-search-bar" class="row mb-2" style="display: none;">
-				
-				<div class="col-md-12">
+				<div id="mobile-search-bar" class="row mb-2" style="display: none; padding-left: 15px; padding-right: 15px;">
 					
-					<div><?php echo do_shortcode('[wpdreams_ajaxsearchpro id=3]'); ?></div>
-							
+					<div class="col-md-12">
+						
+						<div><?php echo do_shortcode('[wpdreams_ajaxsearchpro id=3]'); ?></div>
+								
+					</div>
 				
 				</div>
-			
+				
 			</div>
-
+				
+		</div>
+				
 	</div>
 
-	<hr class="orange-hr">
+	<!-- <hr class="orange-hr"> -->
 
 	<?php do_action('store-notice-header'); ?>
 

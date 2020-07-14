@@ -34,7 +34,7 @@ get_header(); ?>
 
     <?php if ( is_product_category() && is_parent_category() == FALSE && is_designer_collection() == FALSE ) : ?>
 
-    <div class="col-md-12 col-12" style="background-color: #f6f6f6;">
+    <div class="col-md-12 col-12 title-container">
 
       <div class="row">
 
@@ -66,13 +66,13 @@ get_header(); ?>
 
     </div>
 
-    <div class="col-lg-4 col-12" style="background-color: #fbfbfb;">
+    <div class="col-lg-4 col-12 title-container">
 
       <div class="row h-100 justify-content-center">
 
         <div class="col-lg-12 col-12 my-auto">
 
-          <div class="prod_cat_text" style="background-color: #fbfbfb;  padding: 10px;">
+          <div class="prod_cat_text title-container" style="padding: 10px;">
 
             <h2 class="prod-cat-title">
 
@@ -96,13 +96,13 @@ get_header(); ?>
 
     </div>
 
-    <div class="col-lg-8 col-12" style="background-color: #fbfbfb;">
+    <div class="col-lg-8 col-12 title-container">
 
       <div class="row h-100 justify-content-center">
 
         <div class="col-lg-12 col-12 my-auto">
 
-          <div class="prod_cat_text" style="background-color: #fbfbfb;  padding: 10px;">
+          <div class="prod_cat_text title-container" style="padding: 10px;">
 
             <h2 class="prod-cat-title">
 
@@ -159,7 +159,7 @@ get_header(); ?>
           <!-- The WooCommerce loop -->
           <?php if ( is_shop() && empty( get_search_query() ) ) : ?>
 
-          <div class="col-md-12 col-12 mb-5" style="background-color: #f6f6f6;">
+          <div class="col-md-12 col-12 mb-5 title-container">
 
             <div class="row">
 
@@ -181,7 +181,7 @@ get_header(); ?>
 
           <div class="row">
 
-            <div class="col-md-12 col-12 mb-5" style="background-color: #f6f6f6;">
+            <div class="col-md-12 col-12 mb-5 title-container">
 
               <div class="row">
 

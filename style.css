@@ -2,7 +2,7 @@
 Theme Name: Light World
 Author: Jim Merk
 Description: Light World's Custom Wordpress Theme
-Version: 1.11.0
+Version: 1.12.0
 Text Domain: light-world
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
@@ -1393,11 +1393,11 @@ object {
       display: none!important;
     }
   
-    #header-cart {
+    /* #header-cart {
     position: absolute;
-    top: 25%;
+    top: 30%;
     width: 100%;
-    }
+    } */
   
     .cart-contents:before {
       font-size: 32px;
@@ -1702,6 +1702,13 @@ object {
   
   @media screen and (max-width: 767px) {
 
+    #header-container {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      margin-right: 0px !important;
+      margin-left: 0px !important;
+    }
+
     .woocommerce-ordering { float: none!important; }
   
     #dark-overlay {
@@ -1956,7 +1963,8 @@ object {
     margin: 10px;
   }
 
-  #accordion-container p {
+  .accordion-container, .accordion-container p {
+    background-color: #EDEEF0;
     text-align: left;
   }
 
@@ -1968,12 +1976,29 @@ object {
     color: orange;
     font-size: 24px!important;
   }
+
+  .fa-search {
+    font-size: 20px!important;
+    /* margin-top: 2px; */
+  }
   
   /* Removes "View Cart" from woocommerce ajax add to cart button */
   .woocommerce a.added_to_cart {
     display: none;
   }
-  
+
+  #header-store-info-row-mobile, #header-extra-links-row {
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  #header-extra-links-row a {
+    color: #000;
+  }
+
+  header {
+    border-bottom: 1px solid rgba(0,0,0,.2);
+  }
+
   .woocommerce a.tfs-remove {
     display: block;
     font-size: 2em;
@@ -2001,9 +2026,18 @@ object {
   #quick-view-gallery-images .thumbnail-arrow-right {
     transform: translatey(0);
   }
+
+  .button-container,
+  .title-container {
+    background-color: #EDEEF0;
+  }
   
+  .woocommerce a.button {
+    color: #fff;
+  }
+
   a.button, button.button {
-      background-color: #222!important;
+      background-color: #000!important;
       border-radius: 0;
       -webkit-box-shadow: none!important;
       -o-box-shadow: none!important;
@@ -2015,7 +2049,7 @@ object {
       -o-text-shadow: none!important;
       border: none!important;
       background-repeat: no-repeat;
-      color: #fff!important;
+      color: #fff !important;
       cursor: pointer;
       display: inline-block;
       font-size: 12px!important;
@@ -2059,6 +2093,22 @@ object {
   justify-content: center;
   float: left;
   }
+
+  .sticky-nav {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    z-index: 10000000;
+  }
+
+  .sticky-nav + .content + #woocommerce-wrapper-shop {
+    padding-top: 60px;
+  }
+
+  .sticky-nav + #woocommerce-wrapper-shop {
+    margin-top: 30px;
+  }
   
   #header-contact-and-account {
   font-family:'lato';
@@ -2083,7 +2133,7 @@ object {
   }
 
   .orange-hr {
-    background-color: rgb(253, 156, 21);
+    background-color: #D9B44A;
     margin-bottom: 0;
     height: 2px;
   }
@@ -2121,7 +2171,7 @@ object {
   
   /* hover color for SM Icons */
   .fa:hover {
-    color: #000;
+    color: #D9B44A;
     transition: .5s;
   }
   
@@ -2210,17 +2260,17 @@ object {
   
   /* blog time color */
   time {
-    color: #ffa500;
+    color: #D9B44A;
   }
   
   /* blog heading color */
   .url, .fn, .n {
-    color: #ffa500;
+    color: #D9B44A;
   }
   
   /* blog heading link color */
   h2.entry-title > a {
-    color: #ffa500!important;
+    color: #D9B44A!important;
   }
   
   /*Blog Post Heading Color */
@@ -2229,7 +2279,7 @@ object {
   }
   
   ul, li > a:hover {
-    color: #ffa500!important;
+    color: #D9B44A!important;
   }
   
   .hp-content > h1 {
@@ -2244,12 +2294,12 @@ object {
   
   /*CHANGES HOVER COLOR FOR READ MORE BUTTON IN BLOG */
   .btn-read-more:hover {
-    color: #ffa500;
+    color: #D9B44A;
   }
   
   /*CHANGES HOVER COLOR FOR CHILD ANCHORS OF PARAGRAPH */
   p > a:hover {
-    color: #ffa500;
+    color: #D9B44A;
   }
   
   .breadcrumb {
@@ -2350,11 +2400,11 @@ object {
   .image-hover:hover {
     transition: .2s;
   }
-  
+/*   
   .picture-container:hover .image-title-bar {
     background-color: rgb(255, 241, 224);
     transition: .5s ease;
-  }
+  } */
   
   .staff-picks-image {
     opacity: 1;
@@ -2365,7 +2415,7 @@ object {
     backface-visibility: hidden;
   }
   
-  .button-container {
+  /* .button-container {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -2375,7 +2425,7 @@ object {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1000;
-  }
+  } */
   
   #image-hover-button {
     display: none;
@@ -2400,7 +2450,7 @@ object {
     -webkit-filter: blur(2px);
   }
 
-  .button-container-chandelier, .button-container-fan {
+  /* .button-container-chandelier, .button-container-fan {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -2409,7 +2459,7 @@ object {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
+  } */
   
   /* CENTERS SHOP BUTTON FOR LARGE OUTDOOR IMAGE */
   .button-container-outdoor_large {
@@ -2480,7 +2530,7 @@ object {
   }
   
   .lw-showroom-nav-button {
-    background-color: #222!important;
+    background-color: #000;
         border-radius: 0;
         -webkit-box-shadow: none!important;
         -o-box-shadow: none!important;
@@ -2637,7 +2687,7 @@ object {
   ## WALL LIGHTS AND CEILINGS LIGHTS PICTURE BOXES 
   -----------------------------------------------------*/
 
-  .hover-button-container {
+  /* .hover-button-container {
     position: absolute;
     top: 25%;
     right: 50%;
@@ -2645,7 +2695,7 @@ object {
     opacity: 0;
     border: 2px solid white;
     padding: 80px;
-  }
+  } */
   
   .picture-container:hover .hover-button-container {
     opacity: 1;
@@ -2945,7 +2995,7 @@ object {
       font-size: 1em;
       padding: .5em 0;
       text-align: center;
-      background-color: rgb(253, 156, 21);
+      background-color: orange;
       color: #fff;
       z-index: 1;
       box-shadow: none!important;
@@ -3084,6 +3134,10 @@ object {
     float: none;
     line-height: 0px;
     margin: 0px;
+  }
+
+  .woocommerce div.product .woocommerce-tabs ul.tabs li a {
+    display: block;
   }
   
   .ui-corner-all {
@@ -3539,7 +3593,10 @@ object {
   ### SINGLE PRODUCT DESIGN CHANGES
   -----------------------------------------*/
   
-  .sp-finish, .sp-categories, .sp-tags {
+  .sp-finish, 
+  .sp-categories, 
+  .sp-tags,
+  .sp-dimensions {
     text-align: left;
     font-size: 16px;
   }
@@ -3612,7 +3669,7 @@ object {
   .cart_label {
     cursor: pointer;
     display: none;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   a .cart_label:hover {
@@ -3620,22 +3677,18 @@ object {
   }
   
   .cart-contents:before {
-      font-family: FontAwesome;
-      content: "\f07a";
-      font-size:30px;
-      margin-top:10px;
-      font-style:normal;
-      font-weight:400;
-      padding-right:0px;
-      vertical-align: bottom;
-      color: #ffc107;
+      content: url('http://lightyourhome.com/wp-content/themes/light-world/assets/cart.svg');
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      /* margin-top:10px; */
   }
   .cart-contents:hover {
       text-decoration: none;
   }
   .cart-contents-count {
       color: #fff;
-      background-color: #dc3545;
+      background-color: #dc143c;
       font-weight: bold;
       border-radius: 15px;
       padding: 1px 6px;

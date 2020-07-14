@@ -10,7 +10,7 @@
             <div class="col-md-12">
                 <img id="home-image" src="<?php echo site_url('/wp-content/uploads/2020/03/wll_lights_mobile.jpg'); ?>">
             </div>
-            <div class="col-md-12" style="background-color: #f6f6f6; text-align: center;">
+            <div class="col-md-12 title-container" style="text-align: center;">
                 <div class="home-hero-desc">
                     <h3>Wall Lights</h3>
                     <p>Add Layers of Light</p>
@@ -64,7 +64,7 @@
 
                     </div>
 
-                    <div class="col-md-12 mt-5" style="text-align: center; background-color: #f6f6f6;">
+                    <div class="col-md-12 mt-5 title-container" style="text-align: center;">
 
                         <div class="mb-5 mt-5">
 
@@ -89,7 +89,7 @@
 
                     <?php get_recent_post_data(); ?>
 
-                    <div class="col-md-12 mt-5" style="text-align: center; background-color: #f6f6f6;">
+                    <div class="col-md-12 mt-5 title-container" style="text-align: center;">
 
                         <div class="mb-5 mt-5">
 
@@ -109,7 +109,7 @@
 
 </div>
 
-<div id="accordion-container" class="row justify-content-center mt-5" style="background-color: #f6f6f6;">
+<div class="row justify-content-center mt-5 accordion-container">
 
     <div class="col-md-8 p-4">
 

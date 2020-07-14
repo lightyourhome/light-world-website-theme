@@ -4,7 +4,7 @@
 			<div id="content" class="container-fluid">
 				<div id="primary" class="content-area col-md-12">
 					<main id="main" class="site-main" role="main">
-						<div class="row justify-content-center mt-3" style="background-color: #fbfbfb;">
+						<div class="row justify-content-center mt-3 title-container">
 							<div class="col-md-12 col-12 mt-3 mb-3">
 								<div class="prod_cat_text">
 									<h1 class="prod-cat-title">Dual Finishes</h1></div>

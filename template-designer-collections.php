@@ -17,10 +17,10 @@
                   <div class="col-lg-4 col-md-4 col-12 my-auto">
                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/01/ED_EllenDeGeneres.jpg">', wp_get_attachment_metadata(116997), 116997 ); ?>
                   </div>
-                  <div class="col-lg-8 col-md-8 col-12" style="background-color: #fbfbfb;">
+                  <div class="col-lg-8 col-md-8 col-12 button-container">
                     <div class="row justify-content-center">
-                      <div class="col-lg-12 col-12 mt-2">
-                        <div class="prod_cat_text" style="background-color: #fbfbfb;  padding: 10px;">
+                      <div class="col-lg-12 col-12 mt-2 button-container">
+                        <div class="prod_cat_text" style="padding: 10px;">
                           <h2 class="prod-cat-title">ED By Ellen DeGeneres</h2>
                           <a href="<?php echo site_url('/brands/generation-lighting'); ?>"><p><strong>Generation Lighting</strong></p></a>
                           <p>Ellen DeGeneres is a highly accredited comedian, television host, actress, writer, and producer. She is best known for her Television Talk Show "The Ellen DeGeneres Show". After teaming up with Generation Lighting, her passion for interior design came to life in her ED Collection. Inspired by Relaxed Mid-Century and Rustic Modern designs, the ED collection is perfect for any space ranging from Modern to Contemporary.</p>
@@ -39,10 +39,10 @@
                   <div class="col-lg-4 col-md-4 col-12 my-auto">
                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/01/cm_designer-page_images.jpg">', wp_get_attachment_metadata(116996), 116996 ); ?>
                   </div>
-                  <div class="col-lg-8 col-md-8 col-12" style="background-color: #fbfbfb;">
+                  <div class="col-lg-8 col-md-8 col-12 button-container">
                     <div class="row justify-content-center">
-                      <div class="col-lg-12 col-12 mt-2">
-                        <div class="prod_cat_text" style="background-color: #fbfbfb;  padding: 10px;">
+                      <div class="col-lg-12 col-12 mt-2 button-container">
+                        <div class="prod_cat_text" style="padding: 10px;">
                           <h2 class="prod-cat-title">Chapman & Myers</h2>
                           <a href="<?php echo site_url('/brands/generation-lighting'); ?>"><p><strong>Generation Lighting</strong></p></a>
                           <p>Together, E.F. Chapman and Kyle Myers have founded Chapman & Myers. Chapman designs principally within a classical idiom of fundamental principles, while Myers brings a more modern orientation and sensibility to their partnership. As a result, their collection provides a breadth of expression encompassing traditional, modern and transitional aesthetics.</p>
@@ -61,10 +61,10 @@
                   <div class="col-lg-4 col-md-4 col-12 my-auto">
                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/01/Kelly_KW.jpg">', wp_get_attachment_metadata(116998), 116998 ); ?>
                   </div>
-                  <div class="col-lg-8 col-md-8 col-12" style="background-color: #fbfbfb;">
+                  <div class="col-lg-8 col-md-8 col-12 button-container">
                     <div class="row justify-content-center">
-                      <div class="col-lg-12 col-12 mt-2">
-                        <div class="prod_cat_text" style="background-color: #fbfbfb;  padding: 10px;">
+                      <div class="col-lg-12 col-12 mt-2 button-container">
+                        <div class="prod_cat_text" style="padding: 10px;">
                           <h2 class="prod-cat-title">Kelly By Kelly Wearstler</h2>
                           <a href="<?php echo site_url('/brands/generation-lighting'); ?>"><p><strong>Generation Lighting</strong></p></a>
                           <p>Kelly Wearstler, founder and principal of Kelly Wearstler, is an American designer creating multi-faceted, experiential residential, hospitality, commercial and retail environments as well as expansive collections of lifestyle product designs. With the demonstration of provocative concepts and expressive narratives signature to her extensive body of work, Wearstler is internationally recognized with distinctive design awards and numerous publications.</p>
@@ -82,10 +82,10 @@
                   <div class="col-lg-4 col-md-4 col-12 my-auto">
                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/01/TOB_Portrait_credit-to-Michelle-Arcila.jpg">', wp_get_attachment_metadata(116999), 116999 ); ?>
                   </div>
-                  <div class="col-lg-8 col-md-8 col-12" style="background-color: #fbfbfb;">
+                  <div class="col-lg-8 col-md-8 col-12 button-container">
                     <div class="row justify-content-center">
-                      <div class="col-lg-12 col-12 mt-2">
-                        <div class="prod_cat_text" style="background-color: #fbfbfb;  padding: 10px;">
+                      <div class="col-lg-12 col-12 mt-2 button-container">
+                        <div class="prod_cat_text" style="padding: 10px;">
                           <h2 class="prod-cat-title">TOB By Thomas O'Brien</h2>
                           <a href="<?php echo site_url('/brands/generation-lighting'); ?>"><p><strong>Generation Lighting</strong></p></a>
                           <p>Thomas O’Brien is an interior and home furnishings designer based in New York City. He is the founder and President of Aero Studios, one of America’s leading design firms, and the proprietor of Aero Ltd., the iconic home boutique that is the retail face of the studio. Since establishing Aero in 1992, O’Brien has

@@ -68,8 +68,20 @@ if ( post_password_required() ) {
 			</div>
 
 		<?php endif; ?>
-
+		
 		<?php woocommerce_get_template( 'single-product/meta.php' ); ?>
+
+		<?php if ( $product->has_dimensions() ) : ?>
+
+			<div class="mt-3 mb-3 sp-dimensions">
+
+				<span><b>Dimensions: </b></span>
+
+				<span><?php echo esc_html( $product->get_dimensions() ); ?><span>
+
+			</div>
+
+		<?php endif; ?>
 
 		<div class="mb-3 sp-categories">
 			<span><b>Categories: </b></span>
