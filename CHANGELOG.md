@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.11.5 ]
+
+## Changed 
+
+- Quoizel sale wording
+
+## Removed 
+
+- Artcraft sale
+
+## [ released ]
+
 ## [ 1.11.4 ]
 
 ## Changed
