@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>">
-                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/04.Banner_640x800.jpg">', wp_get_attachment_metadata(172775), 172775 ); ?>
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/02.Banner_640x800.jpg">', wp_get_attachment_metadata(172691), 172691 ); ?>
                 </a>
             </div>
         </div>
@@ -18,7 +18,7 @@
 
 <div class="desktop-only">
 
-    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/04.Banner_1.jpg">', wp_get_attachment_metadata(172773), 172773 ); ?></a>
+    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/02.Banner_2.jpg">', wp_get_attachment_metadata(172684), 172684 ); ?></a>
 
 </div>
 
@@ -117,16 +117,16 @@
 
                     <div class="col-md-6">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>">
+                            <a href="<?php echo site_url('/product-category/brands/quoizel-lighting'); ?>">
                                 <div class="block-picture">
                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/quoizel_bath_sale.jpg">', wp_get_attachment_metadata(172776), 172776 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Quoizel Lighting</h4>
-                                        <h3 class="block-heading">Save 10% on Quoizel Bath</h3>
+                                        <h3 class="block-heading">Save 10% on Quoizel</h3>
                                         <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/brands/quoizel-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
