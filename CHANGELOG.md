@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ] - 7.13.2020
 
+## [ 1.12.2 ]
+
+## Changed
+
+- Checkout credit card input font size
+
+## [ released ] - 7.13.2020
+
 ## [ 1.12.1 ]
 
 ## Changed
