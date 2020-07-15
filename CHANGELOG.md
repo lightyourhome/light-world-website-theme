@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ] - 7.15.2020
 
+## [ 1.12.6 ]
+
+## Changed
+
+- Logo sizes
+
+## [ unreleased ] - 7.15.2020
+
 ## [ 1.12.5 ]
 
 ## Removed
