@@ -2,7 +2,7 @@
 Theme Name: Light World
 Author: Jim Merk
 Description: Light World's Custom Wordpress Theme
-Version: 1.12.6
+Version: 1.12.7
 Text Domain: light-world
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
@@ -1316,9 +1316,19 @@ object {
     .shop-container {
       max-width: 1700px;
     }
+
+    .entry-summary p {
+      text-align: center;
+    }
   }
   
   @media screen and (min-width: 1400px) {
+
+    #sp-print {
+
+      display: block !important;
+
+    }
 
     .cart_label {
       display: inline-block!important;
@@ -1504,6 +1514,7 @@ object {
   }
   
   @media screen and (max-width: 768px) {
+
 
     #lyh-mobile-brand {
       justify-content: left !important;
@@ -1711,6 +1722,15 @@ object {
   
   @media screen and (max-width: 767px) {
 
+    /* .price {
+      margin-top: 20px;
+      text-align: left !important;
+    }   */
+
+    .single_add_to_cart_button {
+      width: 100%;
+    }
+
     #header-container {
       padding-left: 0px !important;
       padding-right: 0px !important;
@@ -1885,6 +1905,10 @@ object {
   }
 
   @media (min-width: 769px ) {
+
+    .flex-next, .flex-prev {
+      display: none !important;
+    }
 
     .desktop-only { display:block !important; }
 
@@ -2214,10 +2238,10 @@ object {
     color: #fff;
   }
     
-  .entry-summary p {
+  /* .entry-summary p {
     text-align: left;
     font-size: 16px;
-  }
+  } */
   
   .entry-summary .product_meta {
     text-align: left;
@@ -3924,9 +3948,50 @@ object {
   
   /* ALIGNS WOO TEXT CENTER */
   .woocommerce, .products, .product, .price, .woocommerce-Price-amount, .amount
-  { text-align: center!important; }
-  
-  
+  { text-align: center; }
+
+  .woocommerce-variation-add-to-cart,
+  .variations_button,
+  .woocommerce-variation-add-to-cart-enabled {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-size: 1.5rem;
+    z-index: 5;
+    color: #D9B44A;
+  }
+
+  .flex-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 1.5rem;
+    z-index: 5;
+    color: #D9B44A;
+  }
+
+  .product-type-simple form.cart {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-title-link_variable {
+    cursor: pointer;
+  }
+
+  .price {
+    margin-top: 20px;
+    font-weight: 600;
+  }
+
+  .sp-description p {
+    text-align: left;
+  }  
   
   /*---------------------------------------- 
   ### WOOCOMMERCE SHOP LOOP FINISH SWATCHES 

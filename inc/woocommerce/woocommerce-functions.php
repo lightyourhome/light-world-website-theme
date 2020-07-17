@@ -1170,6 +1170,31 @@ if ( ! function_exists('remove_item_from_cart') ) :
 
 endif;
 
+add_filter( 'woocommerce_single_product_carousel_options', 'tfs_filter_single_product_carousel_options' );
+if ( ! function_exists('tfs_filter_single_product_carousel_options') ) :
+
+  /**
+   * Change the options of the single product flex slider on mobile devices
+   * 
+   * @param array - flex slider options
+   * @return array - flex slider options
+   */
+  function tfs_filter_single_product_carousel_options( $options ) {
+
+    if ( wp_is_mobile() ) {
+
+      $options['controlNav'] = false;
+      $options['directionNav'] = false;
+      $options['prevText'] = '';
+      $options['nextText'] = '';
+
+    }
+
+    return $options;
+
+  }
+
+endif;
 
 add_filter('woocommerce_single_product_zoom_options', 'single_product_zoom_options');
 if ( ! function_exists('single_product_zoom_options') ) :
@@ -1364,7 +1389,16 @@ if ( ! function_exists('tfs_hide_select') ) :
 endif;
 
 
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
+if ( wp_is_mobile() ) {
+
+  add_action( 'before_sp_overview_product_overview_table', 'woocommerce_template_product_description', 20 );
+
+} else {
+
+  add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
+
+}
+
 if ( ! function_exists('woocommerce_template_product_description') ) :
 
   /**
@@ -1376,29 +1410,36 @@ if ( ! function_exists('woocommerce_template_product_description') ) :
 
     if ( strlen( $product->get_description() ) > 40 ) : ?>
 
-    <div class="sp-description">
-      <?php woocommerce_get_template( 'single-product/tabs/description.php' ); ?>
-    </div>
+      <div class="sp-description">
+        <?php woocommerce_get_template( 'single-product/tabs/description.php' ); ?>
+      </div>
 
-  <?php endif; ?>
+    <?php endif; 
 
-  <div id="sp-print" class="desktop-only">
-    <span title="Print This Product"><i class="fa fa-print" aria-hidden="true"></i></span>
-  </div>
+    if ( ! wp_is_mobile() ) : 
+    
+    ?>
 
-  <?php
+      <div id="sp-print" style="display: none;">
+    		<span title="Print This Product"><i class="fa fa-print" aria-hidden="true"></i></span>
+      </div>
+      
+      
 
-  if ( $product->is_type('variable') ) : ?>
+    <?php endif;
 
-    <div class="sp-available-options mb-3">
-      <h3>Available Options: </h3>
-    </div>
+    if ( $product->is_type('variable') && ! wp_is_mobile() ) : ?>
 
-  <?php else : ?>
+      <div class="sp-available-options mb-3">
+        <h3>Available Options: </h3>
+      </div> 
 
-    <div class="sp-available-options mb-3"></div>
+    <?php else : ?>
 
-  <?php endif;
+      <div class="sp-available-options mb-3"></div>
+
+    <?php endif;
+
   }
 
 endif;
@@ -1538,6 +1579,8 @@ if ( ! function_exists('woo_overview_tab_content') )  :
       <div class="row mt-3 <?php if ( $manufacturer_warranty_and_sheets_missing == true ) : ?>justify-content-center<?php endif; ?>">
     
         <div class="<?php if ( $manufacturer_warranty_and_sheets_missing !== true ) : ?>col-md-6 col-12<?php else : ?>col-md-8 col-12<?php endif; ?>">
+
+          <?php do_action('before_sp_overview_product_overview_table'); ?>
     
           <table class="woocommerce-product-attributes sp-overview-table">
             <tbody>
@@ -1752,3 +1795,56 @@ if ( ! function_exists('display_mobile_filter') ) :
   }
 
 endif;
+
+// add_filter( 'woocommerce_format_price_range', 'tfs_format_price_range', 10, 3 );
+// if ( ! function_exists('tfs_format_price_range') ) :
+
+//   function tfs_format_price_range( $price, $range, $to ) {
+
+//     return sprintf( '%s: %s', __( 'From', 'light-world' ), wc_price( $from ) );
+
+//   }
+
+// endif;
+
+
+/**
+ * Change price format from range to "From:"
+ *
+ * @param float $price
+ * @param obj $product
+ * @return str
+ */
+function tfs_variable_price_format( $price, $product ) {
+
+  $prefix = sprintf('<b>%s: </b>', __('From', 'light-world'));
+  $format = '%s to %s';
+
+  $min_price_regular = $product->get_variation_regular_price( 'min', true );
+  $min_price_sale    = $product->get_variation_sale_price( 'min', true );
+  $max_price = $product->get_variation_price( 'max', true );
+  $min_price = $product->get_variation_price( 'min', true );
+
+  $price = ( $min_price_sale == $min_price_regular ) ?
+      wc_price( $min_price_regular ) :
+      '<del>' . wc_price( $min_price_regular ) . '</del>' . '<ins>' . wc_price( $min_price_sale ) . '</ins>';
+
+  if ( is_product() ) {
+
+    return ( $min_price == $max_price ) ?
+    $price :
+    sprintf($format, wc_price( $min_price ), wc_price( $max_price ) );
+
+  } elseif ( is_shop() || is_product_category() ) {
+
+    return ( $min_price == $max_price ) ?
+    $price :
+    sprintf('%s%s', $prefix, $price);
+
+  }
+
+}
+
+add_filter( 'woocommerce_variable_sale_price_html', 'tfs_variable_price_format', 10, 2 );
+add_filter( 'woocommerce_variable_price_html', 'tfs_variable_price_format', 10, 2 );
+

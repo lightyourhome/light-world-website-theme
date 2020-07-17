@@ -4,6 +4,34 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ unreleased ] - in progress
+
+## [ 1.13.0 ]
+
+## Added
+
+- Navigation arrows to mobile sliders
+
+## Changed
+
+- Moved single product description to overview tab
+- Moved add to cart button up on single product pages
+- Add to cart button size on mobile
+- Price range display on single products ( displays "to" as delimiter for price range instead of "-" )
+- Price range display in shop loop ( From *insert price* instead of *price* - *price* )
+
+## Removed
+
+- Gallery thumbnails on mobile devices
+
+## [ released ] - 7.15.2020
+
+## [ 1.12.6 ]
+
+## Changed
+
+- Elk Lighting Sale container column size
+
 ## [ released ] - 7.15.2020
 
 ## [ 1.12.6 ]
