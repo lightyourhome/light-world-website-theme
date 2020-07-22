@@ -169,7 +169,7 @@ jQuery(function($) {
 
     function appendSingleProductGalleryNavigation() {
 
-        if ( $( '.flex-next' ) && $( '.flex-prev' ) ) {
+       if ( $( '.flex-viewport' )[0] && $('.woocommerce-product-gallery__wrapper').children().length > 1 ) {
 
             $('.flex-direction-nav').remove();
 
@@ -196,7 +196,7 @@ jQuery(function($) {
 
             });
 
-        }
+       }
 
     }
 

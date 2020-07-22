@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Added
 
 - Navigation arrows to mobile sliders
+- Minor layout adjustments to front page (home)
+- Email sign up form on home page between Inspiration and Why Shop With Us
+- Action hook for embedded email sign up
+- Additional product variation url's to product loop color swatches
+- New picture block layout to function get_recent_post_data()
+- function create_picture_block to dynamically create picture blocks
 
 ## Changed
 
@@ -19,10 +25,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add to cart button size on mobile
 - Price range display on single products ( displays "to" as delimiter for price range instead of "-" )
 - Price range display in shop loop ( From *insert price* instead of *price* - *price* )
+- Logo Size on Desktop
+- Pictures blocks layout/positioning to flex
+- Moved picture blocks text to beneath picture container rather than overlay
+- Changed picture block text size on Mobile
+- Picture block html on all pages
 
 ## Removed
 
 - Gallery thumbnails on mobile devices
+- Borders under headings on home page
+
+## Fixed
+
+- Product Loop Swatch slider bug where variation urls were not changing
 
 ## [ released ] - 7.15.2020
 

@@ -142,7 +142,7 @@ add_action( 'widgets_init', 'light_world_widgets_init' );
  * Enqueue scripts and styles.
  */
 function enqueue_light_world_scripts() {
-	wp_enqueue_style( 'light-world-style', get_template_directory_uri() . '/style.css', array(), '1.12.4' );
+	wp_enqueue_style( 'light-world-style', get_template_directory_uri() . '/style.css', array(), '1.13.0' );
 
 	//wp_enqueue_style( 'light-world-style-2', get_template_directory_uri() . '/css/theme.css', array(), '03192020', true );
 
@@ -154,7 +154,7 @@ function enqueue_light_world_scripts() {
 	wp_enqueue_script( 'mobile-search-bar-js', get_template_directory_uri() . '/js/mobile_search_init.js', array(), '07102020', true);
 
 	/* Color Swatch JS */
-	wp_enqueue_script( 'woocommerce-product-swatches', get_template_directory_uri() . '/js/swatch_slider_1.0.js', array(), '03112020', true);
+	wp_enqueue_script( 'woocommerce-product-swatches', get_template_directory_uri() . '/js/swatch_slider_1.0.js', array(), '07222020', true);
 
 	/* Single Product JS */
 	wp_enqueue_script( 'woocommerce-single-product-scripts', get_template_directory_uri() . '/js/woo_single_product.js', array(), '1.5.1', true );
@@ -400,5 +400,105 @@ if ( ! function_exists( 'tfs_post_nav' ) ) :
 		<?php
 	}
 endif;
+
+if ( ! function_exists( 'create_picture_block' ) ) :
+
+	/**
+	 * Returns a picture block according to the parameters specificied
+	 * 
+	 * @param string - $classes - columns to be used for the picture block
+	 * @param string - $href - URL for the picture block
+	 * @param string - $img_src - the img source
+	 * @param string - $hidden_link_text - The next for the pop up link e.g "shop now"
+	 * @param int - $attachment_id - the passed images attachment id if available
+	 * @param int - the number of headings for the picture box
+	 * @param string $heading_1_text - The first heading text
+	 * @param string $heading_2_text - The second heading text
+	 * @param string $heading_3_text - The third heading text
+	 * 
+	 */
+	function create_picture_block( $classes, $href, $img_src, $hidden_link_text, $attachment_id = NULL, $number_of_headings, $heading_1_text = NULL, $heading_2_text = NULL, $heading_3_text = NULL ) {  ?>
+
+		<div class="<?php echo $classes; ?>">
+
+			<div class="block-picture-primary-container">
+
+				<div class="block-container">
+					<a href="<?php echo $href; ?>">
+					<div class="block-picture">
+						<?php
+						
+							if ( $attachment_id !== NULL ) {
+
+								echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . $img_src . '">', wp_get_attachment_metadata( $attachment_id ), get_post_thumbnail_id( $attachment_id ) );
+
+							} else {
+								
+								?>
+
+									<img style="height: auto; width: 100%;" src="<?php echo $img_src; ?>">
+
+								<?php
+
+							}
+						
+						?>
+					</div>
+					<div class="block-caption-wrapper">
+						<div class="block-caption-container">
+							<?php
+
+								if ( $number_of_headings == 3 ) :
+								
+									?>
+
+										<h4 class="block-heading"><?php echo $heading_1_text; ?></h4>
+										<h3 class="block-heading"><?php echo $heading_2_text; ?></h3>
+										<h4 class="block-heading"><?php echo $heading_3_text; ?></h4>
+										<a style="text-align: center;" href="<?php echo $href; ?>" class="block-shop-link"><?php echo $hidden_link_text; ?></a>
+
+									<?php
+
+								elseif ( $number_of_headings == 2 ) :
+
+									?>
+
+										<h4 class="block-heading"><?php echo $heading_1_text; ?></h4>
+										<h3 class="block-heading"><?php echo $heading_2_text; ?></h3>
+										<a style="text-align: center;" href="<?php echo $href; ?>" class="block-shop-link"><?php echo $hidden_link_text; ?></a>
+
+									<?php
+
+								elseif ( $number_of_headings == 1 ) :
+
+									?>
+
+										<h4 class="block-heading"><?php echo $heading_1_text; ?></h4>
+										<a style="text-align: center;" href="<?php echo $href; ?>" class="block-shop-link"><?php echo $hidden_link_text; ?></a>
+
+									<?php
+
+								endif;
+								
+							?>
+						</div>
+						
+					</div>
+					
+					</a>
+					
+				</div>
+
+			</div>
+		
+		</div>
+
+	<?php
+
+	}
+	
+endif;
+
+
 
 

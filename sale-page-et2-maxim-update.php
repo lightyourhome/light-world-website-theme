@@ -35,58 +35,76 @@
                     </div>
                     
                     <div class="col-md-4">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/UNI8602PK.jpg">', wp_get_attachment_metadata(17649), 17649 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Quoizel Lighting</h4>
-                                        <h3 class="block-heading">Save 10% on Quoizel Bath</h3>
-                                        <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>" class="block-shop-link">Shop Now</a>
-                                    </div>
-                                </div>
-                            </a>
-                         </div>
-                     </div>
 
-                     <div class="col-md-4">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/03/QW4065AN.jpg">', wp_get_attachment_metadata(10836), 10836 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Quoizel Lighting</h4>
-                                        <h3 class="block-heading">Save 10% on Quoizel Sconces</h3>
-                                        <h4 class="block-heading">Use Code "QUOIZEL10" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>" class="block-shop-link">Shop Now</a>
-                                    </div>
-                                </div>
-                            </a>
-                         </div>
-                     </div>
+                        <div class="block-picture-primary-container">
 
-                     <div class="col-md-4">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-mirrors/'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/QR3700-1.jpg">', wp_get_attachment_metadata(22989), 22989 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Quoizel Lighting</h4>
-                                        <h3 class="block-heading">Save 10% on Quoizel Mirrors</h3>
-                                        <h4 class="block-heading">Use Code "QUOIZEL10" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-mirrors/'); ?>" class="block-shop-link">Shop Now</a>
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/UNI8602PK.jpg">', wp_get_attachment_metadata(17649), 17649 ); ?>
                                     </div>
-                                </div>
-                            </a>
-                         </div>
-                     </div>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Quoizel Lighting</h4>
+                                            <h3 class="block-heading">Save 10% on Quoizel Bath</h3>
+                                            <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="block-picture-primary-container">
+
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/03/QW4065AN.jpg">', wp_get_attachment_metadata(10836), 10836 ); ?>
+                                    </div>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Quoizel Lighting</h4>
+                                            <h3 class="block-heading">Save 10% on Quoizel Sconces</h3>
+                                            <h4 class="block-heading">Use Code "QUOIZEL10" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="block-picture-primary-container">
+
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-mirrors/'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/QR3700-1.jpg">', wp_get_attachment_metadata(22989), 22989 ); ?>
+                                    </div>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Quoizel Lighting</h4>
+                                            <h3 class="block-heading">Save 10% on Quoizel Mirrors</h3>
+                                            <h4 class="block-heading">Use Code "QUOIZEL10" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-mirrors/'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                      <!-- <div class="col-md-4">
                         <div class="block-container">
@@ -178,58 +196,76 @@
                         </div>
                      </div> -->
 
-                     <div class="col-md-4">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/brands/elk-lighting'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/05/89047_8.jpg">', wp_get_attachment_metadata(166726), 166726 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Elk Lighting</h4>
-                                        <h3 class="block-heading">Save 15% off all Elk Lighting</h3>
-                                        <h4 class="block-heading">Use code "ELKLIGHTING15" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/elk-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                    <div class="col-md-4">
+
+                        <div class="block-picture-primary-container">
+
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/brands/elk-lighting'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/05/89047_8.jpg">', wp_get_attachment_metadata(166726), 166726 ); ?>
                                     </div>
-                                </div>
-                             </a>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Elk Lighting</h4>
+                                            <h3 class="block-heading">Save 15% off all Elk Lighting</h3>
+                                            <h4 class="block-heading">Use code "ELKLIGHTING15" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/elk-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
                         </div>
-                     </div>
 
-                     <div class="col-md-4">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/brands/mitzi-lighting'); ?>">
-                                <div class="block-picture">
-                                  <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2018/12/mitzi_Arden_1.jpg">', wp_get_attachment_metadata(7356), 7356 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Mitzi Lighting</h4>
-                                        <h3 class="block-heading">Save 20% off all Mitzi Lighting</h3>
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="block-picture-primary-container">
+
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/brands/mitzi-lighting'); ?>">
+                                    <div class="block-picture">
+                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2018/12/mitzi_Arden_1.jpg">', wp_get_attachment_metadata(7356), 7356 ); ?>
+                                    </div>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Mitzi Lighting</h4>
+                                            <h3 class="block-heading">Save 20% off all Mitzi Lighting</h3>
+                                            <h4 class="block-heading">Prices already discounted!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/mitzi-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>                                   
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-md-4">
+
+                        <div class="block-picture-primary-container">
+
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/brands/hudson-valley-lighting'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/07/5800-AGB_800.jpg">', wp_get_attachment_metadata(27793), 27793 ); ?>
+                                    </div>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                        <h4 class="block-heading">Hudson Valley</h4>
+                                        <h3 class="block-heading">Save 20% off all Hudson Valley Lighting</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/mitzi-lighting'); ?>" class="block-shop-link">Shop Now</a>
-                                    </div>                                   
-                                </div>
-                            </a>
-                         </div>
-                     </div>
+                                        <a style="text-align: center;" href="<?php echo site_url('/brands/hudson-valley-lighting'); ?>" class="block-shop-link">Shop Now</a>                                    </div>
+                                    </div>
+                                </a>
+                            </div>
 
-                     <div class="col-md-4">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/brands/hudson-valley-lighting'); ?>">
-                                <div class="block-picture">
-                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/07/5800-AGB_800.jpg">', wp_get_attachment_metadata(27793), 27793 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                    <h4 class="block-heading">Hudson Valley</h4>
-                                    <h3 class="block-heading">Save 20% off all Hudson Valley Lighting</h3>
-                                    <h4 class="block-heading">Prices already discounted!</h4>
-                                    <a style="text-align: center;" href="<?php echo site_url('/brands/hudson-valley-lighting'); ?>" class="block-shop-link">Shop Now</a>                                    </div>
-                                </div>
-                            </a>
-                         </div>
-                     </div>
+                        </div>
+
+                    </div>
 
                     <div class="col-md-12" style="border-top: 2px solid #d3d3d3;"></div>
 

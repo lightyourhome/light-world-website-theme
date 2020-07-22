@@ -3,10 +3,13 @@ jQuery(function($) {
 let swatchSlideIds = [];
 let swatchStartIndexes = [];
 
-document.addEventListener('DOMContentLoaded', initSwatchSliders, true);
+$(document).ready(function() {
+
+  initSwatchSliders();
+
+});
 
 function initSwatchSliders() {
-
 
   let unfilteredIds = [];
   swatchSlideIds = [];
@@ -19,17 +22,17 @@ function initSwatchSliders() {
   unfilteredIds = [];
 
   for (let i = 0; i < $getSlidesByClass.length; i++) {
-      unfilteredIds.push($getSlidesByClass[i].getAttribute('data-id'));
+    unfilteredIds.push($getSlidesByClass[i].getAttribute('data-id'));
   }
 
   let filteredIds = unfilteredIds.filter( (x, y) => unfilteredIds.indexOf(x) == y);
 
   for (let x = 0; x < filteredIds.length; x++) {
-      swatchSlideIds.push(filteredIds[x]);
+    swatchSlideIds.push(filteredIds[x]);
   }
 
   for (let d = 0; d < $getVariableTitleCountByClass.length; d++) {
-      $getVariableTitleCountByClass[d].id = swatchSlideIds[d];
+    $getVariableTitleCountByClass[d].id = swatchSlideIds[d];
   }
 
   for (let e = 0; e < $getVariablePriceCountByClass.length; e++) {
@@ -37,22 +40,26 @@ function initSwatchSliders() {
   }
 
   for (let j = 0; j < swatchSlideIds.length; j++) {
-      swatchStartIndexes.push(0);
-      changeProductTitleAndPriceLink(0, j);
+    swatchStartIndexes.push(0);
+    setProductVariationUrls(0, j, $('.' + swatchSlideIds[j]).children('#ss-variation-url').attr('href') );
   }
 
 }
 
-  function changeProductTitleAndPriceLink(index, sliderId) {
+  function setProductVariationUrls(index, sliderId, productUrl) {
 
     swatchStartIndexes[sliderId] = index;
 
     let $currentSliderImageNodes = $('.' + swatchSlideIds[sliderId]);
 
-    let $currentSlideLink = $($currentSliderImageNodes).eq(index).children().attr('href');
+    //current prod slide url
+    $($currentSliderImageNodes).children('#ss-variation-url').attr('href', productUrl);
 
-    $('#' + swatchSlideIds[sliderId] + "-" + sliderId).attr('href', $currentSlideLink);
-    $('#' + swatchSlideIds[sliderId] + "-" + sliderId).closest('a').siblings('.product-title-link_variable').attr('href', $currentSlideLink);
+    //current prod title url
+    $($currentSliderImageNodes).siblings('.product-title-link_variable').attr('href', productUrl);
+
+    //price prod url
+    $($currentSliderImageNodes).siblings('.product-price-link_variable').attr('href', productUrl);
 
   }
 
@@ -61,6 +68,8 @@ function initSwatchSliders() {
     $('body').on('click', '.swatch_slide_dot', function() {
 
       let $slideIndex = $(this).attr('data-index');
+
+      let $productUrl = $(this).attr('data-prod-url');
 
       let $getSlideId = $(this).parent().parent().parent().children($(this)).attr('data-id');
 
@@ -87,13 +96,13 @@ function initSwatchSliders() {
 
       for (var i = 0; i < swatchSlideIds.length; i++) {
 
-          if ($getSlideId == swatchSlideIds[i]) {
+        if ($getSlideId == swatchSlideIds[i]) {
 
-            let slideId = swatchSlideIds.indexOf($getSlideId);
+          let slideId = swatchSlideIds.indexOf($getSlideId);
 
-              changeProductTitleAndPriceLink($slideIndex, slideId);
+          setProductVariationUrls($slideIndex, slideId, $productUrl);
 
-          }
+        }
       }
 
     });
