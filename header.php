@@ -146,7 +146,7 @@
 								
 							<div id="lyh-brand" class="">
 									
-								<img src="https://lightyourhome.com/wp-content/uploads/2020/03/lyh_logo_mobile_large.jpg<?php //echo site_url('/wp-content/uploads/2020/03/lyh_logo_wide.jpg'); ?>">
+								<img src="https://www.lightyourhome.com/wp-content/uploads/2020/07/lyh_logo_1.png">
 								
 							</div>
 						
@@ -203,14 +203,14 @@
 
 					</div>
 
-					<div id="brand-container-mobile" class="col-sm-6 col-6 col-md-8 my-auto">
+					<div id="brand-container-mobile" class="col-sm-6 col-6 col-md-8">
 
 
 						<a href="<?php echo site_url('/home'); ?>">
 							
 							<div id="lyh-mobile-brand">
 								
-								<img src="https://lightyourhome.com/wp-content/uploads/2020/03/lyh_logo_mobile_large.jpg<?php //echo site_url('/wp-content/uploads/2020/03/lyh_logo_mobile_large.jpg'); ?>" style="height: 40px;">
+								<img src="https://www.lightyourhome.com/wp-content/uploads/2020/07/lyh_logo_1.png" style="height: 36px;">
 							
 							</div>
 						
