@@ -2,7 +2,7 @@
 Theme Name: Light World
 Author: Jim Merk
 Description: Light World's Custom Wordpress Theme
-Version: 1.12.1
+Version: 1.12.4
 Text Domain: light-world
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
@@ -3108,6 +3108,10 @@ object {
   div.wc-proceed-to-checkout > a.checkout-button {
    background-color: orange!important;
   }
+
+  img[alt="PayPal acceptance mark"] {
+    display: none !important;
+  }
   
   p.form-row > button.button { background-color:orange!important;
   }
@@ -4150,16 +4154,16 @@ object {
       color: #787878;
       content: " ";
       cursor: pointer;
-      display: none;
+      display: inline-block;
       font-family: FontAwesome;
       font-size: 6px;
-      height: 1.3em;
+      height: 3em;
       line-height: 1.28em;
       text-align: center;
       text-indent: -0.02em;
-      vertical-align: top;
-      width: 1.3em;
-      padding: 1px;
+      vertical-align: middle;
+      width: 3em;
+      padding: 10px;
   }
   
   .berocket_label_widgets {
