@@ -421,74 +421,70 @@ if ( ! function_exists( 'create_picture_block' ) ) :
 
 		<div class="<?php echo $classes; ?>">
 
-			<div class="block-picture-primary-container">
+			<div class="block-container">
+				<a href="<?php echo $href; ?>">
+				<div class="block-picture">
+					<?php
+					
+						if ( $attachment_id !== NULL ) {
 
-				<div class="block-container">
-					<a href="<?php echo $href; ?>">
-					<div class="block-picture">
+							echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . $img_src . '">', wp_get_attachment_metadata( $attachment_id ), get_post_thumbnail_id( $attachment_id ) );
+
+						} else {
+							
+							?>
+
+								<img style="height: auto; width: 100%;" src="<?php echo $img_src; ?>">
+
+							<?php
+
+						}
+					
+					?>
+				</div>
+				<div class="block-caption-wrapper">
+					<div class="block-caption-container">
 						<?php
-						
-							if ( $attachment_id !== NULL ) {
 
-								echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . $img_src . '">', wp_get_attachment_metadata( $attachment_id ), get_post_thumbnail_id( $attachment_id ) );
-
-							} else {
-								
+							if ( $number_of_headings == 3 ) :
+							
 								?>
 
-									<img style="height: auto; width: 100%;" src="<?php echo $img_src; ?>">
+									<h4 class="block-heading"><?php echo $heading_1_text; ?></h4>
+									<h3 class="block-heading"><?php echo $heading_2_text; ?></h3>
+									<h4 class="block-heading"><?php echo $heading_3_text; ?></h4>
+									<a style="text-align: center;" href="<?php echo $href; ?>" class="block-shop-link"><?php echo $hidden_link_text; ?></a>
 
 								<?php
 
-							}
-						
+							elseif ( $number_of_headings == 2 ) :
+
+								?>
+
+									<h4 class="block-heading"><?php echo $heading_1_text; ?></h4>
+									<h3 class="block-heading"><?php echo $heading_2_text; ?></h3>
+									<a style="text-align: center;" href="<?php echo $href; ?>" class="block-shop-link"><?php echo $hidden_link_text; ?></a>
+
+								<?php
+
+							elseif ( $number_of_headings == 1 ) :
+
+								?>
+
+									<h4 class="block-heading"><?php echo $heading_1_text; ?></h4>
+									<a style="text-align: center;" href="<?php echo $href; ?>" class="block-shop-link"><?php echo $hidden_link_text; ?></a>
+
+								<?php
+
+							endif;
+							
 						?>
 					</div>
-					<div class="block-caption-wrapper">
-						<div class="block-caption-container">
-							<?php
-
-								if ( $number_of_headings == 3 ) :
-								
-									?>
-
-										<h4 class="block-heading"><?php echo $heading_1_text; ?></h4>
-										<h3 class="block-heading"><?php echo $heading_2_text; ?></h3>
-										<h4 class="block-heading"><?php echo $heading_3_text; ?></h4>
-										<a style="text-align: center;" href="<?php echo $href; ?>" class="block-shop-link"><?php echo $hidden_link_text; ?></a>
-
-									<?php
-
-								elseif ( $number_of_headings == 2 ) :
-
-									?>
-
-										<h4 class="block-heading"><?php echo $heading_1_text; ?></h4>
-										<h3 class="block-heading"><?php echo $heading_2_text; ?></h3>
-										<a style="text-align: center;" href="<?php echo $href; ?>" class="block-shop-link"><?php echo $hidden_link_text; ?></a>
-
-									<?php
-
-								elseif ( $number_of_headings == 1 ) :
-
-									?>
-
-										<h4 class="block-heading"><?php echo $heading_1_text; ?></h4>
-										<a style="text-align: center;" href="<?php echo $href; ?>" class="block-shop-link"><?php echo $hidden_link_text; ?></a>
-
-									<?php
-
-								endif;
-								
-							?>
-						</div>
-						
-					</div>
-					
-					</a>
 					
 				</div>
-
+				
+				</a>
+				
 			</div>
 		
 		</div>
