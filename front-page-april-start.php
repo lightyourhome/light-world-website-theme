@@ -133,7 +133,7 @@
                          </div>
                      </div>
 
-                     <div class="col-md-4">
+                     <div class="col-md-6">
                         <div class="block-container">
                             <a href="<?php echo site_url('/brands/elk-lighting'); ?>">
                                 <div class="block-picture">
