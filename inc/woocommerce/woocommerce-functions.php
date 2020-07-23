@@ -163,78 +163,82 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
 */
 
   function custom_loop_product_thumbnail() {
-      global $product;
-      $prodId = $product->get_id();
-      $simpleProdImg = $product->get_image();
 
-      if (!$product->is_type('variable') ) { ?>
+    global $product;
+    $prodId = $product->get_id();
+    $simpleProdImg = $product->get_image();
+
+    if ( ! $product->is_type('variable') ) { 
+      
+      ?>
 
         <div class="woo-simple-product"><a href="<?php echo get_the_permalink($prodId); ?>"><?php echo $simpleProdImg; ?></a></div>
 
-        <?php }
+      <?php 
+      
+    } elseif ( $product->is_type('variable') ) {
 
-        if ($product->is_type('variable') ) {
+      $imageVariationFinishArr = array();
+      $variationArr = array();
 
-          $imageVariationFinishArr = array();
-          $variationArr = array();
+      foreach ( $product->get_visible_children() as $variation_id ) {
 
-          foreach ($product->get_visible_children() as $variation_id) {
-              // Get an instance of the WC_Product_Variation object
-              $getVariation = wc_get_product($variation_id);
+        // Get an instance of the WC_Product_Variation object
+        $getVariation = wc_get_product($variation_id);
 
-              $variationFinish = $getVariation->get_attribute('finish');
+        $variationFinish = $getVariation->get_attribute('finish');
 
-              $imageVariationFinishArr[$variationFinish][] = $variation_id;
+        $imageVariationFinishArr[$variationFinish][] = $variation_id;
 
-            }
+      }
 
-            $filteredVariableIds = array();
+      $filteredVariableIds = array();
 
-            foreach ( $imageVariationFinishArr as $variableFin => $var_id ) {
+      foreach ( $imageVariationFinishArr as $variableFin => $var_id ) {
 
-               array_push($filteredVariableIds, $var_id[0]);
+        array_push($filteredVariableIds, $var_id[0]);
 
-            }
+      }
 
-          //generate a unique id for each slider
-          $id = uniqid();
-          $quick_view_id = uniqid();
+      //generate a unique id for each slider
+      $id = uniqid();
+      $quick_view_id = uniqid();
 
-          $count = 0;
+      $count = 0;
 
-        foreach ( $filteredVariableIds as $variation_id ) {
-           //Get an instance of the WC_Product_Variation object
+      foreach ( $filteredVariableIds as $variation_id ) {
 
-           $variation = wc_get_product( $variation_id );
+          //Get an instance of the WC_Product_Variation object
+          $variation = wc_get_product( $variation_id );
 
-           $finish = $variation->get_attribute('finish');
-           $prod_slug = $product->get_slug($prodId);
+          $finish = $variation->get_attribute('finish');
+          $prod_slug = $product->get_slug($prodId);
 
-           $variation_link = site_url('product/') . $prod_slug . '/?attribute_pa_finish=' . return_slug($finish);
+          $variation_link = site_url('product/') . $prod_slug . '/?attribute_pa_finish=' . return_slug($finish);
 
-           $img_url = wp_get_attachment_image_src( $variation->get_image_id(),  array('350', '350') );
-           $img_srcset = wp_get_attachment_image_srcset( $variation->get_image_id() );
+          $img_url = wp_get_attachment_image_src( $variation->get_image_id(),  array('350', '350') );
+          $img_srcset = wp_get_attachment_image_srcset( $variation->get_image_id() );
 
-           //image extensions
-           $img_extensions = array('/.jpg/', '/.jpeg/', '/.png/');
+          //image extensions
+          $img_extensions = array('/.jpg/', '/.jpeg/', '/.png/');
 
-           $img_webp_src = preg_replace($img_extensions, '.webp', $img_srcset);
+          $img_webp_src = preg_replace($img_extensions, '.webp', $img_srcset);
 
-           ?>
+          ?>
 
-
-  <div class="swatch_slide <?php echo $id; ?>" data-id="<?php echo $id; ?>">
-    <a href="<?php echo $variation_link; ?>">
-      <picture>
-        <source class="webp-src-set" srcset="<?php echo esc_attr($img_webp_src); ?>" type="image/webp">
-        <source srcset="<?php echo esc_attr($img_srcset); ?>">
-        <img height="350" width="350" src="<?php echo $img_url[0]; ?>" srcset="<?php echo esc_attr($img_srcset); ?>">
-      </picture>
-    </a>
-  </div>
+            <div class="swatch_slide <?php echo $id; ?>" data-id="<?php echo $id; ?>">
+              <a id="ss-variation-url" href="<?php echo $variation_link; ?>">
+                <picture>
+                  <source class="webp-src-set" srcset="<?php echo esc_attr($img_webp_src); ?>" type="image/webp">
+                  <source srcset="<?php echo esc_attr($img_srcset); ?>">
+                  <img height="350" width="350" src="<?php echo $img_url[0]; ?>" srcset="<?php echo esc_attr($img_srcset); ?>">
+                </picture>
+              </a>
+            </div>
 
           <?php
-          break;
+
+        break;
       }
     }
   }
@@ -431,53 +435,67 @@ if ( ! function_exists('woocommerce_loop_swatches') ) :
         $finishArr = array();
         $image_urls = array();
         $image_srcset = array();
+        $variation_links = array();
 
         $image_extensions = array('/.jpg/', '/.jpeg/', '/.png/');
 
         foreach ($product->get_visible_children() as $variation_id) {
-            // Get an instance of the WC_Product_Variation object
-            $variation = wc_get_product($variation_id);
+          // Get an instance of the WC_Product_Variation object
+          $variation = wc_get_product($variation_id);
 
-            $finish = $variation->get_attribute('finish');
+          $finish = $variation->get_attribute('finish');
 
-            array_push($finishArr, $finish);
-            array_push($image_urls, wp_get_attachment_image_src( $variation->get_image_id() ) );
-            array_push($image_srcset, wp_get_attachment_image_srcset( $variation->get_image_id() ) );
+          $prod_slug = $product->get_slug($prodId);
+
+          $variation_link = site_url('product/') . $prod_slug . '/?attribute_pa_finish=' . return_slug($finish);
+
+          array_push($variation_links, $variation_link);
+          array_push($finishArr, $finish);
+          array_push($image_urls, wp_get_attachment_image_src( $variation->get_image_id() ) );
+          array_push($image_srcset, wp_get_attachment_image_srcset( $variation->get_image_id() ) );
+
+        }
+
+        $finishArrUnique = array_unique($finishArr);
+
+        foreach ($finishArrUnique as $uniqueFinish) {
+
+          foreach ($color_swatch_links as $swatches => $swatch_link) {
+
+            if (strpos($uniqueFinish, $swatches) !== FALSE) { ?>
+
+              <a href="javascript:void(0)" class="swatch-border swatch_slide_dot" data-prod-url="<?php echo $variation_links[$count]; ?>" data-index="<?php echo $count; ?>" data-image-url="<?php echo $image_urls[$count][0]; ?>" data-image-srcset-jpg="<?php echo $image_srcset[$count]; ?>" data-img-srcset-webp="<?php echo preg_replace($image_extensions, '.webp', $image_srcset[$count]); ?>">
+                <img class="swatch-image img-circle" src="<?php echo $swatch_link; ?>">
+              </a>
+
+              <?php $count++;
+
+              break;
+
+            }
 
           }
 
-          $finishArrUnique = array_unique($finishArr);
+        }
 
-          foreach ($finishArrUnique as $uniqueFinish) {
-
-              foreach ($color_swatch_links as $swatches => $swatch_link) {
-
-                  if (strpos($uniqueFinish, $swatches) !== FALSE) { ?>
-
-           <a href="javascript:void(0)" class="swatch-border swatch_slide_dot" data-index="<?php echo $count; ?>" data-image-url="<?php echo $image_urls[$count][0]; ?>" data-image-srcset-jpg="<?php echo $image_srcset[$count]; ?>" data-img-srcset-webp="<?php echo preg_replace($image_extensions, '.webp', $image_srcset[$count]); ?>">
-             <img class="swatch-image img-circle" src="<?php echo $swatch_link; ?>">
-           </a>
-
-              <?php $count++; ?>
-
-              <?php break; ?>
-
-              <?php
-
-                  }
-              }
-          }
       } else if ($productFinishesCount > 3) {
 
         $finishArr = array();
         $image_urls = array();
         $image_srcset = array();
+        $variation_links = array();
 
         foreach ($product->get_visible_children() as $variation_id) {
             // Get an instance of the WC_Product_Variation object
             $variation = wc_get_product($variation_id);
 
             $finish = $variation->get_attribute('finish');
+
+            $prod_slug = $product->get_slug($prodId);
+
+            $variation_link = site_url('product/') . $prod_slug . '/?attribute_pa_finish=' . return_slug($finish);  
+
+            array_push( $variation_links, $variation_link );
 
             array_push($finishArr, $finish);
 
@@ -499,7 +517,7 @@ if ( ! function_exists('woocommerce_loop_swatches') ) :
 
                       ?>
 
-                      <a href="javascript:void(0)" class="swatch-border swatch_slide_dot" data-index="<?php echo $count; ?>" data-image-url="<?php echo $image_urls[$count][0]; ?>" data-image-srcset-jpg="<?php echo $image_srcset[$count]; ?>" data-img-srcset-webp="<?php echo preg_replace($image_extensions, '.webp', $image_srcset[$count]); ?>">
+                      <a href="javascript:void(0)" class="swatch-border swatch_slide_dot" data-prod-url="<?php echo $variation_links[$count]; ?>" data-index="<?php echo $count; ?>" data-image-url="<?php echo $image_urls[$count][0]; ?>" data-image-srcset-jpg="<?php echo $image_srcset[$count]; ?>" data-img-srcset-webp="<?php echo preg_replace($image_extensions, '.webp', $image_srcset[$count]); ?>">
                         <img class="swatch-image img-circle" src="<?php echo $swatch_link; ?>">
                       </a>
 
@@ -1170,6 +1188,31 @@ if ( ! function_exists('remove_item_from_cart') ) :
 
 endif;
 
+//add_filter( 'woocommerce_single_product_carousel_options', 'tfs_filter_single_product_carousel_options' );
+if ( ! function_exists('tfs_filter_single_product_carousel_options') ) :
+
+  /**
+   * Change the options of the single product flex slider on mobile devices
+   * 
+   * @param array - flex slider options
+   * @return array - flex slider options
+   */
+  function tfs_filter_single_product_carousel_options( $options ) {
+
+    if ( wp_is_mobile() ) {
+
+      $options['controlNav'] = false;
+      $options['directionNav'] = false;
+      $options['prevText'] = '';
+      $options['nextText'] = '';
+
+    }
+
+    return $options;
+
+  }
+
+endif;
 
 add_filter('woocommerce_single_product_zoom_options', 'single_product_zoom_options');
 if ( ! function_exists('single_product_zoom_options') ) :
@@ -1364,7 +1407,16 @@ if ( ! function_exists('tfs_hide_select') ) :
 endif;
 
 
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
+if ( wp_is_mobile() ) {
+
+  add_action( 'before_sp_overview_product_overview_table', 'woocommerce_template_product_description', 20 );
+
+} else {
+
+  add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
+
+}
+
 if ( ! function_exists('woocommerce_template_product_description') ) :
 
   /**
@@ -1376,29 +1428,36 @@ if ( ! function_exists('woocommerce_template_product_description') ) :
 
     if ( strlen( $product->get_description() ) > 40 ) : ?>
 
-    <div class="sp-description">
-      <?php woocommerce_get_template( 'single-product/tabs/description.php' ); ?>
-    </div>
+      <div class="sp-description">
+        <?php woocommerce_get_template( 'single-product/tabs/description.php' ); ?>
+      </div>
 
-  <?php endif; ?>
+    <?php endif; 
 
-  <div id="sp-print" class="desktop-only">
-    <span title="Print This Product"><i class="fa fa-print" aria-hidden="true"></i></span>
-  </div>
+    if ( ! wp_is_mobile() ) : 
+    
+    ?>
 
-  <?php
+      <div id="sp-print" style="display: none;">
+    		<span title="Print This Product"><i class="fa fa-print" aria-hidden="true"></i></span>
+      </div>
+      
+      
 
-  if ( $product->is_type('variable') ) : ?>
+    <?php endif;
 
-    <div class="sp-available-options mb-3">
-      <h3>Available Options: </h3>
-    </div>
+    if ( $product->is_type('variable') && ! wp_is_mobile() ) : ?>
 
-  <?php else : ?>
+      <div class="sp-available-options mb-3">
+        <h3>Available Options: </h3>
+      </div> 
 
-    <div class="sp-available-options mb-3"></div>
+    <?php else : ?>
 
-  <?php endif;
+      <div class="sp-available-options mb-3"></div>
+
+    <?php endif;
+
   }
 
 endif;
@@ -1538,6 +1597,8 @@ if ( ! function_exists('woo_overview_tab_content') )  :
       <div class="row mt-3 <?php if ( $manufacturer_warranty_and_sheets_missing == true ) : ?>justify-content-center<?php endif; ?>">
     
         <div class="<?php if ( $manufacturer_warranty_and_sheets_missing !== true ) : ?>col-md-6 col-12<?php else : ?>col-md-8 col-12<?php endif; ?>">
+
+          <?php do_action('before_sp_overview_product_overview_table'); ?>
     
           <table class="woocommerce-product-attributes sp-overview-table">
             <tbody>
@@ -1641,21 +1702,27 @@ if ( ! function_exists('get_recent_post_data') ) :
      ?>
 
       <div class="col-md-4 col-12">
-        <div class="block-container">
-          <a href="<?php echo get_the_permalink( $post->ID ); ?>">
-            <div class="block-picture">
-              <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ) . '">', wp_get_attachment_metadata( get_post_thumbnail_id( $post->ID ) ), get_post_thumbnail_id( $post->ID ) ); ?>
-            </div>
-            <div class="block-caption-wrapper">
-              <div class="block-caption-container">
-                <h3 class="block-heading"><?php echo $post->post_title; ?></h3>
-                  <a style="text-align: center;" href="<?php echo get_the_permalink( $post->ID ); ?>" class="block-shop-link">
-                    Start Reading
-                  </a>
+
+        <div class="block-picture-primary-container">
+
+          <div class="block-container">
+            <a href="<?php echo get_the_permalink( $post->ID ); ?>">
+              <div class="block-picture">
+                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ) . '">', wp_get_attachment_metadata( get_post_thumbnail_id( $post->ID ) ), get_post_thumbnail_id( $post->ID ) ); ?>
               </div>
-            </div>
-          </a>
+              <div class="block-caption-wrapper">
+                <div class="block-caption-container">
+                  <h3 class="block-heading"><?php echo $post->post_title; ?></h3>
+                    <a style="text-align: center;" href="<?php echo get_the_permalink( $post->ID ); ?>" class="block-shop-link">
+                      Start Reading
+                    </a>
+                </div>
+              </div>
+            </a>
+          </div>
+
         </div>
+
       </div>
 
     <?php endforeach;
@@ -1752,3 +1819,56 @@ if ( ! function_exists('display_mobile_filter') ) :
   }
 
 endif;
+
+// add_filter( 'woocommerce_format_price_range', 'tfs_format_price_range', 10, 3 );
+// if ( ! function_exists('tfs_format_price_range') ) :
+
+//   function tfs_format_price_range( $price, $range, $to ) {
+
+//     return sprintf( '%s: %s', __( 'From', 'light-world' ), wc_price( $from ) );
+
+//   }
+
+// endif;
+
+
+/**
+ * Change price format from range to "From:"
+ *
+ * @param float $price
+ * @param obj $product
+ * @return str
+ */
+function tfs_variable_price_format( $price, $product ) {
+
+  $prefix = sprintf('<b>%s: </b>', __('From', 'light-world'));
+  $format = '%s to %s';
+
+  $min_price_regular = $product->get_variation_regular_price( 'min', true );
+  $min_price_sale    = $product->get_variation_sale_price( 'min', true );
+  $max_price = $product->get_variation_price( 'max', true );
+  $min_price = $product->get_variation_price( 'min', true );
+
+  $price = ( $min_price_sale == $min_price_regular ) ?
+      wc_price( $min_price_regular ) :
+      '<del>' . wc_price( $min_price_regular ) . '</del>' . '<ins>' . wc_price( $min_price_sale ) . '</ins>';
+
+  if ( is_product() ) {
+
+    return ( $min_price == $max_price ) ?
+    $price :
+    sprintf($format, wc_price( $min_price ), wc_price( $max_price ) );
+
+  } elseif ( is_shop() || is_product_category() ) {
+
+    return ( $min_price == $max_price ) ?
+    $price :
+    sprintf('%s%s', $prefix, $price);
+
+  }
+
+}
+
+add_filter( 'woocommerce_variable_sale_price_html', 'tfs_variable_price_format', 10, 2 );
+add_filter( 'woocommerce_variable_price_html', 'tfs_variable_price_format', 10, 2 );
+

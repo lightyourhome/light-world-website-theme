@@ -26,12 +26,11 @@
 
     <div id="content" class="container">
 
-        <div id="primary" class="content-area col-md-12">
+        <div id="primary" class="content-area">
 
             <main id="main" class="site-main" role="main">
 
-                <div class="row mt-5 row-eq-height">
-                    <!-- ROW 2 -->
+                <div class="row mt-5 ml-0 mr-0 row-eq-height"><!-- ROW 2 -->
 
                     <!-- Popular Categories -->
                     <div class="col-md-2 col-6 mt-3">
@@ -115,108 +114,144 @@
 
                     </div>
 
-                    <div class="col-md-6">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/brands/quoizel-lighting'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/quoizel_bath_sale.jpg">', wp_get_attachment_metadata(172776), 172776 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Quoizel Lighting</h4>
-                                        <h3 class="block-heading">Save 10% on Quoizel</h3>
-                                        <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/brands/quoizel-lighting'); ?>" class="block-shop-link">Shop Now</a>
-                                    </div>
-                                </div>
-                            </a>
-                         </div>
-                     </div>
+                </div><!-- END ROW 2 -->
 
-                     <div class="col-md-6">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/brands/kichler-lighting'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/kichler_summer_sale_2020.jpg">', wp_get_attachment_metadata(172667), 172667 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Kichler Lighting</h4>
-                                        <h3 class="block-heading">Save 20% off all Kichler Lighting</h3>
-                                        <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/kichler-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                <div class="row mt-5 ml-0 mr-0 row-eq-height"><!-- ROW 3 --> 
+
+                    <div class="col-md-6">
+
+                        <div class="block-picture-primary-container">
+                        
+                            <a href="<?php echo site_url('/product-category/brands/quoizel-lighting'); ?>">
+                                <div class="block-container">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://lightyourhome.com/wp-content/uploads/2020/06/quoizel_bath_sale.jpg">', wp_get_attachment_metadata(172776), 172776 ); ?>
+                                    </div>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Quoizel Lighting</h4>
+                                            <h3 class="block-heading">Save 10% on Quoizel</h3>
+                                            <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/brands/quoizel-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
+
                         </div>
-                     </div>
+                    
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="block-picture-primary-container">
+
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/brands/elk-lighting'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://lightyourhome.com/wp-content/uploads/2020/05/89047_8.jpg">', wp_get_attachment_metadata(166726), 166726 ); ?>
+                                    </div>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Elk Lighting</h4>
+                                            <h3 class="block-heading">Save 15% off all Elk Lighting</h3>
+                                            <h4 class="block-heading">Use code "ELKLIGHTING15" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/elk-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row mt-5 ml-0 mr-0 row-eq-height">
                      
-                    <div class="col-md-12 mb-3 mt-5" style="border-bottom: 2px solid #d3d3d3;">
+                    <div class="col-md-12 mb-3 mt-5">
                         <h2>Featured Designer Collections</h2>
                     </div>
 
                     <div class="col-md-4 col-12">
-                        <div class="block-container">
-                            <a
-                                href="<?php echo site_url('/product-category/generation-lighting/ellen-degeneres-collection'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/01/ED_EllenDeGeneres.jpg">', wp_get_attachment_metadata(116997), 116997 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
 
-                                        <h3 class="block-heading">ED By Ellen DeGeneres</h3>
-                                        <a style="text-align: center;"
-                                            href="<?php echo site_url('/product-category/generation-lighting/ellen-degeneres-collection'); ?>"
-                                            class="block-shop-link">Shop ED Collection</a>
+                        <div class="block-picture-primary-container">
 
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/product-category/generation-lighting/ellen-degeneres-collection'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/01/ED_EllenDeGeneres.jpg">', wp_get_attachment_metadata(116997), 116997 ); ?>
                                     </div>
-                                </div>
-                            </a>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h3 class="block-heading">ED By Ellen DeGeneres</h3>
+                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/generation-lighting/ellen-degeneres-collection'); ?>" class="block-shop-link">Shop ED Collection</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
                         </div>
+
                     </div>
 
                     <div class="col-md-4 col-12">
-                        <div class="block-container">
-                            <a
-                                href="<?php echo site_url('/product-category/generation-lighting/kelly-wearstler-collection'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/01/Kelly_KW.jpg">', wp_get_attachment_metadata(116998), 116998 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
 
-                                        <h3 class="block-heading">Kelly By Kelly Wearstler</h3>
-                                        <a style="text-align: center;"
-                                            href="<?php echo site_url('/product-category/generation-lighting/kelly-wearstler-collection'); ?>"
-                                            class="block-shop-link">Shop Kelly Collection</a>
+                        <div class="block-picture-primary-container">
 
+                            <div class="block-container">
+                                <a
+                                    href="<?php echo site_url('/product-category/generation-lighting/kelly-wearstler-collection'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/01/Kelly_KW.jpg">', wp_get_attachment_metadata(116998), 116998 ); ?>
                                     </div>
-                                </div>
-                            </a>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+
+                                            <h3 class="block-heading">Kelly By Kelly Wearstler</h3>
+                                            <a style="text-align: center;"
+                                                href="<?php echo site_url('/product-category/generation-lighting/kelly-wearstler-collection'); ?>"
+                                                class="block-shop-link">Shop Kelly Collection</a>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
                         </div>
+
                     </div>
 
                     <div class="col-md-4 col-12">
-                        <div class="block-container">
-                            <a
-                                href="<?php echo site_url('/product-category/generation-lighting/thomas-obrien-collection'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/01/TOB_Portrait_credit-to-Michelle-Arcila.jpg">', wp_get_attachment_metadata(116999), 116999 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
 
-                                        <h3 class="block-heading">TOB by Thomas O'Brien</h3>
-                                        <a style="text-align: center;"
-                                            href="<?php echo site_url('/product-category/generation-lighting/thomas-obrien-collection'); ?>"
-                                            class="block-shop-link">Shop TOB Collection</a>
+                        <div class="block-picture-primary-container">
 
+                            <div class="block-container">
+                                <a
+                                    href="<?php echo site_url('/product-category/generation-lighting/thomas-obrien-collection'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/01/TOB_Portrait_credit-to-Michelle-Arcila.jpg">', wp_get_attachment_metadata(116999), 116999 ); ?>
                                     </div>
-                                </div>
-                            </a>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+
+                                            <h3 class="block-heading">TOB by Thomas O'Brien</h3>
+                                            <a style="text-align: center;"
+                                                href="<?php echo site_url('/product-category/generation-lighting/thomas-obrien-collection'); ?>"
+                                                class="block-shop-link">Shop TOB Collection</a>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
                         </div>
+
                     </div>
+
+                </div>
+
+                <div class="row mt-5 ml-0 mr-0 row-eq-height">
 
                     <div class="col-md-12 mt-5 button-container" style="text-align: center;">
                         <div class="mb-5 mt-5">
@@ -226,166 +261,180 @@
                         </div>
                     </div>
 
-                </div>
-
-
-                <div class="col-md-12 mb-3 mt-5" style="border-bottom: 2px solid #d3d3d3;">
-                    <h2>Popular Products</h2>
-                </div>
-
-                <div class="col-md-12 mb-3 mt-5" style="border-bottom: 2px solid #d3d3d3;">
-                    <?php echo do_shortcode('[products limit="6" columns="3" orderby="popularity" ]'); ?>
-                </div>
-
-
-        </div><!-- END ROW 2 -->
-
-        <div class="lighting-ideas-home">
-
-            <div class="row mt-5">
-                <!-- ROW 3 -->
-
-                <div class="col-md-4">
-
-                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Linara-Night-LI.jpg">', wp_get_attachment_metadata(163890), 163890 ); ?>
-
-                </div>
-
-                <!-- LIGHTING IDEAS -->
-                <div class="col-md-4 p-3 button-container">
-
-                    <div class="row h-100">
-
-                        <div class="col-md-12 my-auto">
-
-                            <div>
-                                <h2>Lighting Ideas</h2>
-                            </div>
-
-                            <div class="mt-3">
-                                <p><span style="font-weight: 400;">Love a chandelier, but can't find a </span><a
-                                        href="https://www.lightyourhome.com/product-category/pendant-lights"><span
-                                            style="font-weight: 400;">pendant light fixture</span></a><span
-                                        style="font-weight: 400;"> that matches it? Love a certain style, but don't know
-                                        where to start? Look no further! Our </span><span style="font-weight: 400;">online
-                                        lighting store</span><span style="font-weight: 400;"> has a section dedicated only
-                                        to Lighting Ideas, where you&rsquo;ll find products from all lighting categories
-                                        across the most recent and popular styles. Whether you're looking for inspiration or
-                                        just want to find matching fixtures &mdash; Lighting Ideas is a great place to get
-                                        started!</span></p>
-                            </div>
-
-                            <div class="mt-3"><a href="<?php echo site_url('/home/lighting-ideas'); ?>"
-                                    class="lw-showroom-nav-button">Get Inspired</a></div>
-                        </div>
+                    <div class="col-md-12 mt-5">
+                        <h2>Popular Products</h2>
                     </div>
+
+                    <div class="col-md-12 mt-5">
+                        <?php echo do_shortcode('[products limit="6" columns="3" orderby="popularity" ]'); ?>
+                    </div>
+
+                </div><!-- END ROW 3 -->
+
+                <div class="lighting-ideas-home">
+
+                    <div class="row mt-5"><!-- ROW 4 -->
+
+                        <div class="col-md-4 d-flex">
+
+                            <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Linara-Night-LI.jpg">', wp_get_attachment_metadata(163890), 163890 ); ?>
+
+                        </div>
+
+                        <!-- LIGHTING IDEAS -->
+                        <div class="col-md-4 p-3 button-container">
+
+                            <div class="row h-100">
+
+                                <div class="col-md-12 my-auto">
+
+                                    <div>
+                                        <h2>Lighting Ideas</h2>
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <p><span style="font-weight: 400;">Love a chandelier, but can't find a </span><a
+                                                href="https://www.lightyourhome.com/product-category/pendant-lights"><span
+                                                    style="font-weight: 400;">pendant light fixture</span></a><span
+                                                style="font-weight: 400;"> that matches it? Love a certain style, but don't know
+                                                where to start? Look no further! Our </span><span style="font-weight: 400;">online
+                                                lighting store</span><span style="font-weight: 400;"> has a section dedicated only
+                                                to Lighting Ideas, where you&rsquo;ll find products from all lighting categories
+                                                across the most recent and popular styles. Whether you're looking for inspiration or
+                                                just want to find matching fixtures &mdash; Lighting Ideas is a great place to get
+                                                started!</span></p>
+                                    </div>
+
+                                    <div class="mt-3">
+
+                                        <a href="<?php echo site_url('/home/lighting-ideas'); ?>" class="lw-showroom-nav-button">Get Inspired</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 d-none d-md-flex d-lg-flex">
+
+                            <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Dining-Room-Laurent-52052CG-Detail-Day-1B-scaled.jpg">', wp_get_attachment_metadata(163892), 163892 ); ?>
+
+                        </div>
+
+                    </div><!-- END row 4 -->
+
                 </div>
 
-                <div class="col-md-4 desktop-only">
-                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Dining-Room-Laurent-52052CG-Detail-Day-1B-scaled.jpg">', wp_get_attachment_metadata(163892), 163892 ); ?>
+                <div class="row mt-2"><!-- ROW 5 -->
+
+                    <div class="col-md-12 mb-3 mt-5">
+                        <h2>Inspiration</h2>
+                    </div>
+
+                    <?php get_recent_post_data(); ?>
+
+                </div><!-- END ROW 5-->
+
+                <div class="row no-gutters">
+
+                    <div class="col-12 col-md-12 mt-5 button-container" style="text-align: center;">
+
+                        <div class="mb-5 mt-5">
+
+                            <a class="button" href="<?php echo site_url('/lightworld-blog'); ?>">See All Inspiration</a>
+
+                        </div>
+
+                    </div>
+                
                 </div>
 
-            </div><!-- END ROW 3-->
+                <div id="home-email-capture-form-row" class="row justify-content-center mt-4"><!-- ROW 6 -->
+                
+                    <div class="col-md-12">
+                    
+                        <?php do_action('tfs_home_page_sign_up_form'); ?>
+                    
+                    </div>        
+                
+                </div><!-- END ROW 6 -->
 
-        </div>
+                <!-- ROW 7 -->
+                <div class="row ml-0 mr-0 mt-5 mb-5" style="text-align: center; border: 2px solid #000;">
 
+                    <div class="col-md-12 mt-3 mb-3">
+                        <h2>Why Shop at Our Online Lighting Store</h2>
+                    </div>
 
-        <div class="row mt-5">
-            <!-- ROW 4 -->
+                    <div class="col-md-3 mt-3">
+                        <i class="fa fa-users"></i>
+                        <p class="single-product__icon_text"><strong>Family Owned Since 1989</strong></p>
+                        <p>For over 30 years, one of Light World’s traditions is treating its customers and employees like
+                            family! Not happy with your order? Let’s fix it! Need advice? Contact us! Lightyourhome.com was
+                            founded on these values and we’re with you every step of the way.</p>
+                    </div>
 
-            <div class="col-md-12 mb-3 mt-5" style="border-bottom: 2px solid #d3d3d3;">
-                <h2>Inspiration</h2>
-            </div>
+                    <div class="col-md-3 mt-3">
+                        <i class="fa fa-usd"></i>
+                        <p class="single-product__icon_text"><strong>You Save Money</strong></p>
+                        <p>Not only do we guarantee the lowest prices, we also include free shipping with every order - no
+                            questions asked! Shopping with us means more money towards your project or having a night out with
+                            the family.</p>
+                    </div>
 
-            <?php get_recent_post_data(); ?>
+                    <div class="col-md-3 mt-3">
+                        <i class="fa fa-check"></i>
+                        <p class="single-product__icon_text"><strong>Handpicked Selection</strong></p>
+                        <p>After being in business for over 30 years, we realized it can take time to find that perfect fixture
+                            – so we did it for you! Every fixture on lightyourhome.com is guaranteed hand-picked by our staff
+                            for their timeless styles, quality and eye-catching looks.</p>
+                    </div>
 
-            <div class="col-md-12 mt-5 button-container" style="text-align: center;">
+                    <div class="col-md-3 mt-3">
+                        <i class="fa fa-shopping-cart"></i>
+                        <p class="single-product__icon_text"><strong>First Return Free</strong></p>
+                        <p>If you’re not satisfied with your first order from us for any reason, you can return it for free! No
+                            restocking or shipping fees.</p>
+                        <br>
+                        <p><strong>This offer applies to orders on lightyourhome.com only.</strong></p>
+                    </div>
 
-                <div class="mb-5 mt-5">
+                </div><!--END row 7 -->
 
-                    <a class="button" href="<?php echo site_url('/lightworld-blog'); ?>">See All Inspiration</a>
+            </main><!-- #main -->
 
-                </div>
-            </div>
+        </div><!-- #primary -->
 
-        </div><!-- END ROW 4-->
+    </div><!-- #content --><!-- .container -->
 
-        <!-- WHY SHOP WITH US -->
-        <!-- ROW 5 -->
-        <div class="row mt-5 mb-5" style="text-align: center; border: 2px solid #000;">
-
-            <div class="col-md-12 mt-3 mb-3">
-                <h2>Why Shop at Our Online Lighting Store</h2>
-            </div>
-
-            <div class="col-md-3 mt-3">
-                <i class="fa fa-users"></i>
-                <p class="single-product__icon_text"><strong>Family Owned Since 1989</strong></p>
-                <p>For over 30 years, one of Light World’s traditions is treating its customers and employees like
-                    family! Not happy with your order? Let’s fix it! Need advice? Contact us! Lightyourhome.com was
-                    founded on these values and we’re with you every step of the way.</p>
-            </div>
-
-            <div class="col-md-3 mt-3">
-                <i class="fa fa-usd"></i>
-                <p class="single-product__icon_text"><strong>You Save Money</strong></p>
-                <p>Not only do we guarantee the lowest prices, we also include free shipping with every order - no
-                    questions asked! Shopping with us means more money towards your project or having a night out with
-                    the family.</p>
-            </div>
-
-            <div class="col-md-3 mt-3">
-                <i class="fa fa-check"></i>
-                <p class="single-product__icon_text"><strong>Handpicked Selection</strong></p>
-                <p>After being in business for over 30 years, we realized it can take time to find that perfect fixture
-                    – so we did it for you! Every fixture on lightyourhome.com is guaranteed hand-picked by our staff
-                    for their timeless styles, quality and eye-catching looks.</p>
-            </div>
-
-            <div class="col-md-3 mt-3">
-                <i class="fa fa-shopping-cart"></i>
-                <p class="single-product__icon_text"><strong>First Return Free</strong></p>
-                <p>If you’re not satisfied with your first order from us for any reason, you can return it for free! No
-                    restocking or shipping fees.</p>
-                <br>
-                <p><strong>This offer applies to orders on lightyourhome.com only.</strong></p>
-            </div>
-
-        </div>
-
-    </div>
-
-    </main>
-    <!-- #main -->
-
-</div><!-- #primary -->
-
-</div>
-<!-- #content -->
-
-</div>
-<!-- Wrapper end -->
+</div><!-- Wrapper end -->
 
 <div class="container-fluid home-hero-desc">
 
     <div class="mobile-only">
 
         <div class="container-fluid px-0">
+
             <div class="row">
 
-                <img id="home-image"
-                    src="<?php echo site_url('/wp-content/uploads/2019/11/home_showroom_img_mobile_1.jpg'); ?>">
+                <img id="home-image" src="<?php echo site_url('/wp-content/uploads/2019/11/home_showroom_img_mobile_1.jpg'); ?>">
 
                 <div class="col-md-12" style="background-color: #f6f6f6; text-align: center;">
+
                     <div class="home-hero-desc">
+
                         <h3>Our Showroom</h3>
                         <p>Free candy, a huge selection, and a team of experts ready to help! What more could you ask
                             for?</p>
-                        <a class="button mb-3" href="<?php echo site_url('/home/light-world-showroom'); ?>">Learn
-                            More</a>
+                        <a class="button mb-3" href="<?php echo site_url('/home/light-world-showroom'); ?>">Learn More</a>
+
                     </div>
                 </div>
+
             </div>
+
         </div>
 
     </div>
@@ -395,7 +444,9 @@
         <div class="row mt-5 mb-5 px-3" style="text-align: center;">
 
             <div class="col-md-12">
+
                 <?php echo do_shortcode('[rev_slider alias="home_black_friday_golden_11-19-19-11"][/rev_slider]'); ?>
+
             </div>
 
         </div>
@@ -521,8 +572,6 @@
         </div>
 
     </div>
-
-</div>
 
 </div>
 <!-- end container-fluid -->

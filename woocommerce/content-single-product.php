@@ -95,9 +95,8 @@ if ( post_password_required() ) {
 				<span><?php echo $product->get_tags(); ?></span>
 			</div>
 
-		<?php endif; ?>
+		<?php endif;
 
-		<?php
 		/**
 		 * Hook: woocommerce_single_product_summary.
 		 *
@@ -116,9 +115,13 @@ if ( post_password_required() ) {
 		<?php //echo free_bulbs(); ?>
 
 		<div class="sp-free-shipping">
+
+			<i class="fa fa-truck" aria-hidden="true"></i>
+
 			<span>
 				<strong>Free Shipping!</strong>
 			</span>
+			
 		</div>
 
 		<!-- <p style="text-align: center; color: rgb(253, 156, 21);"><strong>c</strong></p> -->

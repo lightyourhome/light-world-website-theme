@@ -4,6 +4,50 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ unreleased ] - in progress
+
+## [ 1.13.0 ]
+
+## Added
+
+- Navigation arrows to mobile sliders
+- Minor layout adjustments to front page (home)
+- Email sign up form on home page between Inspiration and Why Shop With Us
+- Action hook for embedded email sign up
+- Additional product variation url's to product loop color swatches
+- New picture block layout to function get_recent_post_data()
+- function create_picture_block to dynamically create picture blocks
+
+## Changed
+
+- Moved single product description to overview tab
+- Moved add to cart button up on single product pages
+- Add to cart button size on mobile
+- Price range display on single products ( displays "to" as delimiter for price range instead of "-" )
+- Price range display in shop loop ( From *insert price* instead of *price* - *price* )
+- Logo Size on Desktop
+- Pictures blocks layout/positioning to flex
+- Moved picture blocks text to beneath picture container rather than overlay
+- Changed picture block text size on Mobile
+- Picture block html on all pages
+
+## Removed
+
+- Gallery thumbnails on mobile devices
+- Borders under headings on home page
+
+## Fixed
+
+- Product Loop Swatch slider bug where variation urls were not changing
+
+## [ released ] - 7.15.2020
+
+## [ 1.12.6 ]
+
+## Changed
+
+- Elk Lighting Sale container column size
+
 ## [ released ] - 7.15.2020
 
 ## [ 1.12.6 ]

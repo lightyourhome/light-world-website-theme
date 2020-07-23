@@ -167,6 +167,41 @@ jQuery(function($) {
 
     }
 
+    function appendSingleProductGalleryNavigation() {
+
+       if ( $( '.flex-viewport' )[0] && $('.woocommerce-product-gallery__wrapper').children().length > 1 ) {
+
+            $('.flex-direction-nav').remove();
+
+            $('.slider').flexslider({
+
+                controlsContainer: '.flex-viewport'
+
+            });
+
+            $('.flex-viewport').prepend('<a class="flex-prev" href="#" tabindex="-1"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>');
+            $('.flex-viewport').prepend('<a class="flex-next" href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>');
+
+            $('.flex-next').click(function() {
+
+                $('.woocommerce-product-gallery').flexslider('next');
+                return false;
+
+            });
+
+            $('.flex-prev').click(function() {
+
+                $('.woocommerce-product-gallery').flexslider('prev');
+                return false;
+
+            });
+
+       }
+
+    }
+
+    appendSingleProductGalleryNavigation();
+
     /***********************************************
      ********** VARIABLE PRODUCT SUMMARY ***********
      ***********************************************/

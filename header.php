@@ -146,7 +146,7 @@
 								
 							<div id="lyh-brand" class="">
 									
-								<img src="https://www.lightyourhome.com/wp-content/uploads/2020/07/lyh_logo_1.png">
+								<img src="https://www.lightyourhome.com/wp-content/uploads/2020/07/lyh_logo_pr.png">
 								
 							</div>
 						
