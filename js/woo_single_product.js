@@ -151,6 +151,20 @@ jQuery(function($) {
 
     }
 
+    function is_mobile() {
+
+        if (parseInt($(window).width()) < 1024) {
+
+            return true;
+
+        } else {
+
+            return false;
+
+        }
+
+    }
+
     function insertNextAndPrev() {
 
         if (is_large_screen()) {
@@ -733,15 +747,45 @@ jQuery(function($) {
 
                     let $positionLeft = $(event.target).position();
 
-                    let $positionTop = $('#tool-tip--' + $currentId).parent().position();
+                    let tooltipIconHeight = $(event.target).height();
+
+                    let toolTipTop = $(event.target).position().top;
+
+                    let $positionTop = $('#tool-tip--' + $currentId).parent().position().top;
+
+                    let $outerHeight = $('#tool-tip--' + $currentId).parent().outerHeight(true);
 
                     let $elementHeight = $('#tool-tip--' + $currentId).parent().height();
 
-                    let additionalHeight = ( is_large_screen() ) ? 10 : 20;
+                    let totalTopPositioning;
 
-                    $('#tool-tip--' + $currentId).children('span').height( $elementHeight / 2 + additionalHeight );
+                    if ( is_mobile() ) {
 
-                    $('#tool-tip--' + $currentId).show().css({ 'top' : $positionTop.top - $elementHeight , 'left' : $positionLeft.left });
+                        if ( $outerHeight > 40 ) {
+
+                            totalTopPositioning = $positionTop - $outerHeight - tooltipIconHeight / 2;
+
+                        } else if ( $currentId == 'attribute_pa_safety-rating' ) {
+
+                            totalTopPositioning = $positionTop - $outerHeight * 3.0;
+                            
+                        } else {
+
+                            totalTopPositioning = $positionTop - $outerHeight * 1.75;
+
+                        }
+
+                    } else {
+
+                        totalTopPositioning = $positionTop - $outerHeight - $outerHeight / 2;
+
+                    }
+
+                    //let additionalHeight = ( is_large_screen() ) ? 10 : 20;
+
+                    //$('#tool-tip--' + $currentId).children('span').height( $elementHeight / 2 + additionalHeight );
+
+                    $('#tool-tip--' + $currentId).show().css({ 'top' : totalTopPositioning, 'left' : $positionLeft.left });
 
                 } else {
 
