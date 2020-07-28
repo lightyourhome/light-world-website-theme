@@ -230,8 +230,8 @@
 
 					<div id="header-extra-nav-items" class="col-xs-3 col-sm-1 col-2 my-auto mx-auto justify-content-center">
 
-						<ul class="mb-0 ml-0" style="list-style: none; width: 100%;">
-							<li id="header-cart" class="mt-1"><?php echo display_woo_cart(); ?></li>
+						<ul class="mb-0 ml-0 d-flex justify-content-center" style="list-style: none; width: 100%;">
+							<li id="header-cart" class="mt-1 d-flex"><?php echo display_woo_cart(); ?></li>
 						</ul>
 
 					</div>

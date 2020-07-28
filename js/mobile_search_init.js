@@ -36,30 +36,24 @@ jQuery(function($) {
 
 	}
 
+	$(document).ready(function() {
+
+		if ( $('#accordion-read-more').length ) {
+
+			$('#accordion-read-more').toggle(function() {
+
+				$('#accordion-hidden-content').show();
+				$(this).text('Read Less');
+		
+			}, function() {
+		
+				$('#accordion-hidden-content').hide();
+				$(this).text('Read More');
+		
+			});		
+
+		}
+
+	});
+
 });
-
- document.addEventListener("DOMContentLoaded", initAccordion, true);
- function initAccordion() {
-	 function toggleAccordion() {
-	 
-	 let accordionHiddenText = document.getElementById('accordion-hidden-content');
-		 
-	 if(accordionHiddenText.style.display=="block"){
-         
-		 document.getElementById('accordion-read-more').innerHTML="Read More";
-         accordionHiddenText.style.display="none";
-		 
-     } else {
-         
-		 document.getElementById('accordion-read-more').innerHTML="Read Less";
-          accordionHiddenText.style.display="block";
-        }
-   }
-	 
-	let readMore = document.getElementById('accordion-read-more');
-	if (readMore) {
-		readMore.addEventListener('click', toggleAccordion, true);
-	}
-	 
- }
-

@@ -529,7 +529,7 @@ if ( ! function_exists('woocommerce_loop_swatches') ) :
 
                       ?>
 
-                      <div class="swatch-border"><div class="swatch-image img-circle"><?php echo '+' . $remainingFinishes; ?></div></div>
+                      <div class="swatch-border swatch-remaining-finishes"><div class="swatch-image img-circle"><?php echo '+' . $remainingFinishes; ?></div></div>
 
                     <?php endif; ?>
 
@@ -1743,11 +1743,7 @@ endif;
 remove_action('wp_footer', 'woocommerce_demo_store');
 add_action('store-notice-header', 'woocommerce_demo_store' );
 
-// function customize_notices() {
 
-// remove_action('wp_body_open', 'wc_print_notices');
-
-// }
 
 if ( ! function_exists('display_mobile_filter') ) :
 
@@ -1757,7 +1753,7 @@ if ( ! function_exists('display_mobile_filter') ) :
   
       <div class="row justify-content-center filter-overlay-button">
       
-        <div class="col-md-6">
+        <div class="col-md-6" style="text-align: center;">
       
           <a id="open-filter-overlay" class="button" style="cursor: pointer;">Refine Your Search</a>
       

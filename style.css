@@ -2,7 +2,7 @@
 Theme Name: Light World
 Author: Jim Merk
 Description: Light World's Custom Wordpress Theme
-Version: 1.13.2
+Version: 1.13.3
 Text Domain: light-world
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
@@ -1334,10 +1334,6 @@ object {
       display: inline-block!important;
     }
 
-    .woocommerce nav.woocommerce-pagination ul li a, 
-    .woocommerce nav.woocommerce-pagination ul li span {
-      font-size: 1.5em;
-    }
   
     .sp-download-area a {
       flex-direction: column!important;
@@ -1572,6 +1568,30 @@ object {
   
   @media screen and (max-width: 768px) {
 
+    .woocommerce nav.woocommerce-pagination ul li a, 
+    .woocommerce nav.woocommerce-pagination ul li span {
+      font-size: 1.2em;
+    }  
+
+    .swatch-remaining-finishes {
+      font-size: 12px;
+      color: #000;
+      padding-top: 0px !important;
+    }
+
+    .swatch-image {
+      height: 14px !important;
+      width: 14px !important;
+    }
+
+    .swatch-border {
+      height: 24px !important;
+      width: 24px !important;
+      margin-left: 3px;
+      margin-top: 0px;
+
+    }
+
     h4.block-heading {
       font-size: 14px !important;
       line-height: 14px !important;
@@ -1618,6 +1638,11 @@ object {
 
     .woocommerce div.product .woocommerce-tabs ul.tabs::before {
       border: none;
+    }
+
+    .tabs .wc-tabs {
+      display: flex;
+      justify-content: center;
     }
 
     .woocommerce div.product .woocommerce-tabs ul.tabs li {
@@ -2003,6 +2028,21 @@ object {
   
   /*medium+ screen sizes*/
   @media (min-width:768px) {
+
+    .swatch-image {
+      height: 22.5px !important;
+      width: 22.5px !important;
+      color: #000;
+      border-radius: 100%;
+      margin: 0 auto!important;
+    }
+  
+
+    .woocommerce nav.woocommerce-pagination ul li a, 
+    .woocommerce nav.woocommerce-pagination ul li span {
+      font-size: 1.5em;
+    }
+
     
     .flex-next,
     .flex-prev {
@@ -2139,6 +2179,8 @@ object {
     font-weight: 700;
     border: 0;
   }
+  
+
   
   .contact-showroom-hours > ul li {
   
@@ -2291,8 +2333,8 @@ object {
   }
   
   .product-titles {
-    background-color: #f6f6f6;
-    margin-bottom: 10px!important;
+    /* background-color: #f6f6f6; */
+    /* margin-bottom: 10px!important; */
     font-family: Lato;
   }
   
@@ -2343,10 +2385,10 @@ object {
   /*ADJUST THIS SINCE IT AFFECTS CHECKOUT DROPDOWN */
   
   /* footer list styles */
-  .widgets-footer, .widget-footer-title > ul, li {
+  /* .widgets-footer, .widget-footer-title > ul, li {
   color: black;
   text-align: center;
-  }
+  } */
   
   /* Blog cards */
   
@@ -3375,7 +3417,7 @@ object {
    }
 
    .checkout .entry-summary .woocommerce-Price-amount, .amount {
-     font-size: 20px !important;
+     /* font-size: 20px !important; */
    }
    
    .woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
@@ -3584,6 +3626,10 @@ object {
   
   .site-footer > a {
     color: white!important;
+  }
+
+  .site-footer ul li {
+    text-align: center;
   }
   
   /*---------------------------------- 
@@ -4007,15 +4053,23 @@ object {
     background-color: #f6f6f6;
   }
 
-  .woocommerce ul.products 
+  /* .woocommerce ul.products 
   li.product .woocommerce-loop-category__title, 
   .woocommerce ul.products li.product 
   .woocommerce-loop-product__title, 
   .woocommerce ul.products li.product h3 {
     padding: .5em .5em;
+  } */
+
+  .woocommerce ul.products li.product .price del {
+    margin-right: 5px;
   }
 
- 
+  .woocommerce ul.products li.product .woocommerce-loop-category__title, 
+  .woocommerce ul.products li.product .woocommerce-loop-product__title, 
+  .woocommerce ul.products li.product h3 {
+    padding: 0;
+  }
     
   /* centers price amounts and changes color */
   .woocommerce ul.products li.product .price {
@@ -4031,8 +4085,8 @@ object {
   }
   
   /* ALIGNS WOO TEXT CENTER */
-  .woocommerce, .products, .product, .price, .woocommerce-Price-amount, .amount
-  { text-align: center; }
+  /* .woocommerce, .products, .product, .price, .woocommerce-Price-amount, .amount
+  { text-align: center; } */
 
   .woocommerce-variation-add-to-cart,
   .variations_button,
@@ -4167,6 +4221,7 @@ object {
   }
   
   .swatch-div {
+    margin-bottom: 5px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -4185,8 +4240,7 @@ object {
   }
   
   .swatch-image {
-    height: 23px!important;
-    width: 23px!important;
+    color: #000;
     border-radius: 100%;
     margin: 0 auto!important;
   }
@@ -4194,17 +4248,27 @@ object {
   a.swatch_slide_dot {
     z-index: 2;
   }
+
+  h3.product-titles {
+    text-align: left;
+  }
+
+  .product-price-link_simple .price {
+    text-align: left !important;
+    font-size: 16px;
+    font-weight: 700;
+  }
   
   /* ADDS BORDER TO WOO LOOP VARIABLE IMAGES */
   .swatch_slide img {
-    border: 2px solid #f6f6f6;
-    padding: 10px;
+    /* border: 2px solid #f6f6f6;
+    padding: 10px; */
   }
   
   /* ADDS BORDER TO WOO LOOP SIMPLE IMAGES */
   .woo-simple-product img {
-    border: 2px solid #f6f6f6;
-    padding: 10px;
+    /* border: 2px solid #f6f6f6;
+    padding: 10px; */
   }
   
   /* ADD SPACE BETWEEN SWATCHES */
@@ -4213,16 +4277,16 @@ object {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
+    /* margin: auto; */
   }
 
   /*--------------------------------
   ## SHOP FILTER 
   ---------------------------------*/
   
-  .widgets-footer, .widget-footer-title > ul, li {
+  /* .widgets-footer, .widget-footer-title > ul, li {
     text-align: center;
-  }
+  } */
 
   .wppp-select {
   display: block;
@@ -4239,6 +4303,7 @@ object {
   }
 
   .style_filter_checkboxes li, .finish_filter_swatches li {
+    color: #000;
     text-align: left;
     margin-left: 20px;
   }
