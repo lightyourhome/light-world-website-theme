@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Color swatch size on mobile and left aligned
 - Color swatch size on desktop
 - Pagination size on mobile
+- Amount of product columns in shop loop to 4 (desktop)
 
 ## Removed
 

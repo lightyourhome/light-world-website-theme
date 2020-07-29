@@ -1570,7 +1570,7 @@ object {
 
     .woocommerce nav.woocommerce-pagination ul li a, 
     .woocommerce nav.woocommerce-pagination ul li span {
-      font-size: 1.2em;
+      font-size: 1.0em;
     }  
 
     .swatch-remaining-finishes {
@@ -1634,6 +1634,7 @@ object {
 
     .woocommerce div.product .woocommerce-tabs ul.tabs {
       padding: 0!important;
+      text-align: center;
     }
 
     .woocommerce div.product .woocommerce-tabs ul.tabs::before {
@@ -2935,7 +2936,6 @@ object {
   }
   
   .term-description {
-  background-color: rgba(246, 246, 246, 0.5);;
   padding: 50px 0;
   margin-bottom: -50px;
   margin-top: 100px;
@@ -3259,6 +3259,10 @@ object {
    background-color: orange!important;
   }
 
+  .woocommerce-info {
+    text-align: center;
+  }
+
   img[alt="PayPal acceptance mark"] {
     display: none !important;
   }
@@ -3316,6 +3320,11 @@ object {
   .woocommerce div.product .woocommerce-tabs ul.tabs li a {
     display: block;
   }
+
+  .woocommerce div.product .woocommerce-tabs ul.tabs {
+    text-align: center;
+  }
+
   
   .ui-corner-all {
     background-color: #000!important;
@@ -3644,6 +3653,10 @@ object {
     font-size: 20px;
   }
 
+  .variations_form .woocommerce-variation-price {
+    text-align: center;
+  }
+
   .related h2 {
     text-align: center;
     margin-bottom: 1em;
@@ -3737,6 +3750,7 @@ object {
     width: 125px;
     border: 2px solid #f6f6f6;
     padding: 10px;
+    text-align: center;
     margin-right: 5px;
     margin-left: 5px;
   }
@@ -3747,7 +3761,7 @@ object {
   }
   
   .sp-download-area i {
-    margin-top: auto;
+    margin: auto;
     font-size: 32px;
     color: #adadad;
   }
@@ -4252,6 +4266,18 @@ object {
   h3.product-titles {
     text-align: left;
   }
+
+  .woocommerce ul.products li.product, 
+  .woocommerce-page ul.products li.product {
+    padding: 10px;
+  }
+
+  /* ul.products .product:hover {
+    box-shadow: 1px -2px 10px #A9A9A9;
+    transition: .3s;
+    cursor: pointer;
+  } */
+
 
   .product-price-link_simple .price {
     text-align: left !important;

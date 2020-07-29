@@ -142,7 +142,7 @@ add_action( 'widgets_init', 'light_world_widgets_init' );
  * Enqueue scripts and styles.
  */
 function enqueue_light_world_scripts() {
-	wp_enqueue_style( 'light-world-style', get_template_directory_uri() . '/style.css', array(), '1.13.2' );
+	wp_enqueue_style( 'light-world-style', get_template_directory_uri() . '/style.css', array(), '1.13.3' );
 
 	//wp_enqueue_style( 'light-world-style-2', get_template_directory_uri() . '/css/theme.css', array(), '03192020', true );
 
@@ -151,7 +151,7 @@ function enqueue_light_world_scripts() {
 	// wp_enqueue_script( 'light-world-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	/* Search Bar JS */
-	wp_enqueue_script( 'mobile-search-bar-js', get_template_directory_uri() . '/js/mobile_search_init.js', array(), '07102020', true);
+	wp_enqueue_script( 'mobile-search-bar-js', get_template_directory_uri() . '/js/mobile_search_init.js', array(), '07292020', true);
 
 	/* Color Swatch JS */
 	wp_enqueue_script( 'woocommerce-product-swatches', get_template_directory_uri() . '/js/swatch_slider_1.0.js', array(), '07222020', true);

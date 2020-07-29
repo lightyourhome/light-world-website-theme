@@ -33,7 +33,7 @@ if ( ! function_exists('loop_columns') ) :
   * Change the number of products per row in WooCommerce Shop Loop
   */
 	function loop_columns() {
-		return 3; // 3 products per row
+		return 4; // 3 products per row
 	}
 endif;
 
