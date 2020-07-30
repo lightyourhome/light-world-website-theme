@@ -169,13 +169,13 @@ jQuery(function($) {
 
         if (is_large_screen()) {
 
-            $('.flex-control-thumbs').prepend('<span><i id="arrow-left" class="thumbnail-arrow-left fa fa-arrow-up"></i></span>');
-            $('.flex-control-thumbs').append('<span><i id="arrow-right" class="thumbnail-arrow-right fa fa-arrow-down"></i></span>');
+            $('.flex-control-thumbs').prepend('<span class="thumbnail-arrow-left-container"><i id="arrow-left" class="thumbnail-arrow-left fa fa-arrow-up"></i></span>');
+            $('.flex-control-thumbs').append('<span class="thumbnail-arrow-right-container"><i id="arrow-right" class="thumbnail-arrow-right fa fa-arrow-down"></i></span>');
 
         } else {
 
-            $('.flex-control-thumbs').prepend('<span><i id="arrow-left" class="thumbnail-arrow-left fa fa-arrow-left"></i></span>');
-            $('.flex-control-thumbs').append('<span><i id="arrow-right" class="thumbnail-arrow-right fa fa-arrow-right"></i></span>');
+            $('.flex-control-thumbs').prepend('<span class="thumbnail-arrow-left-container"><i id="arrow-left" class="thumbnail-arrow-left fa fa-arrow-left"></i></span>');
+            $('.flex-control-thumbs').append('<span class="thumbnail-arrow-right-container"><i id="arrow-right" class="thumbnail-arrow-right fa fa-arrow-right"></i></span>');
 
         }
 
