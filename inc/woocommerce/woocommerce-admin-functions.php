@@ -5,6 +5,13 @@
 *
 */
 
+/**
+ * Adds Apple Pay Support to WooCommerce Admin Settings
+ * 
+ * @since 1.14.0
+ */
+add_filter( 'wc_payment_gateway_authorize_net_cim_activate_apple_pay', '__return_true' );
+
 /****************************************************
 
 ***** BEGIN PRODUCT CATEGORY CUSTOM META FIELDS ******
