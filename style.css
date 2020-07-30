@@ -2,7 +2,7 @@
 Theme Name: Light World
 Author: Jim Merk
 Description: Light World's Custom Wordpress Theme
-Version: 1.13.3
+Version: 1.13.4
 Text Domain: light-world
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
@@ -3667,6 +3667,12 @@ object {
     margin-left: 0;
   }
 
+  .sp-description ul li {
+    margin-left: 15px;
+    list-style: disc;
+    color: black;
+  }
+
   .stars, #reply-title, .comment-form-rating, label[for="comment"] {
     font-size: 18px;
   }
@@ -3820,6 +3826,7 @@ object {
     font-size: 42px;
     text-align: left;
     color: #adadad;
+    margin-top: 20px;
     margin-bottom: 10px;
     cursor: pointer;
   }
