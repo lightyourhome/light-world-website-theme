@@ -2209,9 +2209,9 @@ object {
 
   
   .contact-showroom-hours > ul li {
-  
+  text-align: center;
   margin: 0!important;
-  
+  color: #000 !important;
   }
   
   #quick-view-gallery-images .thumbnail-arrow-left {

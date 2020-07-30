@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Positioning issues with single product thumbnail gallery increment/decrement arrows
 - Styling issue with single product list descriptions
+- Contact page store hours alignment/color
 
 ## [ released ] - 7.30.2020
 
