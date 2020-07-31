@@ -8,7 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.14.1 ]
 
+## Added
 
+- Quoizel Ceiling Mount Sale (Home Page and Sale Page)
+- Elk Home Sale (Home Page and Sale Page)
+- ET2 Sale (Sale Page)
+- Maxim Sale (Sale Page)
+
+## Removed
+
+- Quoizel Bath Sale (Home page and Sale Page)
+- Elk Lighting Sale (Home Page and Sale Page)
 
 ## [ released ] 7.30.2020
  
