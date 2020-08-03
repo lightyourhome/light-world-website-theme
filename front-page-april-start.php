@@ -253,8 +253,8 @@
 
                 <div class="row mt-5 ml-0 mr-0 row-eq-height">
 
-                    <div class="col-md-12 mt-5 button-container" style="text-align: center;">
-                        <div class="mb-5 mt-5">
+                    <div class="col-md-12" style="text-align: center;">
+                        <div class="mb-5">
                             <a class="button" href="<?php echo site_url('/designer-collections'); ?>">
                                 See All Designer Collections
                             </a>
@@ -327,7 +327,7 @@
 
                 </div>
 
-                <div class="row mt-2"><!-- ROW 5 -->
+                <div class="row mt-5"><!-- ROW 5 -->
 
                     <div class="col-md-12 mb-3 mt-5">
                         <h2>Inspiration</h2>
@@ -337,11 +337,11 @@
 
                 </div><!-- END ROW 5-->
 
-                <div class="row no-gutters">
+                <div class="row no-gutters mt-5">
 
-                    <div class="col-12 col-md-12 mt-5 button-container" style="text-align: center;">
+                    <div class="col-12 col-md-12 mt" style="text-align: center;">
 
-                        <div class="mb-5 mt-5">
+                        <div class="mb-5">
 
                             <a class="button" href="<?php echo site_url('/lightworld-blog'); ?>">See All Inspiration</a>
 
