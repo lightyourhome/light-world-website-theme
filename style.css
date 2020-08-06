@@ -2,7 +2,7 @@
 Theme Name: Light World
 Author: Jim Merk
 Description: Light World's Custom Wordpress Theme
-Version: 1.13.3
+Version: 1.13.4
 Text Domain: light-world
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
@@ -1349,6 +1349,13 @@ object {
       width: 15%;
       float: left;
      }
+
+     ol.flex-control-nav {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+     }
+
      /* Style each Thumbnail with width and margins */
     .single-product div.product .images .thumbnails a.zoom, ol.flex-control-nav.flex-control-thumbs a.zoom {
       width: 90%;
@@ -1367,12 +1374,20 @@ object {
       transform: translateY(0px)!important;
       margin-left: 5px!important;
       margin-top: 10px;
+      display: flex !important;
+      justify-content: center;
      }
     .thumbnail-arrow-left {
       margin-bottom: 10px;
       margin-left: 5px!important;
       transform: translateY(0px)!important;
      }
+     
+     .thumbnail-arrow-left-container,
+     .thumbnail-arrow-right-container {
+        margin: 0 auto;
+     }
+
     .fa-arrow-up {
       color: #000!important;
      }
@@ -1871,15 +1886,15 @@ object {
   
     .thumbnail-arrow-left {
       transform: translateY(-40px)!important;
-       margin-right: 20px!important;
-       font-size: 32px!important;
+       /* margin-right: 20px!important; */
+       font-size: 22px!important;
       cursor: pointer;
     }
   
     .thumbnail-arrow-right {
       transform: translateY(-40px)!important;
-      margin-left: 20px!important;
-      font-size: 32px!important;
+      /* margin-left: 20px!important; */
+      font-size: 22px!important;
       cursor: pointer;
     }
   
@@ -1902,59 +1917,69 @@ object {
     #arrow-right:before {
       content: "\f063";
     }
-  
-    .thumbnail-arrow-left {
-      transform: translateY(-40px)!important;
-       margin-right: 5px!important;
-       font-size: 27px!important;
-      cursor: pointer;
-    }
-  
+
     .thumbnail-arrow-right {
-      transform: translateY(-40px)!important;
+      transform: translateY(0px)!important;
       margin-left: 5px!important;
-      font-size: 27px!important;
-      cursor: pointer;
-    }
+      margin-top: 10px;
+      display: flex !important;
+      justify-content: center;
+     }
+    .thumbnail-arrow-left {
+      margin-bottom: 10px;
+      margin-left: 5px!important;
+      transform: translateY(0px)!important;
+      display: flex !important;
+      justify-content: center;
+     }
+     
+     .thumbnail-arrow-left-container,
+     .thumbnail-arrow-right-container {
+        margin: 0 auto;
+     }
+
+     ol.flex-control-nav {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+     }
+
   
     .sp-download-area a {
       flex-direction: column!important;
      }
+
      /* Make image width smaller to make room to its right */
     .single-product div.product .images .woocommerce-main-image, .flex-viewport {
       width: 80%;
       float: left;
       margin-right: 20px;
      }
+
      /* Make Gallery smaller width and place it beside the image */
     .single-product div.product .images .thumbnails, ol.flex-control-nav.flex-control-thumbs {
       width: 15%;
       float: left;
      }
+
      /* Style each Thumbnail with width and margins */
     .single-product div.product .images .thumbnails a.zoom, ol.flex-control-nav.flex-control-thumbs a.zoom {
       width: 90%;
       float: none;
       margin: 0 0 10% 10%;
      }
+     
+
      /* Move the zoom tool to the left side to accommodate the gallery thumbs (otherwise it covers the first thumbnail */
     .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
       left: .875em !important;
      }
+
     .woocommerce div.product div.images .flex-control-thumbs li {
       width: 100%!important;
       margin: 5px;
      }
-    .thumbnail-arrow-right {
-      transform: translateY(0px)!important;
-      margin-left: 5px!important;
-      margin-top: 10px;
-     }
-    .thumbnail-arrow-left {
-      margin-bottom: 10px;
-      margin-left: 5px!important;
-      transform: translateY(0px)!important;
-     }
+
     .fa-arrow-up {
       color: #000!important;
      }
@@ -2184,9 +2209,9 @@ object {
 
   
   .contact-showroom-hours > ul li {
-  
+  text-align: center;
   margin: 0!important;
-  
+  color: #000 !important;
   }
   
   #quick-view-gallery-images .thumbnail-arrow-left {
@@ -3667,6 +3692,12 @@ object {
     margin-left: 0;
   }
 
+  .sp-description ul li {
+    margin-left: 15px;
+    list-style: disc;
+    color: black;
+  }
+
   .stars, #reply-title, .comment-form-rating, label[for="comment"] {
     font-size: 18px;
   }
@@ -3820,6 +3851,7 @@ object {
     font-size: 42px;
     text-align: left;
     color: #adadad;
+    margin-top: 20px;
     margin-bottom: 10px;
     cursor: pointer;
   }
