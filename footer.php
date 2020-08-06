@@ -152,20 +152,22 @@
 					
 						<div class="row justify-content-center">
 						
-							<div class="col-sm-2 col-3 my-auto"><?php echo wp_image_add_srcset_and_sizes('<img src="/wp-content/uploads/2020/01/visa_64.png" title="We Accept Visa" alt="Visa">', wp_get_attachment_metadata(126408), 126408 ); ?></div>
+							<div class="col-sm-auto col-3 my-auto"><?php echo wp_image_add_srcset_and_sizes('<img src="https://lightyourhome.com/wp-content/uploads/2020/01/visa_64.png" title="We Accept Visa" alt="Visa">', wp_get_attachment_metadata(126408), 126408 ); ?></div>
 							
-						    <div class="col-sm-2 col-3 my-auto"><?php echo wp_image_add_srcset_and_sizes('<img src="/wp-content/uploads/2020/01/mastercard_64.png" title="We Accept Master Card" alt="Master Card">', wp_get_attachment_metadata(1126407), 126407 ); ?></div>
+						    <div class="col-sm-auto col-3 my-auto"><?php echo wp_image_add_srcset_and_sizes('<img src="https://lightyourhome.com/wp-content/uploads/2020/01/mastercard_64.png" title="We Accept Master Card" alt="Master Card">', wp_get_attachment_metadata(1126407), 126407 ); ?></div>
 						    
-						    <div class="col-sm-2 col-3 my-auto"><?php echo wp_image_add_srcset_and_sizes('<img src="/wp-content/uploads/2020/01/discover_64.png" title="We Accept Discover" alt="Discover">', wp_get_attachment_metadata(126406), 126406 ); ?></div>
+						    <div class="col-sm-auto col-3 my-auto"><?php echo wp_image_add_srcset_and_sizes('<img src="https://lightyourhome.com/wp-content/uploads/2020/01/discover_64.png" title="We Accept Discover" alt="Discover">', wp_get_attachment_metadata(126406), 126406 ); ?></div>
 						    
-						    <div class="col-sm-2 col-3 my-auto"><?php echo wp_image_add_srcset_and_sizes('<img src="/wp-content/uploads/2020/01/amex_64.png" title="We Accept American Express" alt="American Express">', wp_get_attachment_metadata(126405), 126405 ); ?></div>
+						    <div class="col-sm-auto col-3 my-auto"><?php echo wp_image_add_srcset_and_sizes('<img src="https://lightyourhome.com/wp-content/uploads/2020/01/amex_64.png" title="We Accept American Express" alt="American Express">', wp_get_attachment_metadata(126405), 126405 ); ?></div>
 						
+						    <div class="col-sm-auto col-3 my-auto"><img width="64px" height="40px" src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_74x46.jpg" border="0" alt="PayPal Logo"></div>
+
 						</div>
 					
 					
 					</div>
 
-					<div class="col-md-3 col-6 copyright-footer-item">
+					<div class="col-md-3 col-5 copyright-footer-item">
 							
 						<ul id="footer-sm-icons-nav">
 							<li class="social-widget-icon"><a href="<?php echo esc_url('https://www.facebook.com/shoplightworld', 'light-world'); ?>" title="Facebook"><i class="fa fa-facebook"></i></a></li>
