@@ -2206,7 +2206,9 @@ object {
     border: 0;
   }
   
-
+  #add_payment_method #payment ul.payment_methods li, .woocommerce-cart #payment ul.payment_methods li, .woocommerce-checkout #payment ul.payment_methods li {
+    color: #000;
+  }
   
   .contact-showroom-hours > ul li {
   text-align: center;
