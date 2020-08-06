@@ -4,6 +4,28 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ unreleased ]
+
+## [ 1.13.3 ]
+
+## Changed
+
+- Price font size and alignment in shop loop
+- Product title alignment in shop loop
+- Color swatch size on mobile and left aligned
+- Color swatch size on desktop
+- Pagination size on mobile
+- Amount of product columns in shop loop to 4 (desktop)
+
+## Removed
+
+- Picture border in shop loop
+- Product title background color in shop loop
+
+## Fixed
+
+- Bug where SEO accordions would not open
+
 ## [ released ] - 7.24.2020
 
 ## [ 1.13.2 ]

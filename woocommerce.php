@@ -254,17 +254,25 @@ get_header(); ?>
   </div>
   <!-- Container end -->
 
-  <section class="term-description">
+</div>
+<!-- Wrapper end -->
 
-    <div class="container">
+<section class="term-description">
 
-      <?php echo category_description(); ?>
+  <div class="container-fluid">
+
+    <div class="row accordion-container justify-content-center">
+
+      <div class="col-md-8 p-3">
+
+        <?php echo category_description(); ?>
+
+      </div>
 
     </div>
 
-  </section>
+  </div>
 
-</div>
-<!-- Wrapper end -->
+</section>
 
 <?php get_footer(); ?>
