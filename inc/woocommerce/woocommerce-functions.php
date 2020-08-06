@@ -1865,6 +1865,35 @@ function tfs_variable_price_format( $price, $product ) {
 
 }
 
-add_filter( 'woocommerce_variable_sale_price_html', 'tfs_variable_price_format', 10, 2 );
-add_filter( 'woocommerce_variable_price_html', 'tfs_variable_price_format', 10, 2 );
+if (  ! is_user_logged_in() ) {
 
+  add_filter( 'woocommerce_variable_sale_price_html', 'tfs_variable_price_format', 10, 2 );
+  add_filter( 'woocommerce_variable_price_html', 'tfs_variable_price_format', 10, 2 );
+  
+}
+  
+add_filter( 'woocommerce_get_catalog_ordering_args', 'tfs_sort_by_stock' );
+function tfs_sort_by_stock( $args ) { 
+
+  $orderby_value = isset( $_GET['orderby'] ) ? wc_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
+
+  if ( 'stock' == $orderby_value ) {
+
+    $args['orderby'] = 'meta_value';
+    $args['order'] = 'ASC';
+    $args['meta_key'] = '_stock_status';
+
+  }
+
+  return $args;
+
+}
+    
+add_filter( 'woocommerce_default_catalog_orderby_options', 'tfs_load_custom_woocommerce_catalog_sorting' );
+add_filter( 'woocommerce_catalog_orderby', 'tfs_load_custom_woocommerce_catalog_sorting' );
+function tfs_load_custom_woocommerce_catalog_sorting( $options ) {
+
+  $options['stock'] = 'Sort by stock';
+  return $options;
+
+}

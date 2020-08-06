@@ -2156,6 +2156,10 @@ object {
     margin: 10px;
   }
 
+  #commentform, #respond {
+    text-align: center;
+  }
+
   .accordion-container, .accordion-container p {
     background-color: #EDEEF0;
     text-align: left;

@@ -4,17 +4,24 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ released ] - 8.3.2020
+## [ unreleased ] - 8.3.2020
 
 ## [ 1.14.2 ]
 
 ## Added
 
 - Paypal logo to footer
+- Additional custom product sorting options (display by stock, display by stock and availability was not compatible)
 
 ## Changed
 
 - Inspiration and Designer collections bg color/margin
+- Default product sorting in shop loop to sort by stock and popularity (in stock shows first)
+
+## Fixed
+
+- Variable "From" formatted pricing displaying in WooCommerce Admin area
+- Single product review form text alignment
 
 ## [ released ] - 8.1.2020
 
