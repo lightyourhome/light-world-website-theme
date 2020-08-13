@@ -130,7 +130,7 @@
                             <div class="mobile-only" style="box-shadow: 0px 2px 10px #000;">
                             <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%; " src="/wp-content/uploads/2019/11/cyber_monday_sale_mobile.jpg">', wp_get_attachment_metadata(85963), 85963); ?>
                                 <div class="pt-2 pb-3" style="background-color: #f4f4f4;">
-                                    <h3>Now Offering Virtual Appointment</h3>
+                                    <h3>Now Offering Virtual Appointments</h3>
                                     <p><strong>Email us at contact@lightyourhome.com or contact us below for more info!</strong></p>
                                     <div style="text-align: center;">
                                         <a href="<?php echo site_url('/contact'); ?>" class="button" style="text-align: center;">Contact Us</a>
