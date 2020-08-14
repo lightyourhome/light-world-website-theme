@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.14.4 ]
+
 ## Added
 
 - Virtual Appointments banner to desktop and mobile

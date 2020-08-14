@@ -121,8 +121,8 @@
                     <div class="col-md-12">
 
                         <div class="desktop-only">
-                            <a href="<?php echo site_url('/contact'); ?>">
-                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%; box-shadow: 0px 2px 10px #000;" src="/wp-content/uploads/2020/08/virtual_appointment_banner_desktop.jpg">', wp_get_attachment_metadata(172915), 172915); ?>
+                            <a href="<?php echo site_url('/contact'); ?>" style="vertical-align: bottom;">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%; box-shadow: 0px 2px 10px #000;" src="/wp-content/uploads/2020/08/virtual_appointment_banner_desktop.jpg">', wp_get_attachment_metadata(163986), 163986); ?>
                             </a>
                         </div>
 
