@@ -145,28 +145,6 @@
 
                 <div class="row mt-5 ml-0 mr-0 row-eq-height"><!-- ROW 3 --> 
 
-                    <div class="col-md-6">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/brands/elk-home'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/07/elk_home_sale_august.jpg">', wp_get_attachment_metadata(172838), 172838 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Elk  Home</h4>
-                                            <h3 class="block-heading">Save 15% off all of Elk Home</h3>
-                                            <h4 class="block-heading">Use code "ELKHOME15" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
 
                     <div class="col-md-6">
 
@@ -190,6 +168,29 @@
 
                         </div>
                     
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="block-picture-primary-container">
+
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/brands/elk-home'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/07/elk_home_sale_august.jpg">', wp_get_attachment_metadata(172838), 172838 ); ?>
+                                    </div>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Elk  Home</h4>
+                                            <h3 class="block-heading">Save 20% off all of Elk Home</h3>
+                                            <h4 class="block-heading">Prices already discounted!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
