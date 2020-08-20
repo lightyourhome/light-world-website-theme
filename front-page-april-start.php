@@ -116,6 +116,33 @@
 
                 </div><!-- END ROW 2 -->
 
+                <div class="row mt-5 ml-0 mr-0">
+
+                    <div class="col-md-12">
+
+                        <div class="desktop-only">
+                            <a href="<?php echo site_url('/contact'); ?>" style="vertical-align: bottom;">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%; box-shadow: 0px 2px 10px #000; vertical-align: bottom;" src="/wp-content/uploads/2020/08/virtual_appointment_banner_desktop.jpg">', wp_get_attachment_metadata(163986), 163986); ?>
+                            </a>
+                        </div>
+
+                        <a href="<?php echo site_url('/contact'); ?>" class="mobile-only" style="vertical-align: bottom;">
+                            <div class="mobile-only" style="box-shadow: 0px 2px 10px #000;">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%; vertical-align: bottom;" src="/wp-content/uploads/2019/11/cyber_monday_sale_mobile.jpg">', wp_get_attachment_metadata(85963), 85963); ?>
+                                <div class="pt-2 pb-3" style="background-color: #f4f4f4;">
+                                    <h3>Now Offering Virtual Appointments</h3>
+                                    <p><strong>Email us at contact@lightyourhome.com or contact us below for more info!</strong></p>
+                                    <div style="text-align: center;">
+                                        <a href="<?php echo site_url('/contact'); ?>" class="button" style="text-align: center;">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                    </div>
+                
+                </div>
+
                 <div class="row mt-5 ml-0 mr-0 row-eq-height"><!-- ROW 3 --> 
 
                     <div class="col-md-6">
