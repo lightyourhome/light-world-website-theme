@@ -14,6 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.14.3 ]
+
 ## Added
 
 - Artcraft Sale to sale page
