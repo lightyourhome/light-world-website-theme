@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Elk Home Sale on home page to use coupon
+- Elk Home Sale on sale page to use coupon
+
+## Removed
+
+- Artcraft sale from sale page
+- Elk Lighting sale from sale page
 
 ## [ released ]
 
