@@ -28,7 +28,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Changed
 
-- Elk Home Sale to 20% off map
+- Elk Home Sale to 20% off mapgit chec
+
+## Removed
+
+- Artcraft Lighting Sale
+- Elk Lighting Sale
 
 ## [ released ]
 
