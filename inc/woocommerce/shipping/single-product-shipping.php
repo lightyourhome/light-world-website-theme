@@ -101,6 +101,14 @@ if ( ! function_exists('single_product_manufacturer_shipping_and_info') ) :
         'shipping' => 'Ships in 2 to 3 Business Days',
         'warranty' => ''
         ],
+
+      '699' => [ //CURREY
+        'shipping' => 'Ships in 3 to 4 Business Days',
+        'warranty' => [
+          'text'   => 'Currey & Company warrants its products for one year against defects in materials and workmanship',
+          'nolink' => true
+        ],
+      ],
   
       '083' => [ //FEISS
         'shipping' => 'Ships in 2 to 3 Business Days',
