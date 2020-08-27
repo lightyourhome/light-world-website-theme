@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Additional Dimension information for product diameter to single product page template
 - Additional Dimension info for product sets to single product page template
 - Currey and Co. to brand page template
+- Brand page image to currey and co. parent category page
 
 ## [ released ]
 
