@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Currey and Co. Base template
 - Currey and Co. Shipping information (single product shipping)
 - Currey and Co. Warranty information (single product shipping)
+- Added Links and images to Currey and Co. Brand template
 
 ## [ released ]
 
