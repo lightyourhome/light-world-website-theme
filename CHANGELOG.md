@@ -14,6 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Currey and Co. Shipping information (single product shipping)
 - Currey and Co. Warranty information (single product shipping)
 - Added Links and images to Currey and Co. Brand template
+- Additional Dimension information for product diameter to single product page template
+- Additional Dimension info for product sets to single product page template
 
 ## [ released ]
 

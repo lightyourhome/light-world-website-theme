@@ -81,6 +81,57 @@ if ( post_password_required() ) {
 
 			</div>
 
+		<?php else : ?>
+
+			<?php if ( ! empty( $product->get_attribute('pa_depth') ) ) : ?>
+
+				<div class="mt-3 mb-3 sp-dimensions">
+				
+					<span><b>Depth/Length: </b></span>
+
+					<span><?php echo esc_html( $product->get_attribute('pa_depth') ); ?><span>
+
+				</div>
+
+			<?php endif; ?>
+
+			<?php if ( ! empty( $product->get_attribute('pa_width') ) ) : ?>
+
+				<div class="mt-3 mb-3 sp-dimensions">
+
+					<span><b>Width: </b></span>
+
+					<span><?php echo esc_html( $product->get_attribute('pa_width') ); ?><span>
+
+				</div>
+
+			<?php endif; ?>
+
+			<?php if ( ! empty( $product->get_attribute('pa_height') ) ) : ?>
+
+				<div class="mt-3 mb-3 sp-dimensions">
+
+					<span><b>Height: </b></span>
+
+					<span><?php echo esc_html( $product->get_attribute('pa_height') ); ?><span>
+
+				</div>
+
+			<?php endif; ?>
+
+
+		<?php endif; ?> <!-- end dimensions -->
+
+		<?php if ( ! empty( $product->get_attribute('pa_diameter') ) ) : ?>
+
+			<div class="mt-3 mb-3 sp-dimensions">
+
+				<span><b>Diameter: </b></span>
+
+				<span><?php echo esc_html( $product->get_attribute('pa_diameter') ); ?><span>
+
+			</div>
+
 		<?php endif; ?>
 
 		<div class="mb-3 sp-categories">
