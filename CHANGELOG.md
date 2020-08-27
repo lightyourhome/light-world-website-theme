@@ -4,7 +4,7 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ unreleased ]
+## [ released ] - 8.27.2020
 
 ## [ 1.15.0 ]
 
@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Links and images to Currey and Co. Brand template
 - Additional Dimension information for product diameter to single product page template
 - Additional Dimension info for product sets to single product page template
+- Currey and Co. to brand page template
 
 ## [ released ]
 
