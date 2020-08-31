@@ -4,7 +4,25 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ unreleased ] - scheduled for 9.1.2020
+
+## [ 1.15.2 ]
+
 ## [ released ]
+
+## Added
+
+- Elk Lighting Sale
+- Innovations Sale
+
+## Changed
+
+- Quoizel Sale on Front Page text/image
+- Maxim/ET2 Sales
+
+## Removed
+
+- Elk Home Sale
 
 ## [ 1.15.1 ]
 
