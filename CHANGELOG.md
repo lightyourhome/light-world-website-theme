@@ -19,6 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Quoizel Sale on Front Page text/image
 - Maxim/ET2 Sales
+- Mobile/Desktop sale banners on Home Page
+- Mobile/Desktop sale banners on Sale Page
 
 ## Removed
 

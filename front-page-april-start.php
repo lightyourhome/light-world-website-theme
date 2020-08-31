@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>">
-                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/07/2.mobile_banner_640x800.jpg">', wp_get_attachment_metadata(172791), 172791 ); ?>
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/08/2.1.Slider_a.jpg">', wp_get_attachment_metadata(173678), 173678 ); ?>
                 </a>
             </div>
         </div>
@@ -18,7 +18,7 @@
 
 <div class="desktop-only">
 
-    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/07/2.Summer_banner_1920x600.jpg">', wp_get_attachment_metadata(172792), 172792 ); ?></a>
+    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/08/2.slider_2.a.png">', wp_get_attachment_metadata(173680), 173680 ); ?></a>
 
 </div>
 
