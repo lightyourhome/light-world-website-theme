@@ -18,7 +18,7 @@
 
 <div class="desktop-only">
 
-    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/08/labor_day_sale_desktop_1.jpg">', wp_get_attachment_metadata(173682), 173682 ); ?></a>
+    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/09/labor_day_sale_2-1.jpg">', wp_get_attachment_metadata(176746), 176746 ); ?></a>
 
 </div>
 

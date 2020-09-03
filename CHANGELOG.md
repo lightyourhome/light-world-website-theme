@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Maxim/ET2 sales to 20% off all
+- Changed home page desktop sale banner
 
 ## [ released ]
 
