@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ unreleased ] - scheduled for 9.4.2020
 
+## Added
+
+
+
+## Changed
+
+- Quoizel Sale text to 15% off
+- Quoizel sale coupon codes
+
+## [ released ]
+
 ## [ 1.15.3 ]
 
 ## Changed
