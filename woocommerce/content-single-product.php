@@ -165,6 +165,30 @@ if ( post_password_required() ) {
 
 		<?php //echo free_bulbs(); ?>
 
+		<?php $shipping_duration = single_product_manufacturer_shipping_and_info( $product->get_categories() ); ?>
+
+		<div class="sp-coupon-code mb-4 mt-4">
+			<strong>
+				<?php 
+
+					if ( isset( $shipping_duration['coupon'] ) || isset( $shipping_duration['coupon-elk-lighting'] ) && $product->get_stock_status() == 'instock' ) {
+
+						if ( strpos( $product->get_categories(), 'Elk Lighting' ) ) {
+
+							echo $shipping_duration['coupon-elk-lighting'];
+
+						} else {
+
+							echo $shipping_duration['coupon'];
+
+						}
+
+					}
+				
+				?>
+			</strong>
+		</div>
+
 		<div class="sp-free-shipping">
 
 			<i class="fa fa-truck" aria-hidden="true"></i>
@@ -180,8 +204,6 @@ if ( post_password_required() ) {
         <!-- DISPLAYS SHIPPING DURATION ON SINGLE PRODUCT PAGES -->
         <div class="shipping-duration mb-5 mt-4">
 	       <?php
-
-				$shipping_duration = single_product_manufacturer_shipping_and_info( $product->get_categories() );
 
 				echo $shipping_duration['shipping'];
 

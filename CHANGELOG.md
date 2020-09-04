@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Added
 
-
+- Coupon codes to single product pages for Quoizel and Elk Lighting
+- basic styling for single product page coupon message
 
 ## Changed
 
