@@ -6,9 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [ 1.16.1 ]
 
+## Added
+
+- New categories to currey and co. brand page template
+
+## Removed
+
+- Hudson Valley and Mitzi from Sale page template
 
 ## [ released ]
+
+## [ 1.16.0 ]
 
 ## Added
 
