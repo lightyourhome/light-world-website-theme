@@ -196,6 +196,32 @@
 
                     <div class="col-sm-4 col-6 mt-5">
 
+                        <a href="<?php echo site_url('/product-category/currey-co/currey-co-lighting/currey-co-flush-mounts-currey-co-lighting'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/09/9999-0030_3_.jpg">', wp_get_attachment_metadata(174664), 174664); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Semi-Flush Mounts</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
+                        <a href="<?php echo site_url('/product-category/currey-co/currey-co-lighting/currey-co-outdoor-lighting/currey-co-outdoor-wall-lighting'); ?>">
+                            <div class="brand-page_cat_image_container pt-3">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/09/5500-0008_2_-scaled.jpg">', wp_get_attachment_metadata(174214), 174214); ?>
+                                <div class="pb-3 pt-3">
+                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Outdoor Wall Lighting</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-sm-4 col-6 mt-5">
+
                         <a href="<?php echo site_url('/product-category/currey-co/currey-co-lighting/currey-co-sconces'); ?>">
                             <div class="brand-page_cat_image_container pt-3">
                                 <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/08/5000-0162_1_.jpg">', wp_get_attachment_metadata(173306), 173306); ?>
