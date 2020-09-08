@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - New categories to currey and co. brand page template
 
+## Changed
+
+- ET2 and Maxim Lighting text in Sale page template
+
 ## Removed
 
 - Hudson Valley and Mitzi from Sale page template
