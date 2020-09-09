@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ]
 
+## [  1.16.2 ]
+
+## Changed
+
+- Simple product image output to use wp_get_attachment_image_src with img tag instead of $product->get_image()
+
+## Removed
+
+- Inline sizing on shop loop variation images
+- Inline sizing on shop loop simple product images
+
+## [ released ]
+
 ## [ 1.16.1 ]
 
 ## Added

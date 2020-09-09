@@ -165,14 +165,13 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
   function custom_loop_product_thumbnail() {
 
     global $product;
-    $prodId = $product->get_id();
-    $simpleProdImg = $product->get_image();
+    $simple_product_img_url = wp_get_attachment_image_src( $product->get_image_id(),  array('350', '350') );
 
     if ( ! $product->is_type('variable') ) { 
       
       ?>
 
-        <div class="woo-simple-product"><a href="<?php echo get_the_permalink($prodId); ?>"><?php echo $simpleProdImg; ?></a></div>
+        <div class="woo-simple-product"><a href="<?php echo get_the_permalink($prodId); ?>"><img src="<?php echo $simple_product_img_url[0]; ?>"></a></div>
 
       <?php 
       
@@ -231,7 +230,7 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
                 <picture>
                   <source class="webp-src-set" srcset="<?php echo esc_attr($img_webp_src); ?>" type="image/webp">
                   <source srcset="<?php echo esc_attr($img_srcset); ?>">
-                  <img height="350" width="350" src="<?php echo $img_url[0]; ?>" srcset="<?php echo esc_attr($img_srcset); ?>">
+                  <img src="<?php echo $img_url[0]; ?>" srcset="<?php echo esc_attr($img_srcset); ?>">
                 </picture>
               </a>
             </div>
