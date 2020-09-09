@@ -171,7 +171,7 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
       
       ?>
 
-        <div class="woo-simple-product"><a href="<?php echo get_the_permalink($prodId); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . $simple_product_img_url[0] . '">', wp_get_attachment_metadata( $product->get_image_id() ), $product->get_image_id() ); ?></a></div>
+        <div class="woo-simple-product"><a href="<?php echo get_the_permalink($prodId); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . $simple_product_img_url . '">', wp_get_attachment_metadata( $product->get_image_id() ), $product->get_image_id() ); ?></a></div>
 
       <?php 
       
