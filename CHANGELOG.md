@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [  1.16.2 ]
 
+## Added
+
+- Srcset to simple prodcuct images in shop loop
+
 ## Changed
 
 - Simple product image output to use wp_get_attachment_image_src with img tag instead of $product->get_image()
