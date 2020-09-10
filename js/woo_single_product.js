@@ -598,19 +598,19 @@ jQuery(function($) {
                 let specSheets = null;
                 let installSheets = null;
 
-                if ( $.parseJSON($('#woocommerce-variable-product-attributes-table').attr('data-table-json')).length ) {
+                if ( $('#woocommerce-variable-product-attributes-table').length ) {
 
                     tableRows = $.parseJSON($('#woocommerce-variable-product-attributes-table').attr('data-table-json'));
 
                 }
 
-                if ( $.parseJSON($('#sp-spec-sheet').attr('data-spec-sheet-urls')).length ) {
+                if ( $('#sp-spec-sheet').length ) {
 
                     specSheets = $.parseJSON($('#sp-spec-sheet').attr('data-spec-sheet-urls'));
 
                 }
 
-                if ( $.parseJSON($('#sp-installation-sheet').attr('data-installation-sheet-urls')) ) {
+                if ( $('#sp-installation-sheet').length ) {
 
                     installSheets = $.parseJSON($('#sp-installation-sheet').attr('data-installation-sheet-urls'));
 
