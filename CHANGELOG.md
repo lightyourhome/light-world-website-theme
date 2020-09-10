@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Added
 
+- Added html sizes attribute to picture source tags for webp and jpeg in shop loop
 - Srcset to simple prodcuct images in shop loop
 
 ## Changed
@@ -20,6 +21,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Inline sizing on shop loop variation images
 - Inline sizing on shop loop simple product images
+
+## Fixes
+
+- Fixed scaled images not being displayed in shop loop
 
 ## [ released ]
 

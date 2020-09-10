@@ -166,12 +166,34 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
 
     global $product;
     $simple_product_img_url = wp_get_attachment_image_src( $product->get_image_id(),  array('350', '350') );
+    //$simple_product_img_srcset = wp_get_attachment_image_srcset( $product->get_image_id() );
+
+    //image type extensions
+    $img_extensions = array('/.jpg/', '/.jpeg/', '/.png/');
+
+    //$simple_product_img_webp_srcset = preg_replace($img_extensions, '.webp', $simple_product_img_srcset);
+
+    $simple_product_img_tag = wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . $simple_product_img_url[0] . '" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail">', wp_get_attachment_metadata( $product->get_image_id() ), $product->get_image_id() );
+
+    $simple_product_img_srcset = preg_match('/srcset="([^"]+)"/', $simple_product_img_tag, $srcset_match );
+
+    $simple_product_img_webp_srcset = preg_replace($img_extensions, '.webp', $srcset_match[0]);
+
+    $simple_product_srcset_sizes = preg_match('/sizes="([^"]+)"/', $simple_product_img_tag, $sizes_match );
 
     if ( ! $product->is_type('variable') ) { 
       
       ?>
 
-        <div class="woo-simple-product"><a href="<?php echo get_the_permalink($prodId); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . $simple_product_img_url[0] . '">', wp_get_attachment_metadata( $product->get_image_id() ), $product->get_image_id() ); ?></a></div>
+        <div class="woo-simple-product">
+          <a href="<?php echo get_the_permalink( $product->get_id() ); ?>">
+          <picture>
+            <source <?php echo $simple_product_img_webp_srcset; ?> <?php echo $sizes_match[0]; ?> type="image/webp">
+            <source <?php echo $srcset_match[0]; ?> <?php echo $sizes_match[0]; ?>>
+            <?php echo $simple_product_img_tag; ?>
+          </picture>
+          </a>
+        </div>
 
       <?php 
       
@@ -217,20 +239,18 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
 
           $img_url = wp_get_attachment_image_src( $variation->get_image_id(),  array('350', '350') );
           $img_srcset = wp_get_attachment_image_srcset( $variation->get_image_id() );
+          $img_sizes = wp_get_attachment_image_sizes( $variation->get_image_id() );
 
-          //image extensions
-          $img_extensions = array('/.jpg/', '/.jpeg/', '/.png/');
-
-          $img_webp_src = preg_replace($img_extensions, '.webp', $img_srcset);
+          $variable_img_webp_src = preg_replace($img_extensions, '.webp', $img_srcset);
 
           ?>
 
             <div class="swatch_slide <?php echo $id; ?>" data-id="<?php echo $id; ?>">
               <a id="ss-variation-url" href="<?php echo $variation_link; ?>">
                 <picture>
-                  <source class="webp-src-set" srcset="<?php echo esc_attr($img_webp_src); ?>" type="image/webp">
-                  <source srcset="<?php echo esc_attr($img_srcset); ?>">
-                  <img src="<?php echo $img_url[0]; ?>" srcset="<?php echo esc_attr($img_srcset); ?>">
+                  <source class="webp-src-set" srcset="<?php echo esc_attr($variable_img_webp_src); ?>" type="image/webp" sizes="<?php echo $img_sizes; ?>">
+                  <source srcset="<?php echo esc_attr($img_srcset); ?>" sizes="<?php echo $img_sizes; ?>">
+                  <img src="<?php echo $img_url[0]; ?>" srcset="<?php echo esc_attr($img_srcset); ?>" sizes="<?php echo $img_sizes; ?>">
                 </picture>
               </a>
             </div>
