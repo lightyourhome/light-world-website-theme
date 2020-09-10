@@ -616,7 +616,7 @@ jQuery(function($) {
 
                 let $installationAttr = $('#sp-installation-sheet').attr('data-installation-sheet-urls');
 
-                if ( $('#sp-installation-sheet').length && $installationAttr !== typeof undefined && $installationAttr !== false ) {
+                if ( $('#sp-installation-sheet').length && typeof $installationAttr !== typeof undefined && $installationAttr !== false ) {
 
                     installSheets = $.parseJSON($('#sp-installation-sheet').attr('data-installation-sheet-urls'));
 
