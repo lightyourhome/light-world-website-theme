@@ -598,19 +598,25 @@ jQuery(function($) {
                 let specSheets = null;
                 let installSheets = null;
 
-                if ( $('#woocommerce-variable-product-attributes-table').length && $('#woocommerce-variable-product-attributes-table').attr('data-table-json').length ) {
+                let $specTableAttr = $('#woocommerce-variable-product-attributes-table').attr('data-table-json');
+
+                if ( $('#woocommerce-variable-product-attributes-table').length && $specTableAttr !== typeof undefined && $specTableAttr !== false ) {
 
                     tableRows = $.parseJSON($('#woocommerce-variable-product-attributes-table').attr('data-table-json'));
 
                 }
 
-                if ( $('#sp-spec-sheet').length && $('#sp-spec-sheet').attr('data-spec-sheet-urls').length ) {
+                let $specAttr = $('#sp-spec-sheet').attr('data-spec-sheet-urls');
+
+                if ( $('#sp-spec-sheet').length && $specAttr !== typeof undefined && $specAttr !== false ) {
 
                     specSheets = $.parseJSON($('#sp-spec-sheet').attr('data-spec-sheet-urls'));
 
                 }
 
-                if ( $('#sp-installation-sheet').length && $('#sp-installation-sheet').attr('data-installation-sheet-urls').length ) {
+                let $installationAttr = $('#sp-installation-sheet').attr('data-installation-sheet-urls');
+
+                if ( $('#sp-installation-sheet').length && $installationAttr !== typeof undefined && $installationAttr !== false ) {
 
                     installSheets = $.parseJSON($('#sp-installation-sheet').attr('data-installation-sheet-urls'));
 
