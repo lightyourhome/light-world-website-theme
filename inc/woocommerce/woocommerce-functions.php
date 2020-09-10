@@ -165,21 +165,30 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
   function custom_loop_product_thumbnail() {
 
     global $product;
-    $simple_product_img_url = wp_get_attachment_image_src( $product->get_image_id(),  array('350', '350') );
-    //$simple_product_img_srcset = wp_get_attachment_image_srcset( $product->get_image_id() );
 
     //image type extensions
     $img_extensions = array('/.jpg/', '/.jpeg/', '/.png/');
 
-    //$simple_product_img_webp_srcset = preg_replace($img_extensions, '.webp', $simple_product_img_srcset);
+    $image_size = NULL;
 
-    $simple_product_img_tag = wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . $simple_product_img_url[0] . '" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail">', wp_get_attachment_metadata( $product->get_image_id() ), $product->get_image_id() );
+    if ( ! wp_is_mobile() ) {
 
-    $simple_product_img_srcset = preg_match('/srcset="([^"]+)"/', $simple_product_img_tag, $srcset_match );
+      $image_size = 'medium';
 
-    $simple_product_img_webp_srcset = preg_replace($img_extensions, '.webp', $srcset_match[0]);
+    } else {
 
-    $simple_product_srcset_sizes = preg_match('/sizes="([^"]+)"/', $simple_product_img_tag, $sizes_match );
+      $image_size = 'thumbnail';
+
+    }
+
+    $simple_product_img_url = wp_get_attachment_image_src( $product->get_image_id(),  array('350', '350') );
+
+    $simple_product_jpg_img_srcset = wp_get_attachment_image_srcset( $product->get_image_id() );
+
+    $simple_product_img_webp_srcset = preg_replace($img_extensions, '.webp', $simple_product_jpg_img_srcset);
+
+    $simple_product_img_srcset_sizes = wp_get_attachment_image_sizes( $product->get_image_id(), $image_size  );
+
 
     if ( ! $product->is_type('variable') ) { 
       
@@ -188,9 +197,9 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
         <div class="woo-simple-product">
           <a href="<?php echo get_the_permalink( $product->get_id() ); ?>">
           <picture>
-            <source <?php echo $simple_product_img_webp_srcset; ?> <?php echo $sizes_match[0]; ?> type="image/webp">
-            <source <?php echo $srcset_match[0]; ?> <?php echo $sizes_match[0]; ?>>
-            <?php echo $simple_product_img_tag; ?>
+            <source srcset="<?php echo $simple_product_img_webp_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>" type="image/webp">
+            <source srcset="<?php echo $simple_product_jpg_img_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>">
+            <img src="<?php echo $simple_product_image_url; ?>" srcset="<?php echo $simple_product_jpg_img_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>">
           </picture>
           </a>
         </div>
@@ -239,7 +248,8 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
 
           $img_url = wp_get_attachment_image_src( $variation->get_image_id(),  array('350', '350') );
           $img_srcset = wp_get_attachment_image_srcset( $variation->get_image_id() );
-          $img_sizes = wp_get_attachment_image_sizes( $variation->get_image_id() );
+
+          $img_sizes = wp_get_attachment_image_sizes( $variation->get_image_id(), $image_size  );
 
           $variable_img_webp_src = preg_replace($img_extensions, '.webp', $img_srcset);
 
