@@ -600,7 +600,7 @@ jQuery(function($) {
 
                 let $specTableAttr = $('#woocommerce-variable-product-attributes-table').attr('data-table-json');
 
-                if ( $('#woocommerce-variable-product-attributes-table').length && $specTableAttr !== typeof undefined && $specTableAttr !== false ) {
+                if ( $('#woocommerce-variable-product-attributes-table').length && typeof $specTableAttr !== typeof undefined && $specTableAttr !== false ) {
 
                     tableRows = $.parseJSON($('#woocommerce-variable-product-attributes-table').attr('data-table-json'));
 
@@ -608,7 +608,7 @@ jQuery(function($) {
 
                 let $specAttr = $('#sp-spec-sheet').attr('data-spec-sheet-urls');
 
-                if ( $('#sp-spec-sheet').length && $specAttr !== typeof undefined && $specAttr !== false ) {
+                if ( $('#sp-spec-sheet').length && typeof $specAttr !== typeof undefined && $specAttr !== false ) {
 
                     specSheets = $.parseJSON($('#sp-spec-sheet').attr('data-spec-sheet-urls'));
 
