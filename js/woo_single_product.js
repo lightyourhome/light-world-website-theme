@@ -594,9 +594,27 @@ jQuery(function($) {
 
                 let $currentProductId = $('.woocommerce-variation-add-to-cart').find('input[name="variation_id"]').val();
 
-                let tableRows = $.parseJSON($('#woocommerce-variable-product-attributes-table').attr('data-table-json'));
-                let specSheets = $.parseJSON($('#sp-spec-sheet').attr('data-spec-sheet-urls'));
-                let installSheets = $.parseJSON($('#sp-installation-sheet').attr('data-installation-sheet-urls'));
+                let tableRows = null;
+                let specSheets = null;
+                let installSheets = null;
+
+                if ( $.parseJSON($('#woocommerce-variable-product-attributes-table').attr('data-table-json')).length ) {
+
+                    tableRows = $.parseJSON($('#woocommerce-variable-product-attributes-table').attr('data-table-json'));
+
+                }
+
+                if ( $.parseJSON($('#sp-spec-sheet').attr('data-spec-sheet-urls')).length ) {
+
+                    specSheets = $.parseJSON($('#sp-spec-sheet').attr('data-spec-sheet-urls'));
+
+                }
+
+                if ( $.parseJSON($('#sp-installation-sheet').attr('data-installation-sheet-urls')) ) {
+
+                    installSheets = $.parseJSON($('#sp-installation-sheet').attr('data-installation-sheet-urls'));
+
+                }
 
                 if (specSheets !== null && specSheets !== undefined) {
 

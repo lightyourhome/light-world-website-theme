@@ -4,7 +4,19 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ unreleased ]
+## [ released ] - 9.10.2020
+
+## [ 1.16.3 ]
+
+## Added
+
+- check for installation, spec and warranty info to func change_variation_single_product_data in woo_single_product.js
+
+## Fixed
+
+- Bug where specification table for not display on variable products that are missing an installation sheet
+
+## [ released ] 9.10.2020
 
 ## [  1.16.2 ]
 
