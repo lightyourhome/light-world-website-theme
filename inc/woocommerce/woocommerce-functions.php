@@ -55,7 +55,7 @@ if ( ! function_exists('add_checkout_badges') ) :
   			    <script type="text/javascript" language="javascript" src="//verify.authorize.net:443/anetseal/seal.js" ></script>
           </div>
         </div>
-        <div class="col-md-3 col-4">
+        <div class="col-md-3 col-4 my-auto">
           <div class="trustedsite-trustmark" data-type="212" data-width="120"  data-height="50"></div>
       </div>
       </div>
