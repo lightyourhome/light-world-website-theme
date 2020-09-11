@@ -38,13 +38,13 @@ if ( ! function_exists('loop_columns') ) :
 endif;
 
 
-add_action('woocommerce_proceed_to_checkout', 'add_auth_seal');
-add_action('woocommerce_review_order_before_payment', 'add_auth_seal');
-if ( ! function_exists('add_auth_seal') ) :
+add_action('woocommerce_proceed_to_checkout', 'add_checkout_badges');
+add_action('woocommerce_review_order_before_payment', 'add_checkout_badges');
+if ( ! function_exists('add_checkout_badges') ) :
 /**
 * Adds the AUTH.NET Seal to WooCommerce Checkout/Cart Collaterals
 */
-  function add_auth_seal() { ?>
+  function add_checkout_badges() { ?>
 
     <div class="container">
       <div class="row justify-content-center mb-3">

@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - trusted site "certified secure" badge to footer
 
+## Changed
+
+- Function add_auth_seal to add_checkout_badges
+
 ## [ released ] - 9.10.2020
 
 ## [ 1.16.3 ]
