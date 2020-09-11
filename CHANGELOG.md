@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Added
 
 - trusted site "certified secure" badge to footer
+- trusted site "secure checkout" badge to checkout
 
 ## Changed
 

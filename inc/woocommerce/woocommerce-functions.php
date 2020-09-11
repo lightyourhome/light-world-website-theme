@@ -54,6 +54,9 @@ if ( ! function_exists('add_checkout_badges') ) :
   		  	<script type="text/javascript" language="javascript">var ANS_customer_id="8c440f92-ac68-4e99-9c8a-b78107472e0e";</script>
   			  <script type="text/javascript" language="javascript" src="//verify.authorize.net:443/anetseal/seal.js" ></script>
         </div>
+        <div class="col-md-3 col-4">
+          <div class="trustedsite-trustmark" data-type="212" data-width="120"  data-height="50"></div>
+        </div>
       </div>
     </div>
 
