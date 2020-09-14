@@ -7,7 +7,7 @@
     <div class="container-fluid px-0">
         <div class="row">
             <div class="col-md-12">
-                <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/08/2.1.Slider_b.jpg">', wp_get_attachment_metadata(173679), 173679 ); ?></a>
+                <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/09/1.fall_sale_640x800.jpg">', wp_get_attachment_metadata(176774), 176774 ); ?></a>
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@
 
 <div class="desktop-only">
 
-  <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/08/labor_day_sale_desktop_2.jpg">', wp_get_attachment_metadata(173683), 173683 ); ?></a>
+  <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/09/1.Fall-Sale_1920x600.jpg">', wp_get_attachment_metadata(176777), 176777 ); ?></a>
 
 </div>
 

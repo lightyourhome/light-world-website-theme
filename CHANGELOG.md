@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Function add_auth_seal to add_checkout_badges
+- Sale Banners to fall sale
 
 ## [ released ] - 9.10.2020
 
