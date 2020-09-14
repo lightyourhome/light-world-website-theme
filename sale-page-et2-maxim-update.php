@@ -103,30 +103,6 @@
                     </div>
 
                     <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/brands/innovations-lighting'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/09/516-3I-BK-G121-8RB-2.jpg">', wp_get_attachment_metadata(38393), 38393 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Innovations Lighting</h4>
-                                            <h3 class="block-heading">Save 20% on All Innovations Lighting</h3>
-                                            <h4 class="block-heading">Prices already discounted!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/innovations-lighting'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
                         <div class="block-container">
                             <a href="<?php echo site_url('/brands/maxim-lighting'); ?>">
                                 <div class="block-picture">

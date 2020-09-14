@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Removed
 
 - Artcraft sale
+- Innovations Sale
 
 ## [ released ] - 9.10.2020
 
