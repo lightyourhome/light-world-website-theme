@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Check for key 'wppp' in array $GLOBALS
 - added check to function woo_overview_tab_content() for product page
 
+## Changed
+
+- Thumbnail gallery arrow margin on single product page on tablet landscape
+
 ## Removed
 
 - old Post type share switch from header.php (leftover from old theme)
