@@ -203,7 +203,7 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
           <picture>
             <source srcset="<?php echo $simple_product_img_webp_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>" type="image/webp">
             <source srcset="<?php echo $simple_product_jpg_img_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>">
-            <img src="<?php echo $simple_product_img_url; ?>" srcset="<?php echo $simple_product_jpg_img_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>">
+            <img src="<?php echo $simple_product_img_url[0]; ?>" srcset="<?php echo $simple_product_jpg_img_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>">
           </picture>
           </a>
         </div>
