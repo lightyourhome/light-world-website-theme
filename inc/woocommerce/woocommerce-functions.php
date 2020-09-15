@@ -246,7 +246,7 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
           $variation = wc_get_product( $variation_id );
 
           $finish = $variation->get_attribute('finish');
-          $prod_slug = $product->get_slug($prodId);
+          $prod_slug = $product->get_slug( $product->get_id() );
 
           $variation_link = site_url('product/') . $prod_slug . '/?attribute_pa_finish=' . return_slug($finish);
 

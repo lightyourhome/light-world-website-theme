@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - PHP Notice: undefined property front_end from array $GLOBALS['wppp']
 - PHP Notice:  Undefined variable: simple_product_image_url
 - PHP Notice:  Undefined variable: post_type_share_switch in header.php
+- PHP Notice:  Undefined variable: prodId
 
 ## [ released ] 9.11.2020
 
