@@ -338,10 +338,16 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering',30
 /*
  * Remove loop product per page
  */
-remove_action( 'woocommerce_before_shop_loop', array( $GLOBALS['wppp']->front_end, 'products_per_page_dropdown' ), 25 );
-remove_action( 'woocommerce_after_shop_loop', array( $GLOBALS['wppp']->front_end, 'products_per_page_dropdown' ), 25 );
 
-add_action('market_woo_product_per_page',array( $GLOBALS['wppp']->front_end, 'products_per_page_dropdown' ), 30);
+if ( is_plugin_active('woocommerce-products-per-page/woocommerce-products-per-page.php') && array_key_exists('wppp', $GLOBALS) ) {
+
+	remove_action( 'woocommerce_before_shop_loop', array( $GLOBALS['wppp']->front_end, 'products_per_page_dropdown' ), 25 );
+	remove_action( 'woocommerce_after_shop_loop', array( $GLOBALS['wppp']->front_end, 'products_per_page_dropdown' ), 25 );
+	
+	add_action('market_woo_product_per_page',array( $GLOBALS['wppp']->front_end, 'products_per_page_dropdown' ), 30);	
+
+}
+
 
 //Removes sale badge from single product pages
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );

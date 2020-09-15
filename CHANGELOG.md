@@ -8,9 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.17.1 ]
 
+## Added
+
+- Check for key 'wppp' in array $GLOBALS
+
 ## Fixed
 
 - empty regex in preg_replace error woocommerce-functions.php 553
+- php warning undefined index 'wppp' in array $GLOBALS
+- php notice undefined property front_end from array $GLOBALS['wppp']
 
 ## [ released ] 9.11.2020
 
