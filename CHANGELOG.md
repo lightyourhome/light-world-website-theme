@@ -12,12 +12,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Check for key 'wppp' in array $GLOBALS
 
+## Removed
+
+- old Post type share switch from header.php (leftover from old theme)
+
 ## Fixed
 
 - PHP Warning: empty regex in preg_replace error woocommerce-functions.php 553
 - PHP Warning: undefined index 'wppp' in array $GLOBALS
 - PHP Notice: undefined property front_end from array $GLOBALS['wppp']
 - PHP Notice:  Undefined variable: simple_product_image_url
+- PHP Notice:  Undefined variable: post_type_share_switch in header.php
 
 ## [ released ] 9.11.2020
 

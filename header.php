@@ -75,11 +75,6 @@
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=691745001356928&ev=PageView&noscript=1"/></noscript>
   <!-- End Facebook Pixel Code -->
 
-  <!-- Share Content Scripts -->
-  <?php if( $post_type_share_switch == '1' && isset($options['post_type_share']) ) {
-  if(in_array(get_post_type(), $options['post_type_share'])) {
-	  get_template_part('vslmd/share/share');
-  }
 } ?>
 
   <meta name="theme-color" content="#db5945">
