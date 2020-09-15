@@ -461,6 +461,8 @@ if ( ! function_exists('woocommerce_loop_swatches') ) :
 
   $productChildrenCount = sizeOf($product->get_visible_children());
 
+  $image_extensions = array('/.jpg/', '/.jpeg/', '/.png/');
+
   if ($product->is_type('variable')) {
 
       if ($productFinishesCount <= 3) {
@@ -470,7 +472,6 @@ if ( ! function_exists('woocommerce_loop_swatches') ) :
         $image_srcset = array();
         $variation_links = array();
 
-        $image_extensions = array('/.jpg/', '/.jpeg/', '/.png/');
 
         foreach ($product->get_visible_children() as $variation_id) {
           // Get an instance of the WC_Product_Variation object
