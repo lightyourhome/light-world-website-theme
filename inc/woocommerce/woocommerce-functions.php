@@ -1674,7 +1674,7 @@ if ( ! function_exists('woo_overview_tab_content') )  :
       
                   <li><a class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( $manufacturer_warranty_link ); ?>"><span>Product Warranty</span><i class="fa fa-download" aria-hidden="true"></i></a></li>
       
-                <?php elseif ( array_key_exists( 'text', $manufacturer_warranty_link ) ) : ?>
+                <?php elseif ( is_array( $manufacturer_warranty_link ) ) : ?>
       
                   <li><p><?php echo esc_html( $manufacturer_warranty_link['text'] ); ?></p></li>
       
