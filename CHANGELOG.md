@@ -14,9 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Fixed
 
-- empty regex in preg_replace error woocommerce-functions.php 553
-- php warning undefined index 'wppp' in array $GLOBALS
-- php notice undefined property front_end from array $GLOBALS['wppp']
+- PHP Warning: empty regex in preg_replace error woocommerce-functions.php 553
+- PHP Warning: undefined index 'wppp' in array $GLOBALS
+- PHP Notice: undefined property front_end from array $GLOBALS['wppp']
+- PHP Notice:  Undefined variable: simple_product_image_url
 
 ## [ released ] 9.11.2020
 
