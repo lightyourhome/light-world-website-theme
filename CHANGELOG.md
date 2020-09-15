@@ -4,13 +4,14 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ unreleased ]
+## [ released ] - 9.15.2020
 
 ## [ 1.17.1 ]
 
 ## Added
 
 - Check for key 'wppp' in array $GLOBALS
+- added check to function woo_overview_tab_content() for product page
 
 ## Removed
 
@@ -25,6 +26,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - PHP Notice:  Undefined variable: post_type_share_switch in header.php
 - PHP Notice:  Undefined variable: prodId
 - PHP Notice:  Undefined variable: kichler_sku in single-product-shipping.php
+- PHP Warning:  Illegal string offset 'text' in woocommerce-functions.php
+
 
 ## [ released ] 9.11.2020
 
