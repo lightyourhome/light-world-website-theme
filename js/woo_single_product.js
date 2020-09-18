@@ -822,4 +822,24 @@ jQuery(function($) {
 
     });
 
+    $(document).ready(function() {
+
+        if ( document.getElementById( 'sales-page-featured-sales' ) ) {
+
+            document.getElementById( 'sales-page-featured-sales' ).scrollIntoView();
+
+        }
+
+        if ( document.getElementById( 'sales-page-banner' ) ) {
+
+            $('#sales-page-banner').click(function() {
+
+                document.getElementById( 'sales-page-banner' ).scrollIntoView();
+
+            });
+
+        }
+
+    });
+
 });

@@ -16,7 +16,7 @@
 
 <div class="desktop-only">
 
-  <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/09/1.Fall-Sale_1920x600.jpg">', wp_get_attachment_metadata(176777), 176777 ); ?></a>
+  <a id="sales-page-banner" href="#"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://lightyourhome.com/wp-content/uploads/2020/09/1.Fall-Sale_1920x600.jpg">', wp_get_attachment_metadata(176777), 176777 ); ?></a>
 
 </div>
 
@@ -30,7 +30,7 @@
 
                 <div class="row mb-4 mt-4">
 
-                    <div style="border-bottom: 2px solid #d3d3d3;" class="col-md-12 mt-3 mb-3">
+                    <div id="sales-page-featured-sales" style="border-bottom: 2px solid #d3d3d3;" class="col-md-12 mt-3 mb-3">
                         <h1>Our Featured Sales</h1>
                     </div>
                     
