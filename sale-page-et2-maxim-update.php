@@ -40,8 +40,8 @@
 
                             <div class="block-container">
                                 <a href="<?php echo site_url('/brands/quoizel-lighting/'); ?>">
-                                    <div class="block-picture"><!-- https://lightyourhome.com/wp-content/uploads/2019/04/LWN5005BN_4_.jpg -->
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://lightyourhome.com/wp-content/uploads/2020/05/89047_8.jpg">', wp_get_attachment_metadata(15942), 15942 ); ?>
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/04/LWN5005BN_4_.jpg">', wp_get_attachment_metadata(15942), 15942 ); ?>
                                     </div>
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
@@ -85,7 +85,7 @@
                             <div class="block-container">
                                 <a href="<?php echo site_url('/brands/elk-lighting'); ?>">
                                     <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://lightyourhome.com/wp-content/uploads/2020/05/89047_8.jpg">', wp_get_attachment_metadata(166726), 166726 ); ?>
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/05/89047_8.jpg">', wp_get_attachment_metadata(166726), 166726 ); ?>
                                     </div>
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
@@ -124,7 +124,7 @@
                         <div class="block-container">
                             <a href="<?php echo site_url('/brands/et2-lighting'); ?>">
                                 <div class="block-picture">
-                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://lightyourhome.com/wp-content/uploads/2020/04/E25064-92BKGLD-scaled.jpg">', wp_get_attachment_metadata(165986), 165986 ); ?>
+                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/E25064-92BKGLD-scaled.jpg">', wp_get_attachment_metadata(165986), 165986 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
