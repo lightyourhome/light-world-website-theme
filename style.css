@@ -2526,6 +2526,9 @@ object {
     text-align: center;
   }
   
+  a#sales-page-banner {
+    cursor: pointer;
+  }
   
   /*------------------------------------  
   ## WP FORMS 

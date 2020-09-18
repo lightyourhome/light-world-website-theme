@@ -826,7 +826,9 @@ jQuery(function($) {
 
         if ( document.getElementById( 'sales-page-featured-sales' ) ) {
 
-            document.getElementById( 'sales-page-featured-sales' ).scrollIntoView();
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $( $('#sales-page-featured-sales') ).offset().top - 200
+            }, 500);
 
         }
 
@@ -834,7 +836,9 @@ jQuery(function($) {
 
             $('#sales-page-banner').click(function() {
 
-                document.getElementById( 'sales-page-banner' ).scrollIntoView();
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $( $('#sales-page-featured-sales') ).offset().top - 200
+                }, 500);
 
             });
 
