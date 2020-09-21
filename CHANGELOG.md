@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automatic scroll into view for sales when entering sales page
 - Scroll sales into view when clicking on sales page banner
 
+## Changed
+
+- CSS selector for sale page banners
+
 ## [ released ] - 9.15.2020
 
 ## [ 1.18.0 ]

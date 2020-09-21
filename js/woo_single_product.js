@@ -836,9 +836,9 @@ jQuery(function($) {
 
 	$(document).ready(function() {
 
-        if ( document.getElementById( 'sales-page-banner' ) ) {
+        if ( document.getElementsByClassName( 'sales-page-banner' ) ) {
 
-            $('#sales-page-banner').click(function() {
+            $('.sales-page-banner').click(function() {
 
                 $([document.documentElement, document.body]).animate({
                 scrollTop: $( $('#sales-page-featured-sales') ).offset().top - 200
