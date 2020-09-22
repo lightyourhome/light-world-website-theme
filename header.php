@@ -47,6 +47,13 @@
   gtag('config', 'UA-156132286-1');
   </script>
 
+  <!-- call tracking -->
+  <script>
+	gtag('config', 'AW-877014085/WARyCJaKjcIBEMXYmKID', {
+	'phone_conversion_number': '215-883-8544'
+	});
+  </script>
+
   <!-- Hotjar Tracking Code for https://lightyourhome.com -->
 	<script>
 		(function(h,o,t,j,a,r){

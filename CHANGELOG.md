@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Scroll into view functionality for sales page
 - Automatic scroll into view for sales when entering sales page
 - Scroll sales into view when clicking on sales page banner
+- new google conversion tracking code
 
 ## Changed
 
