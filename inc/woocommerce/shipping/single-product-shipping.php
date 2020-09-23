@@ -40,7 +40,7 @@ if ( ! function_exists('single_product_manufacturer_shipping_and_info') ) :
       'Q' => [ //QUOIZEL
         'shipping' => 'Ships in 2 to 3 Business Days',
         'warranty' => 'https://www.quoizel.com/warranty/',
-        'coupon'   => 'Get 15% Off This Item With Code "QUOIZEL15" at Checkout!'
+        'coupon'   => 'Get 10% Off This Item With Code "QUOIZELALL10" at Checkout!'
         ],
   
       '0' => [ //SAVOY

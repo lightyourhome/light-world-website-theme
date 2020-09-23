@@ -46,8 +46,8 @@
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
                                             <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 15% off on All of Quoizel Lighting</h3>
-                                            <h4 class="block-heading">Use code "QUOIZEL15" at checkout!</h4>
+                                            <h3 class="block-heading">Get 10% off on All of Quoizel Lighting</h3>
+                                            <h4 class="block-heading">Use code "QUOIZELALL10" at checkout!</h4>
                                             <a style="text-align: center;" href="<?php echo site_url('/brands/quoizel-lighting/'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
                                     </div>
@@ -135,7 +135,7 @@
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Maxim Lighting</h4>
-                                        <h3 class="block-heading">Save 20% on All Maxim Lighting</h3>
+                                        <h3 class="block-heading">Save 10% on All Maxim Lighting 2019-2020 Releases</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
                                         <a style="text-align: center;" href="<?php echo site_url('/brands/maxim-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
@@ -153,7 +153,7 @@
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">ET2 Lighting</h4>
-                                        <h3 class="block-heading">Save 20% on All ET2 Lighting</h3>
+                                        <h3 class="block-heading">Save 10% on All ET2 Lighting 2019-2020 Releases</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
                                         <a style="text-align: center;" href="<?php echo site_url('/brands/et2-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
@@ -196,53 +196,6 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/brands/mitzi-lighting'); ?>">
-                                    <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2018/12/mitzi_Arden_1.jpg">', wp_get_attachment_metadata(7356), 7356 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Mitzi Lighting</h4>
-                                            <h3 class="block-heading">Save 20% off all Mitzi Lighting</h3>
-                                            <h4 class="block-heading">Prices already discounted!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/mitzi-lighting'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>                                   
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/brands/hudson-valley-lighting'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/07/5800-AGB_800.jpg">', wp_get_attachment_metadata(27793), 27793 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                        <h4 class="block-heading">Hudson Valley</h4>
-                                        <h3 class="block-heading">Save 20% off all Hudson Valley Lighting</h3>
-                                        <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/hudson-valley-lighting'); ?>" class="block-shop-link">Shop Now</a>                                    </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
                     </div>
 
                     <div class="col-md-12" style="border-top: 2px solid #d3d3d3;"></div>

@@ -4,7 +4,34 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ unreleased ] - scheduled for 9.4.2020
+## [ unreleased ] - scheduled update for 9.9.2020
+
+## [ 1.16.1 ] - update
+
+## changed
+
+- Quoizel sale back to 10% off
+- coupon code on single product pages for quoizel products
+
+## [ released ]
+
+## [ 1.16.1 ]
+
+## Added
+
+- New categories to currey and co. brand page template
+
+## Changed
+
+- ET2 and Maxim Lighting text in Sale page template
+
+## Removed
+
+- Hudson Valley and Mitzi from Sale page template
+
+## [ released ]
+
+## [ 1.16.0 ]
 
 ## Added
 
