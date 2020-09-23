@@ -4,39 +4,12 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ released ] - 9.10.2020
+## [ 1.16.1 ] - update
 
-## [ 1.16.3 ]
+## changed
 
-## Added
-
-- check for installation, spec and warranty info to func change_variation_single_product_data in woo_single_product.js
-
-## Fixed
-
-- Bug where specification table for not display on variable products that are missing an installation sheet
-
-## [ released ] 9.10.2020
-
-## [  1.16.2 ]
-
-## Added
-
-- Added html sizes attribute to picture source tags for webp and jpeg in shop loop
-- Srcset to simple prodcuct images in shop loop
-
-## Changed
-
-- Simple product image output to use wp_get_attachment_image_src with img tag instead of $product->get_image()
-
-## Removed
-
-- Inline sizing on shop loop variation images
-- Inline sizing on shop loop simple product images
-
-## Fixes
-
-- Fixed scaled images not being displayed in shop loop
+- Quoizel sale back to 10% off
+- coupon code on single product pages for quoizel products
 
 ## [ released ]
 
