@@ -203,7 +203,7 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
           <picture>
             <source srcset="<?php echo $simple_product_img_webp_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>" type="image/webp">
             <source srcset="<?php echo $simple_product_jpg_img_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>">
-            <img src="<?php echo $simple_product_image_url; ?>" srcset="<?php echo $simple_product_jpg_img_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>">
+            <img src="<?php echo $simple_product_img_url[0]; ?>" srcset="<?php echo $simple_product_jpg_img_srcset; ?>" sizes="<?php echo $simple_product_img_srcset_sizes; ?>">
           </picture>
           </a>
         </div>
@@ -246,7 +246,7 @@ if ( ! function_exists('custom_loop_product_thumbnail') ) :
           $variation = wc_get_product( $variation_id );
 
           $finish = $variation->get_attribute('finish');
-          $prod_slug = $product->get_slug($prodId);
+          $prod_slug = $product->get_slug( $product->get_id() );
 
           $variation_link = site_url('product/') . $prod_slug . '/?attribute_pa_finish=' . return_slug($finish);
 
@@ -461,6 +461,8 @@ if ( ! function_exists('woocommerce_loop_swatches') ) :
 
   $productChildrenCount = sizeOf($product->get_visible_children());
 
+  $image_extensions = array('/.jpg/', '/.jpeg/', '/.png/');
+
   if ($product->is_type('variable')) {
 
       if ($productFinishesCount <= 3) {
@@ -470,7 +472,6 @@ if ( ! function_exists('woocommerce_loop_swatches') ) :
         $image_srcset = array();
         $variation_links = array();
 
-        $image_extensions = array('/.jpg/', '/.jpeg/', '/.png/');
 
         foreach ($product->get_visible_children() as $variation_id) {
           // Get an instance of the WC_Product_Variation object
@@ -1609,114 +1610,118 @@ if ( ! function_exists('woo_overview_tab_content') )  :
    */
   function woo_overview_tab_content() {
 
-    global $product;
-    
-    $manufacturer_id = substr( $product->get_sku(), 0, 3 );
-    
-    $manufacturer_warranty_link = single_product_manufacturer_shipping_and_info( $product->get_categories(), true );
-    
-    $manufacturer_warranty_link_exists = ( is_array( $manufacturer_warranty_link ) && $manufacturer_warranty_link['nolink'] == 1 ? false : true );
-    
-    $manufacturer_warranty_and_sheets_missing = false;
-    
-    if ( $product->is_type('simple') && empty( $manufacturer_warranty_link ) && empty( get_field('product_spec_sheet') ) && empty( get_field('product_installation_sheet') ) ) {
-    
-      $manufacturer_warranty_and_sheets_missing = true;
-    
-    }
-    
-    ?>
-    
-    <div class="container-fluid">
-    
-      <div class="row mt-3 <?php if ( $manufacturer_warranty_and_sheets_missing == true ) : ?>justify-content-center<?php endif; ?>">
-    
-        <div class="<?php if ( $manufacturer_warranty_and_sheets_missing !== true ) : ?>col-md-6 col-12<?php else : ?>col-md-8 col-12<?php endif; ?>">
+    //only run if on a single product page
+    if ( is_product() ) {
 
-          <?php do_action('before_sp_overview_product_overview_table'); ?>
+      global $product;
     
-          <table class="woocommerce-product-attributes sp-overview-table">
-            <tbody>
-              <?php if ( ! empty( $product->get_dimensions() ) ) : ?>
-              <tr class="woocommerce-product-attributes-item">
-                <th class="woocommerce-product-attributes-item__label">Dimensions:</th>
-                <td class="woocommerce-product-attributes-item__value"><?php echo wp_kses_post( $product->get_dimensions() ); ?></td>
-              </tr>
-              <?php endif; ?>
-              <?php if ( ! empty( $product->get_attribute('pa_bulb-type') ) ) : ?>
-              <tr class="woocommerce-product-attributes-item">
-                <th class="woocommerce-product-attributes-item__label">Bulb Type:</th>
-                <td class="woocommerce-product-attributes-item__value"><?php echo wp_kses_post( $product->get_attribute('pa_bulb-type') ); ?></td>
-              </tr>
-             <?php endif; ?>
-             <?php if ( ! empty( $product->get_weight() ) ) : ?>
-              <tr class="woocommerce-product-attributes-item">
-                <th class="woocommerce-product-attributes-item__label">Weight:</th>
-                <td class="woocommerce-product-attributes-item__value"><?php echo wp_kses_post( $product->get_weight() ) . ' lbs'; ?></td>
-              </tr>
-             <?php endif; ?>
-            </tbody>
-          </table>
-    
-        </div>
-    
-        <div class="col-md-6 col-12" style="<?php if ( $manufacturer_warranty_and_sheets_missing == true ) : ?>display: none;<?php endif; ?>">
-    
-          <div class="sp-download-area">
-    
-            <ul>
-    
-              <?php if ( ! empty( $manufacturer_warranty_link ) && $manufacturer_warranty_link_exists == true ) : ?>
-    
-                <li><a class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( $manufacturer_warranty_link ); ?>"><span>Product Warranty</span><i class="fa fa-download" aria-hidden="true"></i></a></li>
-    
-              <?php else : ?>
-    
-                <li><p><?php echo esc_html( $manufacturer_warranty_link['text'] ); ?></p></li>
-    
-              <?php endif; ?>
-    
-              <?php if ( ! empty( get_field('product_spec_sheet') ) && $product->is_type('simple') && $manufacturer_id !== '083' ) : ?>
-    
-              <li><a id="sp-spec-sheet" class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( get_field('product_spec_sheet') ); ?>"><span>Product Specification Sheet</span><i class="fa fa-download" aria-hidden="true"></i></a></li>
-    
-              <?php
-    
-              elseif ( $product->is_type('variable') && $manufacturer_id !== '083' ) :
-    
-                $variation_spec_urls_and_json = get_spec_and_installation_sheet_url_json('spec');
-    
-              ?>
-    
-              <li><a id="sp-spec-sheet" class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( $variation_spec_urls_and_json['default'] ); ?>" <?php if ( ! empty($variation_spec_urls_and_json['json']) ) : echo 'data-spec-sheet-urls=' . $variation_spec_urls_and_json['json']; endif; ?>><span>Product Specification Sheet</span><i class="fa fa-download" aria-hidden="true" ></i></a></li>
-    
-              <?php endif; ?>
-    
-              <?php if ( ! empty( get_field('product_installation_sheet') ) && $product->is_type('simple') ) : ?>
-    
-              <li><a id="sp-installation-sheet" class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( get_field('product_installation_sheet') ); ?>"><span>Product Installation Guide</span><i class="fa fa-download" aria-hidden="true"></i></a></li>
-    
-              <?php elseif ( $product->is_type('variable') ) :
-    
-                $variation_installation_urls_and_json = get_spec_and_installation_sheet_url_json('installation');
-    
-              ?>
-    
-              <li><a id="sp-installation-sheet" class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( $variation_installation_urls_and_json['default'] ); ?>" <?php if ( ! empty($variation_installation_urls_and_json['json']) ) : echo 'data-installation-sheet-urls=' . $variation_installation_urls_and_json['json']; endif; ?>><span>Product Installation Guide</span><i class="fa fa-download" aria-hidden="true"></i></a></li>
-    
-              <?php endif; ?>
-            </ul>
-    
+      $manufacturer_id = substr( $product->get_sku(), 0, 3 );
+      
+      $manufacturer_warranty_link = single_product_manufacturer_shipping_and_info( $product->get_categories(), true );
+      
+      $manufacturer_warranty_link_exists = ( is_array( $manufacturer_warranty_link ) && $manufacturer_warranty_link['nolink'] == 1 ? false : true );
+      
+      $manufacturer_warranty_and_sheets_missing = false;
+      
+      if ( $product->is_type('simple') && empty( $manufacturer_warranty_link ) && empty( get_field('product_spec_sheet') ) && empty( get_field('product_installation_sheet') ) ) {
+      
+        $manufacturer_warranty_and_sheets_missing = true;
+      
+      }
+      
+      ?>
+      
+      <div class="container-fluid">
+      
+        <div class="row mt-3 <?php if ( $manufacturer_warranty_and_sheets_missing == true ) : ?>justify-content-center<?php endif; ?>">
+      
+          <div class="<?php if ( $manufacturer_warranty_and_sheets_missing !== true ) : ?>col-md-6 col-12<?php else : ?>col-md-8 col-12<?php endif; ?>">
+  
+            <?php do_action('before_sp_overview_product_overview_table'); ?>
+      
+            <table class="woocommerce-product-attributes sp-overview-table">
+              <tbody>
+                <?php if ( ! empty( $product->get_dimensions() ) ) : ?>
+                <tr class="woocommerce-product-attributes-item">
+                  <th class="woocommerce-product-attributes-item__label">Dimensions:</th>
+                  <td class="woocommerce-product-attributes-item__value"><?php echo wp_kses_post( $product->get_dimensions() ); ?></td>
+                </tr>
+                <?php endif; ?>
+                <?php if ( ! empty( $product->get_attribute('pa_bulb-type') ) ) : ?>
+                <tr class="woocommerce-product-attributes-item">
+                  <th class="woocommerce-product-attributes-item__label">Bulb Type:</th>
+                  <td class="woocommerce-product-attributes-item__value"><?php echo wp_kses_post( $product->get_attribute('pa_bulb-type') ); ?></td>
+                </tr>
+               <?php endif; ?>
+               <?php if ( ! empty( $product->get_weight() ) ) : ?>
+                <tr class="woocommerce-product-attributes-item">
+                  <th class="woocommerce-product-attributes-item__label">Weight:</th>
+                  <td class="woocommerce-product-attributes-item__value"><?php echo wp_kses_post( $product->get_weight() ) . ' lbs'; ?></td>
+                </tr>
+               <?php endif; ?>
+              </tbody>
+            </table>
+      
           </div>
-    
+      
+          <div class="col-md-6 col-12" style="<?php if ( $manufacturer_warranty_and_sheets_missing == true ) : ?>display: none;<?php endif; ?>">
+      
+            <div class="sp-download-area">
+      
+              <ul>
+      
+                <?php if ( ! empty( $manufacturer_warranty_link ) && $manufacturer_warranty_link_exists == true ) : ?>
+      
+                  <li><a class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( $manufacturer_warranty_link ); ?>"><span>Product Warranty</span><i class="fa fa-download" aria-hidden="true"></i></a></li>
+      
+                <?php elseif ( is_array( $manufacturer_warranty_link ) ) : ?>
+      
+                  <li><p><?php echo esc_html( $manufacturer_warranty_link['text'] ); ?></p></li>
+      
+                <?php endif; ?>
+      
+                <?php if ( ! empty( get_field('product_spec_sheet') ) && $product->is_type('simple') && $manufacturer_id !== '083' ) : ?>
+      
+                <li><a id="sp-spec-sheet" class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( get_field('product_spec_sheet') ); ?>"><span>Product Specification Sheet</span><i class="fa fa-download" aria-hidden="true"></i></a></li>
+      
+                <?php
+      
+                elseif ( $product->is_type('variable') && $manufacturer_id !== '083' ) :
+      
+                  $variation_spec_urls_and_json = get_spec_and_installation_sheet_url_json('spec');
+      
+                ?>
+      
+                <li><a id="sp-spec-sheet" class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( $variation_spec_urls_and_json['default'] ); ?>" <?php if ( ! empty($variation_spec_urls_and_json['json']) ) : echo 'data-spec-sheet-urls=' . $variation_spec_urls_and_json['json']; endif; ?>><span>Product Specification Sheet</span><i class="fa fa-download" aria-hidden="true" ></i></a></li>
+      
+                <?php endif; ?>
+      
+                <?php if ( ! empty( get_field('product_installation_sheet') ) && $product->is_type('simple') ) : ?>
+      
+                <li><a id="sp-installation-sheet" class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( get_field('product_installation_sheet') ); ?>"><span>Product Installation Guide</span><i class="fa fa-download" aria-hidden="true"></i></a></li>
+      
+                <?php elseif ( $product->is_type('variable') ) :
+      
+                  $variation_installation_urls_and_json = get_spec_and_installation_sheet_url_json('installation');
+      
+                ?>
+      
+                <li><a id="sp-installation-sheet" class="sp-download-button" target="_blank" rel="noopener noreferrer" href="<?php echo esc_url( $variation_installation_urls_and_json['default'] ); ?>" <?php if ( ! empty($variation_installation_urls_and_json['json']) ) : echo 'data-installation-sheet-urls=' . $variation_installation_urls_and_json['json']; endif; ?>><span>Product Installation Guide</span><i class="fa fa-download" aria-hidden="true"></i></a></li>
+      
+                <?php endif; ?>
+              </ul>
+      
+            </div>
+      
+          </div>
+      
         </div>
-    
+      
       </div>
-    
-    </div>
-    
-    
-  <?php }
+
+    <?php }
+
+  }
 
 endif;
 

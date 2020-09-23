@@ -18,8 +18,6 @@ if ( ! function_exists('single_product_manufacturer_shipping_and_info') ) :
     $manufacturer_id = substr($sku, 0, 3);
     $kichler_id = substr($sku, 0, 5);
   
-    echo $kichler_sku;
-  
     //DEFINE MANUFACTURER ID'S AND ASSIGN A DURATION TO ITS ID
     $manufacturer_info = array(
   
