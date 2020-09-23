@@ -158,8 +158,8 @@
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
                                             <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 10% off on All Quoizel Lighting Products</h3>
-                                            <h4 class="block-heading">Use code "QUOIZELALL10" at checkout!</h4>
+                                            <h3 class="block-heading">Get 15% off on All Quoizel Lighting Products</h3>
+                                            <h4 class="block-heading">Use code "QUOIZEL15" at checkout!</h4>
                                             <a style="text-align: center;" href="<?php echo site_url('/brands/quoizel-lighting/'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
                                     </div>

@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ unreleased ] - scheduled for 9.4.2020
 
+## Added
+
+- Coupon codes to single product pages for Quoizel and Elk Lighting
+- basic styling for single product page coupon message
+
+## Changed
+
+- Quoizel Sale text to 15% off
+- Quoizel sale coupon codes
+
+## [ released ]
+
 ## [ 1.15.3 ]
 
 ## Changed
