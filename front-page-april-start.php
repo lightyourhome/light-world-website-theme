@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>">
-                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/07/2.mobile_banner_640x800.jpg">', wp_get_attachment_metadata(172791), 172791 ); ?>
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/08/2.1.Slider_a.jpg">', wp_get_attachment_metadata(173678), 173678 ); ?>
                 </a>
             </div>
         </div>
@@ -18,7 +18,7 @@
 
 <div class="desktop-only">
 
-    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/07/2.Summer_banner_1920x600.jpg">', wp_get_attachment_metadata(172792), 172792 ); ?></a>
+    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/08/labor_day_sale_desktop_1.jpg">', wp_get_attachment_metadata(173682), 173682 ); ?></a>
 
 </div>
 
@@ -150,17 +150,17 @@
 
                         <div class="block-picture-primary-container">
                         
-                            <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-semi-flush-mounts/'); ?>">
+                            <a href="<?php echo site_url('/brands/quoizel-lighting/'); ?>">
                                 <div class="block-container">
                                     <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/07/quoizel_ceiling_mount_sale.jpg">', wp_get_attachment_metadata(172837), 172837 ); ?>
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/06/quoizel_outdoor_sale_2020_3.jpg">', wp_get_attachment_metadata(172664), 172664 ); ?>
                                     </div>
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
                                             <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Save 10% on Quoizel Semi Flush Mounts</h3>
-                                            <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-semi-flush-mounts/'); ?>" class="block-shop-link">Shop Now</a>
+                                            <h3 class="block-heading">Get 10% off on All Quoizel Lighting Products</h3>
+                                            <h4 class="block-heading">Use code "QUOIZELALL10" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/quoizel-lighting/'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -175,16 +175,16 @@
                         <div class="block-picture-primary-container">
 
                             <div class="block-container">
-                                <a href="<?php echo site_url('/brands/elk-home'); ?>">
+                                <a href="<?php echo site_url('/brands/elk-lighting'); ?>">
                                     <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/07/elk_home_sale_august.jpg">', wp_get_attachment_metadata(172838), 172838 ); ?>
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/05/89047_8.jpg">', wp_get_attachment_metadata(166726), 166726 ); ?>
                                     </div>
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
-                                            <h4 class="block-heading">Elk Home</h4>
-                                            <h3 class="block-heading">Save 15% on all Elk Home Products</h3>
-                                            <h4 class="block-heading">Use code ELKHOME15 at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
+                                            <h4 class="block-heading">Elk Lighting</h4>
+                                            <h3 class="block-heading">Get 15% off on All Elk Lighting Products</h3>
+                                            <h4 class="block-heading">Use code "ELKLIGHTING15" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/elk-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
                                     </div>
                                 </a>
