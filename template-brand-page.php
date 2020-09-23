@@ -46,6 +46,8 @@
 
                 create_picture_block( 'col-md-4', site_url('/brands/uttermost-lighting-and-decor'), '/wp-content/uploads/2019/01/216-06428_3_-3.jpg', 'Shop Uttermost', 9268, 1, 'Uttermost'  );
 
+                create_picture_block( 'col-md-4', site_url('/brands/currey-and-company'), '/wp-content/uploads/2020/08/1200-0352_2_.jpg', 'Shop Currey and Co.', 173200, 1, 'Currey and Co.'  );
+
                 create_picture_block( 'col-md-4', site_url('/brands/livex-lighting'), '/wp-content/uploads/2019/10/49824-33_04.jpg', 'Shop Livex Lighting', 64116, 1, 'Livex Lighting'  );
 
                 create_picture_block( 'col-md-4', site_url('/brands/hudson-valley-lighting'), '/wp-content/uploads/2019/07/6710-AGB_800.jpg', 'Shop Hudson Valley', 27809, 1, 'Hudson Valley'  );

@@ -922,7 +922,9 @@ if ( ! function_exists('categoryPageImages') ) :
     //wall lights
     '30480' => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/bath_and_vanity_category_picture-1.jpg',
     //lamps
-    '30481' => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/table_and_floor_lamps_category_picture_5-e1569944729170.jpg'
+    '30481' => 'https://www.lightyourhome.com/wp-content/uploads/2019/07/table_and_floor_lamps_category_picture_5-e1569944729170.jpg',
+    //currey
+    '30539' => 'https://www.lightyourhome.com/wp-content/uploads/2020/08/6000-0192_8__brand_page.jpg'
     
     ); ?>
     
