@@ -822,4 +822,32 @@ jQuery(function($) {
 
     });
 
+    $(window).load(function() {
+
+        if ( document.getElementById( 'sales-page-featured-sales' ) ) {
+
+             $([document.documentElement, document.body]).animate({
+                 scrollTop: $( $('#sales-page-featured-sales') ).offset().top - 200
+             }, 500);
+
+        }
+
+	});
+
+	$(document).ready(function() {
+
+        if ( document.getElementsByClassName( 'sales-page-banner' ) ) {
+
+            $('.sales-page-banner').click(function() {
+
+                $([document.documentElement, document.body]).animate({
+                scrollTop: $( $('#sales-page-featured-sales') ).offset().top - 200
+            }, 500);
+
+            });
+
+        }
+
+    });
+
 });
