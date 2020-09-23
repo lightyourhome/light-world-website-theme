@@ -38,22 +38,26 @@ if ( ! function_exists('loop_columns') ) :
 endif;
 
 
-add_action('woocommerce_proceed_to_checkout', 'add_auth_seal');
-add_action('woocommerce_review_order_before_payment', 'add_auth_seal');
-if ( ! function_exists('add_auth_seal') ) :
+add_action('woocommerce_proceed_to_checkout', 'add_checkout_badges');
+add_action('woocommerce_review_order_before_payment', 'add_checkout_badges');
+if ( ! function_exists('add_checkout_badges') ) :
 /**
 * Adds the AUTH.NET Seal to WooCommerce Checkout/Cart Collaterals
 */
-  function add_auth_seal() { ?>
+  function add_checkout_badges() { ?>
 
     <div class="container">
       <div class="row justify-content-center mb-3">
         <div class="col-md-3 col-4">
           <!-- (c) 2005, 2019. Authorize.Net is a registered trademark of CyberSource Corporation -->
           <div class="AuthorizeNetSeal">
-  		  	<script type="text/javascript" language="javascript">var ANS_customer_id="8c440f92-ac68-4e99-9c8a-b78107472e0e";</script>
-  			  <script type="text/javascript" language="javascript" src="//verify.authorize.net:443/anetseal/seal.js" ></script>
+  		  	  <script type="text/javascript" language="javascript">var ANS_customer_id="8c440f92-ac68-4e99-9c8a-b78107472e0e";</script>
+  			    <script type="text/javascript" language="javascript" src="//verify.authorize.net:443/anetseal/seal.js" ></script>
+          </div>
         </div>
+        <div class="col-md-3 col-4 my-auto">
+          <div class="trustedsite-trustmark" data-type="212" data-width="120"  data-height="50"></div>
+      </div>
       </div>
     </div>
 

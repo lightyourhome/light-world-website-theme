@@ -162,6 +162,8 @@
 						
 						    <div class="col-sm-auto col-3 my-auto"><img width="64px" height="40px" src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_74x46.jpg" border="0" alt="PayPal Logo"></div>
 
+							<div class="col-sm-auto col-6 my-auto"><div class="trustedsite-trustmark" data-type="202" data-width="93"  data-height="38"></div></div>
+
 						</div>
 					
 					

@@ -594,9 +594,33 @@ jQuery(function($) {
 
                 let $currentProductId = $('.woocommerce-variation-add-to-cart').find('input[name="variation_id"]').val();
 
-                let tableRows = $.parseJSON($('#woocommerce-variable-product-attributes-table').attr('data-table-json'));
-                let specSheets = $.parseJSON($('#sp-spec-sheet').attr('data-spec-sheet-urls'));
-                let installSheets = $.parseJSON($('#sp-installation-sheet').attr('data-installation-sheet-urls'));
+                let tableRows = null;
+                let specSheets = null;
+                let installSheets = null;
+
+                let $specTableAttr = $('#woocommerce-variable-product-attributes-table').attr('data-table-json');
+
+                if ( $('#woocommerce-variable-product-attributes-table').length && typeof $specTableAttr !== typeof undefined && $specTableAttr !== false ) {
+
+                    tableRows = $.parseJSON($('#woocommerce-variable-product-attributes-table').attr('data-table-json'));
+
+                }
+
+                let $specAttr = $('#sp-spec-sheet').attr('data-spec-sheet-urls');
+
+                if ( $('#sp-spec-sheet').length && typeof $specAttr !== typeof undefined && $specAttr !== false ) {
+
+                    specSheets = $.parseJSON($('#sp-spec-sheet').attr('data-spec-sheet-urls'));
+
+                }
+
+                let $installationAttr = $('#sp-installation-sheet').attr('data-installation-sheet-urls');
+
+                if ( $('#sp-installation-sheet').length && typeof $installationAttr !== typeof undefined && $installationAttr !== false ) {
+
+                    installSheets = $.parseJSON($('#sp-installation-sheet').attr('data-installation-sheet-urls'));
+
+                }
 
                 if (specSheets !== null && specSheets !== undefined) {
 

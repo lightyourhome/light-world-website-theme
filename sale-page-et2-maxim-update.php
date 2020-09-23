@@ -7,7 +7,7 @@
     <div class="container-fluid px-0">
         <div class="row">
             <div class="col-md-12">
-                <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/08/2.1.Slider_b.jpg">', wp_get_attachment_metadata(173679), 173679 ); ?></a>
+                <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/09/1.fall_sale_640x800.jpg">', wp_get_attachment_metadata(176774), 176774 ); ?></a>
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@
 
 <div class="desktop-only">
 
-  <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/08/labor_day_sale_desktop_2.jpg">', wp_get_attachment_metadata(173683), 173683 ); ?></a>
+  <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/09/1.Fall-Sale_1920x600.jpg">', wp_get_attachment_metadata(176777), 176777 ); ?></a>
 
 </div>
 
@@ -102,47 +102,23 @@
 
                     </div>
 
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/brands/innovations-lighting'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/09/516-3I-BK-G121-8RB-2.jpg">', wp_get_attachment_metadata(38393), 38393 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Innovations Lighting</h4>
-                                            <h3 class="block-heading">Save 20% on All Innovations Lighting</h3>
-                                            <h4 class="block-heading">Prices already discounted!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/innovations-lighting'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="block-container">
-                            <a href="<?php echo site_url('/brands/maxim-lighting'); ?>">
+                            <a href="<?php //echo site_url('/brands/maxim-lighting'); ?>">
                                 <div class="block-picture">
-                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/31213OIAB-scaled.jpg">', wp_get_attachment_metadata(165335), 165335 ); ?>
+                                     <?php //echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/31213OIAB-scaled.jpg">', wp_get_attachment_metadata(165335), 165335 ); ?>
                                 </div>
                                 <div class="block-caption-wrapper">
                                     <div class="block-caption-container">
                                         <h4 class="block-heading">Maxim Lighting</h4>
                                         <h3 class="block-heading">Save 10% on All Maxim Lighting 2019-2020 Releases</h3>
                                         <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/maxim-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                        <a style="text-align: center;" href="<?php //echo site_url('/brands/maxim-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                     </div>
                                 </div>
                             </a>
                          </div>
-                    </div>
+                    </div> -->
 
                      <div class="col-md-4">
                         <div class="block-container">
@@ -161,42 +137,6 @@
                             </a>
                          </div>
                      </div>
-
-                     <div class="col-md-4">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/artcraft-lighting/artcraft-sconces/'); ?>">
-                                <div class="block-picture">
-                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/03/AC10590VB-1.jpg">', wp_get_attachment_metadata(163510), 163510 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Artcraft Lighting</h4>
-                                        <h3 class="block-heading">Save 15% on Artcraft Lighting Sconces</h3>
-                                        <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/artcraft-lighting/artcraft-sconces/'); ?>" class="block-shop-link">Shop Now</a>
-                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/artcraft-lighting/artcraft-outdoor-lighting/artcraft-outdoor-wall-lighting'); ?>">
-                                <div class="block-picture">
-                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src=/wp-content/uploads/2020/03/AC9012BK.jpg">', wp_get_attachment_metadata(163739), 163739 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Artcraft Lighting</h4>
-                                        <h3 class="block-heading">Save 15% on Artcraft Outdoor Wall Lights</h3>
-                                        <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/artcraft-lighting/artcraft-outdoor-lighting/artcraft-outdoor-wall-lighting'); ?>" class="block-shop-link">Shop Now</a>
-                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
 
                     <div class="col-md-12" style="border-top: 2px solid #d3d3d3;"></div>
 
