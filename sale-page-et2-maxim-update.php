@@ -156,6 +156,41 @@
                          </div>
                      </div>
 
+                     <div class="col-md-4">
+                        <div class="block-container">
+                            <a href="<?php echo site_url('/product-category/artcraft-lighting/artcraft-sconces/'); ?>">
+                                <div class="block-picture">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/03/AC10590VB-1.jpg">', wp_get_attachment_metadata(163510), 163510 ); ?>
+                                </div>
+                                <div class="block-caption-wrapper">
+                                    <div class="block-caption-container">
+                                        <h4 class="block-heading">Artcraft Lighting</h4>
+                                        <h3 class="block-heading">Save 15% on Artcraft Lighting Sconces</h3>
+                                        <h4 class="block-heading">Prices already discounted!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/artcraft-lighting/artcraft-sconces/'); ?>" class="block-shop-link">Shop Now</a>
+                                     </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="block-container">
+                            <a href="<?php echo site_url('/product-category/artcraft-lighting/artcraft-outdoor-lighting/artcraft-outdoor-wall-lighting'); ?>">
+                                <div class="block-picture">
+                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src=/wp-content/uploads/2020/03/AC9012BK.jpg">', wp_get_attachment_metadata(163739), 163739 ); ?>
+                                </div>
+                                <div class="block-caption-wrapper">
+                                    <div class="block-caption-container">
+                                        <h4 class="block-heading">Artcraft Lighting</h4>
+                                        <h3 class="block-heading">Save 15% on Artcraft Outdoor Wall Lights</h3>
+                                        <h4 class="block-heading">Prices already discounted!</h4>
+                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/artcraft-lighting/artcraft-outdoor-lighting/artcraft-outdoor-wall-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                     </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
                     <div class="col-md-4">
 
