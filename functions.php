@@ -378,19 +378,6 @@ function tfs_remove_woocommerce_content_page_title() {
 	return false;
 }
 
-add_filter( 'sgo_javascript_combine_exclude', 'js_combine_exclude' );
-function js_combine_exclude( $exclude_list ) {
-    $exclude_list[] = 'sv-wc-payment-gateway-payment-form-v5_8_1';
-
-    return $exclude_list;
-}
-
-add_filter( 'sgo_js_async_exclude', 'js_async_exclude' );
-function js_async_exclude( $exclude_list ) {
-    $exclude_list[] = 'sv-wc-payment-gateway-payment-form-v5_8_1';
-
-    return $exclude_list;
-}
 
 /* Blog post navigation */
 if ( ! function_exists( 'tfs_post_nav' ) ) :
