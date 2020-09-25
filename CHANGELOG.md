@@ -8,11 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.19.1 ]
 
+## Added
+
+- Default padding and margin values for user agent stylesheet
+
 ## Fixed
 
 - Fatal Error: undefined function is_plugin_active
 - SEO JS accordions handler
 - Mobile JS search handler
+- CSS bug where mobile search icon and shopping cart were displaced
 
 ## [ released ] - 9.21.2020
 
