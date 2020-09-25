@@ -385,6 +385,13 @@ function js_combine_exclude( $exclude_list ) {
     return $exclude_list;
 }
 
+add_filter( 'sgo_js_async_exclude', 'js_async_exclude' );
+function js_async_exclude( $exclude_list ) {
+    $exclude_list[] = 'sv-wc-payment-gateway-payment-form-v5_8_1';
+
+    return $exclude_list;
+}
+
 /* Blog post navigation */
 if ( ! function_exists( 'tfs_post_nav' ) ) :
 
