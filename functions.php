@@ -157,7 +157,7 @@ function enqueue_light_world_scripts() {
 	wp_enqueue_script( 'woocommerce-product-swatches', get_template_directory_uri() . '/js/swatch_slider_1.0.js', array(), '07222020', true);
 
 	/* Single Product JS */
-	wp_enqueue_script( 'woocommerce-single-product-scripts', get_template_directory_uri() . '/js/woo_single_product.js', array(), '1.19.0', true );
+	wp_enqueue_script( 'woocommerce-single-product-scripts', get_template_directory_uri() . '/js/woo_single_product.js', array(), '1.19.1', true );
 
 	/* Slick Slider */
 	wp_enqueue_script( 'slick-slider', get_template_directory_uri() . '/js/slick_init.min.js', array(), '02332020', true );

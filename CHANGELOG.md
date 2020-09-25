@@ -8,16 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.19.1 ]
 
-## Added
-
-- SG Exclude script filter
-- SG Exclude async script filter
-
 ## Fixed
 
 - Fatal Error: undefined function is_plugin_active
-- Auth Net CIM plugin javascript error from SG Optimizer plugin
-- Auth Net CIM plugin javascript error when async loading files from SG Optimizer plugin
+- SEO JS accordions handler
+- Mobile JS search handler
 
 ## [ released ] - 9.21.2020
 
