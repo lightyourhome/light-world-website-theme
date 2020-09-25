@@ -199,6 +199,10 @@ function dequeue_light_world_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'dequeue_light_world_scripts', 100 );
 
+/**
+ * Include plugin.php
+ */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 /**
  * Implement the Custom Header feature.
@@ -338,7 +342,6 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering',30
 /*
  * Remove loop product per page
  */
-
 if ( is_plugin_active('woocommerce-products-per-page/woocommerce-products-per-page.php') && array_key_exists('wppp', $GLOBALS) ) {
 
 	remove_action( 'woocommerce_before_shop_loop', array( $GLOBALS['wppp']->front_end, 'products_per_page_dropdown' ), 25 );
