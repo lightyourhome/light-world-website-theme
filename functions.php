@@ -142,7 +142,7 @@ add_action( 'widgets_init', 'light_world_widgets_init' );
  * Enqueue scripts and styles.
  */
 function enqueue_light_world_scripts() {
-	wp_enqueue_style( 'light-world-style', get_template_directory_uri() . '/style.css', array(), '1.19.0' );
+	wp_enqueue_style( 'light-world-style', get_template_directory_uri() . '/style.css', array(), '1.19.1' );
 
 	//wp_enqueue_style( 'light-world-style-2', get_template_directory_uri() . '/css/theme.css', array(), '03192020', true );
 
@@ -151,13 +151,13 @@ function enqueue_light_world_scripts() {
 	// wp_enqueue_script( 'light-world-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	/* Search Bar JS */
-	wp_enqueue_script( 'mobile-search-bar-js', get_template_directory_uri() . '/js/mobile_search_init.js', array(), '07292020', true);
+	wp_enqueue_script( 'mobile-search-bar-js', get_template_directory_uri() . '/js/mobile_search_init.js', array(), '09252020', true);
 
 	/* Color Swatch JS */
 	wp_enqueue_script( 'woocommerce-product-swatches', get_template_directory_uri() . '/js/swatch_slider_1.0.js', array(), '07222020', true);
 
 	/* Single Product JS */
-	wp_enqueue_script( 'woocommerce-single-product-scripts', get_template_directory_uri() . '/js/woo_single_product.js', array(), '1.19.0', true );
+	wp_enqueue_script( 'woocommerce-single-product-scripts', get_template_directory_uri() . '/js/woo_single_product.js', array(), '1.19.1', true );
 
 	/* Slick Slider */
 	wp_enqueue_script( 'slick-slider', get_template_directory_uri() . '/js/slick_init.min.js', array(), '02332020', true );
@@ -199,6 +199,10 @@ function dequeue_light_world_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'dequeue_light_world_scripts', 100 );
 
+/**
+ * Include plugin.php
+ */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 /**
  * Implement the Custom Header feature.
@@ -338,7 +342,6 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering',30
 /*
  * Remove loop product per page
  */
-
 if ( is_plugin_active('woocommerce-products-per-page/woocommerce-products-per-page.php') && array_key_exists('wppp', $GLOBALS) ) {
 
 	remove_action( 'woocommerce_before_shop_loop', array( $GLOBALS['wppp']->front_end, 'products_per_page_dropdown' ), 25 );

@@ -1,17 +1,13 @@
 jQuery(function($) {
 
-	if ( $('#header-mobile-search') ) {
+	if ( $('#header-mobile-search').length ) {
 
-		$('#header-mobile-search').toggle(function() {
+		$('#header-mobile-search').click(function() {
 
-			$('#mobile-search-bar').show();
-
-		}, function() {
-
-			$('#mobile-search-bar').hide();
+			$('#mobile-search-bar').toggle();
 
 		});
-	
+		
 	}
 
 	$(window).scroll( function() { addStickyNav() } );
@@ -40,17 +36,16 @@ jQuery(function($) {
 
 		if ( $('#accordion-read-more').length ) {
 
-			$('#accordion-read-more').toggle(function() {
+			$('#accordion-read-more').click(function() {
 
-				$('#accordion-hidden-content').show();
-				$(this).text('Read Less');
-		
-			}, function() {
-		
-				$('#accordion-hidden-content').hide();
-				$(this).text('Read More');
-		
-			});		
+				$('#accordion-hidden-content').toggle();
+
+				let text = $('#accordion-read-more').text();
+				$('#accordion-read-more').text(
+					text == "Read More" ? "Read Less" : "Read More"
+				);
+
+			});
 
 		}
 
