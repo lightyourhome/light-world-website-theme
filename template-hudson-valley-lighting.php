@@ -38,6 +38,30 @@
                         <h2>Hudson Valley Lighting Categories</h2>
                     </div>
 
+                    <?php
+
+                        brand_page_picture_blocks( array(
+
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Chandeliers',
+                            'img_src' => '',
+                            'img_id'  => ,
+                            'url'     => site_url( '' )
+
+                        ) );
+
+                        brand_page_picture_blocks( array(
+
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Floor Lamps',
+                            'img_src' => '/wp-content/uploads/2019/05/L1346-AGB.jpg',
+                            'img_id'  => 23766,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-floor-lamps' )
+
+                        ) );
+
+                    ?>
+
                     <div class="col-sm-4 col-6  mt-5">
 
                         <a href="<?php echo site_url('/product-category/hudson-valley-lighting/hudson-valley-floor-lamps'); ?>">
