@@ -11,6 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Added
 
 - function brand_page_picture_blocks to dynamically output brand page category picture blocks
+- New HVL product categories to HVL brand page
+
+## Changed
+
+- HVL brand page template to use function brand_page_picture_blocks
 
 ## [ released ] - 9.25.2020
 
