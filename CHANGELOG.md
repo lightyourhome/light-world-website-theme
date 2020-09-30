@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Added
 
 - Elk Home sale to home page
+- Outdoor Wall Lighting to Maxim brand page template
 
 ## Removed
 
