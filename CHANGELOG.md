@@ -8,7 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.20.2 ]
 
+## Added
 
+- .block-picture img to fix white space between images and titles
+
+## Fixed
+
+- White space in picture blocks
 
 ## [ released ] - 9.29.2020
 
