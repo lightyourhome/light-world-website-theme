@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Elk Home sale to home page
 - Outdoor Wall Lighting to Maxim brand page template
 - Elk Home sale to sale page
+- Quoizel Table and floors lamps sale to sale page
+
 
 ## Changed
 
@@ -22,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Quoizel sale from home page
 - Removed ET2 sale from sale page
+- Quoizel All Sale from sale page
 
 ## [ released ] - 9.30.2020
 
