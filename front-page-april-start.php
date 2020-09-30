@@ -150,17 +150,17 @@
 
                         <div class="block-picture-primary-container">
                         
-                            <a href="<?php echo site_url('/brands/quoizel-lighting/'); ?>">
+                            <a href="<?php echo site_url('/brands/elk-lighting/'); ?>">
                                 <div class="block-container">
                                     <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/06/quoizel_outdoor_sale_2020_3.jpg">', wp_get_attachment_metadata(172664), 172664 ); ?>
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/05/45421_3.jpg">', wp_get_attachment_metadata(167227), 167227 ); ?>
                                     </div>
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
-                                            <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 10% off on All Quoizel Lighting Products</h3>
-                                            <h4 class="block-heading">Use code "QUOIZELALL10" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/quoizel-lighting/'); ?>" class="block-shop-link">Shop Now</a>
+                                            <h4 class="block-heading">Elk Lighting</h4>
+                                            <h3 class="block-heading">Get 15% off on All Elk Lighting Products</h3>
+                                            <h4 class="block-heading">Use code "ELKLIGHTING15" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/elk-lighting/'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -175,16 +175,16 @@
                         <div class="block-picture-primary-container">
 
                             <div class="block-container">
-                                <a href="<?php echo site_url('/brands/elk-lighting'); ?>">
+                                <a href="<?php echo site_url('/brands/elk-home'); ?>">
                                     <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/05/89047_8.jpg">', wp_get_attachment_metadata(166726), 166726 ); ?>
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/elk_home_sale_june.jpg">', wp_get_attachment_metadata(172718), 172718 ); ?>
                                     </div>
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
-                                            <h4 class="block-heading">Elk Lighting</h4>
-                                            <h3 class="block-heading">Get 15% off on All Elk Lighting Products</h3>
-                                            <h4 class="block-heading">Use code "ELKLIGHTING15" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/elk-lighting'); ?>" class="block-shop-link">Shop Now</a>
+                                            <h4 class="block-heading">Elk Home</h4>
+                                            <h3 class="block-heading">Get 15% off on All Elk Home Products</h3>
+                                            <h4 class="block-heading">Use code "ELKHOME15" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
                                     </div>
                                 </a>
