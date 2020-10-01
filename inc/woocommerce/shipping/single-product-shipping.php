@@ -38,7 +38,6 @@ if ( ! function_exists('single_product_manufacturer_shipping_and_info') ) :
       'Q' => [ //QUOIZEL
         'shipping' => 'Ships in 2 to 3 Business Days',
         'warranty' => 'https://www.quoizel.com/warranty/',
-        'coupon'   => 'Get 10% Off This Item With Code "QUOIZELALL10" at Checkout!'
         ],
   
       '0' => [ //SAVOY
@@ -99,7 +98,8 @@ if ( ! function_exists('single_product_manufacturer_shipping_and_info') ) :
       '051' => [ //ELK
         'shipping' => 'Ships in 2 to 3 Business Days',
         'warranty' => '',
-        'coupon-elk-lighting' => 'Get 15% Off This Item With Code "ELKLIGHTING15" at Checkout!'
+        'coupon-elk-lighting' => 'Get 15% Off This Item With Code "ELKLIGHTING15" at Checkout!',
+        'coupon-elk-home' => 'Get 15% Off This Item With Code "ELKHOME15" at Checkout!'
         ],
 
       '699' => [ //CURREY

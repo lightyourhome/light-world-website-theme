@@ -153,6 +153,19 @@
 
               <div class="col-sm-4 col-6 mt-5">
 
+                  <a href="<?php echo site_url('/product-category/maxim-lighting/maxim-lighting-outdoor-lighting/maxim-outdoor-wall-lighting/'); ?>">
+                      <div class="brand-page_cat_image_container p-3">
+                          <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/30094CLDBZ.jpg">', wp_get_attachment_metadata(165479), 165479 ); ?>
+           <div class="pb-3 pt-3">
+                              <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Outdoor Wall Lighting</h3>
+                          </div>
+                      </div>
+                  </a>
+
+              </div>
+
+              <div class="col-sm-4 col-6 mt-5">
+
                  <a href="<?php echo site_url('/product-category/maxim-lighting/maxim-lighting-outdoor-pendants'); ?>">
                      <div class="brand-page_cat_image_container p-3">
                          <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/10268CLWZ-scaled.jpg">', wp_get_attachment_metadata(165813), 165813 ); ?>

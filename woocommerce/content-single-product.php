@@ -171,16 +171,16 @@ if ( post_password_required() ) {
 			<strong>
 				<?php 
 
-					if ( isset( $shipping_duration['coupon'] ) || isset( $shipping_duration['coupon-elk-lighting'] ) && $product->get_stock_status() == 'instock' ) {
+					if ( isset( $shipping_duration['coupon-elk-lighting'] ) || isset( $shipping_duration['coupon-elk-home'] ) && $product->get_stock_status() == 'instock' ) {
 
 						if ( strpos( $product->get_categories(), 'Elk Lighting' ) ) {
 
 							echo $shipping_duration['coupon-elk-lighting'];
 
-						} else {
+						} else if ( strpos( $product->get_categories(), 'Elk Home' ) ) {
 
-							echo $shipping_duration['coupon'];
-
+							echo $shipping_duration['coupon-elk-home'];
+							
 						}
 
 					}
