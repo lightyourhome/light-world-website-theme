@@ -38,57 +38,99 @@
                         <h2>Hudson Valley Lighting Categories</h2>
                     </div>
 
-                    <div class="col-sm-4 col-6  mt-5">
+                    <?php
 
-                        <a href="<?php echo site_url('/product-category/hudson-valley-lighting/hudson-valley-floor-lamps'); ?>">
-                            <div class="brand-page_cat_image_container pt-3">
-                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/L1346-AGB.jpg">', wp_get_attachment_metadata(23766), 23766 ); ?>
-                                <div class="pb-3 pt-3">
-                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Floor Lamps</h3>
-                                </div>
-                            </div>
-                        </a>
+                        brand_page_picture_blocks( array(
 
-                    </div>
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Chandeliers',
+                            'img_src' => '/wp-content/uploads/2020/09/5708-GL_WH-1.png',
+                            'img_id'  => 176958,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-chandeliers/' )
 
-                    <div class="col-sm-4 col-6 mt-5">
+                        ) );
 
-                        <a href="<?php echo site_url('/product-category/hudson-valley-lighting/hudson-valley-table-lamps'); ?>">
-                            <div class="brand-page_cat_image_container pt-3">
-                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/L942-PN_800.jpg">', wp_get_attachment_metadata(23938), 23938 ); ?>
-								 <div class="pb-3 pt-3">
-                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Table Lamps</h3>
-                                </div>
-                            </div>
-                        </a>
+                        brand_page_picture_blocks( array(
 
-                    </div>
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Pendants',
+                            'img_src' => '/wp-content/uploads/2020/09/BKO303-PN_BK.png',
+                            'img_id'  => 177240,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-pendants/' )
 
-					<div class="col-sm-4 col-6 mt-5">
+                        ) );
 
-                        <a href="<?php echo site_url('/product-category/hudson-valley-lighting/hudson-valley-flush-mounts'); ?>">
-                            <div class="brand-page_cat_image_container pt-3">
-                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/07/6416-AGB_800.jpg">', wp_get_attachment_metadata(27804), 27804 ); ?>
-								 <div class="pb-3 pt-3">
-                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Flush Mounts</h3>
-                                </div>
-                            </div>
-                        </a>
+                        brand_page_picture_blocks( array(
 
-                    </div>
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Bath and Vanity',
+                            'img_src' => '/wp-content/uploads/2020/09/9204-PN.png',
+                            'img_id'  => 177734,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-bath-and-vanity/' )
 
-					<div class="col-sm-4 col-6 mt-5">
+                        ) );
 
-                        <a href="<?php echo site_url('/product-category/hudson-valley-lighting/hudson-valley-semi-flush-mounts'); ?>">
-                            <div class="brand-page_cat_image_container pt-3">
-                                <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/07/5800-PN_800.jpg">', wp_get_attachment_metadata(27795), 27795 ); ?>
-								 <div class="pb-3 pt-3">
-                                    <h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2">Semi Flush Mounts</h3>
-                                </div>
-                            </div>
-                        </a>
+                        brand_page_picture_blocks( array(
 
-                    </div>
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Sconces',
+                            'img_src' => '/wp-content/uploads/2020/09/6821-OB.png',
+                            'img_id'  => 177640,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-sconces/' )
+
+                        ) );
+
+                        brand_page_picture_blocks( array(
+
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Swing Arm Sconces',
+                            'img_src' => '/wp-content/uploads/2020/09/5331-AGB.png',
+                            'img_id'  => 177709,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-sconces/hudson-valley-swing-arm-sconces/' )
+
+                        ) );
+
+                        brand_page_picture_blocks( array(
+
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Floor Lamps',
+                            'img_src' => '/wp-content/uploads/2019/05/L1346-AGB.jpg',
+                            'img_id'  => 23766,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-floor-lamps' )
+
+                        ) );
+
+                        brand_page_picture_blocks( array(
+
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Table Lamps',
+                            'img_src' => '/wp-content/uploads/2019/05/L942-PN_800.jpg',
+                            'img_id'  => 23938,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-table-lamps' )
+
+                        ) );
+
+                        brand_page_picture_blocks( array(
+
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Flush Mounts',
+                            'img_src' => '/wp-content/uploads/2019/07/6416-AGB_800.jpg',
+                            'img_id'  => 27804,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-flush-mounts' )
+
+                        ) );
+
+                        brand_page_picture_blocks( array(
+
+                            'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Semi Flush Mounts',
+                            'img_src' => '/wp-content/uploads/2019/07/5800-PN_800.jpg',
+                            'img_id'  => 27795,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-semi-flush-mounts' )
+
+                        ) );
+
+                    ?>
 
                     <div class="col-md-12 mt-5 button-container" style="text-align: center;">
                         <div class="mb-5 mt-5">

@@ -4,6 +4,19 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ released ] - 9.29.2020
+
+## [ 1.20.0 ]
+
+## Added
+
+- function brand_page_picture_blocks to dynamically output brand page category picture blocks
+- New HVL product categories to HVL brand page
+
+## Changed
+
+- HVL brand page template to use function brand_page_picture_blocks
+
 ## [ released ] - 9.25.2020
 
 ## [ 1.19.1 ]

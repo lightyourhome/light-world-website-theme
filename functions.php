@@ -504,6 +504,57 @@ if ( ! function_exists( 'create_picture_block' ) ) :
 	
 endif;
 
+if ( ! function_exists( 'brand_page_picture_blocks' ) ) :
+
+	/**
+	 * Outputs brand page picture blocks
+	 * 
+	 * @param array $args - array of arguments for brand page picture blocks
+	 */
+	function brand_page_picture_blocks( $args ) {
+
+		if ( isset( $args['title'] ) && isset( $args['img_src'] ) && isset( $args['classes'] ) && isset( $args['img_id'] ) && isset( $args['url'] ) ) {
+
+			$options = array(
+
+				'classes' => $args['classes'],
+				'title'   => $args['title'],
+				'img_src' => $args['img_src'],
+				'img_id'  => $args['img_id'],
+				'url'     => $args['url']	
+	
+			);
+	
+			?>
+	
+				<div class="<?php echo $options['classes']; ?>">
+	
+					<a href="<?php echo $args['url']; ?>">
+						<div class="brand-page_cat_image_container pt-3">
+							<?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="' . $args['img_src'] . '">', wp_get_attachment_metadata( $args['img_id'] ), $args['img_id'] ); ?>
+							<div class="pb-3 pt-3">
+								<h3 class="brand-page_cat_headings" style="text-align: center;" class="mb-2"><?php echo $args['title']; ?></h3>
+							</div>
+						</div>
+					</a>
+	
+				</div>
+	
+			<?php
+
+
+		} else {
+
+			error_log('function brand_page_picture_blocks - missing required arguments');
+
+			return;
+
+		}
+
+	}
+
+endif;
+
 
 
 
