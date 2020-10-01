@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ] - 9.29.2020
 
+## [ 1.20.1 ]
+
+## Removed
+
+- display flex from @media width 1366px .block-picture
+- Display flex from lighting ideas row
+
+## Fixed
+
+- Block picture display bug on IOS tablet
+- lighting ideas display bug on IOS tablet
+
+## [ released ] - 9.29.2020
+
 ## [ 1.20.0 ]
 
 ## Added

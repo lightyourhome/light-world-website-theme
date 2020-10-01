@@ -303,9 +303,9 @@
 
                     <div class="row mt-5"><!-- ROW 4 -->
 
-                        <div class="col-md-4 d-flex">
+                        <div class="col-md-4">
 
-                            <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Linara-Night-LI.jpg">', wp_get_attachment_metadata(163890), 163890 ); ?>
+                            <?php echo wp_image_add_srcset_and_sizes('<img style="height: 100%; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Linara-Night-LI.jpg">', wp_get_attachment_metadata(163890), 163890 ); ?>
 
                         </div>
 
@@ -345,9 +345,9 @@
 
                         </div>
 
-                        <div class="col-md-4 d-none d-md-flex d-lg-flex">
+                        <div class="col-md-4">
 
-                            <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Dining-Room-Laurent-52052CG-Detail-Day-1B-scaled.jpg">', wp_get_attachment_metadata(163892), 163892 ); ?>
+                            <?php echo wp_image_add_srcset_and_sizes('<img style="height: 100%; width: 100%;" src="https://www.lightyourhome.com/wp-content/uploads/2020/04/Dining-Room-Laurent-52052CG-Detail-Day-1B-scaled.jpg">', wp_get_attachment_metadata(163892), 163892 ); ?>
 
                         </div>
 
