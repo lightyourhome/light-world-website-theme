@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.21.1 ]
 
+## Fixed
+
+- Maxim sale page link
+
 ## [ released ] - 10.1.2020
 
 ## [ 1.21.0 ]
