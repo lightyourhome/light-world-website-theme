@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Kichler sale to home page
 - Kichler sale to sale page
+- Elan sale to sale page
 
 ## Removed
 
