@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Kichler sale to home page
 - Kichler sale to sale page
 - Elan sale to sale page
+- Artcraft sale to sale page (commit releasing 10.6.2020)
 
 ## Removed
 
