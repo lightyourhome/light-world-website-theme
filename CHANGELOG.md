@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.23.0 ]
 
+## Added
+
+- Picture lights to hudson valley brand page template
+
 ## [ released ] - 10.6.2020
 
 ## [ 1.22.0 ]
