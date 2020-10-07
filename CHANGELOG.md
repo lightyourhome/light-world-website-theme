@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Picture lights to hudson valley brand page template
 
+## Changed
+
+- Kichler sale wording
+
 ## [ released ] - 10.6.2020
 
 ## [ 1.22.0 ]
