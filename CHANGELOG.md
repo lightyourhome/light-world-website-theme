@@ -8,9 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.25.0 ]
 
+## Added
+
+- Elk Lighting sale to home page
+
 ## Removed
 
 - Kichler and Elan Sale from sale page
+- Kichler sale from home page
 
 ## [ released ] - 10.16.2020
 
