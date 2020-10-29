@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.26.0 ]
 
+## Added
+
+- Quoizel Lighting Sale to Home Page
+
+## Removed
+
+- Elk Lighting Sale from Home Page
+
 ## [ released ] - 10.20.2020
 
 ## [ 1.25.0 ]
