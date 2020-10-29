@@ -11,10 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Added
 
 - Quoizel Lighting Sale to Home Page
+- Quoizel Lighting Sale to sale page
 
 ## Removed
 
 - Elk Lighting Sale from Home Page
+- Quoizel Table lamps and Floor Lamps sale from sale page
 
 ## [ released ] - 10.20.2020
 
