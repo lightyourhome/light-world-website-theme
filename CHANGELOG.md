@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Quoizel Lighting Sale to Home Page
 - Quoizel Lighting Sale to sale page
+- Quoizel coupon code to single product pages
 
 ## Removed
 
