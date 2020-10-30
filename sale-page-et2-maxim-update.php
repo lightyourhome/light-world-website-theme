@@ -60,6 +60,30 @@
 
                     <div class="col-md-4">
 
+                        <div class="block-picture-primary-container">
+
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/product-category/kichler-lighting/kichler-lighting-sale/'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/kichler_summer_sale_2020.jpg">', wp_get_attachment_metadata(172667), 172667 ); ?>
+                                    </div>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Kichler Lighting</h4>
+                                            <h3 class="block-heading">Get 20% - 25% off on select Kichler Lighting Products</h3>
+                                            <h4 class="block-heading">Prices already discounted!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/kichler-lighting/kichler-lighting-sale/'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
                         <div class="block-container">
                             <a href="<?php echo site_url('/brands/elk-home'); ?>">
                                 <div class="block-picture">

@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Maxim sale to sale page
 - ET2 sale to sale page
+- Kichler sale to sale page
 
 ## Removed
 
