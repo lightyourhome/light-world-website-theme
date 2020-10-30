@@ -102,26 +102,6 @@
 
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/product-category/maxim-lighting/maxim-lighting-outdoor-lighting/'); ?>">
-                                <div class="block-picture">
-                                     <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/10316CLBZGLD.jpg">', wp_get_attachment_metadata(165421), 165421 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Maxim Lighting</h4>
-                                        <h3 class="block-heading">Save 10% on All Maxim Outdoor Lighting</h3>
-                                        <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/product-category/maxim-lighting/maxim-lighting-outdoor-lighting/'); ?>" class="block-shop-link">Shop Now</a>
-                                    </div>
-                                </div>
-                            </a>
-                         </div>
-                    </div>
-
-                     
-
                     <div class="col-md-12" style="border-top: 2px solid #d3d3d3;"></div>
 
                 </div>
