@@ -4,6 +4,21 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [ released ] - 10.6.2020
+
+## [ 1.22.0 ]
+
+## Added
+
+- Kichler sale to home page
+- Kichler sale to sale page
+- Elan sale to sale page
+- Artcraft sale to sale page (commit releasing 10.6.2020)
+
+## Removed
+
+- Elk Lighting Sale from home page
+
 ## [ released ] - 10.1.2020
 
 ## [ 1.21.1 ]
