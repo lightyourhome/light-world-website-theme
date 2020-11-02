@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Quoizel sales on sale page
+- Quoizel sale coupon on single product pages
 
 ## [ released ] - 11.1.2020
 
