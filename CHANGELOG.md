@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ unreleased ] - scheduled for 11.3.2020
 
+## Changed
+
+- Quoizel sales on sale page
+
 ## [ released ] - 11.1.2020
 
 ## [ 1.27.0 ]
