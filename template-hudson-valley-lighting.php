@@ -93,6 +93,16 @@
                         brand_page_picture_blocks( array(
 
                             'classes' => 'col-sm-4 col-6 mt-5',
+                            'title'   => 'Picture Lights',
+                            'img_src' => '/wp-content/uploads/2020/10/7008-AGB.png',
+                            'img_id'  => 190451,
+                            'url'     => site_url( '/product-category/hudson-valley-lighting/hudson-valley-sconces/hudson-valley-picture-lights/' )
+
+                        ) );
+
+                        brand_page_picture_blocks( array(
+
+                            'classes' => 'col-sm-4 col-6 mt-5',
                             'title'   => 'Floor Lamps',
                             'img_src' => '/wp-content/uploads/2019/05/L1346-AGB.jpg',
                             'img_id'  => 23766,

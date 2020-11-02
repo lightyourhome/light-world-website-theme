@@ -158,7 +158,7 @@
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
                                             <h4 class="block-heading">Kichler Lighting</h4>
-                                            <h3 class="block-heading">Get 15% off on All Kichler Lighting</h3>
+                                            <h3 class="block-heading">Get 15% off on Kichler Lighting</h3>
                                             <h4 class="block-heading">Prices already discounted!</h4>
                                             <a style="text-align: center;" href="<?php echo site_url('/brands/kichler-lighting/'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
