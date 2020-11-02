@@ -171,7 +171,7 @@ if ( post_password_required() ) {
 			<strong>
 				<?php 
 
-					if ( isset( $shipping_duration['coupon-elk-lighting'] ) || isset( $shipping_duration['coupon-elk-home'] ) && $product->get_stock_status() == 'instock' ) {
+					if ( isset( $shipping_duration['coupon-elk-lighting'] ) || isset( $shipping_duration['coupon-elk-home'] ) || isset( $shipping_duration['coupon-code-quoizel'] ) && $product->get_stock_status() == 'instock' ) {
 
 						if ( strpos( $product->get_categories(), 'Elk Lighting' ) ) {
 
@@ -181,6 +181,10 @@ if ( post_password_required() ) {
 
 							echo $shipping_duration['coupon-elk-home'];
 							
+						} else if ( strpos( $product->get_categories(), 'Quoizel Lighting' ) ) {
+
+							echo $shipping_duration['coupon-code-quoizel'];
+
 						}
 
 					}

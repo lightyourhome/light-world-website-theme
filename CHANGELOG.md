@@ -4,7 +4,22 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ unreleased ] - scheduled for 10.20.2020
+## [ released ] - 10.29.2020
+
+## [ 1.26.0 ]
+
+## Added
+
+- Quoizel Lighting Sale to Home Page
+- Quoizel Lighting Sale to sale page
+- Quoizel coupon code to single product pages
+
+## Removed
+
+- Elk Lighting Sale from Home Page
+- Quoizel Table lamps and Floor Lamps sale from sale page
+
+## [ released ] - 10.20.2020
 
 ## [ 1.25.0 ]
 
