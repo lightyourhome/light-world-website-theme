@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ unreleased ] - scheduled for 11.3.2020
 
+## Added
+
+- Additional logic for displaying quoizel coupons (include certain categories, exclude others)
+
 ## Changed
 
 - Quoizel sales on sale page

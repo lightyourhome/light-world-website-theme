@@ -171,19 +171,48 @@ if ( post_password_required() ) {
 			<strong>
 				<?php 
 
+					$product_categories = $product->get_categories();
+
 					if ( isset( $shipping_duration['coupon-elk-lighting'] ) || isset( $shipping_duration['coupon-elk-home'] ) || isset( $shipping_duration['coupon-code-quoizel'] ) && $product->get_stock_status() == 'instock' ) {
 
-						if ( strpos( $product->get_categories(), 'Elk Lighting' ) ) {
+						if ( strpos( $product_categories, 'Elk Lighting' ) ) {
 
 							echo $shipping_duration['coupon-elk-lighting'];
 
-						} else if ( strpos( $product->get_categories(), 'Elk Home' ) ) {
+						} else if ( strpos( $product_categories, 'Elk Home' ) ) {
 
 							echo $shipping_duration['coupon-elk-home'];
 							
-						} else if ( strpos( $product->get_categories(), 'Quoizel Lighting' ) ) {
+						} else if ( strpos( $product_categories, 'Quoizel Lighting' ) ) {
 
-							echo $shipping_duration['coupon-code-quoizel'];
+							$quoizel_sale_categories = array( 
+															  'Quoizel Bath and Vanity', 
+															  'Quoizel Chandeliers', 
+															  'Quoizel Pendants', 
+															  'Quoizel Sconces', 
+															  'Quoizel Semi-Flush Mounts', 
+															  'Quoizel Flush Mounts' 
+															);
+
+							
+
+							$product_cat_terms = get_terms( array(
+
+								'taxonomy'   => 'product_cat',
+								'object_ids' => $product->get_id(),
+								'orderby'    => 'name'
+
+							) );
+
+							foreach ( $product_cat_terms as $term_object => $terms ) {
+
+								if ( in_array( $terms->name, $quoizel_sale_categories ) ) {
+
+									echo $shipping_duration['coupon-code-quoizel'];
+
+								}
+
+							}
 
 						}
 
