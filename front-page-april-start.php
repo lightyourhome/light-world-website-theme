@@ -143,24 +143,21 @@
                 
                 </div>
 
-                <div class="row mt-5 ml-0 mr-0 row-eq-height"><!-- ROW 3 --> 
-
-
-                    <div class="col-md-6">
+                <div class="col-md-6">
 
                         <div class="block-picture-primary-container">
 
                             <div class="block-container">
-                                <a href="<?php echo site_url('/brands/quoizel-lighting/'); ?>">
+                                <a href="<?php echo site_url('/brands/hudson-valley-lighting/'); ?>">
                                     <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/quoizel_bath_sale.jpg">', wp_get_attachment_metadata(172776), 172776 ); ?>
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/11/hudson_valley_holiday_sale-2.jpg">', wp_get_attachment_metadata(190653), 190653 ); ?>
                                     </div>
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
-                                            <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 15% off on All of Quoizel Lighting</h3>
-                                            <h4 class="block-heading">Use code "QUOIZELALL15" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/quoizel-lighting/'); ?>" class="block-shop-link">Shop Now</a>
+                                            <h4 class="block-heading">Hudson Valley Lighting</h4>
+                                            <h3 class="block-heading">Get 20% off on All Hudson Valley Lighting</h3>
+                                            <h4 class="block-heading">Prices already discounted!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/hudson-valley-lighting/'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
                                     </div>
                                 </a>
