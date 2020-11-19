@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Added
 
 - Hudson Valley Sale to front page
+- Hudson Valley Sale to sale page
 
 ## [ released ] - 11.17.2020
 
