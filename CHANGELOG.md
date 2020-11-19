@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Artcraft sale to sales page
 
+## Changed
+
+- Quoizel Sale text
+
 ## [ released ] - 11.16.2020
 
 ## [ 1.27.2 ]
