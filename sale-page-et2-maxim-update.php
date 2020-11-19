@@ -252,6 +252,30 @@
 
                     <div class="col-md-4">
 
+                        <div class="block-picture-primary-container">
+
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/brands/mitzi-lighting/'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/05/HL285201-AGB.jpg">', wp_get_attachment_metadata(23532), 23532 ); ?>
+                                    </div>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Mitzi Lighting</h4>
+                                            <h3 class="block-heading">Get 20% off on All Mitzi Lighting</h3>
+                                            <h4 class="block-heading">Prices already discounted!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/mitzi-lighting/'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
                         <div class="block-container">
                             <a href="<?php echo site_url('/brands/elk-home'); ?>">
                                 <div class="block-picture">
