@@ -143,7 +143,9 @@
                 
                 </div>
 
-                <div class="col-md-6">
+                <div class="row mt-5 ml-0 mr-0 row-eq-height">
+
+                    <div class="col-md-6">
 
                         <div class="block-picture-primary-container">
 
