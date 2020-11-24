@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Elk home sale to quoizel sale on home page
-- Quoizel sale on sale page
+- updated Quoizel sale on sale page
 
 ## [ released ] - 11.19.2020
 
