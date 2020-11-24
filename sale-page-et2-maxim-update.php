@@ -39,136 +39,16 @@
                         <div class="block-picture-primary-container">
 
                             <div class="block-container">
-                                <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>">
+                                <a href="<?php echo site_url('/brands/quoizel-lighting'); ?>">
                                     <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/quoizel_bath_sale.jpg">', wp_get_attachment_metadata(172776), 172776 ); ?>
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/11/quoizel_lighting_bf_sale_2020.jpg">', wp_get_attachment_metadata( 190657 ), 190657 ); ?>
                                     </div>
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
                                             <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 10% off on Quoizel Bath and Vanity</h3>
-                                            <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-bath-and-vanity/'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/03/DNY8601BN.jpg">', wp_get_attachment_metadata(10779), 10779 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 10% off on Quoizel Sconces</h3>
-                                            <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-sconces/'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-chandeliers/'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/04/TNC5006WT_4_.jpg">', wp_get_attachment_metadata(16796), 16796 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 10% off on Quoizel Chandeliers</h3>
-                                            <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-chandeliers/'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-pendants/'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/04/TWE1510BN_3_.jpg">', wp_get_attachment_metadata(14721), 14721 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 10% off on Quoizel Pendants</h3>
-                                            <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-pendants/'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-flush-mounts/'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/04/BRX1611C_3_.jpg">', wp_get_attachment_metadata(13564), 13564 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 10% off on Quoizel Flush Mounts</h3>
-                                            <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-flush-mounts/'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-semi-flush-mounts/'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2019/04/CDL1714EK_3_.jpg">', wp_get_attachment_metadata(13588), 13588 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 10% off on Quoizel Semi Flush Mounts</h3>
-                                            <h4 class="block-heading">Use code "QUOIZEL10" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/product-category/quoizel-lighting/quoizel-semi-flush-mounts/'); ?>" class="block-shop-link">Shop Now</a>
+                                            <h3 class="block-heading">Get 20% off on All Quoizel Lighting Products</h3>
+                                            <h4 class="block-heading">Use code "BLACKFRIDAY20" at checkout!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/quoizel-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
                                     </div>
                                 </a>
