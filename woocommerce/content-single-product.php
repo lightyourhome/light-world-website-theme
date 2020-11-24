@@ -186,12 +186,7 @@ if ( post_password_required() ) {
 						} else if ( strpos( $product_categories, 'Quoizel Lighting' ) ) {
 
 							$quoizel_sale_categories = array( 
-															  'Quoizel Bath and Vanity', 
-															  'Quoizel Chandeliers', 
-															  'Quoizel Pendants', 
-															  'Quoizel Sconces', 
-															  'Quoizel Semi-Flush Mounts', 
-															  'Quoizel Flush Mounts' 
+															  'Quoizel Lighting'
 															);
 
 							
