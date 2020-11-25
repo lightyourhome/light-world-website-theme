@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Elk Home and Lighting Sale text
 
+## Removed
+
+- Elk home and lighting coupons from single product pages
+
 ## [ released ] - 11.25.2020
 
 ## [ 1.28.1 ]
