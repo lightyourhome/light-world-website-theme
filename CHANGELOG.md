@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.28.1 ]
 
+## Added
+
+- Livex lighting sale to sale page
+
 ## Changed
 
 - ET2 and Maxim Lighting Sale text
