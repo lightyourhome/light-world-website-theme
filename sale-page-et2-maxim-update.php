@@ -39,30 +39,6 @@
                         <div class="block-picture-primary-container">
 
                             <div class="block-container">
-                                <a href="<?php echo site_url('/brands/quoizel-lighting'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/11/quoizel_lighting_bf_sale_2020.jpg">', wp_get_attachment_metadata( 190657 ), 190657 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Quoizel Lighting</h4>
-                                            <h3 class="block-heading">Get 20% off on All Quoizel Lighting Products</h3>
-                                            <h4 class="block-heading">Use code "BLACKFRIDAY20" at checkout!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/quoizel-lighting'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
                                 <a href="<?php echo site_url('/product-category/kichler-lighting/kichler-lighting-sale/'); ?>">
                                     <div class="block-picture">
                                         <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/06/kichler_summer_sale_2020.jpg">', wp_get_attachment_metadata(172667), 172667 ); ?>
