@@ -180,20 +180,24 @@
 
                     <div class="col-md-4">
 
-                        <div class="block-container">
-                            <a href="<?php echo site_url('/brands/elk-home'); ?>">
-                                <div class="block-picture">
-                                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/07/elk_home_sale_august.jpg">', wp_get_attachment_metadata(172838), 172838 ); ?>
-                                </div>
-                                <div class="block-caption-wrapper">
-                                    <div class="block-caption-container">
-                                        <h4 class="block-heading">Elk Home</h4>
-                                        <h3 class="block-heading">Save 20% on all Elk Home Products</h3>
-                                        <h4 class="block-heading">Prices already discounted!</h4>
-                                        <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
+                        <div class="block-picture-primary-container">
+
+                            <div class="block-container">
+                                <a href="<?php echo site_url('/brands/elk-home'); ?>">
+                                    <div class="block-picture">
+                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/07/elk_home_sale_august.jpg">', wp_get_attachment_metadata(172838), 172838 ); ?>
                                     </div>
-                                </div>
-                             </a>
+                                    <div class="block-caption-wrapper">
+                                        <div class="block-caption-container">
+                                            <h4 class="block-heading">Elk Home</h4>
+                                            <h3 class="block-heading">Save 20% on all Elk Home Products</h3>
+                                            <h4 class="block-heading">Prices already discounted!</h4>
+                                            <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
                         </div>
 
                     </div>
