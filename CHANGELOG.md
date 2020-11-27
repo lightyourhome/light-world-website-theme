@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Removed
 
 - Quoizel sale from front page
+- Quoizel sale coupon from single product pages
 
 ## [ released ] -  11.25.2020
 
