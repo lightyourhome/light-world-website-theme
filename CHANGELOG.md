@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Quoizel sale from front page
 - Quoizel sale coupon from single product pages
+- Removed livex sale from sale page
 
 ## [ released ] -  11.25.2020
 
