@@ -7,7 +7,7 @@
     <div class="container-fluid px-0">
         <div class="row">
             <div class="col-md-12">
-                <a class="sales-page-banner"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/11/Banner_v1_640x800.png">', wp_get_attachment_metadata(190661), 190661 ); ?></a>
+                <a class="sales-page-banner"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/12/wintersale_2020_2_mobile-1.jpg">', wp_get_attachment_metadata(190676), 190676 ); ?></a>
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@
 
 <div class="desktop-only">
 
-  <a class="sales-page-banner"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/11/Black-FridayCyber-Monday-Banner_v2.png">', wp_get_attachment_metadata(190660), 190660 ); ?></a>
+  <a class="sales-page-banner"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/12/wintersale_2020_2.jpg">', wp_get_attachment_metadata(190674), 190674 ); ?></a>
 
 </div>
 
