@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Elk home sale on front page to coupon
+- Elk home and lighting to coupon on sales page
 
 ## Removed
 

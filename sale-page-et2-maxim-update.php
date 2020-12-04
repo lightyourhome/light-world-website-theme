@@ -142,8 +142,8 @@
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
                                             <h4 class="block-heading">Elk Home</h4>
-                                            <h3 class="block-heading">Save 20% on all Elk Home Products</h3>
-                                            <h4 class="block-heading">Prices already discounted!</h4>
+                                            <h3 class="block-heading">Save 15% on all Elk Home Products</h3>
+                                            <h4 class="block-heading">Use coupon "ELKHOME15" at checkout!</h4>
                                             <a style="text-align: center;" href="<?php echo site_url('/brands/elk-home'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
                                     </div>
@@ -166,8 +166,8 @@
                                     <div class="block-caption-wrapper">
                                         <div class="block-caption-container">
                                             <h4 class="block-heading">Elk Lighting</h4>
-                                            <h3 class="block-heading">Get 20% off on All Elk Lighting</h3>
-                                            <h4 class="block-heading">Prices already discounted!</h4>
+                                            <h3 class="block-heading">Get 15% off on All Elk Lighting</h3>
+                                            <h4 class="block-heading">Use coupon "ELKLIGHTING15" at checkout!</h4>
                                             <a style="text-align: center;" href="<?php echo site_url('/brands/elk-lighting'); ?>" class="block-shop-link">Shop Now</a>
                                         </div>
                                     </div>
