@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ released ] - 12.4.2020
 
+## Added
+
+- Elk lighting sale coupon to single product pages
+- Elk home sale coupon to single product pages
+
 ## Changed
 
 - Elk home sale on front page to coupon
