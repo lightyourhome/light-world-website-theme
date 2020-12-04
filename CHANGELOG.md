@@ -10,6 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Elk home sale on front page to coupon
 
+## Removed
+
+- Currey and co sale from sale page
+- Artcraft sale from sale page
+
 ## [ released ] - 11.30.2020
 
 ## Added
