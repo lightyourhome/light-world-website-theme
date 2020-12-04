@@ -4,7 +4,13 @@ All notable theme changes should be added to this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [ unreleased ] - scheduled for 11.30.2020
+## [ released ] - 12.4.2020
+
+## Changed
+
+- Elk home sale on front page to coupon
+
+## [ released ] - 11.30.2020
 
 ## Added
 
