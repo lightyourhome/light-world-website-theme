@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>">
-                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/11/Banner_v2_640x800.png">', wp_get_attachment_metadata(190662), 190662 ); ?>
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/12/wintersale_2020_1_mobile.jpg">', wp_get_attachment_metadata(190673), 190673 ); ?>
                 </a>
             </div>
         </div>
@@ -18,7 +18,7 @@
 
 <div class="desktop-only">
 
-    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/11/Black-FridayCyber-Monday-Banner_v1.png">', wp_get_attachment_metadata(190659), 190659 ); ?></a>
+    <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/12/wintersale_2020_1.jpg">', wp_get_attachment_metadata(190672), 190672 ); ?></a>
 
 </div>
 
