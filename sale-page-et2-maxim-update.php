@@ -7,7 +7,7 @@
     <div class="container-fluid px-0">
         <div class="row">
             <div class="col-md-12">
-                <a class="sales-page-banner"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/12/wintersale_2020_2_mobile-1.jpg">', wp_get_attachment_metadata(190676), 190676 ); ?></a>
+                <a class="sales-page-banner"><?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/12/winter_sale_mobile_01.jpg">', wp_get_attachment_metadata(190677), 190677 ); ?></a>
             </div>
         </div>
     </div>

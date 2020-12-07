@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <a href="<?php echo site_url('/home/sales-and-promotions/'); ?>">
-                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/12/wintersale_2020_1_mobile.jpg">', wp_get_attachment_metadata(190673), 190673 ); ?>
+                    <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/12/winter_sale_mobile_02.jpg">', wp_get_attachment_metadata(190678), 190678 ); ?>
                 </a>
             </div>
         </div>
