@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Mobile sale banners
+- Hudson Valley sale to Maxim Lighting sale on home page
 
 ## [ released ] - 12.4.2020
 
