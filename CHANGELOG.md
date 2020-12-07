@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Mobile sale banners
 - Hudson Valley sale to Maxim Lighting sale on home page
 
+## Removed
+
+- Kichler sale from sale page
+- Elan sale from sale page
+- Hudson valley sale from sale page
+- Elan sale from sale page
+
 ## [ released ] - 12.4.2020
 
 ## [ 1.29.0 ]
