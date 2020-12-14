@@ -82,54 +82,6 @@
 
                     </div>
 
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/brands/maxim-lighting'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/11375BKAB-scaled.jpg">', wp_get_attachment_metadata(164738), 164738 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">Maxim Lighting</h4>
-                                            <h3 class="block-heading">Get 20% off on All Maxim Lighting</h3>
-                                            <h4 class="block-heading">Prices already discounted!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/maxim-lighting'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="block-picture-primary-container">
-
-                            <div class="block-container">
-                                <a href="<?php echo site_url('/brands/et2-lighting'); ?>">
-                                    <div class="block-picture">
-                                        <?php echo wp_image_add_srcset_and_sizes('<img style="height: auto; width: 100%;" src="/wp-content/uploads/2020/04/E25118-92BKGLD-scaled.jpg">', wp_get_attachment_metadata(165861), 165861 ); ?>
-                                    </div>
-                                    <div class="block-caption-wrapper">
-                                        <div class="block-caption-container">
-                                            <h4 class="block-heading">ET2 Lighting</h4>
-                                            <h3 class="block-heading">Get 20% off on All ET2 Lighting</h3>
-                                            <h4 class="block-heading">Prices already discounted!</h4>
-                                            <a style="text-align: center;" href="<?php echo site_url('/brands/et2-lighting'); ?>" class="block-shop-link">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
                     <div class="col-md-12" style="border-top: 2px solid #d3d3d3;"></div>
 
                 </div>

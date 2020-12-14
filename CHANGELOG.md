@@ -8,9 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [ 1.29.2 ]
 
-## [ Removed ]
+## Added
+
+- Elk lighting sale to front page
+
+## Removed
 
 - Maxim Lighting Sale from front page
+- Maxim Lighting sale from sale page
+- ET2 Lighting sale from sale page
 
 ## [ released ] - 12.7.2020
 
