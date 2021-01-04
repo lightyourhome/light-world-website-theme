@@ -97,9 +97,7 @@ if ( ! function_exists('single_product_manufacturer_shipping_and_info') ) :
   
       '051' => [ //ELK
         'shipping' => 'Ships in 2 to 3 Business Days',
-        'warranty' => '',
-        'coupon-elk-lighting' => 'Get 15% Off This Item With Code "ELKLIGHTING15" at Checkout!',
-        'coupon-elk-home' => 'Get 15% Off This Item With Code "ELKHOME15" at Checkout!'
+        'warranty' => ''
         ],
 
       '699' => [ //CURREY
