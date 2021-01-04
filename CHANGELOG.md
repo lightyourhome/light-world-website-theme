@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Elk home and lighting sales from home page
 - Elk home and lighting sales from sales page
+- Elk sale coupon from single product pages
 
 ## [ released ] - 12.14.2020
 
