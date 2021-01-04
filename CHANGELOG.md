@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Removed
 
 - Elk home and lighting sales from home page
+- Elk home and lighting sales from sales page
 
 ## [ released ] - 12.14.2020
 
